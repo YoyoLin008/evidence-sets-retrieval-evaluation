@@ -1,0 +1,89 @@
+{
+  "version": "v1.1.1",
+  "recorded_utc": "2026-10-03T19:17:39.165608+00:00",
+  "scientific_source_commit": "45c5c57e2de2fd45cb6691e7274bc600e731b5a0",
+  "reviewed_release_commit": "ff7f51142aa7bb253ed4a587309654ac5d6101e7",
+  "patch_baseline_commit": "d656c69217bd77ae600f09607486980cf9b6c6f8",
+  "correction_build_commit": "e77374837ce5891b5ff38b932438f02491d6809e",
+  "source_branch": "patch/final-corrections-v1.1.1",
+  "commit_roles": "Correction/build commit contains corrected sources, accepted PDFs and validation. The later release commit adds this provenance and packaging metadata; its ID is recorded externally without a self-hash cycle. Scientific source remains the reviewed original.",
+  "build_commands": [
+    ".venv/bin/python src/revision_v3_release_docs.py",
+    ".venv/bin/python src/render_final.py",
+    ".venv/bin/python src/qa_final_documents.py --output-dir revisions/patch_v1.1.1/qa/rendered",
+    ".venv/bin/python -m pytest -q tests/test_revision_v3_manuscript.py"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.2-arm64-arm-64bit",
+    "libraries": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "reportlab": "4.4.4",
+      "pypdf": "6.10.0",
+      "pypdfium2": "4.30.0"
+    },
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)"
+  },
+  "source_sha256": {
+    "src/build_manuscript.py": "06db98726c368ebf172b4ae5c44c339a7bf959a90c855785df6a23e6aca7df8f",
+    "src/revision_v3_manuscript.py": "395d8cf024371129a7d99ab1c744124c7f8223ec5834f75a6a6cf2907d010915",
+    "src/manuscript_revision_tables.py": "65fa6a641ea3b43cfbb6265f14e62f6506447ecb505fa471a6b26dfba3408519",
+    "src/revision_v3_release_docs.py": "8bf7779d1aa3b84d0b093ca4c1c6b1dcde6f4a68919ef9a715ff6eda74223644",
+    "src/render_final.py": "463f273cb865d240cf96bbcf2d1db171ff7f9555fb571ee7ab86764fcd552c73",
+    "src/render_manuscript.py": "c43370c4b00f21081f7dd0b1bf88c3641cd4b5629f49c7f072abc2a19e796195",
+    "src/qa_final_documents.py": "3839bf75b87f2748ebc33b93c337ebbad749381c48c9a143e55ec5449ff9a68c",
+    "src/encoder_dependency_preflight.py": "6b8731876a9e3d36b37c5b40625754448d42e431fc4516aa09a56b036583134c",
+    "src/package_final_patch.py": "0aa6a51c71a22646c7285b9aac7ba2454e67d139f3121857e5ed0079c46c0932",
+    "paper/article_blocks_1.json": "02813fa680e9d87ed54f1b9dfa9a4c2257291005c7201606aff0aed1f2966566",
+    "paper/article_blocks_2.json": "2f115af2a5f3bd1dffa7ec01cda3929d347af8f2f170f4772b80a6eb31b0ca95",
+    "paper/supplement_blocks.json": "ce3e51dac0a8290e02e15d36acfd905dfc7e6faee04bf3eddfa15da4015f8b90",
+    "paper/irrj2e.sty": "5952d152ce89b9446587f8e4182da420f8228a8a85248a692b83d52962fd2910"
+  },
+  "PDFs": [
+    {
+      "file": "paper/manuscript_official_style.pdf",
+      "pages": 21,
+      "sha256": "b2044275325f8a1317ffc1a571d8b010f5d027b1a5aa39f4886516dc7707e580",
+      "text_checks": "passed",
+      "all_pages_rendered": true,
+      "visual_inspection": "passed",
+      "visual_checked_utc": "2026-10-03T19:12:05.388849+00:00",
+      "visual_method": "Every page rendered at 1.5x and inspected in sequential two-page sheets, including all references, figures, tables and the three corrected locations; no clipping, missing glyphs or blank pages observed."
+    },
+    {
+      "file": "paper/supplement_official_style.pdf",
+      "pages": 12,
+      "sha256": "8478c6beb495f0f656f557708f5efda0f6b89567bbe1b6ed55750bd5a2ef11ad",
+      "text_checks": "passed",
+      "all_pages_rendered": true,
+      "visual_inspection": "passed",
+      "visual_checked_utc": "2026-10-03T19:12:05.630844+00:00",
+      "visual_method": "Every page rendered at 1.5x and inspected in sequential two-page sheets, including all references, figures, tables and the three corrected locations; no clipping, missing glyphs or blank pages observed."
+    },
+    {
+      "file": "paper/manuscript_reading_copy.pdf",
+      "pages": 20,
+      "sha256": "3ef55e26ae7b8a4c27c73b02d61d1658581be8c4c2f16f8911e811e37667bf29",
+      "text_checks": "passed",
+      "all_pages_rendered": true,
+      "visual_inspection": "passed",
+      "visual_checked_utc": "2026-10-03T19:12:05.852985+00:00",
+      "visual_method": "Every page rendered at 1.5x and inspected in sequential two-page sheets, including all references, figures, tables and the three corrected locations; no clipping, missing glyphs or blank pages observed."
+    },
+    {
+      "file": "paper/cover_letter.pdf",
+      "pages": 1,
+      "sha256": "457e3e7095bebf07b0a28d60bd428f83f0aec4424ebefcf56693e8c76ca8ed94",
+      "text_checks": "passed",
+      "all_pages_rendered": true,
+      "visual_inspection": "passed",
+      "visual_checked_utc": "2026-10-03T19:12:05.863556+00:00",
+      "visual_method": "Every page rendered at 1.5x and inspected in sequential two-page sheets, including all references, figures, tables and the three corrected locations; no clipping, missing glyphs or blank pages observed."
+    }
+  ],
+  "scientific_recomputation_performed": false,
+  "full_inference_rerun": false,
+  "dependency_validation": "installation.json and dependency_preflight.json",
+  "DOI_strategy": "Verified concept DOI 10.5281/zenodo.23122619 plus exact v1.1.1 tag; actual version DOI only in later landing metadata."
+}

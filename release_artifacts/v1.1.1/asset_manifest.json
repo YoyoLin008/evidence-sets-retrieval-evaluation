@@ -1,0 +1,35 @@
+{
+  "version": "v1.1.1",
+  "source_provenance": "revisions/patch_v1.1.1/build_provenance.json",
+  "scope": "Frozen patch PDF/ZIP/report assets; no self checksum.",
+  "files": {
+    "paper/manuscript_official_style.pdf": {
+      "sha256": "b2044275325f8a1317ffc1a571d8b010f5d027b1a5aa39f4886516dc7707e580",
+      "bytes": 397755
+    },
+    "paper/supplement_official_style.pdf": {
+      "sha256": "8478c6beb495f0f656f557708f5efda0f6b89567bbe1b6ed55750bd5a2ef11ad",
+      "bytes": 305768
+    },
+    "paper/cover_letter.pdf": {
+      "sha256": "457e3e7095bebf07b0a28d60bd428f83f0aec4424ebefcf56693e8c76ca8ed94",
+      "bytes": 46269
+    },
+    "paper/manuscript_reading_copy.pdf": {
+      "sha256": "3ef55e26ae7b8a4c27c73b02d61d1658581be8c4c2f16f8911e811e37667bf29",
+      "bytes": 401633
+    },
+    "release_artifacts/v1.1.1/submission-v1.1.1.zip": {
+      "sha256": "f2ed4d64bc2fb0005130d41e01c72569d53541b3b8780b614c0b655b9b7da12d",
+      "bytes": 1166535
+    },
+    "revisions/patch_v1.1.1/patch_memo.md": {
+      "sha256": "0acd4d2589c99eed87f7c0a365623245b4d50c3538aba4de7aa758bdab74c291",
+      "bytes": 4056
+    },
+    "revisions/patch_v1.1.1/validation_report.md": {
+      "sha256": "4c562bc2c864f8f88041762c4326ed167ffd869aace9bc6f3f2542781c41b0c9",
+      "bytes": 6495
+    }
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "version": "v1.1.1",
+  "zip": "release_artifacts/v1.1.1/submission-v1.1.1.zip",
+  "zip_bytes": 1166535,
+  "zip_sha256": "f2ed4d64bc2fb0005130d41e01c72569d53541b3b8780b614c0b655b9b7da12d",
+  "internal_file_count": 22,
+  "all_internal_files_match_standalone": true,
+  "entries": {
+    "docs/revision_v1.1_reproduction.md": {
+      "sha256": "44f6c44a20b516f87fd63326e4fa60a8d14a69f5b853dbf263f53d0d4bb3c6aa",
+      "bytes": 6417
+    },
+    "paper/cover_letter.md": {
+      "sha256": "6a02b86249e8284e96c1e475ae8a77609952fe0f70bc2315d2c02f6e6bbf584f",
+      "bytes": 3300
+    },
+    "paper/cover_letter.pdf": {
+      "sha256": "457e3e7095bebf07b0a28d60bd428f83f0aec4424ebefcf56693e8c76ca8ed94",
+      "bytes": 46269
+    },
+    "paper/irrj2e.sty": {
+      "sha256": "5952d152ce89b9446587f8e4182da420f8228a8a85248a692b83d52962fd2910",
+      "bytes": 14739
+    },
+    "paper/manuscript.tex": {
+      "sha256": "30bc836ffca0b9ef0e5743c006cba477a93b371804eb6699adef821cb812e70b",
+      "bytes": 64990
+    },
+    "paper/manuscript_official_style.pdf": {
+      "sha256": "b2044275325f8a1317ffc1a571d8b010f5d027b1a5aa39f4886516dc7707e580",
+      "bytes": 397755
+    },
+    "paper/manuscript_reading_copy.pdf": {
+      "sha256": "3ef55e26ae7b8a4c27c73b02d61d1658581be8c4c2f16f8911e811e37667bf29",
+      "bytes": 401633
+    },
+    "paper/references.bib": {
+      "sha256": "03fc72387b480f05beb08e3df156382e5c1b990f2e22ec0357a9b54b7a147536",
+      "bytes": 12111
+    },
+    "paper/supplement.tex": {
+      "sha256": "0aacc94c70142155429ae2cdc841c7312067f7a79cd3077f633a5829919e71df",
+      "bytes": 41769
+    },
+    "paper/supplement_official_style.pdf": {
+      "sha256": "8478c6beb495f0f656f557708f5efda0f6b89567bbe1b6ed55750bd5a2ef11ad",
+      "bytes": 305768
+    },
+    "revisions/patch_v1.1.1/baseline.json": {
+      "sha256": "42c48769ffbf35f219058005755873990a27c68f2b3eda1df14e4be87d438b2b",
+      "bytes": 47735
+    },
+    "revisions/patch_v1.1.1/build_provenance.json": {
+      "sha256": "e68cccce8da046b9ecb7681a3bd187b5b8755f831a90c711b8abbe2602396c1c",
+      "bytes": 5223
+    },
+    "revisions/patch_v1.1.1/dependency_preflight.json": {
+      "sha256": "3adbd6add585455e0d933b3754920f8827d7433da939dbd750abc5582e75e2ad",
+      "bytes": 1646
+    },
+    "revisions/patch_v1.1.1/installation.json": {
+      "sha256": "6fef1546110a58bff66c39851a9366c811f5d4e494b6b9ea38d392982f5ea320",
+      "bytes": 4773
+    },
+    "revisions/patch_v1.1.1/patch_memo.md": {
+      "sha256": "0acd4d2589c99eed87f7c0a365623245b4d50c3538aba4de7aa758bdab74c291",
+      "bytes": 4056
+    },
+    "revisions/patch_v1.1.1/qa/document_checks.json": {
+      "sha256": "e26abeb7b0ead0f5dec4a18498df9eeb3211c0311be327f32b9f15a133b0eac3",
+      "bytes": 2159
+    },
+    "revisions/patch_v1.1.1/qa/text_comparison.json": {
+      "sha256": "c0123d0de87c7817516288c020052fbbada4eed3af687609e9385d24893278e0",
+      "bytes": 1382
+    },
+    "revisions/patch_v1.1.1/scientific_integrity.json": {
+      "sha256": "4d1126590a72a9e6a9b4536dcf384a59c6cebad10a731b7cc20a9edac9448664",
+      "bytes": 50669
+    },
+    "revisions/patch_v1.1.1/submission_checklist.md": {
+      "sha256": "6824455cad9940f99ad635f252a05d49af6d50156d4f04ee43ff7f7534026861",
+      "bytes": 822
+    },
+    "revisions/patch_v1.1.1/validation_report.md": {
+      "sha256": "4c562bc2c864f8f88041762c4326ed167ffd869aace9bc6f3f2542781c41b0c9",
+      "bytes": 6495
+    },
+    "revisions/v3/encoder/README.md": {
+      "sha256": "a07d3889292890f53cd46121bfb5a727402b66d574e3b9751f46daea637e7d30",
+      "bytes": 8500
+    },
+    "src/encoder_dependency_preflight.py": {
+      "sha256": "6b8731876a9e3d36b37c5b40625754448d42e431fc4516aa09a56b036583134c",
+      "bytes": 2715
+    }
+  },
+  "manifest_layers": "ZIP contains no self checksum; this record and asset manifest are outside it. PACKAGE_MANIFEST excludes itself."
+}
