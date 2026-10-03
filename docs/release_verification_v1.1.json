@@ -1,0 +1,213 @@
+{
+  "version": "v1.1.0",
+  "status": "PUBLISHED_AND_VERIFIED",
+  "verified_utc": "2026-10-03T17:38:00.873250+00:00",
+  "source_commit": "45c5c57e2de2fd45cb6691e7274bc600e731b5a0",
+  "source_branch": "revision/practical-evidence-v1.1",
+  "release_tag": "v1.1.0",
+  "release_commit": "ff7f51142aa7bb253ed4a587309654ac5d6101e7",
+  "github": {
+    "checked_utc": "2026-10-03T17:34:35.794689+00:00",
+    "release_id": 402618719,
+    "release_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0",
+    "draft": false,
+    "tag": "v1.1.0",
+    "target_commitish": "ff7f51142aa7bb253ed4a587309654ac5d6101e7",
+    "assets": [
+      {
+        "name": "asset_manifest.json",
+        "bytes": 1315,
+        "sha256": "d2d09ed23a0ee72a8ab541b88e648e963406ba598af07d91c1ffddd16f1e1603",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/asset_manifest.json",
+        "download_matches_local": true
+      },
+      {
+        "name": "cover_letter.pdf",
+        "bytes": 46270,
+        "sha256": "178ea207485d92f5f35ce2f27753985f0757bada47bc0e513835d326150cc297",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/cover_letter.pdf",
+        "download_matches_local": true
+      },
+      {
+        "name": "manuscript_official_style.pdf",
+        "bytes": 397758,
+        "sha256": "453b9d6dee8433b7d7b2eccf772ec97aaea74cbb3fe6961bdf9c762a2f04b12a",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/manuscript_official_style.pdf",
+        "download_matches_local": true
+      },
+      {
+        "name": "manuscript_reading_copy.pdf",
+        "bytes": 401633,
+        "sha256": "5c1f9b11ba218bc524b869254f2c9aef6d34da43a0cf96db01503ad40fd4ca6d",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/manuscript_reading_copy.pdf",
+        "download_matches_local": true
+      },
+      {
+        "name": "revision_memo.md",
+        "bytes": 5507,
+        "sha256": "b067481c2a1c33cc9482998a2309bbc3dabe205cd7c3dfc92cc08f0676d286fa",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/revision_memo.md",
+        "download_matches_local": true
+      },
+      {
+        "name": "SHA256SUMS",
+        "bytes": 627,
+        "sha256": "3fd59ad843ec60198289a27ddc40753600c60838ee44c1549b778e2bde923107",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/SHA256SUMS",
+        "download_matches_local": true
+      },
+      {
+        "name": "submission-v1.1.0.zip",
+        "bytes": 1118416,
+        "sha256": "7ac7526746c4481bcaafea4811883b0c202adccf5babca0d02b89b8e776869f0",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/submission-v1.1.0.zip",
+        "download_matches_local": true
+      },
+      {
+        "name": "supplement_official_style.pdf",
+        "bytes": 305757,
+        "sha256": "3256005b3206db9fbccc48aa4732b2051fc37ff8089916f5e84b66b2bb07d7d2",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/supplement_official_style.pdf",
+        "download_matches_local": true
+      },
+      {
+        "name": "validation_report.md",
+        "bytes": 6422,
+        "sha256": "38e2c6710cbaf8cf474697cc244921ce28008c54323d7fcb6bcf8009b555b9ab",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.0/validation_report.md",
+        "download_matches_local": true
+      }
+    ]
+  },
+  "zenodo": {
+    "checked_utc": "2026-10-03T17:34:56.683556+00:00",
+    "published": true,
+    "version": "v1.1.0",
+    "record_id": 23125121,
+    "record_url": "https://zenodo.org/records/23125121",
+    "doi": "10.5281/zenodo.23125121",
+    "conceptdoi": "10.5281/zenodo.23122619",
+    "conceptrecid": "23122619",
+    "doi_http_status": 200,
+    "doi_resolved_url": "https://zenodo.org/records/23125121",
+    "archive_scope": "Automatic GitHub tag repository snapshot, including final four PDFs and submission ZIP; arbitrary release attachments are not separately fetched by this integration.",
+    "source_commit": "ff7f51142aa7bb253ed4a587309654ac5d6101e7",
+    "archive_download_url": "https://zenodo.org/api/records/23125121/files/YoyoLin008/evidence-sets-retrieval-evaluation-v1.1.0.zip/content",
+    "archive_bytes": 13869496,
+    "archive_md5": "352daaa62b35ccbee563cae250cc390c",
+    "archive_sha256": "cead628d898ace8252e153f35141e4efb60992fded59a90c0a1cb252ccc9dfc2",
+    "all_files_match_tag": true,
+    "files_compared": 403,
+    "key_files": {
+      "figures/figure1_completion_curves.pdf": {
+        "bytes": 17350,
+        "sha256": "f7af436fafec083d51c373c8f99de1089fd28a49b514085a91d24a99c07172b6"
+      },
+      "figures/figure2_paired_gaps.pdf": {
+        "bytes": 15725,
+        "sha256": "0c96f5bd96fe248ba8750d15fa4fa1a2a550f143f9671f116e1f3cfe6b5e6296"
+      },
+      "figures/figure3_extra_depth.pdf": {
+        "bytes": 15745,
+        "sha256": "c40c60d703134703e47d0005909f5ccde71ddb11dbff1473b0baaccf17462a5b"
+      },
+      "figures/figure4_annotation_structure.pdf": {
+        "bytes": 12372,
+        "sha256": "a9ed482b0207025fd369cae14b4a31e8576cf4ab3b16df5a8edfe31c07090ab6"
+      },
+      "paper/cover_letter.pdf": {
+        "bytes": 46270,
+        "sha256": "178ea207485d92f5f35ce2f27753985f0757bada47bc0e513835d326150cc297"
+      },
+      "paper/manuscript_official_style.pdf": {
+        "bytes": 397758,
+        "sha256": "453b9d6dee8433b7d7b2eccf772ec97aaea74cbb3fe6961bdf9c762a2f04b12a"
+      },
+      "paper/manuscript_reading_copy.pdf": {
+        "bytes": 401633,
+        "sha256": "5c1f9b11ba218bc524b869254f2c9aef6d34da43a0cf96db01503ad40fd4ca6d"
+      },
+      "paper/supplement_official_style.pdf": {
+        "bytes": 305757,
+        "sha256": "3256005b3206db9fbccc48aa4732b2051fc37ff8089916f5e84b66b2bb07d7d2"
+      },
+      "release_artifacts/submission-v1.1.0.zip": {
+        "bytes": 1118416,
+        "sha256": "7ac7526746c4481bcaafea4811883b0c202adccf5babca0d02b89b8e776869f0"
+      }
+    },
+    "metadata": {
+      "title": "When Evidence Sets Become Relevance Lists: A Controlled Audit of Scientific Retrieval Evaluation",
+      "creators": [
+        {
+          "name": "Lin, Yunya",
+          "affiliation": "University of Illinois Urbana-Champaign"
+        }
+      ],
+      "license": {
+        "id": "mit-license"
+      },
+      "version": "v1.1.0"
+    },
+    "comparison_method": "Compared every decompressed path and byte to git archive of the verified tag commit, independent of ZIP wrapper metadata."
+  },
+  "historical_version": {
+    "tag": "v1.0.0",
+    "commit": "ed2d6f6ca6f3e17b3b89c593bda5668c83b44e78",
+    "doi": "10.5281/zenodo.23122620",
+    "unchanged": true
+  },
+  "publication_route": "Existing automatic GitHub\u2013Zenodo integration; no duplicate manual deposit. Draft assets uploaded and downloaded/hashed before publishing, then public assets downloaded and hashed again.",
+  "clean_index_export": {
+    "files_verified": 402,
+    "extra_files": [],
+    "scope": "Exact public tree excluding PACKAGE_MANIFEST itself, before publication"
+  },
+  "asset_files": {
+    "paper/manuscript_official_style.pdf": {
+      "sha256": "453b9d6dee8433b7d7b2eccf772ec97aaea74cbb3fe6961bdf9c762a2f04b12a",
+      "bytes": 397758
+    },
+    "paper/supplement_official_style.pdf": {
+      "sha256": "3256005b3206db9fbccc48aa4732b2051fc37ff8089916f5e84b66b2bb07d7d2",
+      "bytes": 305757
+    },
+    "paper/cover_letter.pdf": {
+      "sha256": "178ea207485d92f5f35ce2f27753985f0757bada47bc0e513835d326150cc297",
+      "bytes": 46270
+    },
+    "paper/manuscript_reading_copy.pdf": {
+      "sha256": "5c1f9b11ba218bc524b869254f2c9aef6d34da43a0cf96db01503ad40fd4ca6d",
+      "bytes": 401633
+    },
+    "release_artifacts/submission-v1.1.0.zip": {
+      "sha256": "7ac7526746c4481bcaafea4811883b0c202adccf5babca0d02b89b8e776869f0",
+      "bytes": 1118416
+    },
+    "revisions/v3/revision_memo.md": {
+      "sha256": "b067481c2a1c33cc9482998a2309bbc3dabe205cd7c3dfc92cc08f0676d286fa",
+      "bytes": 5507
+    },
+    "revisions/v3/qa/validation_report.md": {
+      "sha256": "38e2c6710cbaf8cf474697cc244921ce28008c54323d7fcb6bcf8009b555b9ab",
+      "bytes": 6422
+    }
+  },
+  "metadata_note": "Zenodo identifies this software archive as MIT. The recorded abstract and repository LICENSES.md distinguish original scholarly materials under CC BY 4.0 and third-party exclusions.",
+  "frozen_files_unchanged_after_publication": true,
+  "remaining_external_steps": [
+    {
+      "step": "Formal IRRJ submission",
+      "status": "NOT_PERFORMED",
+      "reason": "Explicitly reserved to the author; upload official main, supplement and cover letter and personally complete journal forms/terms."
+    }
+  ],
+  "scientific_limitations": [
+    "No independent human semantic annotation",
+    "No external or cross-platform full-inference replication",
+    "No entire upstream retrieval/generation product execution",
+    "Bounded implementation sample and one added encoder; no ecosystem prevalence or model-population claim"
+  ],
+  "native_editor_status": "Adjacent official style unavailable in standalone native compiler; successful existing-local-pdflatex official exports and all-page visual checks complete.",
+  "provenance_layers": "Source commit records scientific sources and verified PDFs; release commit adds package/provenance manifests; this remote-verification record is added later on main and is not part of the frozen tag or its already archived ZIP."
+}

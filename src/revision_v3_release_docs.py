@@ -144,5 +144,8 @@ No independent human semantic annotation, external independent replication, depl
  cff=(R/'CITATION.cff').read_text().replace('version: 1.0.0','version: 1.1.0').replace('doi: "10.5281/zenodo.23122620"','doi: "10.5281/zenodo.23122619"')
  if 'url:' not in cff:cff+='url: "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0"\n'
  (R/'CITATION.cff').write_text(cff)
+ landing=R/'docs/release_landing_v1.1.md'
+ if landing.exists():
+  readme=R/'README.md';readme.write_text(readme.read_text()+'\n'+landing.read_text())
  print('Generated README, cover research prose, revision memo and citation metadata from complete results.')
 if __name__=='__main__':main()

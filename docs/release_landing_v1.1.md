@@ -1,0 +1,3 @@
+## Verified publication status
+
+**v1.1.0 is published and its remote files are verified.** [GitHub release](https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0) · [Zenodo record](https://zenodo.org/records/23125121) · [version DOI 10.5281/zenodo.23125121](https://doi.org/10.5281/zenodo.23125121). All nine uploaded release assets match the local accepted files, and all 403 files in the automatic Zenodo source archive match tag commit `ff7f51142aa7bb253ed4a587309654ac5d6101e7`. See [the publication correspondence and hashes](docs/release_verification_v1.1.md). Historical v1.0.0 and frozen v1.1.0 PDFs/ZIP/tag remain unchanged. Formal IRRJ submission remains an author action.

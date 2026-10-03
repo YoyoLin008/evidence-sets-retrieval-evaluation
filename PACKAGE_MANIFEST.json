@@ -1,6 +1,8 @@
 {
-  "version": "v1.1.0",
-  "scope": "Public tag content excluding this manifest itself; verify before modifying any file during reproduction.",
+  "version": "v1.1.0+publication-verification",
+  "scope": "Current landing-branch public files excluding this manifest itself. Frozen v1.1.0 tag and its original PACKAGE_MANIFEST remain unchanged.",
+  "frozen_release_commit": "ff7f51142aa7bb253ed4a587309654ac5d6101e7",
+  "frozen_release_tag": "v1.1.0",
   "files": {
     ".gitattributes": {
       "sha256": "d573c6c667f2992cf4289e5520e4f2a3ca34181d28b6b170027a1be50e7572db",
@@ -27,8 +29,8 @@
       "bytes": 1387
     },
     "README.md": {
-      "sha256": "9f39708c83ebc8871d6d5c689158c342709e216b24fd0338f26e3a4d1f05be41",
-      "bytes": 8069
+      "sha256": "739bace373b7dc5a92dd29c9b96a97e089dd7466a6a9cccf98500a19ae3faebd",
+      "bytes": 8786
     },
     "REPRODUCIBILITY.md": {
       "sha256": "6bcc9b1cb7f9dc4ac220f89635436bfdc1e142a5bfa0e5c9bed6e6d673db3449",
@@ -115,8 +117,20 @@
       "bytes": 429
     },
     "docs/publication.md": {
-      "sha256": "f26d705b3cbd90ed17325f27da17c9b87c21bdc3c9f4d36ff7acb61f3cb8441b",
-      "bytes": 1287
+      "sha256": "a5e35395a7414343badd3b2d5a60e3e99da9c29964a295ce215886e8182e8813",
+      "bytes": 1493
+    },
+    "docs/release_landing_v1.1.md": {
+      "sha256": "8b685baa245f226b3902625ea82df06c09832d8d0c4521471f7e562321278be3",
+      "bytes": 716
+    },
+    "docs/release_verification_v1.1.json": {
+      "sha256": "47c5b49c8e937d17ec2258890d99dede1979ef3f578ff4cdc0ce2a8dbb15d807",
+      "bytes": 9794
+    },
+    "docs/release_verification_v1.1.md": {
+      "sha256": "b8ea51ec691ae9bbcb8ee0f84d6f2050e3a0e99333fec2b58f9f732bc02f3e58",
+      "bytes": 4544
     },
     "docs/reproduction_check.json": {
       "sha256": "10a1ac2950d8cbfbc3b76d209f10d20c7d289da03453b64efc2b2a7dc89747a2",
@@ -1463,8 +1477,8 @@
       "bytes": 23425
     },
     "src/revision_v3_release_docs.py": {
-      "sha256": "98f232bfb696da976fc4d96eb5c8f1ae63874896424931fef8e35c2950077df6",
-      "bytes": 18088
+      "sha256": "aeda07473f7f76932125f7e3fdec1d2c4ec19d4d40534d0ec35a738c93943972",
+      "bytes": 18238
     },
     "src/revision_v3_statistics.py": {
       "sha256": "fc2d563d69dbe761f6d47ef2b39251aecfd4c540bc41bd6627e283cfdca755ef",
