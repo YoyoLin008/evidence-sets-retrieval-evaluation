@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "Please cite this reproducibility package when using the code or results."
+type: software
+title: "When Evidence Sets Become Relevance Lists: A Controlled Audit of Scientific Retrieval Evaluation"
+authors:
+  - family-names: Lin
+    given-names: Yunya
+    affiliation: University of Illinois Urbana-Champaign
+repository-code: "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation"
+license: MIT
+abstract: "Controlled rescoring of fixed scientific retrieval rankings under any-hit, one-set-completion, and union-completion targets. Code and usage documentation are MIT licensed; original scholarly materials and derived results are CC BY 4.0, with third-party exclusions."
+keywords:
+  - information retrieval
+  - evidence sets
+  - evaluation
+  - reproducibility
+version: 1.0.0
+date-released: 2026-10-03

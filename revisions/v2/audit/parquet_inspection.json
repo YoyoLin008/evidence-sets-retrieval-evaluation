@@ -1,0 +1,84 @@
+[
+  {
+    "index": 42,
+    "path": "qrels_test.parquet",
+    "rows": 43,
+    "schema": "query-id: int64\ncorpus-id: int64\nscore: int64\n-- schema metadata --\npandas: '{\"index_columns\": [{\"kind\": \"range\", \"name\": null, \"start\": 0, \"' + 595",
+    "first": [
+      {
+        "query-id": 36,
+        "corpus-id": 5152028,
+        "score": 1
+      }
+    ]
+  },
+  {
+    "index": 59,
+    "path": "qasper-dataset/train-00000-of-00001.parquet",
+    "rows": 2593,
+    "schema": "question: string\nanswer: string\ncontext: list<element: string>\n  child 0, element: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"question\": {\"dtype\": \"string\", \"_ty' + 149",
+    "first": [
+      {
+        "question": "What is the seed lexicon?",
+        "answer": "a vocabulary of positive and negative predicates that helps determine the polarity score of an event seed lexicon consists of positive and negative predicates",
+        "context": [
+          "The seed lexicon consists of positive and negative predicates. If the predicate of an extracted event is in the seed lexicon and does not involve complex phenomena like negation, we assign the corresponding polarity score ($+1$ for positive events and $-1$ for negative events) to the event. We expect the model to automatically learn complex phenomena through label propagation. Based on the availability of scores and the types of discourse relations, we classify the extracted event pairs into the following three types.",
+          "The seed lexicon consists of positive and negative predicates. If the predicate of an extracted event is in the seed lexicon and does not involve complex phenomena like negation, we assign the corresponding polarity score ($+1$ for positive events and $-1$ for negative events) to the event. We expect the model to automatically learn complex phenomena through label propagation. Based on the availability of scores and the types of discourse relations, we classify the extracted event pairs into the following three types."
+        ]
+      }
+    ]
+  },
+  {
+    "index": 112,
+    "path": "QASPER-qrels/test-00000-of-00001.parquet",
+    "rows": 2319,
+    "schema": "query-id: string\ncorpus-id: string\nscore: int64\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"query-id\": {\"dtype\": \"string\", \"_ty' + 115",
+    "first": [
+      {
+        "query-id": "397a1e851aab41c455c2b284f5e4947500d797f0",
+        "corpus-id": "1911.10742_15",
+        "score": 1
+      }
+    ]
+  },
+  {
+    "index": 112,
+    "path": "QASPER-queries/test-00000-of-00001.parquet",
+    "rows": 1335,
+    "schema": "id: string\ntext: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"id\": {\"dtype\": \"string\", \"_type\": \"' + 57",
+    "first": [
+      {
+        "id": "397a1e851aab41c455c2b284f5e4947500d797f0",
+        "text": "How big is the ANTISCAM dataset? "
+      }
+    ]
+  },
+  {
+    "index": 138,
+    "path": "data/test-00000-of-00001.parquet",
+    "rows": 300,
+    "schema": "id: string\ninput: string\nexpected_output: string\nmetadata.query_id: string\nmetadata.split: string\n-- schema metadata --\nhuggingface: '{\"info\": {\"features\": {\"id\": {\"dtype\": \"string\", \"_type\": \"' + 233",
+    "first": [
+      {
+        "id": "dbcffef4-237b-4da7-81be-685af2222372",
+        "input": "Hypothalamic glutamate neurotransmission is crucial to energy balance.",
+        "expected_output": "[{\"id\": \"11886686\", \"score\": 1}, {\"id\": \"25007443\", \"score\": 1}]",
+        "metadata.query_id": "540",
+        "metadata.split": "test"
+      }
+    ]
+  },
+  {
+    "index": 143,
+    "path": "qrels/test-00000-of-00001.parquet",
+    "rows": 339,
+    "schema": "query-id: string\ncorpus-id: string\nscore: int32",
+    "first": [
+      {
+        "query-id": "1",
+        "corpus-id": "31715818",
+        "score": 1
+      }
+    ]
+  }
+]

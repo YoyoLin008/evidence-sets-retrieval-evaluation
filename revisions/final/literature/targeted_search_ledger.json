@@ -1,0 +1,89 @@
+{
+  "search_date_utc": "2026-10-03",
+  "scope": "Final targeted positioning check; not systematic or population-representative; no exhaustive novelty claim",
+  "requested_queries": [
+    {
+      "order": 1,
+      "query": "\"evidence ranking\" \"sufficient\" \"gold\" evidence sets"
+    },
+    {
+      "order": 2,
+      "query": "\"evidence-set completion\" retrieval evaluation"
+    },
+    {
+      "order": 3,
+      "query": "\"sufficient evidence sets\" ranking evaluation"
+    },
+    {
+      "order": 4,
+      "query": "\"minimal sufficient rank\""
+    },
+    {
+      "order": 5,
+      "query": "\"multiple gold evidence sets\" evaluation ranking"
+    },
+    {
+      "order": 6,
+      "query": "\"alternative evidence sets\" retrieval evaluation"
+    },
+    {
+      "order": 7,
+      "query": "\"conjunctive evidence\" retrieval evaluation"
+    },
+    {
+      "order": 8,
+      "query": "\"grouped qrels\""
+    },
+    {
+      "order": 9,
+      "query": "\"structured relevance judgments\" evidence retrieval evaluation"
+    },
+    {
+      "order": 10,
+      "query": "\"flattened qrels\" evidence"
+    },
+    {
+      "order": 11,
+      "query": "\"evidence aggregation\" \"gold\" \"evaluation\" evidence sets"
+    },
+    {
+      "order": 12,
+      "query": "\"best-reference\" \"union\" evaluation evidence"
+    }
+  ],
+  "primary_screening": [
+    {
+      "title": "User-Centric Evidence Ranking for Attribution and Fact Verification",
+      "url": "https://aclanthology.org/2026.eacl-long.340/",
+      "reading": "Full 23-page published paper",
+      "decision": "Prominent closest prior; earliest gold-set completion rank is dC under same criterion."
+    },
+    {
+      "title": "Minimal Evidence Group Identification for Claim Verification",
+      "url": "https://aclanthology.org/2025.trustnlp-main.8/",
+      "reading": "Full 9-page published paper",
+      "decision": "Added close prior; minimal groups and group-versus-union budget comparisons narrow novelty further."
+    },
+    {
+      "title": "Mitigating False-Negative Contexts in Multi-document Question Answering with Retrieval Marginalization",
+      "url": "https://aclanthology.org/2021.emnlp-main.497/",
+      "reading": "Primary abstract",
+      "decision": "Addresses missing alternative context/training; not the same fixed-ranking representation intervention. No new claim imported."
+    },
+    {
+      "title": "Evidence Retrieval for Fact Verification using Multi-stage Reranking",
+      "url": "https://aclanthology.org/2024.findings-emnlp.428/",
+      "reading": "Primary abstract and evaluation excerpt",
+      "decision": "Optimization of evidence ordering; less direct than Alt and Li for this contribution. No substantive result imported."
+    }
+  ],
+  "other_screening_notes": [
+    "Searches also surfaced causal evidence-selection and evidence-state-reward approaches; primary abstracts concern selection/training, not the paired representation intervention. They are not used as sources for manuscript claims.",
+    "SciFact-Open flattening occurs in a changed benchmark/task; the final pass did not expand the already frozen implementation sample or alter its counts.",
+    "No public repository/DOI for this manuscript was verified. Search non-discovery does not prove nonexistence; no identifier was supplied or invented.",
+    "Exact-title searches and official arXiv records did not verify a formal venue for Cha or Nguy; pinned preprint status retained."
+  ],
+  "historical_correction": "Earlier search missed Alt and Li; cutoff date is not evidence of comprehensive coverage.",
+  "raw_result_local": "revisions/final/literature/sources/web_search_records.json",
+  "raw_results_in_public_release": false
+}

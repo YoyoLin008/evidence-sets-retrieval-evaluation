@@ -1,0 +1,787 @@
+{
+  "title": "Supplementary material: When Evidence Sets Become Relevance Lists: A Controlled Audit of Scientific Retrieval Evaluation",
+  "author": "Yunya Lin",
+  "affiliation": "University of Illinois Urbana-Champaign",
+  "abstract": "Supplementary distributions, implementation-audit details, encoder feasibility evidence, and computational provenance for the controlled evaluation study. No additional effectiveness experiment is reported.",
+  "keywords": "retrieval evaluation; evidence sets; scientific information; measurement validity; reproducibility",
+  "blocks": [
+    [
+      "section",
+      "Additional depth distributions and tabulated results"
+    ],
+    [
+      "p",
+      "Figure 1 shows the cumulative distribution of additional ranked depth. Its zero mass is central to interpretation: the BM25 median is zero in each corpus despite positive mean cost. The scientific results and definitions are the same as in the main article."
+    ],
+    [
+      "figure",
+      "figure3_extra_depth"
+    ],
+    [
+      "p",
+      "Machine-readable tables retain all methods and budgets, paired contrasts, original and joint sensitivities, the four disjoint topology categories, singleton/answer-agreement modifiers, and contributions to score and cost. Empty strata remain empty, and cells with fewer than ten represented clusters are flagged sparse. The joint restriction, topology decomposition, implementation audit, and modern-encoder feasibility analysis are post-main and exploratory."
+    ],
+    [
+      "section",
+      "Implementation-audit protocol and evidence"
+    ],
+    [
+      "p",
+      "The implementation audit was frozen before inspecting additional code behavior. Prior familiarity with both official evaluators was disclosed, and those evaluators are reference cases outside downstream counts. On 3 October 2026 UTC, each benchmark name was crossed with “dataset loader,” “evidence retrieval evaluation,” “qrels conversion,” and “RAG benchmark” in domain-restricted searches of GitHub and Hugging Face datasets. The first ten available results per query were logged, including exclusions and inaccessible results."
+    ],
+    [
+      "p",
+      "The search comprised sixteen phrase-quoted queries and sixteen benchmark-quoted queries added by a pre-classification amendment, totaling 320 result slots and 148 canonical projects. Three inaccessible QASPER distributions had unverified eligibility. The final eligible pool contained 24 QASPER and 32 SciFact downstream families; fifteen per benchmark were selected by ascending SHA-256 of canonical identifiers. Post-inspection corrections merged the VikingRAG/OpenViking lineage and treated official AllenAI distributions as reference cases, replacing their selected slots with the next eligible families. The protocol, query records, eligibility decisions, and selection correction records accompany the package."
+    ],
+    [
+      "p",
+      "Classification traces pinned input, conversion, output, and scoring roles where accessible. Grouped lists preserve relationships even without explicit set IDs. The classification ledger records commit/revision, code locations, source/output granularity, transformation, supporting evidence, and uncertainty. A second consistency pass rechecked these source records. It does not constitute independent human annotation. Six isolated conversion fixtures supplement static code and schema inspection; no complete downstream model pipeline was executed."
+    ],
+    [
+      "p",
+      "The official QASPER evaluator selects a best reference for Evidence F1. The official SciFact evaluator retains alternative rationales for its complete-rationale abstract-level condition; sentence-level coverage is distinct. The official SciFact Hugging Face loader expands a rationale into a row, permitting grouping by claim and document. Reference distributions are excluded from downstream counts."
+    ],
+    [
+      "p",
+      "For mteb/QASPER, comparison with source IDs finds exact raw-union targets for 576 of 1,335 matched questions. This prevents interpreting every released target as the controlled union intervention. The sscc-rag-paper fixture demonstrates relation loss when every evidence unit maps; real input can additionally lose unmatched evidence. These two failure modes are recorded separately."
+    ],
+    [
+      "p",
+      "Final downstream counts in preserved/flat-only/both/other/undetermined order are QASPER 0/2/3/9/1 and SciFact 1/0/1/13/0. Unavailable and changed-task cases remain visible. These bounded counts do not estimate ecosystem prevalence."
+    ],
+    [
+      "subsection",
+      "Case-selection record"
+    ],
+    [
+      "p",
+      "The frozen error taxonomy contains 306/123/156/290 QASPER items and 34/9/58/108 SciFact pairs in the no-hit, fragment-only, one-set-without-union, and union-complete categories. Earlier examples were selected by SHA-256 order within each category, up to three per category. The panels in the main article present the first already-selected one-set-without-union case from each corpus; they are illustrations, not representative-sample estimates."
+    ],
+    [
+      "section",
+      "Result-blind modern-encoder feasibility gate"
+    ],
+    [
+      "p",
+      "Qwen3-Embedding-0.6B was the sole post-main candidate [[qwen]]. Its official revision, tokenizer, weights, and separate dependencies were pinned. The proposed configuration used float32 CPU inference, last-token pooling, normalized 1,024-dimensional vectors, an 8,192-token limit, and the fixed instruction “Given a scientific question or claim, retrieve passages that provide evidence relevant to it.” Queries were instructed and candidate units were not."
+    ],
+    [
+      "p",
+      "The frozen gate sampled 32 inputs by SHA-256 from each equal-count tokenizer-length quartile, adding its longest input when absent. Timing 132 of 20,112 unique inputs projected 10,568.9 seconds (2.94 hours), exceeding the prespecified two-hour limit. Full inference was therefore omitted. No effectiveness outcomes were computed from the timing sample, and no substitute was tried. The conservative longest-input addition and local runtime conditions limit the precision of this projection; omission leaves the modern-retriever robustness question unresolved."
+    ],
+    [
+      "p",
+      "The pinned Qwen model revision is 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3. The separate environment records PyTorch 2.8.0 and Transformers 4.57.1, with exact resolved dependencies, tokenizer and weight hashes. Timing and truncation records are separate from the MiniLM embedding cache. The complete projection reconstructs from the length-bin means, full input counts, model loading, and warm-up costs. The gate was applied before effectiveness evaluation."
+    ],
+    [
+      "section",
+      "Answer-agreement implementation"
+    ],
+    [
+      "p",
+      "The frozen function answer_key in src/evidence.py selects nonempty extractive_spans first (in source order, joined by comma-space), then nonempty free_form_answer, then yes_no when non-null, and otherwise the empty string. It applies Python str.lower, deletes string.punctuation (ASCII punctuation), removes whole-word a/an/the with a regular expression, and joins whitespace-separated tokens with one space. It does not apply Unicode normalization or delete non-ASCII punctuation. qasper_instances retains agreement when the set of normalized strings across all annotations has size one. The joint sensitivity in src/supplemental.py uses that saved indicator before minimal-reference pruning."
+    ],
+    [
+      "section",
+      "Computational provenance and replay"
+    ],
+    [
+      "p",
+      "The pilot used SHA-256-selected QASPER development papers and SciFact training claims, yielding 88 and 47 eligible items; none entered the main estimates. Inclusion rules, metrics, models, and analysis were frozen locally at 2026-10-03T00:51:19 UTC. This is a prospective local record, not public preregistration."
+    ],
+    [
+      "p",
+      "QASPER test annotations were first deserialized after the freeze. SciFact development schema and availability had been inspected earlier, but rankings had not been scored. No retriever was tuned on either main cohort. The saved experiment contains 5420 full rankings and 32520 unit-budget scoring points."
+    ],
+    [
+      "p",
+      "The main CPU run took 626.5 seconds on ARM64 macOS with Python 3.12. Input, code, configuration, and model fingerprints bind checkpointed rankings and embedding caches. The reproduction package retains timestamped source snapshots, acquisition hashes, pilot records, correction logs, and current presentation sources."
+    ],
+    [
+      "p",
+      "The MiniLM revision is 1110a243fdf4706b3f48f1d95db1a4f5529b4d41. The acquired SciFact archive is distributed through a mutable latest URL, so acquisition hashes, rather than the URL label, identify this study’s annotations. Data and model acquisition manifests and the frozen configuration identify the exact source artifacts."
+    ],
+    [
+      "p",
+      "Adapters validate nonempty evidence families and source-unit mappings. Scores treat predicted IDs as sets; duplicate references do not change H, C, A, or max-reference overlap. Fingerprints bind rankings to queries, units, annotations, configuration, and retrieval code."
+    ],
+    [
+      "p",
+      "The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation."
+    ],
+    [
+      "section",
+      "Literature-search scope"
+    ],
+    [
+      "p",
+      "A final targeted search on 3 October 2026 UTC covered evidence ranking, evidence-set completion, sufficient evidence sets, minimal sufficient rank, multiple gold evidence sets, alternative evidence sets, conjunctive evidence, grouped qrels, structured relevance judgments, flattened qrels, evidence aggregation, and best-reference versus union evaluation. Primary-source records and exact queries are retained in the literature ledger. This is targeted positioning, not a systematic review."
+    ],
+    [
+      "p",
+      "Alt et al. (2026) and Li et al. (2025) were read in full for the comparison of sufficient-set ranking and group-versus-union evaluation [[alt2026;li2025]]. The claim-to-source ledger distinguishes bibliographic verification from methodological reading and records source-access limitations. Cha et al. and Nguy are cited as preprints."
+    ],
+    [
+      "section",
+      "Authorship and assistance"
+    ],
+    [
+      "p",
+      "Generative AI tools (OpenAI Codex) supported grammar checking, language refinement, clarity, and organization. The author conceived the study, made the substantive methodological and interpretive decisions, conducted and verified the research, and wrote the substantive content. Under the author’s direction, tool assistance also supported code edits, reruns, numerical and reference checks, and preparation of figures and manuscript files. The author reviewed AI-assisted material and takes responsibility for the final work. AI is not an author."
+    ],
+    [
+      "section",
+      "Acknowledgments and disclosure of funding"
+    ],
+    [
+      "p",
+      "No external funding or third-party computational resources were received or used for this work. All computational experiments were conducted locally on the author’s personal computer."
+    ]
+  ],
+  "tables": {
+    "cohort": {
+      "caption": "Source and analysis denominators. QASPER exclusion reasons overlap; SciFact claims and claim-abstract pairs are different units.",
+      "headers": [
+        "Quantity",
+        "QASPER test",
+        "SciFact dev"
+      ],
+      "rows": [
+        [
+          "Source questions / claims",
+          "1451",
+          "300"
+        ],
+        [
+          "Source papers",
+          "416",
+          "Known abstract supplied"
+        ],
+        [
+          "Eligible questions / pairs",
+          "875",
+          "209"
+        ],
+        [
+          "Resampling clusters",
+          "367",
+          "164"
+        ],
+        [
+          "Multiple distinct evidence sets",
+          "472",
+          "85"
+        ],
+        [
+          "Multiple minimal evidence sets",
+          "285",
+          "85"
+        ],
+        [
+          "No singleton reference",
+          "127",
+          "14"
+        ],
+        [
+          "Exact answer agreement",
+          "195",
+          "Consistent rationale labels"
+        ]
+      ],
+      "widths": [
+        216,
+        108,
+        108
+      ]
+    },
+    "primary": {
+      "caption": "Fixed-budget outcomes on the full eligible cohorts. H: any annotated hit; C: one completed set; A: completed union. C−A uses paired 95% cluster intervals. Lead and random are controls.",
+      "headers": [
+        "Corpus / k",
+        "Method",
+        "H (%)",
+        "C (%)",
+        "A (%)",
+        "C−A, pp [95% interval]"
+      ],
+      "rows": [
+        [
+          "QASPER / 5",
+          "BM25",
+          "65.0",
+          "51.0",
+          "33.1",
+          "17.8 [15.3, 20.4]"
+        ],
+        [
+          "QASPER / 5",
+          "TF-IDF",
+          "62.7",
+          "48.7",
+          "31.2",
+          "17.5 [15.0, 20.0]"
+        ],
+        [
+          "QASPER / 5",
+          "MiniLM",
+          "68.9",
+          "54.9",
+          "33.4",
+          "21.5 [18.6, 24.3]"
+        ],
+        [
+          "QASPER / 5",
+          "Lead",
+          "23.4",
+          "17.9",
+          "7.3",
+          "10.6 [8.4, 12.9]"
+        ],
+        [
+          "QASPER / 5",
+          "Random",
+          "26.6",
+          "16.1",
+          "6.6",
+          "9.5 [7.5, 11.5]"
+        ],
+        [
+          "SciFact / 3",
+          "BM25",
+          "83.7",
+          "79.4",
+          "51.7",
+          "27.8 [21.2, 34.3]"
+        ],
+        [
+          "SciFact / 3",
+          "TF-IDF",
+          "79.9",
+          "76.1",
+          "48.8",
+          "27.3 [20.6, 34.1]"
+        ],
+        [
+          "SciFact / 3",
+          "MiniLM",
+          "82.3",
+          "78.5",
+          "50.7",
+          "27.8 [21.1, 34.6]"
+        ],
+        [
+          "SciFact / 3",
+          "Lead",
+          "26.3",
+          "22.0",
+          "13.9",
+          "8.1 [4.3, 12.6]"
+        ],
+        [
+          "SciFact / 3",
+          "Random",
+          "61.7",
+          "54.5",
+          "31.6",
+          "23.0 [16.9, 29.0]"
+        ]
+      ],
+      "widths": [
+        77,
+        54,
+        42,
+        42,
+        42,
+        175
+      ]
+    },
+    "costs": {
+      "caption": "Extra fixed-ranking prefix budget required for the union instead of one original reference. Means have 95% cluster intervals; depth medians have interquartile ranges. Lexical tokens are not encoder wordpieces.",
+      "headers": [
+        "Corpus",
+        "Method",
+        "Extra units: mean [CI]",
+        "Median [IQR]",
+        "Extra tokens: mean [CI]"
+      ],
+      "rows": [
+        [
+          "QASPER",
+          "BM25",
+          "6.65 [5.69, 7.70]",
+          "0 [0, 7]",
+          "540.9 [463.7, 624.0]"
+        ],
+        [
+          "QASPER",
+          "TFIDF",
+          "6.61 [5.67, 7.63]",
+          "0 [0, 8]",
+          "540.9 [463.7, 623.8]"
+        ],
+        [
+          "QASPER",
+          "MiniLM",
+          "6.22 [5.41, 7.09]",
+          "0 [0, 8]",
+          "509.3 [440.3, 581.4]"
+        ],
+        [
+          "SciFact",
+          "BM25",
+          "2.02 [1.48, 2.63]",
+          "0 [0, 3]",
+          "58.5 [43.0, 76.3]"
+        ],
+        [
+          "SciFact",
+          "TFIDF",
+          "2.04 [1.51, 2.63]",
+          "0 [0, 3]",
+          "59.5 [43.9, 77.0]"
+        ],
+        [
+          "SciFact",
+          "MiniLM",
+          "1.87 [1.33, 2.53]",
+          "0 [0, 3]",
+          "54.6 [39.4, 72.7]"
+        ]
+      ],
+      "widths": [
+        61,
+        53,
+        112,
+        79,
+        127
+      ]
+    },
+    "robustness": {
+      "caption": "QASPER union-gap sensitivities at k=5. Rows use BM25 unless indicated. The joint restriction is post-main and exploratory.",
+      "headers": [
+        "Restriction",
+        "n",
+        "C−A, pp [95% interval]"
+      ],
+      "rows": [
+        [
+          "Exact answer agreement",
+          "195",
+          "12.3 [7.8, 17.1]"
+        ],
+        [
+          "Minimal-reference pruning",
+          "875",
+          "11.8 [9.7, 13.9]"
+        ],
+        [
+          "MiniLM: no gold truncation",
+          "750",
+          "20.4 [17.4, 23.4]"
+        ],
+        [
+          "Agreement + minimal sets (exploratory)",
+          "195",
+          "8.2 [4.5, 12.4]"
+        ]
+      ],
+      "widths": [
+        250,
+        42,
+        140
+      ]
+    },
+    "representations": {
+      "caption": "Representations and the targets they directly support. The distinction is informational, not a claim of metric invalidity or formal novelty.",
+      "headers": [
+        "Representation",
+        "Documented target",
+        "What is still needed for C?"
+      ],
+      "rows": [
+        [
+          "Flat binary/graded qrels",
+          "Recall, AP, nDCG, MRR under their relevance and judgment conventions; H/A from binary union membership.",
+          "Accepted combinations cannot generally be recovered from membership alone."
+        ],
+        [
+          "Intent or subtopic labels",
+          "Intent-weighted utility and coverage of distinct subtopics.",
+          "A rule linking labels/units to accepted evidence combinations."
+        ],
+        [
+          "Nugget labels and weights",
+          "Coverage/importance of information units and redundancy-sensitive gain.",
+          "A mapping from semantic coverage to accepted source-evidence combinations."
+        ],
+        [
+          "Structured evidence families",
+          "H, C, A, and best-reference/union variants, once the target is chosen.",
+          "Source validity and semantic sufficiency still require separate evidence."
+        ]
+      ],
+      "widths": [
+        107,
+        164,
+        161
+      ]
+    },
+    "concept": {
+      "caption": "Illustrative family E1={a,b}, E2={c}. Brackets denote retrieved order; d is unannotated.",
+      "headers": [
+        "Retrieved prefix",
+        "H",
+        "C",
+        "A"
+      ],
+      "rows": [
+        [
+          "[]",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "[a]",
+          "1",
+          "0",
+          "0"
+        ],
+        [
+          "[a,b]",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "[c]",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "[a,c]",
+          "1",
+          "1",
+          "0"
+        ],
+        [
+          "[a,b,c]",
+          "1",
+          "1",
+          "1"
+        ],
+        [
+          "[d]",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "widths": [
+        237,
+        65,
+        65,
+        65
+      ]
+    },
+    "topology_gaps": {
+      "caption": "Exploratory post-main, mutually exclusive topology strata at BM25 primary budgets. n/g gives items/represented clusters. Gap and full-cohort contribution are percentage points with 95% cluster intervals; represented clusters can overlap across strata. Empty categories are shown explicitly.",
+      "headers": [
+        "Corpus and category",
+        "n/g",
+        "C−A, pp [CI]",
+        "Contribution, pp [CI]"
+      ],
+      "rows": [
+        [
+          "QASPER: One distinct set",
+          "403/246",
+          "0.0 [0.0, 0.0]",
+          "0.00 [0.00, 0.00]"
+        ],
+        [
+          "QASPER: Multiple sets, one minimal",
+          "187/145",
+          "27.8 [21.6, 34.4]",
+          "5.94 [4.42, 7.59]"
+        ],
+        [
+          "QASPER: Multiple minimal, no supersets",
+          "243/180",
+          "36.2 [30.6, 42.2]",
+          "10.06 [8.13, 12.05]"
+        ],
+        [
+          "QASPER: Multiple minimal plus supersets",
+          "42/33",
+          "38.1 [22.0, 54.8]",
+          "1.83 [0.89, 2.92]"
+        ],
+        [
+          "SciFact: One distinct set",
+          "124/102",
+          "0.0 [0.0, 0.0]",
+          "0.00 [0.00, 0.00]"
+        ],
+        [
+          "SciFact: Multiple sets, one minimal",
+          "0/0",
+          "—",
+          "0 (empty)"
+        ],
+        [
+          "SciFact: Multiple minimal, no supersets",
+          "85/70",
+          "68.2 [57.8, 77.9]",
+          "27.75 [21.20, 34.30]"
+        ],
+        [
+          "SciFact: Multiple minimal plus supersets",
+          "0/0",
+          "—",
+          "0 (empty)"
+        ]
+      ],
+      "widths": [
+        153,
+        49,
+        115,
+        115
+      ]
+    },
+    "topology_costs": {
+      "caption": "Exploratory post-main completion costs in each populated topology category. Values are mean additional ranked units and lexical tokens with 95% cluster intervals. Units are QASPER paragraphs or SciFact sentences; category denominators are in the preceding table.",
+      "headers": [
+        "Corpus and category",
+        "Extra units [CI]",
+        "Extra lexical tokens [CI]"
+      ],
+      "rows": [
+        [
+          "QASPER: One distinct set",
+          "0.00 [0.00, 0.00]",
+          "0.0 [0.0, 0.0]"
+        ],
+        [
+          "QASPER: Multiple sets, one minimal",
+          "10.18 [8.02, 12.49]",
+          "783.3 [629.2, 946.5]"
+        ],
+        [
+          "QASPER: Multiple minimal, no supersets",
+          "12.66 [10.82, 14.63]",
+          "1047.2 [907.9, 1201.2]"
+        ],
+        [
+          "QASPER: Multiple minimal plus supersets",
+          "20.05 [14.20, 26.64]",
+          "1721.7 [1177.5, 2342.5]"
+        ],
+        [
+          "SciFact: One distinct set",
+          "0.00 [0.00, 0.00]",
+          "0.0 [0.0, 0.0]"
+        ],
+        [
+          "SciFact: Multiple minimal, no supersets",
+          "4.96 [4.05, 6.12]",
+          "143.9 [117.4, 178.4]"
+        ]
+      ],
+      "widths": [
+        173,
+        117,
+        142
+      ]
+    },
+    "ecosystem": {
+      "caption": "Exploratory bounded downstream implementation sample. Counts describe fifteen selected families per benchmark, not population prevalence. The two official evaluator reference families are excluded and retain alternatives for their relevant objectives.",
+      "headers": [
+        "Representation class",
+        "QASPER",
+        "SciFact"
+      ],
+      "rows": [
+        [
+          "Preserved",
+          "0",
+          "1"
+        ],
+        [
+          "Flat only",
+          "2",
+          "0"
+        ],
+        [
+          "Both exposed",
+          "3",
+          "1"
+        ],
+        [
+          "Other / not applicable",
+          "9",
+          "13"
+        ],
+        [
+          "Undetermined",
+          "1",
+          "0"
+        ],
+        [
+          "Total inspected",
+          "15",
+          "15"
+        ]
+      ],
+      "widths": [
+        244,
+        94,
+        94
+      ]
+    },
+    "case_qasper": {
+      "caption": "Exploratory case panel: QASPER. Preselected BM25 example; all unit indices are zero-based and refer to the released source mapping.",
+      "headers": [
+        "Field",
+        "Recorded example"
+      ],
+      "rows": [
+        [
+          "Source IDs",
+          "Paper 1909.12208; question 14fdc8087f2a62baea9d50c4aa3a3f8310b38d17"
+        ],
+        [
+          "Question / claim",
+          "What supports the claim that enhancement in training is advisable as long as enhancement in test is at least as strong as in training?"
+        ],
+        [
+          "Evidence family",
+          "E1={17,22,23,34}; E2={23}"
+        ],
+        [
+          "Exact retrieved prefix",
+          "[34,1,2,23,3] at k=5"
+        ],
+        [
+          "Scores",
+          "H=1; C=1; A=0"
+        ],
+        [
+          "Completion depths",
+          "dC=4; dA=23; extra depth=19"
+        ],
+        [
+          "Interpretation",
+          "Paragraph 23 alone completes a selected annotation. The longer reference also contains 17, 22, and 34. Answers disagree under normalization; this case illustrates nesting and should not be read as agreement-free alternative support."
+        ]
+      ],
+      "widths": [
+        98,
+        334
+      ]
+    },
+    "case_scifact": {
+      "caption": "Exploratory case panel: SciFact. Preselected BM25 example; all unit indices are zero-based and refer to the released source mapping.",
+      "headers": [
+        "Field",
+        "Recorded example"
+      ],
+      "rows": [
+        [
+          "Source IDs",
+          "Claim 873; abstract 1180972"
+        ],
+        [
+          "Question / claim",
+          "Obesity is determined solely by environmental factors."
+        ],
+        [
+          "Evidence family",
+          "E1={3,4}; E2={6}; E3={7}"
+        ],
+        [
+          "Exact retrieved prefix",
+          "[7,0,1] at k=3"
+        ],
+        [
+          "Scores",
+          "H=1; C=1; A=0"
+        ],
+        [
+          "Completion depths",
+          "dC=1; dA=8; extra depth=7"
+        ],
+        [
+          "Interpretation",
+          "Sentence 7 alone is a complete annotated rationale. The other observed rationales contain {3,4} and {6}. The source statement concerns genetic influences on obesity; completion is not an endorsement of the claim’s wording."
+        ]
+      ],
+      "widths": [
+        98,
+        334
+      ]
+    }
+  },
+  "captions": {
+    "figure1_completion_curves": "BM25 completion curves. Shaded bands are 95% cluster-bootstrap intervals. The same prefixes are scored under all three definitions. Units are paragraphs for QASPER and sentences for SciFact; large k saturates at document length.",
+    "figure2_paired_gaps": "Paired score gaps at the primary budgets: QASPER k=5 and SciFact k=3. Whiskers show 95% cluster intervals. The definitions guarantee nonnegative gaps; their magnitudes are the empirical quantities.",
+    "figure4_annotation_structure": "BM25 union gaps stratified by the number of minimal observed evidence sets. Whiskers are 95% cluster intervals; labels give item counts. Original unions retain nested references, explaining the nonzero one-minimal-set QASPER stratum.",
+    "figure3_extra_depth": "Empirical cumulative distributions of extra ranked units for union completion. Horizontal axes are transformed by log(1+extra units), with corpus-specific ranges. The large mass at zero and the tail must be considered together."
+  },
+  "references": {
+    "alt2026": {
+      "authors": [
+        "Guy Alt",
+        "Eran Hirsch",
+        "Serwar Basch",
+        "Ido Dagan",
+        "Oren Glickman"
+      ],
+      "title": "User-Centric Evidence Ranking for Attribution and Fact Verification",
+      "year": 2026,
+      "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+      "doi": "10.18653/v1/2026.eacl-long.340",
+      "url": "https://aclanthology.org/2026.eacl-long.340/",
+      "pages": "7215–7237",
+      "label": "Alt et al.",
+      "verification": "ACL Anthology publication record, BibTeX and full 23-page paper",
+      "source_file": "revisions/final/literature/sources/alt2026_final.bib",
+      "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+    },
+    "li2025": {
+      "authors": [
+        "Xiangci Li",
+        "Sihao Chen",
+        "Rajvi Kapadia",
+        "Jessica Ouyang",
+        "Fan Zhang"
+      ],
+      "title": "Minimal Evidence Group Identification for Claim Verification",
+      "year": 2025,
+      "venue": "Proceedings of the 5th Workshop on Trustworthy NLP (TrustNLP 2025)",
+      "doi": "10.18653/v1/2025.trustnlp-main.8",
+      "url": "https://aclanthology.org/2025.trustnlp-main.8/",
+      "pages": "103–111",
+      "label": "Li et al.",
+      "verification": "ACL Anthology publication record, BibTeX and full 9-page paper",
+      "source_file": "revisions/final/literature/sources/li2025_final.bib",
+      "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+    },
+    "qwen": {
+      "authors": [
+        "Qwen Team"
+      ],
+      "title": "Qwen3-Embedding-0.6B: Model Card",
+      "year": 2025,
+      "venue": "Hugging Face model documentation, revision 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "pages": "",
+      "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/tree/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+      "label": "Qwen Team",
+      "verification": "Primary-source metadata and reading locations recorded in revisions/v2/literature/claim_source_ledger.json",
+      "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+    }
+  },
+  "render_note": "The PDF reading copy is generated from this shared document model. The manuscript.tex source loads the separate unmodified official IRRJ style; official PDFs are exported from a clean directory.",
+  "analysis_status": "Topology and implementation audit are exploratory and post-main"
+}

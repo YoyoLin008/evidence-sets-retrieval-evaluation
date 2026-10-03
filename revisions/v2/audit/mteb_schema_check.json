@@ -1,0 +1,11 @@
+{
+  "revision": "898f2eced48890f19b6a88f1b616e9ca6c5dda1c",
+  "url": "https://huggingface.co/datasets/mteb/QASPER/resolve/898f2eced48890f19b6a88f1b616e9ca6c5dda1c/QASPER-corpus/test-00000-of-00001.parquet",
+  "sha256": "82d81edcbaeb24bcc96fe18b407145978114db687fdfb7265c1aba32641ce82d",
+  "corpus_rows": 20508,
+  "exact_body_paragraph_matches_to_original_test": 20098,
+  "query_ids_in_original_test": 1335,
+  "of_queries": 1335,
+  "union_equal_in_id_matched_queries": 576,
+  "interpretation": "Visible qrels do not encode evidence combinations. Exact paragraph identity and union retention are checked separately; unmatched/selected inputs limit causal attribution."
+}

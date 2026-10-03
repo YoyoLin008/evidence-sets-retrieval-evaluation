@@ -1,0 +1,13 @@
+{
+  "utc": "2026-10-03T02:31:48.571328+00:00",
+  "status": "exploratory_post_main",
+  "source_sha256": "20fd97adfde4ad16d831b99cf6edf2330600d4427855e7982ec9dd20df20bd4a",
+  "rankings_sha256": "50f3a7f67fb534724f115793df1c0e96da5b3c00683db46b3f05fc086706e16d",
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20261002,
+    "unit": "same connected clusters as primary; item-weighted",
+    "stratum": "resample clusters represented within stratum",
+    "contribution": "resample full cohort clusters, with non-category values zero"
+  }
+}

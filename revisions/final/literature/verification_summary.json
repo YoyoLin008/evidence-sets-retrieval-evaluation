@@ -1,0 +1,28 @@
+{
+  "references": 26,
+  "all_current_citations_audited": true,
+  "full_reading_added": [
+    "alt2026",
+    "li2025"
+  ],
+  "preprints": [
+    "conjunctive",
+    "relational"
+  ],
+  "limited_access": [
+    "zobel1998: primary abstract/introduction only",
+    "saracevic: publisher abstract only"
+  ],
+  "metadata_corrections": {
+    "bm25": "Crossref currently gives 4(1\u20132):1\u2013174. Original monograph front matter confirms retained 3(4):333\u2013389; no silent replacement. Publisher direct request returned 403; original PDF copy and indexed publisher text checked.",
+    "sufficient": "Added official ICLR proceedings pages 20310\u201320334.",
+    "voorhees2003": "Changed citation publication year to 2004 per NIST record; conference/track remains TREC 2003. Historical citation key retained.",
+    "trecrag2025": "Official TREC34 index confirms SP1344; hosted overview bears 10 March 2026. Condensed venue without changing identity.",
+    "feverous": "ACL BibTeX gives Michael Sejr Schlichtkrull; HTML metadata abbreviates Michael Schlichtkrull. Retained full BibTeX name.",
+    "zhai2003": "Crossref short title omits subtitle; original paper supports retained full title.",
+    "clarke2008": "Fresh Crossref initially unavailable; retry succeeded, all authors and pp.659\u2013666 verified.",
+    "conjunctive": "Official arXiv version remains v2; no formal publication verified in targeted exact-title search.",
+    "relational": "Official arXiv version remains v1; no formal publication verified in targeted exact-title search."
+  },
+  "no_claim_of_exhaustive_novelty": true
+}

@@ -1,0 +1,134 @@
+[
+  [
+    "section",
+    "Additional depth distributions and tabulated results"
+  ],
+  [
+    "p",
+    "Figure 1 shows the cumulative distribution of additional ranked depth. Its zero mass is central to interpretation: the BM25 median is zero in each corpus despite positive mean cost. The scientific results and definitions are the same as in the main article."
+  ],
+  [
+    "figure",
+    "figure3_extra_depth"
+  ],
+  [
+    "p",
+    "Machine-readable tables retain all methods and budgets, paired contrasts, original and joint sensitivities, the four disjoint topology categories, singleton/answer-agreement modifiers, and contributions to score and cost. Empty strata remain empty, and cells with fewer than ten represented clusters are flagged sparse. The joint restriction, topology decomposition, implementation audit, and modern-encoder feasibility analysis are post-main and exploratory."
+  ],
+  [
+    "section",
+    "Implementation-audit protocol and evidence"
+  ],
+  [
+    "p",
+    "The implementation audit was frozen before inspecting additional code behavior. Prior familiarity with both official evaluators was disclosed, and those evaluators are reference cases outside downstream counts. On 3 October 2026 UTC, each benchmark name was crossed with “dataset loader,” “evidence retrieval evaluation,” “qrels conversion,” and “RAG benchmark” in domain-restricted searches of GitHub and Hugging Face datasets. The first ten available results per query were logged, including exclusions and inaccessible results."
+  ],
+  [
+    "p",
+    "The search comprised sixteen phrase-quoted queries and sixteen benchmark-quoted queries added by a pre-classification amendment, totaling 320 result slots and 148 canonical projects. Three inaccessible QASPER distributions had unverified eligibility. The final eligible pool contained 24 QASPER and 32 SciFact downstream families; fifteen per benchmark were selected by ascending SHA-256 of canonical identifiers. Post-inspection corrections merged the VikingRAG/OpenViking lineage and treated official AllenAI distributions as reference cases, replacing their selected slots with the next eligible families. The protocol, query records, eligibility decisions, and selection correction records accompany the package."
+  ],
+  [
+    "p",
+    "Classification traces pinned input, conversion, output, and scoring roles where accessible. Grouped lists preserve relationships even without explicit set IDs. The classification ledger records commit/revision, code locations, source/output granularity, transformation, supporting evidence, and uncertainty. A second consistency pass rechecked these source records. It does not constitute independent human annotation. Six isolated conversion fixtures supplement static code and schema inspection; no complete downstream model pipeline was executed."
+  ],
+  [
+    "p",
+    "The official QASPER evaluator selects a best reference for Evidence F1. The official SciFact evaluator retains alternative rationales for its complete-rationale abstract-level condition; sentence-level coverage is distinct. The official SciFact Hugging Face loader expands a rationale into a row, permitting grouping by claim and document. Reference distributions are excluded from downstream counts."
+  ],
+  [
+    "p",
+    "For mteb/QASPER, comparison with source IDs finds exact raw-union targets for 576 of 1,335 matched questions. This prevents interpreting every released target as the controlled union intervention. The sscc-rag-paper fixture demonstrates relation loss when every evidence unit maps; real input can additionally lose unmatched evidence. These two failure modes are recorded separately."
+  ],
+  [
+    "p",
+    "Final downstream counts in preserved/flat-only/both/other/undetermined order are QASPER 0/2/3/9/1 and SciFact 1/0/1/13/0. Unavailable and changed-task cases remain visible. These bounded counts do not estimate ecosystem prevalence."
+  ],
+  [
+    "subsection",
+    "Case-selection record"
+  ],
+  [
+    "p",
+    "The frozen error taxonomy contains {QNoHitN}/{QPartialN}/{QOneN}/{QAllN} QASPER items and {SNoHitN}/{SPartialN}/{SOneN}/{SAllN} SciFact pairs in the no-hit, fragment-only, one-set-without-union, and union-complete categories. Earlier examples were selected by SHA-256 order within each category, up to three per category. The panels in the main article present the first already-selected one-set-without-union case from each corpus; they are illustrations, not representative-sample estimates."
+  ],
+  [
+    "section",
+    "Result-blind modern-encoder feasibility gate"
+  ],
+  [
+    "p",
+    "Qwen3-Embedding-0.6B was the sole post-main candidate [[qwen]]. Its official revision, tokenizer, weights, and separate dependencies were pinned. The proposed configuration used float32 CPU inference, last-token pooling, normalized 1,024-dimensional vectors, an 8,192-token limit, and the fixed instruction “Given a scientific question or claim, retrieve passages that provide evidence relevant to it.” Queries were instructed and candidate units were not."
+  ],
+  [
+    "p",
+    "The frozen gate sampled 32 inputs by SHA-256 from each equal-count tokenizer-length quartile, adding its longest input when absent. Timing 132 of 20,112 unique inputs projected 10,568.9 seconds (2.94 hours), exceeding the prespecified two-hour limit. Full inference was therefore omitted. No effectiveness outcomes were computed from the timing sample, and no substitute was tried. The conservative longest-input addition and local runtime conditions limit the precision of this projection; omission leaves the modern-retriever robustness question unresolved."
+  ],
+  [
+    "p",
+    "The pinned Qwen model revision is 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3. The separate environment records PyTorch 2.8.0 and Transformers 4.57.1, with exact resolved dependencies, tokenizer and weight hashes. Timing and truncation records are separate from the MiniLM embedding cache. The complete projection reconstructs from the length-bin means, full input counts, model loading, and warm-up costs. The gate was applied before effectiveness evaluation."
+  ],
+  [
+    "section",
+    "Answer-agreement implementation"
+  ],
+  [
+    "p",
+    "The frozen function answer_key in src/evidence.py selects nonempty extractive_spans first (in source order, joined by comma-space), then nonempty free_form_answer, then yes_no when non-null, and otherwise the empty string. It applies Python str.lower, deletes string.punctuation (ASCII punctuation), removes whole-word a/an/the with a regular expression, and joins whitespace-separated tokens with one space. It does not apply Unicode normalization or delete non-ASCII punctuation. qasper_instances retains agreement when the set of normalized strings across all annotations has size one. The joint sensitivity in src/supplemental.py uses that saved indicator before minimal-reference pruning."
+  ],
+  [
+    "section",
+    "Computational provenance and replay"
+  ],
+  [
+    "p",
+    "The pilot used SHA-256-selected QASPER development papers and SciFact training claims, yielding 88 and 47 eligible items; none entered the main estimates. Inclusion rules, metrics, models, and analysis were frozen locally at {FreezeTime}. This is a prospective local record, not public preregistration."
+  ],
+  [
+    "p",
+    "QASPER test annotations were first deserialized after the freeze. SciFact development schema and availability had been inspected earlier, but rankings had not been scored. No retriever was tuned on either main cohort. The saved experiment contains {RankRecords} full rankings and {ScorePoints} unit-budget scoring points."
+  ],
+  [
+    "p",
+    "The main CPU run took {RunSeconds} seconds on ARM64 macOS with Python 3.12. Input, code, configuration, and model fingerprints bind checkpointed rankings and embedding caches. The reproduction package retains timestamped source snapshots, acquisition hashes, pilot records, correction logs, and current presentation sources."
+  ],
+  [
+    "p",
+    "The MiniLM revision is 1110a243fdf4706b3f48f1d95db1a4f5529b4d41. The acquired SciFact archive is distributed through a mutable latest URL, so acquisition hashes, rather than the URL label, identify this study’s annotations. Data and model acquisition manifests and the frozen configuration identify the exact source artifacts."
+  ],
+  [
+    "p",
+    "Adapters validate nonempty evidence families and source-unit mappings. Scores treat predicted IDs as sets; duplicate references do not change H, C, A, or max-reference overlap. Fingerprints bind rankings to queries, units, annotations, configuration, and retrieval code."
+  ],
+  [
+    "p",
+    "The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation."
+  ],
+  [
+    "section",
+    "Literature-search scope"
+  ],
+  [
+    "p",
+    "A final targeted search on 3 October 2026 UTC covered evidence ranking, evidence-set completion, sufficient evidence sets, minimal sufficient rank, multiple gold evidence sets, alternative evidence sets, conjunctive evidence, grouped qrels, structured relevance judgments, flattened qrels, evidence aggregation, and best-reference versus union evaluation. Primary-source records and exact queries are retained in the literature ledger. This is targeted positioning, not a systematic review."
+  ],
+  [
+    "p",
+    "Alt et al. (2026) and Li et al. (2025) were read in full for the comparison of sufficient-set ranking and group-versus-union evaluation [[alt2026;li2025]]. The claim-to-source ledger distinguishes bibliographic verification from methodological reading and records source-access limitations. Cha et al. and Nguy are cited as preprints."
+  ],
+  [
+    "section",
+    "Authorship and assistance"
+  ],
+  [
+    "p",
+    "Generative AI tools (OpenAI Codex) supported grammar checking, language refinement, clarity, and organization. The author conceived the study, made the substantive methodological and interpretive decisions, conducted and verified the research, and wrote the substantive content. Under the author’s direction, tool assistance also supported code edits, reruns, numerical and reference checks, and preparation of figures and manuscript files. The author reviewed AI-assisted material and takes responsibility for the final work. AI is not an author."
+  ],
+  [
+    "section",
+    "Acknowledgments and disclosure of funding"
+  ],
+  [
+    "p",
+    "No external funding or third-party computational resources were received or used for this work. All computational experiments were conducted locally on the author’s personal computer."
+  ]
+]

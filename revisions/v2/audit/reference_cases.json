@@ -1,0 +1,86 @@
+[
+  {
+    "benchmark": "QASPER",
+    "canonical": "github.com/allenai/qasper-led-baseline",
+    "revision": "afd0fb96bf78ce8cd8157639c6f6a6995e4f9089",
+    "classification": "preserved",
+    "scope": "Official evaluator keeps references and takes best evidence F1. Official training labels may aggregate; reference classification is restricted to evaluator objective.",
+    "files": [
+      {
+        "index": 107,
+        "path": "qasper_baselines/dataset_reader.py",
+        "url": "https://raw.githubusercontent.com/allenai/qasper-led-baseline/afd0fb96bf78ce8cd8157639c6f6a6995e4f9089/qasper_baselines/dataset_reader.py",
+        "revision": "afd0fb96bf78ce8cd8157639c6f6a6995e4f9089",
+        "local": "sources/b88fc91ffb09b639/files/qasper_baselines/dataset_reader.py",
+        "bytes": 18507,
+        "sha256": "f8bd166424a9481b0a0f21372a2b625f19f626bbeb077dff0fe6bd5d73b47902"
+      },
+      {
+        "index": 107,
+        "path": "scripts/evaluator.py",
+        "url": "https://raw.githubusercontent.com/allenai/qasper-led-baseline/afd0fb96bf78ce8cd8157639c6f6a6995e4f9089/scripts/evaluator.py",
+        "revision": "afd0fb96bf78ce8cd8157639c6f6a6995e4f9089",
+        "local": "sources/b88fc91ffb09b639/files/scripts/evaluator.py",
+        "bytes": 6345,
+        "sha256": "781aba7cd8e524bef4f0a1b4bf3504e5b02cb1d8d5bf32a8f0a89dfa83e86bfe"
+      }
+    ],
+    "official_dataset_distribution": {
+      "canonical": "huggingface.co/allenai/qasper",
+      "revision": "fdc9d8214fbab5dd782958601db4d678e6934a54",
+      "classification": "preserved",
+      "fixture_index": 99
+    }
+  },
+  {
+    "benchmark": "SciFact",
+    "canonical": "github.com/allenai/scifact",
+    "revision": "68b98a56d93e0f9da0d2aab4e6c3294699a0f72e",
+    "classification": "preserved",
+    "scope": "Official abstract-level criterion accepts a complete rationale; sentence scoring has its own coverage target. scifact-evaluator is grouped with official lineage.",
+    "files": [
+      {
+        "index": 124,
+        "path": "verisci/evaluate/lib/data.py",
+        "url": "https://raw.githubusercontent.com/allenai/scifact/68b98a56d93e0f9da0d2aab4e6c3294699a0f72e/verisci/evaluate/lib/data.py",
+        "revision": "68b98a56d93e0f9da0d2aab4e6c3294699a0f72e",
+        "local": "sources/b1d2d9920172fc50/files/verisci/evaluate/lib/data.py",
+        "bytes": 8911,
+        "sha256": "b413aedc068d980520e9a54870591738d9833ca6e24614742ad070b7edcc3ca5"
+      },
+      {
+        "index": 124,
+        "path": "verisci/evaluate/lib/metrics.py",
+        "url": "https://raw.githubusercontent.com/allenai/scifact/68b98a56d93e0f9da0d2aab4e6c3294699a0f72e/verisci/evaluate/lib/metrics.py",
+        "revision": "68b98a56d93e0f9da0d2aab4e6c3294699a0f72e",
+        "local": "sources/b1d2d9920172fc50/files/verisci/evaluate/lib/metrics.py",
+        "bytes": 5738,
+        "sha256": "ffda621f72cf3f1c557cc88be1e02fdee49b3966f5892f9f08db49f1ed29200b"
+      },
+      {
+        "index": 124,
+        "path": "doc/evaluation.md",
+        "url": "https://raw.githubusercontent.com/allenai/scifact/68b98a56d93e0f9da0d2aab4e6c3294699a0f72e/doc/evaluation.md",
+        "revision": "68b98a56d93e0f9da0d2aab4e6c3294699a0f72e",
+        "local": "sources/b1d2d9920172fc50/files/doc/evaluation.md",
+        "bytes": 5852,
+        "sha256": "daf79d500b0e5df27b29d28d5c14c6876f72cb4dfc2826eb93ca552d80ca0803"
+      },
+      {
+        "index": 136,
+        "path": "evaluator/eval.py",
+        "url": "https://raw.githubusercontent.com/allenai/scifact-evaluator/66feffc5b2cc9e28e3ce3b8c9e824c3c642981eb/evaluator/eval.py",
+        "revision": "66feffc5b2cc9e28e3ce3b8c9e824c3c642981eb",
+        "local": "sources/67777b0eb1817338/files/evaluator/eval.py",
+        "bytes": 8847,
+        "sha256": "2554fed44c3f5592bdeed59ab0d3918a412b452ba1c77da73ba0f62e74c9987f"
+      }
+    ],
+    "official_dataset_distribution": {
+      "canonical": "huggingface.co/allenai/scifact",
+      "revision": "1fe54665deee011033b2dd98db5752e0d586fdfb",
+      "classification": "preserved",
+      "fixture_index": 129
+    }
+  }
+]

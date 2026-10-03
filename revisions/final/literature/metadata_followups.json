@@ -1,0 +1,36 @@
+[
+  {
+    "key": "bm25_publisher",
+    "url": "https://www.nowpublishers.com/article/DownloadSummary/INR-019",
+    "status": "unavailable",
+    "error": "HTTP Error 403: Forbidden"
+  },
+  {
+    "key": "clarke2008_retry",
+    "url": "https://api.crossref.org/works/10.1145%2F1390334.1390446",
+    "path": "revisions/final/literature/sources/clarke2008_retry.json",
+    "sha256": "2321763732988797f6cbb2708fb1b8d8a0dec8d48a375dd1bf150edacd46edb8",
+    "status": "acquired"
+  },
+  {
+    "key": "trec34_index",
+    "url": "https://trec.nist.gov/pubs/trec34/index.html",
+    "path": "revisions/final/literature/sources/trec34_index.html",
+    "sha256": "ae325975c4e56bcbd1438148a9f5a02ebcdfe579cb45aef51c0b505a9972f7a1",
+    "status": "acquired"
+  },
+  {
+    "key": "voorhees_publication",
+    "url": "https://www.nist.gov/publications/overview-trec-2003-question-answering-track",
+    "path": "revisions/final/literature/sources/voorhees_publication.html",
+    "sha256": "2b83eafb7ad7effae224aaa6f0fb27c4aa8606c7bd39c75c9287cb62cecd9d6f",
+    "status": "acquired"
+  },
+  {
+    "key": "irrj_submissions",
+    "url": "https://irrj.org/about/submissions",
+    "path": "revisions/final/literature/sources/irrj_submissions.html",
+    "sha256": "c23be89013496ff5cc5c8b6d75f8681b5d00ec2effa566fd943986b8f41d268f",
+    "status": "acquired"
+  }
+]

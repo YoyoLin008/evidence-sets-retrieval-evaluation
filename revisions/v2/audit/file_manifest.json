@@ -1,0 +1,668 @@
+[
+  {
+    "index": 49,
+    "path": "benchmark/RAG/src/adapters/qasper_adapter.py",
+    "url": "https://raw.githubusercontent.com/rucdatascience/VikingRAG/365d2adc00c8f42517aaef1dd037e0d6f9b58263/benchmark/RAG/src/adapters/qasper_adapter.py",
+    "revision": "365d2adc00c8f42517aaef1dd037e0d6f9b58263",
+    "local": "sources/8425b53b045f0835/files/benchmark/RAG/src/adapters/qasper_adapter.py",
+    "bytes": 15637,
+    "sha256": "fa39ad5c187c3865a00e037aa61049c1fc8d8357aabdb6ee4bc0be2283ad012b"
+  },
+  {
+    "index": 49,
+    "path": "benchmark/RAG/dataset_tools/converters.py",
+    "url": "https://raw.githubusercontent.com/rucdatascience/VikingRAG/365d2adc00c8f42517aaef1dd037e0d6f9b58263/benchmark/RAG/dataset_tools/converters.py",
+    "revision": "365d2adc00c8f42517aaef1dd037e0d6f9b58263",
+    "local": "sources/8425b53b045f0835/files/benchmark/RAG/dataset_tools/converters.py",
+    "bytes": 12633,
+    "sha256": "6d048989dfefc4bcb3efbe0de81081bc976ec588f6ad0bf6541edea7b03d6cad"
+  },
+  {
+    "index": 49,
+    "path": "benchmark/RAG/src/core/metrics.py",
+    "url": "https://raw.githubusercontent.com/rucdatascience/VikingRAG/365d2adc00c8f42517aaef1dd037e0d6f9b58263/benchmark/RAG/src/core/metrics.py",
+    "revision": "365d2adc00c8f42517aaef1dd037e0d6f9b58263",
+    "local": "sources/8425b53b045f0835/files/benchmark/RAG/src/core/metrics.py",
+    "bytes": 4111,
+    "sha256": "e40469aabe0012a58479b62c9330c28e53423305b2c10d02e3e4c72c34a03309"
+  },
+  {
+    "index": 65,
+    "path": "src/data/dataset_loader.py",
+    "url": "https://raw.githubusercontent.com/Vincksi/Fact-Verification-with-Evidence-Retrieval/a81fab500fdfba499b9af8a6ad3d06ab681ad29f/src/data/dataset_loader.py",
+    "revision": "a81fab500fdfba499b9af8a6ad3d06ab681ad29f",
+    "local": "sources/6d5c4d39e3bef24d/files/src/data/dataset_loader.py",
+    "bytes": 6405,
+    "sha256": "1c8b1894533fb01a191ade7582115b0ca46a318c9fa87718133a0c613da86e09"
+  },
+  {
+    "index": 65,
+    "path": "src/evaluation/retrieval_metrics.py",
+    "url": "https://raw.githubusercontent.com/Vincksi/Fact-Verification-with-Evidence-Retrieval/a81fab500fdfba499b9af8a6ad3d06ab681ad29f/src/evaluation/retrieval_metrics.py",
+    "revision": "a81fab500fdfba499b9af8a6ad3d06ab681ad29f",
+    "local": "sources/6d5c4d39e3bef24d/files/src/evaluation/retrieval_metrics.py",
+    "bytes": 8134,
+    "sha256": "ae3f055ee5343905cf55e9fedc05cf8c774c5529769e9ac6f104ae5dcfac2604"
+  },
+  {
+    "index": 65,
+    "path": "scripts/evaluation/evaluate.py",
+    "url": "https://raw.githubusercontent.com/Vincksi/Fact-Verification-with-Evidence-Retrieval/a81fab500fdfba499b9af8a6ad3d06ab681ad29f/scripts/evaluation/evaluate.py",
+    "revision": "a81fab500fdfba499b9af8a6ad3d06ab681ad29f",
+    "local": "sources/6d5c4d39e3bef24d/files/scripts/evaluation/evaluate.py",
+    "bytes": 7715,
+    "sha256": "4942e5fb5ee06f2c2c66cb78f1c81a30a0420984738daa951c6d1fa2538ee77e"
+  },
+  {
+    "index": 75,
+    "path": "docs/reproduce/from-document-collection/beir-v1.0.0-scifact.flat.md",
+    "url": "https://raw.githubusercontent.com/castorini/anserini/ea4a234303b029eefae71385c031cd34af167a2b/docs/reproduce/from-document-collection/beir-v1.0.0-scifact.flat.md",
+    "revision": "ea4a234303b029eefae71385c031cd34af167a2b",
+    "local": "sources/61a2b98767423900/files/docs/reproduce/from-document-collection/beir-v1.0.0-scifact.flat.md",
+    "bytes": 3341,
+    "sha256": "ec2d584fe9ede087b9b8ed487b3c9ab0c4c01b6ad5f87bcad930a873647fc26a"
+  },
+  {
+    "index": 75,
+    "path": "src/main/resources/reproduce/from-document-collection/configs/beir-v1.0.0-scifact.flat.yaml",
+    "url": "https://raw.githubusercontent.com/castorini/anserini/ea4a234303b029eefae71385c031cd34af167a2b/src/main/resources/reproduce/from-document-collection/configs/beir-v1.0.0-scifact.flat.yaml",
+    "revision": "ea4a234303b029eefae71385c031cd34af167a2b",
+    "local": "sources/61a2b98767423900/files/src/main/resources/reproduce/from-document-collection/configs/beir-v1.0.0-scifact.flat.yaml",
+    "bytes": 1218,
+    "sha256": "d588e79b8adabaaa6550f44fa7822c8f6c12d1cfb07707777a0cffa57648d4a0"
+  },
+  {
+    "index": 80,
+    "path": "src/jev_rag_bench/data.py",
+    "url": "https://raw.githubusercontent.com/emretheus/jev-rag-benchmark/6b8390ecc9c7f293e02efc143d1da779ce56ac34/src/jev_rag_bench/data.py",
+    "revision": "6b8390ecc9c7f293e02efc143d1da779ce56ac34",
+    "local": "sources/43438e463871bc02/files/src/jev_rag_bench/data.py",
+    "bytes": 6694,
+    "sha256": "ed59f2ba1ec8d9ece3a026e6b91048d34f84d4c9d9925c018f3943c583906f9a"
+  },
+  {
+    "index": 80,
+    "path": "src/jev_rag_bench/metrics.py",
+    "url": "https://raw.githubusercontent.com/emretheus/jev-rag-benchmark/6b8390ecc9c7f293e02efc143d1da779ce56ac34/src/jev_rag_bench/metrics.py",
+    "revision": "6b8390ecc9c7f293e02efc143d1da779ce56ac34",
+    "local": "sources/43438e463871bc02/files/src/jev_rag_bench/metrics.py",
+    "bytes": 1914,
+    "sha256": "b5117621ab84fde15791d2f0dec8fd4fbdfd76a0dcca56988ae7f0d9cb6f13b0"
+  },
+  {
+    "index": 81,
+    "path": "src/jev_rag_benchmark/data.py",
+    "url": "https://raw.githubusercontent.com/erendikmenn/jev-rag-benchmark/7c7fd8afc30a6fe4e54236e6d65835858cf7393a/src/jev_rag_benchmark/data.py",
+    "revision": "7c7fd8afc30a6fe4e54236e6d65835858cf7393a",
+    "local": "sources/367480a163d6b754/files/src/jev_rag_benchmark/data.py",
+    "bytes": 4700,
+    "sha256": "0ff9308b5dafecfc1c973399ceeb2c69ec6af2f4b77e8cbf5f788c09a49106d5"
+  },
+  {
+    "index": 81,
+    "path": "src/jev_rag_benchmark/metrics.py",
+    "url": "https://raw.githubusercontent.com/erendikmenn/jev-rag-benchmark/7c7fd8afc30a6fe4e54236e6d65835858cf7393a/src/jev_rag_benchmark/metrics.py",
+    "revision": "7c7fd8afc30a6fe4e54236e6d65835858cf7393a",
+    "local": "sources/367480a163d6b754/files/src/jev_rag_benchmark/metrics.py",
+    "bytes": 3122,
+    "sha256": "08010ca5126325c62eba15c1217ead32d2f297d0f4adb8603a4e63f4b5648607"
+  },
+  {
+    "index": 82,
+    "path": "benchmarking/rag/benchmarks/beir_bench.py",
+    "url": "https://raw.githubusercontent.com/ogx-ai/ogx/1e63db92366b46bdd5e803eed01e5f2a20ca13fb/benchmarking/rag/benchmarks/beir_bench.py",
+    "revision": "1e63db92366b46bdd5e803eed01e5f2a20ca13fb",
+    "local": "sources/1f8e28536804374d/files/benchmarking/rag/benchmarks/beir_bench.py",
+    "bytes": 3945,
+    "sha256": "0d7b7a279bc7174881c938faf4504b8231656fcb7c3660532948ed1ae9b4be46"
+  },
+  {
+    "index": 82,
+    "path": "benchmarking/rag/lib/metrics.py",
+    "url": "https://raw.githubusercontent.com/ogx-ai/ogx/1e63db92366b46bdd5e803eed01e5f2a20ca13fb/benchmarking/rag/lib/metrics.py",
+    "revision": "1e63db92366b46bdd5e803eed01e5f2a20ca13fb",
+    "local": "sources/1f8e28536804374d/files/benchmarking/rag/lib/metrics.py",
+    "bytes": 4974,
+    "sha256": "616807fe2872ce5144a40d1d287af80dfcd9a1304831b394de15f01c754adfc4"
+  },
+  {
+    "index": 83,
+    "path": "src/data_loader.py",
+    "url": "https://raw.githubusercontent.com/Zelros02/hybrid-rag-benchmark/5889824a79b1d941153b248921655d54371b3750/src/data_loader.py",
+    "revision": "5889824a79b1d941153b248921655d54371b3750",
+    "local": "sources/032fcca2bce97242/files/src/data_loader.py",
+    "bytes": 1068,
+    "sha256": "8c8624badbe3ced2be6ccc7b355288580ac994786a0f42cf2afe31218b0047f1"
+  },
+  {
+    "index": 83,
+    "path": "src/metrics.py",
+    "url": "https://raw.githubusercontent.com/Zelros02/hybrid-rag-benchmark/5889824a79b1d941153b248921655d54371b3750/src/metrics.py",
+    "revision": "5889824a79b1d941153b248921655d54371b3750",
+    "local": "sources/032fcca2bce97242/files/src/metrics.py",
+    "bytes": 2180,
+    "sha256": "7cecc13417d46bcba22849fe6e784c3b22bfdb290569e2e499b8e13d6ed438a4"
+  },
+  {
+    "index": 90,
+    "path": "evaluator/dataset_evaluator.py",
+    "url": "https://raw.githubusercontent.com/tau-nlp/scrolls/bfc0da0747976418cd0c4b8837db023ea567ba84/evaluator/dataset_evaluator.py",
+    "revision": "bfc0da0747976418cd0c4b8837db023ea567ba84",
+    "local": "sources/22761e56870fc392/files/evaluator/dataset_evaluator.py",
+    "bytes": 7119,
+    "sha256": "805102571c15ec8f92bfee85ca2e4657ea4a96ad2b4a62c93bdd0b5aed2b194b"
+  },
+  {
+    "index": 90,
+    "path": "baselines/src/metrics/metrics.py",
+    "url": "https://raw.githubusercontent.com/tau-nlp/scrolls/bfc0da0747976418cd0c4b8837db023ea567ba84/baselines/src/metrics/metrics.py",
+    "revision": "bfc0da0747976418cd0c4b8837db023ea567ba84",
+    "local": "sources/22761e56870fc392/files/baselines/src/metrics/metrics.py",
+    "bytes": 5479,
+    "sha256": "b0143c2d783b35d3e1d6576bd37889f88560bd1639b7e76162e476f7d869b60a"
+  },
+  {
+    "index": 90,
+    "path": "baselines/src/utils/duplicates.py",
+    "url": "https://raw.githubusercontent.com/tau-nlp/scrolls/bfc0da0747976418cd0c4b8837db023ea567ba84/baselines/src/utils/duplicates.py",
+    "revision": "bfc0da0747976418cd0c4b8837db023ea567ba84",
+    "local": "sources/22761e56870fc392/files/baselines/src/utils/duplicates.py",
+    "bytes": 687,
+    "sha256": "644a3b964e1f577a08b9a631bc4fd77d7c21049a469711b0257290e6c2138c26"
+  },
+  {
+    "index": 91,
+    "path": "create_qasper_examples_scibert.py",
+    "url": "https://raw.githubusercontent.com/JerrryNie/CGSN/06e6bed098a12288d63a89165e9e453271ec20df/create_qasper_examples_scibert.py",
+    "revision": "06e6bed098a12288d63a89165e9e453271ec20df",
+    "local": "sources/0e503055eebd598c/files/create_qasper_examples_scibert.py",
+    "bytes": 37730,
+    "sha256": "4a492e740b13e7e2a8fbd6b868eb0c6e8a60c1c2d5d0a87f264c4b5d1cbab9b4"
+  },
+  {
+    "index": 91,
+    "path": "dataset.py",
+    "url": "https://raw.githubusercontent.com/JerrryNie/CGSN/06e6bed098a12288d63a89165e9e453271ec20df/dataset.py",
+    "revision": "06e6bed098a12288d63a89165e9e453271ec20df",
+    "local": "sources/0e503055eebd598c/files/dataset.py",
+    "bytes": 2789,
+    "sha256": "75060ce16e4a9ff773036b0824025369d80acdfd7c29aef06d9b3f6bc078ab8b"
+  },
+  {
+    "index": 91,
+    "path": "convert_retreived_evidence_to_dataset.py",
+    "url": "https://raw.githubusercontent.com/JerrryNie/CGSN/06e6bed098a12288d63a89165e9e453271ec20df/convert_retreived_evidence_to_dataset.py",
+    "revision": "06e6bed098a12288d63a89165e9e453271ec20df",
+    "local": "sources/0e503055eebd598c/files/convert_retreived_evidence_to_dataset.py",
+    "bytes": 3846,
+    "sha256": "d8f047b4840427c859141ffdfb8428ee6654a66345ce35d3256c2b409fc3523b"
+  },
+  {
+    "index": 91,
+    "path": "qasper-led-baseline/scripts/evaluator.py",
+    "url": "https://raw.githubusercontent.com/JerrryNie/CGSN/06e6bed098a12288d63a89165e9e453271ec20df/qasper-led-baseline/scripts/evaluator.py",
+    "revision": "06e6bed098a12288d63a89165e9e453271ec20df",
+    "local": "sources/0e503055eebd598c/files/qasper-led-baseline/scripts/evaluator.py",
+    "bytes": 6345,
+    "sha256": "781aba7cd8e524bef4f0a1b4bf3504e5b02cb1d8d5bf32a8f0a89dfa83e86bfe"
+  },
+  {
+    "index": 92,
+    "path": "src/lighteval/tasks/tasks/qasper.py",
+    "url": "https://raw.githubusercontent.com/huggingface/lighteval/c2af9e5f2fde494539f84c8ea9d09f18ac9e9c14/src/lighteval/tasks/tasks/qasper.py",
+    "revision": "c2af9e5f2fde494539f84c8ea9d09f18ac9e9c14",
+    "local": "sources/46ce73907e4f3c90/files/src/lighteval/tasks/tasks/qasper.py",
+    "bytes": 1412,
+    "sha256": "f24a5b530b063de32f197788b316bdb347f57147f275a36aae68d91d8f3e015a"
+  },
+  {
+    "index": 97,
+    "path": "dataset_utils.py",
+    "url": "https://raw.githubusercontent.com/princeton-nlp/CEPE/53ca69b757b84872a234a4272e217ed453516616/dataset_utils.py",
+    "revision": "53ca69b757b84872a234a4272e217ed453516616",
+    "local": "sources/032561fa9c274556/files/dataset_utils.py",
+    "bytes": 23799,
+    "sha256": "6fd7823e2f791d727089254a578760b71fc4c768d8075026436e701e2f36bdaa"
+  },
+  {
+    "index": 98,
+    "path": "LongBench-rwkv/eval.py",
+    "url": "https://raw.githubusercontent.com/Ojiyumm/LongBench_RWKV/365d875c0462bf2891b4076e445c1e55c88e4f60/LongBench-rwkv/eval.py",
+    "revision": "365d875c0462bf2891b4076e445c1e55c88e4f60",
+    "local": "sources/48aa0102cc1c5b10/files/LongBench-rwkv/eval.py",
+    "bytes": 3776,
+    "sha256": "1a3acfc25d9b053e9bb75c479f7e385d0cb9989f0f7115346b7d632655967721"
+  },
+  {
+    "index": 98,
+    "path": "LongBench-rwkv/pred.py",
+    "url": "https://raw.githubusercontent.com/Ojiyumm/LongBench_RWKV/365d875c0462bf2891b4076e445c1e55c88e4f60/LongBench-rwkv/pred.py",
+    "revision": "365d875c0462bf2891b4076e445c1e55c88e4f60",
+    "local": "sources/48aa0102cc1c5b10/files/LongBench-rwkv/pred.py",
+    "bytes": 10979,
+    "sha256": "2b4226ed1d464d2f37caab518bf8b0fc2c98a381eac91f1a52102ba92212104b"
+  },
+  {
+    "index": 98,
+    "path": "LongBench-rwkv/metrics.py",
+    "url": "https://raw.githubusercontent.com/Ojiyumm/LongBench_RWKV/365d875c0462bf2891b4076e445c1e55c88e4f60/LongBench-rwkv/metrics.py",
+    "revision": "365d875c0462bf2891b4076e445c1e55c88e4f60",
+    "local": "sources/48aa0102cc1c5b10/files/LongBench-rwkv/metrics.py",
+    "bytes": 5190,
+    "sha256": "e22e2a2662e0f7e683137fa3541f64edb6a801e9138d16d2f3459a6ab9941323"
+  },
+  {
+    "index": 105,
+    "path": "scripts/benchmarks/prepare_qasper.py",
+    "url": "https://raw.githubusercontent.com/Ludovico-Chieffallo/chunklab/054fda10653c480008a3600f6a37763fcee494fa/scripts/benchmarks/prepare_qasper.py",
+    "revision": "054fda10653c480008a3600f6a37763fcee494fa",
+    "local": "sources/7632708e246c0ece/files/scripts/benchmarks/prepare_qasper.py",
+    "bytes": 7646,
+    "sha256": "aba7f4697f744ad3200f38765b1d08242d1134080a7aee9194895cdd58e1d878"
+  },
+  {
+    "index": 105,
+    "path": "chunklab/eval/metrics.py",
+    "url": "https://raw.githubusercontent.com/Ludovico-Chieffallo/chunklab/054fda10653c480008a3600f6a37763fcee494fa/chunklab/eval/metrics.py",
+    "revision": "054fda10653c480008a3600f6a37763fcee494fa",
+    "local": "sources/7632708e246c0ece/files/chunklab/eval/metrics.py",
+    "bytes": 3016,
+    "sha256": "d258712fd2a92ca32ba71192d183c1ffb2b2bb7072eec9612d0befe3efd6a31c"
+  },
+  {
+    "index": 110,
+    "path": "rank_bench.py",
+    "url": "https://raw.githubusercontent.com/rnrn/ai-context/42790a3b1357076f02dc0288b4f95d8f907b15c8/rank_bench.py",
+    "revision": "42790a3b1357076f02dc0288b4f95d8f907b15c8",
+    "local": "sources/4a1a8b1d0831e9e5/files/rank_bench.py",
+    "bytes": 10197,
+    "sha256": "04c0d2dd139f2c624666e0eaec1f0aae37f4ef824b555d10346abecc3a2fb95e"
+  },
+  {
+    "index": 116,
+    "path": "src/convert_qasper.py",
+    "url": "https://raw.githubusercontent.com/unseen1980/IDC/9899c71bded3f1d154d664732adf6f19da373eb1/src/convert_qasper.py",
+    "revision": "9899c71bded3f1d154d664732adf6f19da373eb1",
+    "local": "sources/245a949b4c8d9ff0/files/src/convert_qasper.py",
+    "bytes": 12171,
+    "sha256": "0998f87147156535e7fe809e748f19c9cb51b018ffc6c7e60548b3dea5876ce2"
+  },
+  {
+    "index": 116,
+    "path": "scripts/run_qasper_e2e.sh",
+    "url": "https://raw.githubusercontent.com/unseen1980/IDC/9899c71bded3f1d154d664732adf6f19da373eb1/scripts/run_qasper_e2e.sh",
+    "revision": "9899c71bded3f1d154d664732adf6f19da373eb1",
+    "local": "sources/245a949b4c8d9ff0/files/scripts/run_qasper_e2e.sh",
+    "bytes": 3100,
+    "sha256": "0f4bc3dd45f82ff0dcf814798b538203ca8af0dfae0d7699e3d05baabd65a3eb"
+  },
+  {
+    "index": 116,
+    "path": "data/qasper/qasper_evaluator.py",
+    "url": "https://raw.githubusercontent.com/unseen1980/IDC/9899c71bded3f1d154d664732adf6f19da373eb1/data/qasper/qasper_evaluator.py",
+    "revision": "9899c71bded3f1d154d664732adf6f19da373eb1",
+    "local": "sources/245a949b4c8d9ff0/files/data/qasper/qasper_evaluator.py",
+    "bytes": 6345,
+    "sha256": "781aba7cd8e524bef4f0a1b4bf3504e5b02cb1d8d5bf32a8f0a89dfa83e86bfe"
+  },
+  {
+    "index": 117,
+    "path": "scripts/experiments/qasper_to_gold_file.py",
+    "url": "https://raw.githubusercontent.com/KRLabsOrg/acl-verbatim/ba318bd65f1fa7ba100765bf3e573ccf61a1cc14/scripts/experiments/qasper_to_gold_file.py",
+    "revision": "ba318bd65f1fa7ba100765bf3e573ccf61a1cc14",
+    "local": "sources/19cc11d60d646489/files/scripts/experiments/qasper_to_gold_file.py",
+    "bytes": 14478,
+    "sha256": "532581927392250d07c71dd7ba5ced2d6e808c888044a9bc06eea99423a0f04b"
+  },
+  {
+    "index": 117,
+    "path": "acl_verbatim/eval/evaluate_predictions.py",
+    "url": "https://raw.githubusercontent.com/KRLabsOrg/acl-verbatim/ba318bd65f1fa7ba100765bf3e573ccf61a1cc14/acl_verbatim/eval/evaluate_predictions.py",
+    "revision": "ba318bd65f1fa7ba100765bf3e573ccf61a1cc14",
+    "local": "sources/19cc11d60d646489/files/acl_verbatim/eval/evaluate_predictions.py",
+    "bytes": 1960,
+    "sha256": "7786968059eebcaaeb34ddb0cd7ce0a3fa46296811e91b11ee44fc004aac1976"
+  },
+  {
+    "index": 117,
+    "path": "acl_verbatim/eval/span_metrics.py",
+    "url": "https://raw.githubusercontent.com/KRLabsOrg/acl-verbatim/ba318bd65f1fa7ba100765bf3e573ccf61a1cc14/acl_verbatim/eval/span_metrics.py",
+    "revision": "ba318bd65f1fa7ba100765bf3e573ccf61a1cc14",
+    "local": "sources/19cc11d60d646489/files/acl_verbatim/eval/span_metrics.py",
+    "bytes": 13679,
+    "sha256": "43539f30a789a4ca6a51673da5188a2fe4abc4f29e345215ad6bace636de6e15"
+  },
+  {
+    "index": 119,
+    "path": "evaluate.py",
+    "url": "https://raw.githubusercontent.com/hyundong98/TrapDoc/78328a1a0fd73eaa6b0dd4c8b41b457a47dad6a1/evaluate.py",
+    "revision": "78328a1a0fd73eaa6b0dd4c8b41b457a47dad6a1",
+    "local": "sources/65b7b8f263c2afdb/files/evaluate.py",
+    "bytes": 5072,
+    "sha256": "d0d34392332ea91e081222685622155e48845340dbe3da23bd6af479246506d9"
+  },
+  {
+    "index": 123,
+    "path": "src/sage/eval/benchmarks.py",
+    "url": "https://raw.githubusercontent.com/qarkapp/sscc-rag-paper/da7e8fb13f297969d344bad90295b15c2917a47d/src/sage/eval/benchmarks.py",
+    "revision": "da7e8fb13f297969d344bad90295b15c2917a47d",
+    "local": "sources/635055cc7f32e666/files/src/sage/eval/benchmarks.py",
+    "bytes": 6119,
+    "sha256": "a63f3d5d5fbaaa6636717ec5a8887f3c265cb857403b7f4b65d9afa1c5a276c6"
+  },
+  {
+    "index": 123,
+    "path": "src/sage/eval/dataset.py",
+    "url": "https://raw.githubusercontent.com/qarkapp/sscc-rag-paper/da7e8fb13f297969d344bad90295b15c2917a47d/src/sage/eval/dataset.py",
+    "revision": "da7e8fb13f297969d344bad90295b15c2917a47d",
+    "local": "sources/635055cc7f32e666/files/src/sage/eval/dataset.py",
+    "bytes": 6178,
+    "sha256": "4c9026b49e8989da74ccbd250ef47e67d087c34391030d6fcf366b09644a3f11"
+  },
+  {
+    "index": 123,
+    "path": "src/sage/eval/metrics.py",
+    "url": "https://raw.githubusercontent.com/qarkapp/sscc-rag-paper/da7e8fb13f297969d344bad90295b15c2917a47d/src/sage/eval/metrics.py",
+    "revision": "da7e8fb13f297969d344bad90295b15c2917a47d",
+    "local": "sources/635055cc7f32e666/files/src/sage/eval/metrics.py",
+    "bytes": 2950,
+    "sha256": "e344792d6f57ea0613f587ccd2a2370bfc3f09c9a71950df9dbf47c1e234cc72"
+  },
+  {
+    "index": 123,
+    "path": "src/sage/eval/span_mapping.py",
+    "url": "https://raw.githubusercontent.com/qarkapp/sscc-rag-paper/da7e8fb13f297969d344bad90295b15c2917a47d/src/sage/eval/span_mapping.py",
+    "revision": "da7e8fb13f297969d344bad90295b15c2917a47d",
+    "local": "sources/635055cc7f32e666/files/src/sage/eval/span_mapping.py",
+    "bytes": 2305,
+    "sha256": "356cb54d8871c9022cc51e7b0239dc40c298dd6b76e2734215653e31dff88d8b"
+  },
+  {
+    "index": 127,
+    "path": "script/run_eval.py",
+    "url": "https://raw.githubusercontent.com/dwadden/scifact-open/6fc2e2f2f97001f2fadb882600beb3e984d77aad/script/run_eval.py",
+    "revision": "6fc2e2f2f97001f2fadb882600beb3e984d77aad",
+    "local": "sources/656a3a66d8349182/files/script/run_eval.py",
+    "bytes": 6045,
+    "sha256": "84c998981fe5ccc5902e5d985cc70ae778e3e4dd5a22ff41d3fbc705f0ad94f2"
+  },
+  {
+    "index": 128,
+    "path": "download_data.py",
+    "url": "https://raw.githubusercontent.com/MaryamAsgarinezhad/information-retrieval-sparse-dense-scifact/919681b95f96c71608a7218ab9bfbf203d7d4eb9/download_data.py",
+    "revision": "919681b95f96c71608a7218ab9bfbf203d7d4eb9",
+    "local": "sources/2573e5f992319140/files/download_data.py",
+    "bytes": 589,
+    "sha256": "d47fa09a5d9742cd09720d291c5ed9790fb0749699e9239843c3246872b609cf"
+  },
+  {
+    "index": 128,
+    "path": "evaluation.py",
+    "url": "https://raw.githubusercontent.com/MaryamAsgarinezhad/information-retrieval-sparse-dense-scifact/919681b95f96c71608a7218ab9bfbf203d7d4eb9/evaluation.py",
+    "revision": "919681b95f96c71608a7218ab9bfbf203d7d4eb9",
+    "local": "sources/2573e5f992319140/files/evaluation.py",
+    "bytes": 2538,
+    "sha256": "0c05f5c23757fae32376df74bccabb6bb869150b5a3bd71f0f813f29ff6243ba"
+  },
+  {
+    "index": 107,
+    "path": "qasper_baselines/dataset_reader.py",
+    "url": "https://raw.githubusercontent.com/allenai/qasper-led-baseline/afd0fb96bf78ce8cd8157639c6f6a6995e4f9089/qasper_baselines/dataset_reader.py",
+    "revision": "afd0fb96bf78ce8cd8157639c6f6a6995e4f9089",
+    "local": "sources/b88fc91ffb09b639/files/qasper_baselines/dataset_reader.py",
+    "bytes": 18507,
+    "sha256": "f8bd166424a9481b0a0f21372a2b625f19f626bbeb077dff0fe6bd5d73b47902"
+  },
+  {
+    "index": 107,
+    "path": "scripts/evaluator.py",
+    "url": "https://raw.githubusercontent.com/allenai/qasper-led-baseline/afd0fb96bf78ce8cd8157639c6f6a6995e4f9089/scripts/evaluator.py",
+    "revision": "afd0fb96bf78ce8cd8157639c6f6a6995e4f9089",
+    "local": "sources/b88fc91ffb09b639/files/scripts/evaluator.py",
+    "bytes": 6345,
+    "sha256": "781aba7cd8e524bef4f0a1b4bf3504e5b02cb1d8d5bf32a8f0a89dfa83e86bfe"
+  },
+  {
+    "index": 124,
+    "path": "verisci/evaluate/lib/data.py",
+    "url": "https://raw.githubusercontent.com/allenai/scifact/68b98a56d93e0f9da0d2aab4e6c3294699a0f72e/verisci/evaluate/lib/data.py",
+    "revision": "68b98a56d93e0f9da0d2aab4e6c3294699a0f72e",
+    "local": "sources/b1d2d9920172fc50/files/verisci/evaluate/lib/data.py",
+    "bytes": 8911,
+    "sha256": "b413aedc068d980520e9a54870591738d9833ca6e24614742ad070b7edcc3ca5"
+  },
+  {
+    "index": 124,
+    "path": "verisci/evaluate/lib/metrics.py",
+    "url": "https://raw.githubusercontent.com/allenai/scifact/68b98a56d93e0f9da0d2aab4e6c3294699a0f72e/verisci/evaluate/lib/metrics.py",
+    "revision": "68b98a56d93e0f9da0d2aab4e6c3294699a0f72e",
+    "local": "sources/b1d2d9920172fc50/files/verisci/evaluate/lib/metrics.py",
+    "bytes": 5738,
+    "sha256": "ffda621f72cf3f1c557cc88be1e02fdee49b3966f5892f9f08db49f1ed29200b"
+  },
+  {
+    "index": 124,
+    "path": "doc/evaluation.md",
+    "url": "https://raw.githubusercontent.com/allenai/scifact/68b98a56d93e0f9da0d2aab4e6c3294699a0f72e/doc/evaluation.md",
+    "revision": "68b98a56d93e0f9da0d2aab4e6c3294699a0f72e",
+    "local": "sources/b1d2d9920172fc50/files/doc/evaluation.md",
+    "bytes": 5852,
+    "sha256": "daf79d500b0e5df27b29d28d5c14c6876f72cb4dfc2826eb93ca552d80ca0803"
+  },
+  {
+    "index": 136,
+    "path": "evaluator/eval.py",
+    "url": "https://raw.githubusercontent.com/allenai/scifact-evaluator/66feffc5b2cc9e28e3ce3b8c9e824c3c642981eb/evaluator/eval.py",
+    "revision": "66feffc5b2cc9e28e3ce3b8c9e824c3c642981eb",
+    "local": "sources/67777b0eb1817338/files/evaluator/eval.py",
+    "bytes": 8847,
+    "sha256": "2554fed44c3f5592bdeed59ab0d3918a412b452ba1c77da73ba0f62e74c9987f"
+  },
+  {
+    "index": 42,
+    "path": "qrels_test.parquet",
+    "url": "https://huggingface.co/datasets/lightonai/scifact-decontaminated/resolve/0729fa34af49875724d18ace64ce07f3e1dc0587/qrels_test.parquet",
+    "revision": "0729fa34af49875724d18ace64ce07f3e1dc0587",
+    "local": "sources/63517b1ef1931902/files/qrels_test.parquet",
+    "bytes": 3129,
+    "sha256": "780774da47541d8f0d83bd14591874a27dd05deb6e2bf4d7ea2e1a9668d73d84"
+  },
+  {
+    "index": 42,
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/lightonai/scifact-decontaminated/resolve/0729fa34af49875724d18ace64ce07f3e1dc0587/README.md",
+    "revision": "0729fa34af49875724d18ace64ce07f3e1dc0587",
+    "local": "sources/63517b1ef1931902/files/README.md",
+    "bytes": 2687,
+    "sha256": "466b9ff63c60854768d7c740145b6970e56784ca53ad694282de280acdc0eb2f"
+  },
+  {
+    "index": 59,
+    "path": "qasper-dataset/train-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/zhanxxx/nexa-rag-benchmark/resolve/2579a348f24f22c6ec9f81f8f70f95f0545f933e/qasper-dataset/train-00000-of-00001.parquet",
+    "revision": "2579a348f24f22c6ec9f81f8f70f95f0545f933e",
+    "local": "sources/780934556d3ff5fd/files/qasper-dataset/train-00000-of-00001.parquet",
+    "bytes": 1230627,
+    "sha256": "b60e4469d712b138bb8d57043f972b5bd02fbc4bf5faa7b937a7792c8a83ae93"
+  },
+  {
+    "index": 59,
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/zhanxxx/nexa-rag-benchmark/resolve/2579a348f24f22c6ec9f81f8f70f95f0545f933e/README.md",
+    "revision": "2579a348f24f22c6ec9f81f8f70f95f0545f933e",
+    "local": "sources/780934556d3ff5fd/files/README.md",
+    "bytes": 5718,
+    "sha256": "66c17b0b3e9befff0ee2be6f335991b1c3dc5ab2b9e5b54643a882253bc74765"
+  },
+  {
+    "index": 79,
+    "path": "test.tsv",
+    "url": "https://huggingface.co/datasets/kaengreg/rus-scifact-qrels/resolve/5e0c312c9fb7304a2dc91ec7fd648b3ace5c329f/test.tsv",
+    "revision": "5e0c312c9fb7304a2dc91ec7fd648b3ace5c329f",
+    "local": "sources/30be6e756cfcda0f/files/test.tsv",
+    "bytes": 5389,
+    "sha256": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c"
+  },
+  {
+    "index": 79,
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/kaengreg/rus-scifact-qrels/resolve/5e0c312c9fb7304a2dc91ec7fd648b3ace5c329f/README.md",
+    "revision": "5e0c312c9fb7304a2dc91ec7fd648b3ace5c329f",
+    "local": "sources/30be6e756cfcda0f/files/README.md",
+    "bytes": 173,
+    "sha256": "a0f9da229d310aaafce11836f1d2d5991f203c0a3e0688e32afb085e8ff6d36d"
+  },
+  {
+    "index": 99,
+    "path": "qasper.py",
+    "url": "https://huggingface.co/datasets/allenai/qasper/resolve/fdc9d8214fbab5dd782958601db4d678e6934a54/qasper.py",
+    "revision": "fdc9d8214fbab5dd782958601db4d678e6934a54",
+    "local": "sources/3dc62749a8dff15d/files/qasper.py",
+    "bytes": 5950,
+    "sha256": "381d623d4992118738c0a17b9c8219136f493eda381125716ab32b814d0b3c0a"
+  },
+  {
+    "index": 112,
+    "path": "QASPER-qrels/test-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/mteb/QASPER/resolve/898f2eced48890f19b6a88f1b616e9ca6c5dda1c/QASPER-qrels/test-00000-of-00001.parquet",
+    "revision": "898f2eced48890f19b6a88f1b616e9ca6c5dda1c",
+    "local": "sources/0f4442b169ee113f/files/QASPER-qrels/test-00000-of-00001.parquet",
+    "bytes": 73424,
+    "sha256": "75841413b502b60867864cdb0d43f0d90741a333e5cf989c95f978e996a1e397"
+  },
+  {
+    "index": 112,
+    "path": "QASPER-queries/test-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/mteb/QASPER/resolve/898f2eced48890f19b6a88f1b616e9ca6c5dda1c/QASPER-queries/test-00000-of-00001.parquet",
+    "revision": "898f2eced48890f19b6a88f1b616e9ca6c5dda1c",
+    "local": "sources/0f4442b169ee113f/files/QASPER-queries/test-00000-of-00001.parquet",
+    "bytes": 90882,
+    "sha256": "e26b6a4468f14da37e062319f67e5cee9e50ae6ef0e7ffb97eede1b902083fa0"
+  },
+  {
+    "index": 112,
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/mteb/QASPER/resolve/898f2eced48890f19b6a88f1b616e9ca6c5dda1c/README.md",
+    "revision": "898f2eced48890f19b6a88f1b616e9ca6c5dda1c",
+    "local": "sources/0f4442b169ee113f/files/README.md",
+    "bytes": 9825,
+    "sha256": "891fa4d72c550d56117bc1c91a4b615217a609c03c4a11dd33db93cffe670460"
+  },
+  {
+    "index": 129,
+    "path": "scifact.py",
+    "url": "https://huggingface.co/datasets/allenai/scifact/resolve/1fe54665deee011033b2dd98db5752e0d586fdfb/scifact.py",
+    "revision": "1fe54665deee011033b2dd98db5752e0d586fdfb",
+    "local": "sources/140e6a375a364697/files/scifact.py",
+    "bytes": 7915,
+    "sha256": "84aef0b1137f9e26f999073ccef155f5ce9def5ff21f8ae97f06bde3167644bc"
+  },
+  {
+    "index": 130,
+    "path": "scifact.py",
+    "url": "https://huggingface.co/datasets/bigbio/scifact/resolve/f75ae356668b896f3816d41d90622775c85c9d1a/scifact.py",
+    "revision": "f75ae356668b896f3816d41d90622775c85c9d1a",
+    "local": "sources/6d53577ebcbaa0cd/files/scifact.py",
+    "bytes": 17148,
+    "sha256": "2646cd7fe53da170ad3788a663819219c6482b6e35e09c59f8e3941a77f7fa30"
+  },
+  {
+    "index": 138,
+    "path": "data/test-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/orgrctera/beir_scifact/resolve/250c5a6f0db3af7044501a4c45535fdf38a01f86/data/test-00000-of-00001.parquet",
+    "revision": "250c5a6f0db3af7044501a4c45535fdf38a01f86",
+    "local": "sources/5be69f7d3aed3c19/files/data/test-00000-of-00001.parquet",
+    "bytes": 37748,
+    "sha256": "e179180d0663e8b30de20c047319f6cbfafffb2a973b5d85fb11283540956a6f"
+  },
+  {
+    "index": 138,
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/orgrctera/beir_scifact/resolve/250c5a6f0db3af7044501a4c45535fdf38a01f86/README.md",
+    "revision": "250c5a6f0db3af7044501a4c45535fdf38a01f86",
+    "local": "sources/5be69f7d3aed3c19/files/README.md",
+    "bytes": 7361,
+    "sha256": "f037c3713f7e8f8be26508ff3b8612a4d617c5e02c126d66274b9cf326786735"
+  },
+  {
+    "index": 143,
+    "path": "qrels/test-00000-of-00001.parquet",
+    "url": "https://huggingface.co/datasets/Hyukkyu/beir-scifact/resolve/69e57cb60f133d72b5b52b4381deda43c6f02193/qrels/test-00000-of-00001.parquet",
+    "revision": "69e57cb60f133d72b5b52b4381deda43c6f02193",
+    "local": "sources/4e5cc1307db35498/files/qrels/test-00000-of-00001.parquet",
+    "bytes": 3659,
+    "sha256": "cf8368fa7de78b2a41e9058e14db34f40dbb4ec90be9640533b28cab403168fd"
+  },
+  {
+    "index": 143,
+    "path": "provenance.json",
+    "url": "https://huggingface.co/datasets/Hyukkyu/beir-scifact/resolve/69e57cb60f133d72b5b52b4381deda43c6f02193/provenance.json",
+    "revision": "69e57cb60f133d72b5b52b4381deda43c6f02193",
+    "local": "sources/4e5cc1307db35498/files/provenance.json",
+    "bytes": 5175,
+    "sha256": "0ca6d37f50d16f6a5ff1fcdb1a1334053876d7bcbdc1acd2fa80aba35d69e997"
+  },
+  {
+    "index": 143,
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/Hyukkyu/beir-scifact/resolve/69e57cb60f133d72b5b52b4381deda43c6f02193/README.md",
+    "revision": "69e57cb60f133d72b5b52b4381deda43c6f02193",
+    "local": "sources/4e5cc1307db35498/files/README.md",
+    "bytes": 3666,
+    "sha256": "fde43ddf0e1080a9355ea89007f59032d099fc8ae7ccd94ac771f32bd349cb86"
+  },
+  {
+    "index": 146,
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/andreiaalexa/adaptive-rag-scifact-150/resolve/7df9994cb8949c93a0e4b93b0a9761db1f5c29e5/README.md",
+    "revision": "7df9994cb8949c93a0e4b93b0a9761db1f5c29e5",
+    "local": "sources/15b848107745fe71/files/README.md",
+    "bytes": 2529,
+    "sha256": "d2cbb3e973837ee9a0b844b149f3c8d50bedae336049899c4312e628b644e056"
+  },
+  {
+    "index": 139,
+    "path": "README.md",
+    "url": "https://huggingface.co/datasets/MCINext/scifact-fa/resolve/1b1b4630a4016dcb5d5830eb65a2f2ffda0aab8a/README.md",
+    "revision": "1b1b4630a4016dcb5d5830eb65a2f2ffda0aab8a",
+    "local": "sources/86827be174e0bdaa/files/README.md",
+    "sha256": "11cbbeead136017321a53d9c5efe72394994e61f23c8abdf2b883fbb71129493",
+    "bytes": 1799
+  },
+  {
+    "index": 139,
+    "path": "qrels/test.tsv",
+    "url": "https://huggingface.co/datasets/MCINext/scifact-fa/resolve/1b1b4630a4016dcb5d5830eb65a2f2ffda0aab8a/qrels/test.tsv",
+    "revision": "1b1b4630a4016dcb5d5830eb65a2f2ffda0aab8a",
+    "local": "sources/86827be174e0bdaa/files/qrels/test.tsv",
+    "sha256": "0864bb985e0ca2367ba217977e72004d549054b2b06666ed9d4825ac7c21284c",
+    "bytes": 5389
+  },
+  {
+    "index": 89,
+    "path": "attribution/qasper_reader.py",
+    "url": "https://raw.githubusercontent.com/allenai/data-efficient-finetuning/34488435946870267c912c8430e4f738bd8825ce/attribution/qasper_reader.py",
+    "revision": "34488435946870267c912c8430e4f738bd8825ce",
+    "local": "sources/888aa0e09f41c05e/files/attribution/qasper_reader.py",
+    "sha256": "b5a41a4659c122ca43db5a35be145dc043b328d3afa993c2be662f66f4f0866c",
+    "bytes": 8225
+  },
+  {
+    "index": 89,
+    "path": "scripts/evaluate_qasper_evidence_predictions.py",
+    "url": "https://raw.githubusercontent.com/allenai/data-efficient-finetuning/34488435946870267c912c8430e4f738bd8825ce/scripts/evaluate_qasper_evidence_predictions.py",
+    "revision": "34488435946870267c912c8430e4f738bd8825ce",
+    "local": "sources/888aa0e09f41c05e/files/scripts/evaluate_qasper_evidence_predictions.py",
+    "sha256": "48205f24f7a259ee30cbedbbacddf1ad3e1c6fce1d33fc23772515edbf63650d",
+    "bytes": 2751
+  },
+  {
+    "index": 89,
+    "path": "shell_scripts/evaluate_qasper.sh",
+    "url": "https://raw.githubusercontent.com/allenai/data-efficient-finetuning/34488435946870267c912c8430e4f738bd8825ce/shell_scripts/evaluate_qasper.sh",
+    "revision": "34488435946870267c912c8430e4f738bd8825ce",
+    "local": "sources/888aa0e09f41c05e/files/shell_scripts/evaluate_qasper.sh",
+    "sha256": "8f80d1ed37fbde7ee369671d3217c09cf9f296f6a8a469062f6b2bbfd8c1ea90",
+    "bytes": 579
+  }
+]

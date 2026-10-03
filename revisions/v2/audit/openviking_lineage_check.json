@@ -1,0 +1,13 @@
+[
+  {
+    "path": "benchmark/RAG/src/adapters/qasper_adapter.py",
+    "revision": "7e47957da87a29ae9096161af7cc80fb6f074ec4",
+    "url": "https://raw.githubusercontent.com/volcengine/OpenViking/7e47957da87a29ae9096161af7cc80fb6f074ec4/benchmark/RAG/src/adapters/qasper_adapter.py",
+    "sha256": "871133284200ea3a52845042767a1af2964db567fe6e6b81a4bf95b54fe6a6d7",
+    "same_as_vikingrag": false
+  },
+  {
+    "path": "benchmark/RAG/dataset_tools/converters.py",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

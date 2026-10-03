@@ -1,0 +1,266 @@
+[
+  {
+    "index": 42,
+    "canonical": "huggingface.co/lightonai/scifact-decontaminated",
+    "revision": "0729fa34af49875724d18ace64ce07f3e1dc0587",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 49,
+    "canonical": "github.com/rucdatascience/VikingRAG",
+    "revision": "365d2adc00c8f42517aaef1dd037e0d6f9b58263",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 59,
+    "canonical": "huggingface.co/zhanxxx/nexa-rag-benchmark",
+    "revision": "2579a348f24f22c6ec9f81f8f70f95f0545f933e",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 65,
+    "canonical": "github.com/Vincksi/Fact-Verification-with-Evidence-Retrieval",
+    "revision": "a81fab500fdfba499b9af8a6ad3d06ab681ad29f",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 75,
+    "canonical": "github.com/castorini/anserini",
+    "revision": "ea4a234303b029eefae71385c031cd34af167a2b",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 79,
+    "canonical": "huggingface.co/kaengreg/rus-scifact-qrels",
+    "revision": "5e0c312c9fb7304a2dc91ec7fd648b3ace5c329f",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 80,
+    "canonical": "github.com/emretheus/jev-rag-benchmark",
+    "revision": "6b8390ecc9c7f293e02efc143d1da779ce56ac34",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 81,
+    "canonical": "github.com/erendikmenn/jev-rag-benchmark",
+    "revision": "7c7fd8afc30a6fe4e54236e6d65835858cf7393a",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 82,
+    "canonical": "github.com/ogx-ai/ogx",
+    "revision": "1e63db92366b46bdd5e803eed01e5f2a20ca13fb",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 83,
+    "canonical": "github.com/Zelros02/hybrid-rag-benchmark",
+    "revision": "5889824a79b1d941153b248921655d54371b3750",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 90,
+    "canonical": "github.com/tau-nlp/scrolls",
+    "revision": "bfc0da0747976418cd0c4b8837db023ea567ba84",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 91,
+    "canonical": "github.com/JerrryNie/CGSN",
+    "revision": "06e6bed098a12288d63a89165e9e453271ec20df",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 92,
+    "canonical": "github.com/huggingface/lighteval",
+    "revision": "c2af9e5f2fde494539f84c8ea9d09f18ac9e9c14",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 97,
+    "canonical": "github.com/princeton-nlp/CEPE",
+    "revision": "53ca69b757b84872a234a4272e217ed453516616",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 98,
+    "canonical": "github.com/Ojiyumm/LongBench_RWKV",
+    "revision": "365d875c0462bf2891b4076e445c1e55c88e4f60",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 99,
+    "canonical": "huggingface.co/allenai/qasper",
+    "revision": "fdc9d8214fbab5dd782958601db4d678e6934a54",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 105,
+    "canonical": "github.com/Ludovico-Chieffallo/chunklab",
+    "revision": "054fda10653c480008a3600f6a37763fcee494fa",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 110,
+    "canonical": "github.com/rnrn/ai-context",
+    "revision": "42790a3b1357076f02dc0288b4f95d8f907b15c8",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 112,
+    "canonical": "huggingface.co/mteb/QASPER",
+    "revision": "898f2eced48890f19b6a88f1b616e9ca6c5dda1c",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 116,
+    "canonical": "github.com/unseen1980/IDC",
+    "revision": "9899c71bded3f1d154d664732adf6f19da373eb1",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 117,
+    "canonical": "github.com/KRLabsOrg/acl-verbatim",
+    "revision": "ba318bd65f1fa7ba100765bf3e573ccf61a1cc14",
+    "fork": false,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 119,
+    "canonical": "github.com/hyundong98/TrapDoc",
+    "revision": "78328a1a0fd73eaa6b0dd4c8b41b457a47dad6a1",
+    "fork": false,
+    "parent": null,
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "index": 123,
+    "canonical": "github.com/qarkapp/sscc-rag-paper",
+    "revision": "da7e8fb13f297969d344bad90295b15c2917a47d",
+    "fork": false,
+    "parent": null,
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "index": 127,
+    "canonical": "github.com/dwadden/scifact-open",
+    "revision": "6fc2e2f2f97001f2fadb882600beb3e984d77aad",
+    "fork": false,
+    "parent": null,
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "index": 128,
+    "canonical": "github.com/MaryamAsgarinezhad/information-retrieval-sparse-dense-scifact",
+    "revision": "919681b95f96c71608a7218ab9bfbf203d7d4eb9",
+    "fork": false,
+    "parent": null,
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "index": 129,
+    "canonical": "huggingface.co/allenai/scifact",
+    "revision": "1fe54665deee011033b2dd98db5752e0d586fdfb",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 130,
+    "canonical": "huggingface.co/bigbio/scifact",
+    "revision": "f75ae356668b896f3816d41d90622775c85c9d1a",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 138,
+    "canonical": "huggingface.co/orgrctera/beir_scifact",
+    "revision": "250c5a6f0db3af7044501a4c45535fdf38a01f86",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 143,
+    "canonical": "huggingface.co/Hyukkyu/beir-scifact",
+    "revision": "69e57cb60f133d72b5b52b4381deda43c6f02193",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 146,
+    "canonical": "huggingface.co/andreiaalexa/adaptive-rag-scifact-150",
+    "revision": "7df9994cb8949c93a0e4b93b0a9761db1f5c29e5",
+    "fork": null,
+    "parent": null,
+    "error": null
+  },
+  {
+    "index": 107,
+    "canonical": "github.com/allenai/qasper-led-baseline",
+    "revision": "afd0fb96bf78ce8cd8157639c6f6a6995e4f9089",
+    "fork": false,
+    "parent": null,
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "index": 124,
+    "canonical": "github.com/allenai/scifact",
+    "revision": null,
+    "fork": null,
+    "parent": null,
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "index": 136,
+    "canonical": "github.com/allenai/scifact-evaluator",
+    "revision": null,
+    "fork": null,
+    "parent": null,
+    "error": "HTTP Error 403: rate limit exceeded"
+  }
+]

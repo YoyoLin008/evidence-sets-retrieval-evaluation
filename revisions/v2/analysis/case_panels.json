@@ -1,0 +1,157 @@
+[
+  {
+    "dataset": "qasper",
+    "id": "14fdc8087f2a62baea9d50c4aa3a3f8310b38d17",
+    "cluster": "1909.12208",
+    "category": "one_not_union",
+    "category_n": 156,
+    "query": "What supports the claim that enhancement in training is advisable as long as enhancement in test is at least as strong as in training?",
+    "gold": [
+      [
+        17,
+        22,
+        23,
+        34
+      ],
+      [
+        23
+      ]
+    ],
+    "retrieved": [
+      34,
+      1,
+      2,
+      23,
+      3
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 1,
+      "union_size": 4,
+      "min_set_size": 1,
+      "max_set_size": 4,
+      "union_to_min_size": 4.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category",
+    "scores": {
+      "hit": 1,
+      "complete": 1,
+      "union_complete": 0,
+      "union_recall": 0.5,
+      "max_recall": 1.0,
+      "max_f1": 0.4444444444444444,
+      "union_f1": 0.4444444444444444,
+      "hit_without_complete": 0,
+      "complete_without_union": 1
+    },
+    "unit_index_base": 0,
+    "source_unit_ids": {
+      "1": "1909.12208:paragraph:1",
+      "2": "1909.12208:paragraph:2",
+      "3": "1909.12208:paragraph:3",
+      "17": "1909.12208:paragraph:17",
+      "22": "1909.12208:paragraph:22",
+      "23": "1909.12208:paragraph:23",
+      "34": "1909.12208:paragraph:34"
+    },
+    "text": {
+      "1": "However, there has been a long debate whether it is advisable to apply speech enhancement on data used for ASR training, because it is generally agreed upon that the recognizer should be exposed to as much acoustic variability as possible during training, as long as this variability matches the test scenario BIBREF1, BIBREF2, BIBREF3. Multi-channel speech enhancement, such as acoustic BF or source separation, would not only reduce the acoustic variability, it would also result in a reduction of the amount of training data by a factor of $M$, where $M$ is the number of microphones BIBREF4. Previous studies have shown the benefit of training an ASR on matching enhanced speech BIBREF5, BIBREF6 or on jointly training the enhancement and the acoustic model BIBREF7. Alternatively, the training data is often artificially increased by adding even more degraded speech to it. For instance, Ko et al. BIBREF8 found that adding simulated reverberated speech improves accuracy significantly on several large vocabulary tasks. Similarly, Manohar et al. BIBREF9 improved the WER of the baseline CHiME-5 system by relative 5.5% by augmenting the training data with approx. 160hrs of simulated reverberated speech. However, not only can the generation of new training data be costly and time consuming, the training process itself is also prolonged if the amount of data is increased.",
+      "2": "In this contribution we advocate for the opposite approach. Although we still believe in the argument that ASR training should see sufficient variability, instead of adding degraded speech to the training data, we clean up the training data. We make, however, sure that the remaining acoustic variability is at least as large as on the test data. By applying a beamformer to the multi-channel input, we even reduce the amount of training data significantly. Consequently, this leads to cheaper and faster acoustic model training.",
+      "3": "We perform experiments using data from the CHiME-5 challenge which focuses on distant multi-microphone conversational ASR in real home environments BIBREF10. The CHiME-5 data is heavily degraded by reverberation and overlapped speech. As much as 23% of the time more than one speaker is active at the same time BIBREF11. The challenge's baseline system poor performance (about 80% WER) is an indication that ASR training did not work well. Recently, GSS enhancement on the test data was shown to significantly improve the performance of an acoustic model, which had been trained with a large amount of unprocessed and simulated noisy data BIBREF12. GSS is a spatial mixture model based blind source separation approach which exploits the annotation given in the CHiME-5 database for initialization and, in this way, avoids the frequency permutation problem BIBREF13.",
+      "17": "Experiments were performed using the CHiME-5 data. Distant microphone recordings (U data) during training and/or testing were processed using the speech enhancement methods depicted in Table TABREF6. Speech was either left unprocessed, enhanced using a weighted delay-and-sum beamformer (BFIt) BIBREF21 with or without dereverberation (WPE), or processed using the guided source separation (GSS) approach described in Section SECREF3. In Table TABREF6, the strength of the enhancement increases from top to bottom, i.e., GSS6 signals are much cleaner than the unprocessed ones.",
+      "22": "An extensive set of experiments was performed to measure the WER impact of enhancement on the CHiME-5 training and test data. We test enhancement methods of varying strengths, as described in Section SECREF5, and the results are depicted in Table TABREF12. In all cases, the (unprocessed) worn dataset was also included for AM training since it was found to improve performance (supporting therefore the argument that data variability helps ASR robustness).",
+      "23": "In Table TABREF12, in each row the recognition accuracy improves monotonically from left to right, i.e., as the enhancement strategy on the test data becomes stronger. Reading the table in each column from top to bottom, one observes that accuracy improves with increasing power of the enhancement on the training data, however, only as long as the enhancement on the training data is not stronger than on the test data. Compared with unprocessed training and test data (None-None), GSS6-GSS6 yields roughly 35% (24%) relative WER reduction on the DEV (EVAL) set, and 12% (11%) relative WER reduction when compared with the None-GSS6 scenario. Comparing the amount of training data used to train the acoustic models, we observe that it decreases drastically from no enhancement to the GSS6 enhancement.",
+      "34": "In this paper we performed an extensive experimental evaluation on the acoustically very challenging CHiME-5 dinner party data showing that: (i) cleaning up training data can lead to substantial word error rate reduction, and (ii) enhancement in training is advisable as long as enhancement in test is at least as strong as in training. This approach stands in contrast and delivers larger accuracy gains at a fraction of training data than the common data simulation strategy found in the literature. Using a CNN-TDNNF acoustic model topology along with GSS enhancement refined with time annotations from ASR, discriminative training and RNN LM rescoring, we achieved a new single-system state-of-the-art result on CHiME-5, which is 41.6% (43.2%) on the development (evaluation) set, which is a 8% relative improvement of the word error rate over a comparable system reported so far."
+    },
+    "costs": {
+      "depth_complete": 4,
+      "depth_penalty": 19,
+      "depth_union": 23,
+      "tokens_complete": 584,
+      "tokens_penalty": 2103,
+      "tokens_union": 2687
+    },
+    "status": "exploratory_presentation_of_preselected_case"
+  },
+  {
+    "dataset": "scifact",
+    "id": "873:1180972",
+    "cluster": "873:1180972",
+    "category": "one_not_union",
+    "category_n": 58,
+    "query": "Obesity is determined solely by environmental factors.",
+    "gold": [
+      [
+        3,
+        4
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "retrieved": [
+      7,
+      0,
+      1
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 3,
+      "n_distinct_sets": 3,
+      "n_minimal_sets": 3,
+      "union_size": 4,
+      "min_set_size": 1,
+      "max_set_size": 2,
+      "union_to_min_size": 4.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category",
+    "scores": {
+      "hit": 1,
+      "complete": 1,
+      "union_complete": 0,
+      "union_recall": 0.25,
+      "max_recall": 1.0,
+      "max_f1": 0.5,
+      "union_f1": 0.2857142857142857,
+      "hit_without_complete": 0,
+      "complete_without_union": 1
+    },
+    "unit_index_base": 0,
+    "source_unit_ids": {
+      "0": "1180972:sentence:0",
+      "1": "1180972:sentence:1",
+      "3": "1180972:sentence:3",
+      "4": "1180972:sentence:4",
+      "6": "1180972:sentence:6",
+      "7": "1180972:sentence:7"
+    },
+    "text": {
+      "0": "An adoption study of genetic effects on obesity in adulthood was carried out in which adoptees separated from their natural parents very early in life were compared with their biological full and half siblings reared by their natural parents.",
+      "1": "The adoptees represented four groups who by sampling from a larger population were categorised as either thin, medium weight, overweight, or obese.",
+      "3": "In full siblings body mass index (kg/m2) significantly increased with weight of the adoptees.",
+      "4": "Body mass index of the half siblings showed a steady but weaker increase across the four weight groups of adoptees.",
+      "6": "In contrast with the findings in half siblings and (previously) the natural parents there was a striking, significant increase in body mass index between full siblings of overweight and obese adoptees.",
+      "7": "The degree of fatness in adults living in the same environment appears to be influenced by genetic factors independent of sex, which may include polygenic as well as major gene effects on obesity."
+    },
+    "costs": {
+      "depth_complete": 1,
+      "depth_penalty": 7,
+      "depth_union": 8,
+      "tokens_complete": 33,
+      "tokens_penalty": 171,
+      "tokens_union": 204
+    },
+    "status": "exploratory_presentation_of_preselected_case"
+  }
+]

@@ -1,0 +1,47 @@
+{
+  "date": "2026-10-03",
+  "references": 26,
+  "claim_scope_reviewed": 26,
+  "new_interpretation_changes": 0,
+  "refreshed_keys": [
+    "qasper",
+    "scifact",
+    "fever",
+    "feverous",
+    "dmerit",
+    "lab",
+    "structure",
+    "erag",
+    "ev2r",
+    "sufficient",
+    "conjunctive",
+    "relational",
+    "bm25",
+    "saracevic",
+    "zobel1998",
+    "buckley2004",
+    "zhai2003",
+    "clarke2008",
+    "agrawal2009",
+    "voorhees2003",
+    "lin2006",
+    "trecrag2025",
+    "qwen",
+    "alt2026",
+    "li2025"
+  ],
+  "refresh_limit": "Voorhees 2002 Crossref returned HTTP 429; retained same-date authoritative record and original methodological reading used.",
+  "metadata_comparison": "Compared fresh bibliographic fields or identical primary-source bytes against final verified metadata; no changes.",
+  "known_resolution": "BM25 original publisher volume/pages take precedence over erroneous Crossref metadata.",
+  "reading_limits": [
+    "Zobel: original abstract/introduction only",
+    "Saracevic: publisher abstract only"
+  ],
+  "journal_style": {
+    "url": "https://irrj.org/libraryFiles/downloadPublic/157",
+    "archive_sha256": "bf1bf6515722e37a8290efbb727d5e8522689e88c7ab4ac014b05d66851b2971",
+    "style_sha256": "5952d152ce89b9446587f8e4182da420f8228a8a85248a692b83d52962fd2910",
+    "separate_style_unmodified": true,
+    "correction": "Restored exact publisher bytes; prior embedded-style output stripped trailing whitespace and changed edge blank lines only."
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "event": "finish",
+  "utc": "2026-10-03T01:23:22.401492+00:00",
+  "new_records": 0,
+  "records": 5420,
+  "expected_records": 5420,
+  "complete": true,
+  "seconds": 3.8186043750029057
+}

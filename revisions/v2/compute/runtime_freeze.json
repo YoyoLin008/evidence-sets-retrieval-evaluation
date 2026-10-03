@@ -1,0 +1,23 @@
+{
+  "utc": "2026-10-03T02:29:26.395916+00:00",
+  "config": {
+    "model": "Qwen/Qwen3-Embedding-0.6B",
+    "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "dtype": "float32",
+    "device": "cpu",
+    "batch_size": 1,
+    "threads": 2,
+    "interop_threads": 1,
+    "max_length": 8192,
+    "pooling": "last_nonpadding_token",
+    "dimensions": 1024,
+    "normalize": true,
+    "instruction": "Given a scientific question or claim, retrieve passages that provide evidence relevant to it",
+    "seed": 20261002,
+    "attention": "sdpa",
+    "gate_seconds": 7200,
+    "source_sha256": "ef87c49211cb0da51beba0c2f0c2ea28352c3e1024bbd123c022b69aefb99ac4"
+  },
+  "platform": "macOS-15.2-arm64-arm-64bit",
+  "processor": "arm"
+}

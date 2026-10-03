@@ -1,0 +1,28 @@
+{
+  "status": "exploratory_post_main",
+  "downstream_n": 30,
+  "counts": {
+    "QASPER": {
+      "preserved": 1,
+      "flat_only": 2,
+      "both_exposed": 2,
+      "other_not_applicable": 9,
+      "undetermined": 1
+    },
+    "SciFact": {
+      "preserved": 2,
+      "flat_only": 0,
+      "both_exposed": 1,
+      "other_not_applicable": 12,
+      "undetermined": 0
+    }
+  },
+  "reference_families": 2,
+  "eligible_families": {
+    "QASPER": 25,
+    "SciFact": 33
+  },
+  "inaccessible_eligibility_unknown": 3,
+  "search_result_slots": 320,
+  "deduplicated_candidate_projects": 148
+}

@@ -1,0 +1,24 @@
+{
+  "qasper": {
+    "items": 875,
+    "unique_clusters": 367,
+    "largest_cluster": 7,
+    "overlapping_distinct_refs": 255,
+    "duplicate_unit_items": 89,
+    "distinct_evidence_multiset_items": 472,
+    "query_truncated_items": 0,
+    "any_unit_truncated_items": 556,
+    "gold_truncated_items": 125
+  },
+  "scifact": {
+    "items": 209,
+    "unique_clusters": 164,
+    "largest_cluster": 8,
+    "overlapping_distinct_refs": 0,
+    "duplicate_unit_items": 0,
+    "distinct_evidence_multiset_items": 85,
+    "query_truncated_items": 0,
+    "any_unit_truncated_items": 1,
+    "gold_truncated_items": 0
+  }
+}

@@ -1,0 +1,988 @@
+[
+  {
+    "index": 21,
+    "canonical": "github.com/odvcencio/eos",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/odvcencio/eos",
+    "benchmark": "SciFact",
+    "queries": [
+      2,
+      10
+    ],
+    "screening_source": "sources/87a9e317b06c4693/README.source",
+    "inaccessible": false,
+    "selection_hash": "87a9e317b06c46934dd759e3a98663c35bb29890939b87da20eb424b756ed4ea",
+    "selection_rank": 17,
+    "selected": false
+  },
+  {
+    "index": 39,
+    "canonical": "huggingface.co/sionic-ai/NanoBEIR-en",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/sionic-ai/NanoBEIR-en",
+    "benchmark": "SciFact",
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/938c868525dde4d1/README.source",
+    "inaccessible": false,
+    "selection_hash": "938c868525dde4d12bccc5a4186e219732f8201778cc783274e5097af29a0520",
+    "selection_rank": 18,
+    "selected": false
+  },
+  {
+    "index": 42,
+    "canonical": "huggingface.co/lightonai/scifact-decontaminated",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/lightonai/scifact-decontaminated",
+    "benchmark": "SciFact",
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/63517b1ef1931902/README.source",
+    "inaccessible": false,
+    "selection_hash": "63517b1ef193190238f436f01a469943ee8261f9825ee79435415c6e40a8695c",
+    "selection_rank": 12,
+    "selected": true
+  },
+  {
+    "index": 46,
+    "canonical": "github.com/IBM/RagWorkbench",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/IBM/RagWorkbench",
+    "benchmark": "QASPER",
+    "queries": [
+      6,
+      22
+    ],
+    "screening_source": "sources/af6a6e8e2402a015/README.source",
+    "inaccessible": false,
+    "selection_hash": "af6a6e8e2402a0156dab905113283160029cc38491414a525cb51fed934f2a91",
+    "selection_rank": 20,
+    "selected": false
+  },
+  {
+    "index": 47,
+    "canonical": "github.com/gittycat/ragbench",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/gittycat/ragbench",
+    "benchmark": "QASPER",
+    "queries": [
+      6,
+      22
+    ],
+    "screening_source": "sources/ffad93e8a301529e/README.source",
+    "inaccessible": false,
+    "selection_hash": "ffad93e8a301529eb49d2b6703a83b8e0ecfaa455d5f61f23c90f0d9e93dfb92",
+    "selection_rank": 26,
+    "selected": false
+  },
+  {
+    "index": 49,
+    "canonical": "github.com/rucdatascience/VikingRAG",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/rucdatascience/VikingRAG",
+    "benchmark": "QASPER",
+    "queries": [
+      6
+    ],
+    "screening_source": "sources/8425b53b045f0835/README.source",
+    "inaccessible": false,
+    "selection_hash": "8425b53b045f0835728c0f3ab0a5412c30a90b9684001114577036187602c5b3",
+    "selection_rank": 15,
+    "selected": true
+  },
+  {
+    "index": 52,
+    "canonical": "github.com/volcengine/OpenViking",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/volcengine/OpenViking",
+    "benchmark": "QASPER",
+    "queries": [
+      6,
+      22
+    ],
+    "screening_source": "sources/b44f52925239d1a7/README.source",
+    "inaccessible": false,
+    "selection_hash": "b44f52925239d1a71de3a93a379c2fdf1b45f53cfaf250d1e44c4da6eb871c82",
+    "selection_rank": 22,
+    "selected": false
+  },
+  {
+    "index": 59,
+    "canonical": "huggingface.co/zhanxxx/nexa-rag-benchmark",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/zhanxxx/nexa-rag-benchmark",
+    "benchmark": "QASPER",
+    "queries": [
+      7
+    ],
+    "screening_source": "sources/780934556d3ff5fd/README.source",
+    "inaccessible": false,
+    "selection_hash": "780934556d3ff5fda68f02517629d6e768545cd6bdc47d13bdcbd17c630d2ef5",
+    "selection_rank": 14,
+    "selected": true
+  },
+  {
+    "index": 63,
+    "canonical": "github.com/North-Shore-AI/datasets_ex",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/North-Shore-AI/datasets_ex",
+    "benchmark": "SciFact",
+    "queries": [
+      8,
+      24
+    ],
+    "screening_source": "sources/ae89f96b1d9806f7/README.source",
+    "inaccessible": false,
+    "selection_hash": "ae89f96b1d9806f7374674ee98d87f9914ae4ec2605cf2b93b93c06e9eab9485",
+    "selection_rank": 21,
+    "selected": false
+  },
+  {
+    "index": 64,
+    "canonical": "github.com/jonathanonglq/comparing-basic-search-retrieval",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/jonathanonglq/comparing-basic-search-retrieval",
+    "benchmark": "SciFact",
+    "queries": [
+      8,
+      28
+    ],
+    "screening_source": "sources/e00e8755c2bd14d4/README.source",
+    "inaccessible": false,
+    "selection_hash": "e00e8755c2bd14d47b3234016cc7c482438bf611f499a0e54cdd195cf8fa491f",
+    "selection_rank": 27,
+    "selected": false
+  },
+  {
+    "index": 65,
+    "canonical": "github.com/Vincksi/Fact-Verification-with-Evidence-Retrieval",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Vincksi/Fact-Verification-with-Evidence-Retrieval",
+    "benchmark": "SciFact",
+    "queries": [
+      8
+    ],
+    "screening_source": "sources/6d5c4d39e3bef24d/README.source",
+    "inaccessible": false,
+    "selection_hash": "6d5c4d39e3bef24d5f33e9d8bb51865c0907826631db274a84ea3462c461dab5",
+    "selection_rank": 15,
+    "selected": true
+  },
+  {
+    "index": 67,
+    "canonical": "github.com/SYLee1996/Structural_Chunking",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/SYLee1996/Structural_Chunking",
+    "benchmark": "SciFact",
+    "queries": [
+      8
+    ],
+    "screening_source": "sources/eef6dfab4a919880/README.source",
+    "inaccessible": false,
+    "selection_hash": "eef6dfab4a9198800e7ff8fa867df2c9fb97d2694459e8c111d580bf4dd4c154",
+    "selection_rank": 31,
+    "selected": false
+  },
+  {
+    "index": 72,
+    "canonical": "github.com/ydemers/scifact-evidence-retrieval",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/ydemers/scifact-evidence-retrieval",
+    "benchmark": "SciFact",
+    "queries": [
+      10,
+      26
+    ],
+    "screening_source": "sources/b564841ddb3e1ffb/README.source",
+    "inaccessible": false,
+    "selection_hash": "b564841ddb3e1ffb9a5c79dfcaba14aaca5796d9a981a1f504afd391da9795a3",
+    "selection_rank": 23,
+    "selected": false
+  },
+  {
+    "index": 75,
+    "canonical": "github.com/castorini/anserini",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/castorini/anserini",
+    "benchmark": "SciFact",
+    "queries": [
+      12,
+      28
+    ],
+    "screening_source": "sources/61a2b98767423900/README.source",
+    "inaccessible": false,
+    "selection_hash": "61a2b98767423900fc4f2d5cab7581e1aa923ce73a947d6beca8aad8f6f15d9b",
+    "selection_rank": 11,
+    "selected": true
+  },
+  {
+    "index": 79,
+    "canonical": "huggingface.co/kaengreg/rus-scifact-qrels",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/kaengreg/rus-scifact-qrels",
+    "benchmark": "SciFact",
+    "queries": [
+      13
+    ],
+    "screening_source": "sources/30be6e756cfcda0f/README.source",
+    "inaccessible": false,
+    "selection_hash": "30be6e756cfcda0f3a2ee709ee144566b6d769ebf58ba287d407723fb9ef19ce",
+    "selection_rank": 6,
+    "selected": true
+  },
+  {
+    "index": 80,
+    "canonical": "github.com/emretheus/jev-rag-benchmark",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/emretheus/jev-rag-benchmark",
+    "benchmark": "SciFact",
+    "queries": [
+      14,
+      30
+    ],
+    "screening_source": "sources/43438e463871bc02/README.source",
+    "inaccessible": false,
+    "selection_hash": "43438e463871bc02fe31299a53bd36e70ff1c6ddd37136482f2fcaa3b82200a8",
+    "selection_rank": 8,
+    "selected": true
+  },
+  {
+    "index": 81,
+    "canonical": "github.com/erendikmenn/jev-rag-benchmark",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/erendikmenn/jev-rag-benchmark",
+    "benchmark": "SciFact",
+    "queries": [
+      14,
+      30
+    ],
+    "screening_source": "sources/367480a163d6b754/README.source",
+    "inaccessible": false,
+    "selection_hash": "367480a163d6b7546e09e38ee9a2de8b057b32e54d03316bf49d8ecb19bd525e",
+    "selection_rank": 7,
+    "selected": true
+  },
+  {
+    "index": 82,
+    "canonical": "github.com/ogx-ai/ogx",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/ogx-ai/ogx",
+    "benchmark": "SciFact",
+    "queries": [
+      14
+    ],
+    "screening_source": "sources/1f8e28536804374d/README.source",
+    "inaccessible": false,
+    "selection_hash": "1f8e28536804374d7a951e8a7acf7957e55350a8476dfea16d24d324cdf3f89b",
+    "selection_rank": 4,
+    "selected": true
+  },
+  {
+    "index": 83,
+    "canonical": "github.com/Zelros02/hybrid-rag-benchmark",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Zelros02/hybrid-rag-benchmark",
+    "benchmark": "SciFact",
+    "queries": [
+      14,
+      30
+    ],
+    "screening_source": "sources/032fcca2bce97242/README.source",
+    "inaccessible": false,
+    "selection_hash": "032fcca2bce972428c4c9d1e2c18f1708eee05a27e644821f8aabda717484ab2",
+    "selection_rank": 1,
+    "selected": true
+  },
+  {
+    "index": 85,
+    "canonical": "github.com/NomaDamas/AutoRAG-Research",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/NomaDamas/AutoRAG-Research",
+    "benchmark": "SciFact",
+    "queries": [
+      14
+    ],
+    "screening_source": "sources/b3359342bff7e05e/README.source",
+    "inaccessible": false,
+    "selection_hash": "b3359342bff7e05e1667b317ce28892ff97cddfd3bce33a3372fff1150cab919",
+    "selection_rank": 22,
+    "selected": false
+  },
+  {
+    "index": 89,
+    "canonical": "github.com/allenai/data-efficient-finetuning",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/allenai/data-efficient-finetuning",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      18
+    ],
+    "screening_source": "sources/888aa0e09f41c05e/README.source",
+    "inaccessible": false,
+    "selection_hash": "888aa0e09f41c05e16181c9102b1e010baa32660d97853730063da391c37ccf1",
+    "selection_rank": 16,
+    "selected": false
+  },
+  {
+    "index": 90,
+    "canonical": "github.com/tau-nlp/scrolls",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/tau-nlp/scrolls",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/22761e56870fc392/README.source",
+    "inaccessible": false,
+    "selection_hash": "22761e56870fc392958212b6dcb04ca63bdafa67e4c62db06b6fa760bf0160a7",
+    "selection_rank": 5,
+    "selected": true
+  },
+  {
+    "index": 91,
+    "canonical": "github.com/JerrryNie/CGSN",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/JerrryNie/CGSN",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      20
+    ],
+    "screening_source": "sources/0e503055eebd598c/README.source",
+    "inaccessible": false,
+    "selection_hash": "0e503055eebd598ce3aa7a7ead4d1be184594cb49915fece9b1fabe4034b0f26",
+    "selection_rank": 2,
+    "selected": true
+  },
+  {
+    "index": 92,
+    "canonical": "github.com/huggingface/lighteval",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/huggingface/lighteval",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      18,
+      20
+    ],
+    "screening_source": "sources/46ce73907e4f3c90/README.source",
+    "inaccessible": false,
+    "selection_hash": "46ce73907e4f3c9092ab38dfe4e1dac2d266739586aa0aed2b356563f90412bb",
+    "selection_rank": 8,
+    "selected": true
+  },
+  {
+    "index": 93,
+    "canonical": "github.com/BCJonkhout/msc-thesis-code",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/BCJonkhout/msc-thesis-code",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/b44ae14ecc2a5c7d/README.source",
+    "inaccessible": false,
+    "selection_hash": "b44ae14ecc2a5c7d016534ba49a51e56dae1fce09ab16698030f3dde2c4870ad",
+    "selection_rank": 21,
+    "selected": false
+  },
+  {
+    "index": 94,
+    "canonical": "github.com/open-compass/opencompass",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/open-compass/opencompass",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/e970c734614afe42/README.source",
+    "inaccessible": false,
+    "selection_hash": "e970c734614afe4254cca50346c232fc0dff91469537ba95b64a488735032f5e",
+    "selection_rank": 24,
+    "selected": false
+  },
+  {
+    "index": 95,
+    "canonical": "github.com/jerrrynie/unsupervised-long-document-qa",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/jerrrynie/unsupervised-long-document-qa",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      20
+    ],
+    "screening_source": "sources/f7b546ed49226a59/README.source",
+    "inaccessible": false,
+    "selection_hash": "f7b546ed49226a597e60183dbd61b3e0ab5f202a6ae8006bba4edff53e43c41f",
+    "selection_rank": 25,
+    "selected": false
+  },
+  {
+    "index": 96,
+    "canonical": "github.com/Ahren09/SARA",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Ahren09/SARA",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      20,
+      22
+    ],
+    "screening_source": "sources/ab7ed493588d6d84/README.source",
+    "inaccessible": false,
+    "selection_hash": "ab7ed493588d6d845273a027189fc18f90d0a7bc6ad3648b98b0a93bbe911496",
+    "selection_rank": 19,
+    "selected": false
+  },
+  {
+    "index": 97,
+    "canonical": "github.com/princeton-nlp/CEPE",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/princeton-nlp/CEPE",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/032561fa9c274556/README.source",
+    "inaccessible": false,
+    "selection_hash": "032561fa9c2745561484852ea4351269284a42b30c6676274fe9f49a027263ce",
+    "selection_rank": 1,
+    "selected": true
+  },
+  {
+    "index": 98,
+    "canonical": "github.com/Ojiyumm/LongBench_RWKV",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Ojiyumm/LongBench_RWKV",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/48aa0102cc1c5b10/README.source",
+    "inaccessible": false,
+    "selection_hash": "48aa0102cc1c5b10d063a10bf92c74c4d2d5e138b5d9f95bd2e63105d90cfe81",
+    "selection_rank": 9,
+    "selected": true
+  },
+  {
+    "index": 99,
+    "canonical": "huggingface.co/allenai/qasper",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/allenai/qasper",
+    "benchmark": "QASPER",
+    "queries": [
+      17,
+      19,
+      21,
+      23
+    ],
+    "screening_source": "sources/3dc62749a8dff15d/README.source",
+    "inaccessible": false,
+    "selection_hash": "3dc62749a8dff15df254d814215143e54835a215a5c6e000bc57bf287f9dc76f",
+    "selection_rank": 7,
+    "selected": true
+  },
+  {
+    "index": 102,
+    "canonical": "huggingface.co/DinoStackAI/qasper-rag",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/DinoStackAI/qasper-rag",
+    "benchmark": "QASPER",
+    "queries": [
+      17,
+      19,
+      21,
+      23
+    ],
+    "screening_source": "sources/a77b0a6d69e7c927/README.source",
+    "inaccessible": false,
+    "selection_hash": "a77b0a6d69e7c927d174d14813aba6e8a8ca3cae42cfb5cb74f89b16cdc6e719",
+    "selection_rank": 18,
+    "selected": false
+  },
+  {
+    "index": 105,
+    "canonical": "github.com/Ludovico-Chieffallo/chunklab",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Ludovico-Chieffallo/chunklab",
+    "benchmark": "QASPER",
+    "queries": [
+      18,
+      20,
+      22
+    ],
+    "screening_source": "sources/7632708e246c0ece/README.source",
+    "inaccessible": false,
+    "selection_hash": "7632708e246c0ececd1f94a2be3fe2c0ce5988c4b5d3146f4a07377d6b70962b",
+    "selection_rank": 13,
+    "selected": true
+  },
+  {
+    "index": 106,
+    "canonical": "github.com/UKPLab/emnlp2024-attribute-or-abstain",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/UKPLab/emnlp2024-attribute-or-abstain",
+    "benchmark": "QASPER",
+    "queries": [
+      18
+    ],
+    "screening_source": "sources/c83b00d115792774/README.source",
+    "inaccessible": false,
+    "selection_hash": "c83b00d1157927746ec71f1c725d5f23deb4da05164052963471f22b0655eeb1",
+    "selection_rank": 23,
+    "selected": false
+  },
+  {
+    "index": 110,
+    "canonical": "github.com/rnrn/ai-context",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/rnrn/ai-context",
+    "benchmark": "QASPER",
+    "queries": [
+      18
+    ],
+    "screening_source": "sources/4a1a8b1d0831e9e5/README.source",
+    "inaccessible": false,
+    "selection_hash": "4a1a8b1d0831e9e5e77f216355699cd048646f2dfd945a8a66b98bb3f6220683",
+    "selection_rank": 10,
+    "selected": true
+  },
+  {
+    "index": 112,
+    "canonical": "huggingface.co/mteb/QASPER",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/mteb/QASPER",
+    "benchmark": "QASPER",
+    "queries": [
+      19,
+      23
+    ],
+    "screening_source": "sources/0f4442b169ee113f/README.source",
+    "inaccessible": false,
+    "selection_hash": "0f4442b169ee113f601dfd0c8da676bae5d5e627e3c04b3cee7a31563ca6cc42",
+    "selection_rank": 3,
+    "selected": true
+  },
+  {
+    "index": 116,
+    "canonical": "github.com/unseen1980/IDC",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/unseen1980/IDC",
+    "benchmark": "QASPER",
+    "queries": [
+      20
+    ],
+    "screening_source": "sources/245a949b4c8d9ff0/README.source",
+    "inaccessible": false,
+    "selection_hash": "245a949b4c8d9ff01b516045071a8c37f043b11ef2ec993902d89a78464dd7d6",
+    "selection_rank": 6,
+    "selected": true
+  },
+  {
+    "index": 117,
+    "canonical": "github.com/KRLabsOrg/acl-verbatim",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/KRLabsOrg/acl-verbatim",
+    "benchmark": "QASPER",
+    "queries": [
+      20,
+      22
+    ],
+    "screening_source": "sources/19cc11d60d646489/README.source",
+    "inaccessible": false,
+    "selection_hash": "19cc11d60d64648912e2484cf18cd269f1f9436f702103b7e0f69180b676472e",
+    "selection_rank": 4,
+    "selected": true
+  },
+  {
+    "index": 119,
+    "canonical": "github.com/hyundong98/TrapDoc",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/hyundong98/TrapDoc",
+    "benchmark": "QASPER",
+    "queries": [
+      20
+    ],
+    "screening_source": "sources/65b7b8f263c2afdb/README.source",
+    "inaccessible": false,
+    "selection_hash": "65b7b8f263c2afdb18fa3113fb8e5c4d78d12ab545fd3d5daf372e63df0ce59c",
+    "selection_rank": 12,
+    "selected": true
+  },
+  {
+    "index": 121,
+    "canonical": "github.com/VectorSpaceLab/MemoRAG",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/VectorSpaceLab/MemoRAG",
+    "benchmark": "QASPER",
+    "queries": [
+      22
+    ],
+    "screening_source": "sources/9dae76c5d24bc3e2/README.source",
+    "inaccessible": false,
+    "selection_hash": "9dae76c5d24bc3e2af55522e18c91ba475e0f945b9b7dcb10a2acd4724d0df35",
+    "selection_rank": 17,
+    "selected": false
+  },
+  {
+    "index": 123,
+    "canonical": "github.com/qarkapp/sscc-rag-paper",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/qarkapp/sscc-rag-paper",
+    "benchmark": "QASPER",
+    "queries": [
+      22
+    ],
+    "screening_source": "sources/635055cc7f32e666/README.source",
+    "inaccessible": false,
+    "selection_hash": "635055cc7f32e666a6358fb106a6cc60b672fb7524b09476ce6321b2469b18a0",
+    "selection_rank": 11,
+    "selected": true
+  },
+  {
+    "index": 125,
+    "canonical": "github.com/metareflection/claimcheck",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/metareflection/claimcheck",
+    "benchmark": "SciFact",
+    "queries": [
+      24,
+      30
+    ],
+    "screening_source": "sources/ecd1fccec604a1fa/README.source",
+    "inaccessible": false,
+    "selection_hash": "ecd1fccec604a1fa6ca9b185679a7e5a86754b254aa4c02e19116c5be4e81d6f",
+    "selection_rank": 29,
+    "selected": false
+  },
+  {
+    "index": 126,
+    "canonical": "github.com/beir-cellar/beir",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/beir-cellar/beir",
+    "benchmark": "SciFact",
+    "queries": [
+      24,
+      28
+    ],
+    "screening_source": "sources/94d3adc1b921a6c2/README.source",
+    "inaccessible": false,
+    "selection_hash": "94d3adc1b921a6c28511e4eb9a87fe0e3f38a66867c92524c26abe3c6d9b01ee",
+    "selection_rank": 19,
+    "selected": false
+  },
+  {
+    "index": 127,
+    "canonical": "github.com/dwadden/scifact-open",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/dwadden/scifact-open",
+    "benchmark": "SciFact",
+    "queries": [
+      24
+    ],
+    "screening_source": "sources/656a3a66d8349182/README.source",
+    "inaccessible": false,
+    "selection_hash": "656a3a66d8349182abbf6b8f12418f6cfcd236884ef05ac75d42f6f462d986db",
+    "selection_rank": 13,
+    "selected": true
+  },
+  {
+    "index": 128,
+    "canonical": "github.com/MaryamAsgarinezhad/information-retrieval-sparse-dense-scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/MaryamAsgarinezhad/information-retrieval-sparse-dense-scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      24,
+      26,
+      28
+    ],
+    "screening_source": "sources/2573e5f992319140/README.source",
+    "inaccessible": false,
+    "selection_hash": "2573e5f992319140bd0c8d84abaa01a539de77ca0e627fc03874e9d51af20b27",
+    "selection_rank": 5,
+    "selected": true
+  },
+  {
+    "index": 129,
+    "canonical": "huggingface.co/allenai/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/allenai/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      25,
+      27,
+      31
+    ],
+    "screening_source": "sources/140e6a375a364697/README.source",
+    "inaccessible": false,
+    "selection_hash": "140e6a375a364697d8cfcf1cdd5921cfc3a9ae06f5fff82685de8f864b306257",
+    "selection_rank": 2,
+    "selected": true
+  },
+  {
+    "index": 130,
+    "canonical": "huggingface.co/bigbio/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/bigbio/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      25,
+      27
+    ],
+    "screening_source": "sources/6d53577ebcbaa0cd/README.source",
+    "inaccessible": false,
+    "selection_hash": "6d53577ebcbaa0cdce16ac71c488bd9702251c6ca932170c52991c757320a885",
+    "selection_rank": 14,
+    "selected": true
+  },
+  {
+    "index": 131,
+    "canonical": "huggingface.co/Tevatron/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/Tevatron/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      25
+    ],
+    "screening_source": "sources/ee5b8b95323a7d4a/README.source",
+    "inaccessible": false,
+    "selection_hash": "ee5b8b95323a7d4a958c168d2f33959d91696c0fe3bc03816656e1e649041e77",
+    "selection_rank": 30,
+    "selected": false
+  },
+  {
+    "index": 133,
+    "canonical": "huggingface.co/Dipto084/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/Dipto084/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      25
+    ],
+    "screening_source": "sources/e54a183e742f5732/README.source",
+    "inaccessible": false,
+    "selection_hash": "e54a183e742f57329ed4cf2849e002ae0c4956aad1a73f1c52744992c9529cfe",
+    "selection_rank": 28,
+    "selected": false
+  },
+  {
+    "index": 134,
+    "canonical": "github.com/lachtarnour/scifact-verifier",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/lachtarnour/scifact-verifier",
+    "benchmark": "SciFact",
+    "queries": [
+      26,
+      28,
+      30
+    ],
+    "screening_source": "sources/a4497a85256bf217/README.source",
+    "inaccessible": false,
+    "selection_hash": "a4497a85256bf21779f49612545a734347fbae406bd7f20fd58f865c2f28cc3a",
+    "selection_rank": 20,
+    "selected": false
+  },
+  {
+    "index": 135,
+    "canonical": "github.com/Jonas-Gustafsson/retrieval-evaluation-thesis",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Jonas-Gustafsson/retrieval-evaluation-thesis",
+    "benchmark": "SciFact",
+    "queries": [
+      26,
+      28,
+      30
+    ],
+    "screening_source": "sources/cee2b7be2f988f35/README.source",
+    "inaccessible": false,
+    "selection_hash": "cee2b7be2f988f35c04ecca9d74ff45a1f62623a6bb68f321f235589a8ea9ebc",
+    "selection_rank": 24,
+    "selected": false
+  },
+  {
+    "index": 138,
+    "canonical": "huggingface.co/orgrctera/beir_scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/orgrctera/beir_scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      27
+    ],
+    "screening_source": "sources/5be69f7d3aed3c19/README.source",
+    "inaccessible": false,
+    "selection_hash": "5be69f7d3aed3c196dcc204f5ed07536e32cb9bafdb062c546e9aa544cf6c9d7",
+    "selection_rank": 10,
+    "selected": true
+  },
+  {
+    "index": 139,
+    "canonical": "huggingface.co/MCINext/scifact-fa",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/MCINext/scifact-fa",
+    "benchmark": "SciFact",
+    "queries": [
+      27
+    ],
+    "screening_source": "sources/86827be174e0bdaa/README.source",
+    "inaccessible": false,
+    "selection_hash": "86827be174e0bdaac778bc35b8579975a3f13974bac8f3fac34259554386e98d",
+    "selection_rank": 16,
+    "selected": false
+  },
+  {
+    "index": 140,
+    "canonical": "huggingface.co/andreiaalexa/scifact-relevance-pairs",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/andreiaalexa/scifact-relevance-pairs",
+    "benchmark": "SciFact",
+    "queries": [
+      27
+    ],
+    "screening_source": "sources/fa8ea36b0e63e984/README.source",
+    "inaccessible": false,
+    "selection_hash": "fa8ea36b0e63e984f0f331754892d62036c18dc5fc9908c64ef724d033de6111",
+    "selection_rank": 33,
+    "selected": false
+  },
+  {
+    "index": 141,
+    "canonical": "github.com/neilwen987/CSR_Adaptive_Rep",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/neilwen987/CSR_Adaptive_Rep",
+    "benchmark": "SciFact",
+    "queries": [
+      28
+    ],
+    "screening_source": "sources/d36dcd93410bb1ee/README.source",
+    "inaccessible": false,
+    "selection_hash": "d36dcd93410bb1eee009f442056d8c8b88999ea09357b6fce1d4b166169b5c19",
+    "selection_rank": 25,
+    "selected": false
+  },
+  {
+    "index": 142,
+    "canonical": "huggingface.co/mteb/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/mteb/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      29,
+      31
+    ],
+    "screening_source": "sources/f1632dd7a02f6854/README.source",
+    "inaccessible": false,
+    "selection_hash": "f1632dd7a02f685480cb83a003c4d165a5b40216233971a26e56ca139841ab43",
+    "selection_rank": 32,
+    "selected": false
+  },
+  {
+    "index": 143,
+    "canonical": "huggingface.co/Hyukkyu/beir-scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/Hyukkyu/beir-scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      29
+    ],
+    "screening_source": "sources/4e5cc1307db35498/README.source",
+    "inaccessible": false,
+    "selection_hash": "4e5cc1307db35498a49e6fc9a7842a3af2c882061df8df6d23642abeaaf5a3dc",
+    "selection_rank": 9,
+    "selected": true
+  },
+  {
+    "index": 145,
+    "canonical": "github.com/1ay1/rag-cpp",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/1ay1/rag-cpp",
+    "benchmark": "SciFact",
+    "queries": [
+      30
+    ],
+    "screening_source": "sources/dd2f9dc56e5a129c/README.source",
+    "inaccessible": false,
+    "selection_hash": "dd2f9dc56e5a129c822881654efcbd30d1280fbaff14615cd4fe21270a3c716d",
+    "selection_rank": 26,
+    "selected": false
+  },
+  {
+    "index": 146,
+    "canonical": "huggingface.co/andreiaalexa/adaptive-rag-scifact-150",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/andreiaalexa/adaptive-rag-scifact-150",
+    "benchmark": "SciFact",
+    "queries": [
+      31
+    ],
+    "screening_source": "sources/15b848107745fe71/README.source",
+    "inaccessible": false,
+    "selection_hash": "15b848107745fe71a07e43c00effb9cf749b8290a98e2422a9a479b0f627bd85",
+    "selection_rank": 3,
+    "selected": true
+  }
+]

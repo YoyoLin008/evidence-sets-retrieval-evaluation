@@ -1,0 +1,121 @@
+dataset,method,k,category,label,metric,n,clusters,mean,lo,hi,median,sparse,overall_n,weight,contribution,contribution_lo,contribution_hi,status
+qasper,bm25,5,0,One distinct set,complete_without_union,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,bm25,5,0,One distinct set,depth_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,bm25,5,0,One distinct set,tokens_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,bm25,5,1,"Multiple sets, one minimal set",complete_without_union,187,145,0.27807486631,0.216216216216,0.344090428345,0,False,875,0.213714285714,0.0594285714286,0.0441671729179,0.0758620689655,exploratory_post_main
+qasper,bm25,5,1,"Multiple sets, one minimal set",depth_penalty,187,145,10.1764705882,8.02463054187,12.4873015873,3,False,875,0.213714285714,2.17485714286,1.66856428041,2.74214756077,exploratory_post_main
+qasper,bm25,5,1,"Multiple sets, one minimal set",tokens_penalty,187,145,783.331550802,629.186116619,946.453733522,305,False,875,0.213714285714,167.409142857,129.42996496,208.620076274,exploratory_post_main
+qasper,bm25,5,2,"Multiple minimal sets, no supersets",complete_without_union,243,180,0.362139917695,0.305785123967,0.421688056574,0,False,875,0.277714285714,0.100571428571,0.081291267599,0.12051022962,exploratory_post_main
+qasper,bm25,5,2,"Multiple minimal sets, no supersets",depth_penalty,243,180,12.658436214,10.8205,14.6333464567,7,False,875,0.277714285714,3.51542857143,2.89245330164,4.17536895776,exploratory_post_main
+qasper,bm25,5,2,"Multiple minimal sets, no supersets",tokens_penalty,243,180,1047.22222222,907.935228697,1201.21088032,653,False,875,0.277714285714,290.828571429,239.854589335,343.946675091,exploratory_post_main
+qasper,bm25,5,3,Multiple minimal sets plus supersets,complete_without_union,42,33,0.380952380952,0.219512195122,0.547619047619,0,False,875,0.048,0.0182857142857,0.00889852923001,0.0291815155298,exploratory_post_main
+qasper,bm25,5,3,Multiple minimal sets plus supersets,depth_penalty,42,33,20.0476190476,14.199787234,26.6385904255,14.5,False,875,0.048,0.962285714286,0.550210198105,1.44419708208,exploratory_post_main
+qasper,bm25,5,3,Multiple minimal sets plus supersets,tokens_penalty,42,33,1721.73809524,1177.54037227,2342.475,1221.5,False,875,0.048,82.6434285714,45.2841088615,126.618894699,exploratory_post_main
+qasper,tfidf,5,0,One distinct set,complete_without_union,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,tfidf,5,0,One distinct set,depth_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,tfidf,5,0,One distinct set,tokens_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,tfidf,5,1,"Multiple sets, one minimal set",complete_without_union,187,145,0.262032085561,0.201949917898,0.326086956522,0,False,875,0.213714285714,0.056,0.0416655549626,0.0714305061136,exploratory_post_main
+qasper,tfidf,5,1,"Multiple sets, one minimal set",depth_penalty,187,145,10.1978609626,8.07302350763,12.5,3,False,875,0.213714285714,2.17942857143,1.67044935797,2.74402135389,exploratory_post_main
+qasper,tfidf,5,1,"Multiple sets, one minimal set",tokens_penalty,187,145,792.294117647,637.041220959,958.461363438,194,False,875,0.213714285714,169.324571429,130.98091691,210.95969436,exploratory_post_main
+qasper,tfidf,5,2,"Multiple minimal sets, no supersets",complete_without_union,243,180,0.366255144033,0.307692307692,0.424613095238,0,False,875,0.277714285714,0.101714285714,0.0818380554423,0.122358661917,exploratory_post_main
+qasper,tfidf,5,2,"Multiple minimal sets, no supersets",depth_penalty,243,180,12.8312757202,11.0541554752,14.750050813,7,False,875,0.277714285714,3.56342857143,2.94891658663,4.21254425087,exploratory_post_main
+qasper,tfidf,5,2,"Multiple minimal sets, no supersets",tokens_penalty,243,180,1060.18518519,915.506372978,1215.75967683,622,False,875,0.277714285714,294.428571429,242.750385272,349.370146207,exploratory_post_main
+qasper,tfidf,5,3,Multiple minimal sets plus supersets,complete_without_union,42,33,0.357142857143,0.205128205128,0.511111111111,0,False,875,0.048,0.0171428571429,0.00812961026482,0.0273037542662,exploratory_post_main
+qasper,tfidf,5,3,Multiple minimal sets plus supersets,depth_penalty,42,33,18.1428571429,12.5640243902,24.2669767442,10.5,False,875,0.048,0.870857142857,0.488081417537,1.3187523477,exploratory_post_main
+qasper,tfidf,5,3,Multiple minimal sets plus supersets,tokens_penalty,42,33,1606.80952381,1101.70333333,2181.67523026,1015.5,False,875,0.048,77.1268571429,42.3417355372,118.116232114,exploratory_post_main
+qasper,dense,5,0,One distinct set,complete_without_union,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,dense,5,0,One distinct set,depth_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,dense,5,0,One distinct set,tokens_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,dense,5,1,"Multiple sets, one minimal set",complete_without_union,187,145,0.342245989305,0.269230769231,0.414893617021,0,False,875,0.213714285714,0.0731428571429,0.0547304826196,0.0927002678167,exploratory_post_main
+qasper,dense,5,1,"Multiple sets, one minimal set",depth_penalty,187,145,9.89304812834,8.01029749294,11.947156417,4,False,875,0.213714285714,2.11428571429,1.62987437942,2.64302990006,exploratory_post_main
+qasper,dense,5,1,"Multiple sets, one minimal set",tokens_penalty,187,145,770.13368984,622.608461889,932.145695471,393,False,875,0.213714285714,164.588571429,126.364855033,205.848668317,exploratory_post_main
+qasper,dense,5,2,"Multiple minimal sets, no supersets",complete_without_union,243,180,0.43621399177,0.373949579832,0.5,0,False,875,0.277714285714,0.121142857143,0.0989643268124,0.1435032172,exploratory_post_main
+qasper,dense,5,2,"Multiple minimal sets, no supersets",depth_penalty,243,180,11.9300411523,10.2425134581,13.7692386831,7,False,875,0.277714285714,3.31314285714,2.73244109238,3.93065980782,exploratory_post_main
+qasper,dense,5,2,"Multiple minimal sets, no supersets",tokens_penalty,243,180,1004.22222222,863.775987752,1158.38061241,653,False,875,0.277714285714,278.886857143,229.246559398,332.226112621,exploratory_post_main
+qasper,dense,5,3,Multiple minimal sets plus supersets,complete_without_union,42,33,0.428571428571,0.272727272727,0.587026198439,0,False,875,0.048,0.0205714285714,0.0113122171946,0.0316164873841,exploratory_post_main
+qasper,dense,5,3,Multiple minimal sets plus supersets,depth_penalty,42,33,16.5952380952,12.1748932927,21.659280303,12.5,False,875,0.048,0.796571428571,0.467775460243,1.18270600559,exploratory_post_main
+qasper,dense,5,3,Multiple minimal sets plus supersets,tokens_penalty,42,33,1370.9047619,1011.34436965,1792.09888889,1041,False,875,0.048,65.8034285714,38.8574107489,98.4136822179,exploratory_post_main
+qasper,lead,5,0,One distinct set,complete_without_union,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,lead,5,0,One distinct set,depth_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,lead,5,0,One distinct set,tokens_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,lead,5,1,"Multiple sets, one minimal set",complete_without_union,187,145,0.0267379679144,0.00540540540541,0.0526315789474,0,False,875,0.213714285714,0.00571428571429,0.00115473441109,0.0110497237569,exploratory_post_main
+qasper,lead,5,1,"Multiple sets, one minimal set",depth_penalty,187,145,2.96256684492,2.03157894737,4.025429253,1,False,875,0.213714285714,0.633142857143,0.42161459458,0.879621255872,exploratory_post_main
+qasper,lead,5,1,"Multiple sets, one minimal set",tokens_penalty,187,145,195.160427807,137.939780423,258.838728565,32,False,875,0.213714285714,41.7085714286,28.6397103825,56.3472562659,exploratory_post_main
+qasper,lead,5,2,"Multiple minimal sets, no supersets",complete_without_union,243,180,0.320987654321,0.255319148936,0.388646730195,0,False,875,0.277714285714,0.0891428571429,0.0681044267877,0.111111111111,exploratory_post_main
+qasper,lead,5,2,"Multiple minimal sets, no supersets",depth_penalty,243,180,13.0864197531,11.2166612554,15.1059413786,8,False,875,0.277714285714,3.63428571429,3.00235570808,4.31634314307,exploratory_post_main
+qasper,lead,5,2,"Multiple minimal sets, no supersets",tokens_penalty,243,180,972.115226337,840.099058761,1116.98300294,648,False,875,0.277714285714,269.970285714,223.18745576,320.907417401,exploratory_post_main
+qasper,lead,5,3,Multiple minimal sets plus supersets,complete_without_union,42,33,0.238095238095,0.113636363636,0.375,0,False,875,0.048,0.0114285714286,0.00452988321385,0.02,exploratory_post_main
+qasper,lead,5,3,Multiple minimal sets plus supersets,depth_penalty,42,33,11.7380952381,8.54744208494,15.2619047619,9,False,875,0.048,0.563428571429,0.326767091541,0.834294713161,exploratory_post_main
+qasper,lead,5,3,Multiple minimal sets plus supersets,tokens_penalty,42,33,875.547619048,643.5375,1118.62799878,777.5,False,875,0.048,42.0262857143,24.6257114846,62.2568725418,exploratory_post_main
+qasper,random,5,0,One distinct set,complete_without_union,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,random,5,0,One distinct set,depth_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,random,5,0,One distinct set,tokens_penalty,403,246,0,0,0,0,False,875,0.460571428571,0,0,0,exploratory_post_main
+qasper,random,5,1,"Multiple sets, one minimal set",complete_without_union,187,145,0.096256684492,0.0549450549451,0.142076502732,0,False,875,0.213714285714,0.0205714285714,0.0112866817156,0.0308060929689,exploratory_post_main
+qasper,random,5,1,"Multiple sets, one minimal set",depth_penalty,187,145,9.66310160428,7.69315996503,11.760936496,4,False,875,0.213714285714,2.06514285714,1.57267363284,2.59075144509,exploratory_post_main
+qasper,random,5,1,"Multiple sets, one minimal set",tokens_penalty,187,145,726.56684492,579.720713238,889.338675214,211,False,875,0.213714285714,155.277714286,118.233213985,195.148429425,exploratory_post_main
+qasper,random,5,2,"Multiple minimal sets, no supersets",complete_without_union,243,180,0.234567901235,0.182202960955,0.288617886179,0,False,875,0.277714285714,0.0651428571429,0.0491014204468,0.0816560365646,exploratory_post_main
+qasper,random,5,2,"Multiple minimal sets, no supersets",depth_penalty,243,180,17.6748971193,15.273048006,20.3375394775,11,False,875,0.277714285714,4.90857142857,4.0688260628,5.79614010391,exploratory_post_main
+qasper,random,5,2,"Multiple minimal sets, no supersets",tokens_penalty,243,180,1344.781893,1168.31359833,1534.8690121,991,False,875,0.277714285714,373.465142857,309.770537757,440.0727761,exploratory_post_main
+qasper,random,5,3,Multiple minimal sets plus supersets,complete_without_union,42,33,0.190476190476,0.0789473684211,0.302325581395,0,False,875,0.048,0.00914285714286,0.00343239620791,0.0157128520188,exploratory_post_main
+qasper,random,5,3,Multiple minimal sets plus supersets,depth_penalty,42,33,21.380952381,17.585266591,25.4762175325,17,False,875,0.048,1.02628571429,0.641219015354,1.45504668692,exploratory_post_main
+qasper,random,5,3,Multiple minimal sets plus supersets,tokens_penalty,42,33,1646.38095238,1307.97406504,1998.24821429,1232,False,875,0.048,79.0262857143,47.9505828894,114.022478662,exploratory_post_main
+scifact,bm25,3,0,One distinct set,complete_without_union,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,bm25,3,0,One distinct set,depth_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,bm25,3,0,One distinct set,tokens_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,bm25,3,1,"Multiple sets, one minimal set",complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,bm25,3,1,"Multiple sets, one minimal set",depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,bm25,3,1,"Multiple sets, one minimal set",tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,bm25,3,2,"Multiple minimal sets, no supersets",complete_without_union,85,70,0.682352941176,0.578313253012,0.779069767442,1,False,209,0.406698564593,0.277511961722,0.211977594152,0.342995169082,exploratory_post_main
+scifact,bm25,3,2,"Multiple minimal sets, no supersets",depth_penalty,85,70,4.96470588235,4.0487804878,6.12359550562,4,False,209,0.406698564593,2.01913875598,1.47958120748,2.62847455011,exploratory_post_main
+scifact,bm25,3,2,"Multiple minimal sets, no supersets",tokens_penalty,85,70,143.941176471,117.447058824,178.352352169,112,False,209,0.406698564593,58.5406698565,42.9760074097,76.2804745777,exploratory_post_main
+scifact,bm25,3,3,Multiple minimal sets plus supersets,complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,bm25,3,3,Multiple minimal sets plus supersets,depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,bm25,3,3,Multiple minimal sets plus supersets,tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,tfidf,3,0,One distinct set,complete_without_union,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,tfidf,3,0,One distinct set,depth_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,tfidf,3,0,One distinct set,tokens_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,tfidf,3,1,"Multiple sets, one minimal set",complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,tfidf,3,1,"Multiple sets, one minimal set",depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,tfidf,3,1,"Multiple sets, one minimal set",tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,tfidf,3,2,"Multiple minimal sets, no supersets",complete_without_union,85,70,0.670588235294,0.5625,0.772151898734,1,False,209,0.406698564593,0.272727272727,0.206181681604,0.341232227488,exploratory_post_main
+scifact,tfidf,3,2,"Multiple minimal sets, no supersets",depth_penalty,85,70,5.02352941176,4.14281512605,6.09411764706,4,False,209,0.406698564593,2.04306220096,1.51206878955,2.62926829268,exploratory_post_main
+scifact,tfidf,3,2,"Multiple minimal sets, no supersets",tokens_penalty,85,70,146.294117647,119.481707161,179.861035378,116,False,209,0.406698564593,59.4976076555,43.9288934818,76.9883085361,exploratory_post_main
+scifact,tfidf,3,3,Multiple minimal sets plus supersets,complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,tfidf,3,3,Multiple minimal sets plus supersets,depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,tfidf,3,3,Multiple minimal sets plus supersets,tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,dense,3,0,One distinct set,complete_without_union,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,dense,3,0,One distinct set,depth_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,dense,3,0,One distinct set,tokens_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,dense,3,1,"Multiple sets, one minimal set",complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,dense,3,1,"Multiple sets, one minimal set",depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,dense,3,1,"Multiple sets, one minimal set",tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,dense,3,2,"Multiple minimal sets, no supersets",complete_without_union,85,70,0.682352941176,0.581081081081,0.775280898876,1,False,209,0.406698564593,0.277511961722,0.210784313725,0.346153846154,exploratory_post_main
+scifact,dense,3,2,"Multiple minimal sets, no supersets",depth_penalty,85,70,4.58823529412,3.56248244382,5.96346719933,3,False,209,0.406698564593,1.86602870813,1.32876712329,2.53366328534,exploratory_post_main
+scifact,dense,3,2,"Multiple minimal sets, no supersets",tokens_penalty,85,70,134.141176471,106.444176707,171.140365979,96,False,209,0.406698564593,54.5550239234,39.3626908937,72.6766569381,exploratory_post_main
+scifact,dense,3,3,Multiple minimal sets plus supersets,complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,dense,3,3,Multiple minimal sets plus supersets,depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,dense,3,3,Multiple minimal sets plus supersets,tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,lead,3,0,One distinct set,complete_without_union,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,lead,3,0,One distinct set,depth_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,lead,3,0,One distinct set,tokens_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,lead,3,1,"Multiple sets, one minimal set",complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,lead,3,1,"Multiple sets, one minimal set",depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,lead,3,1,"Multiple sets, one minimal set",tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,lead,3,2,"Multiple minimal sets, no supersets",complete_without_union,85,70,0.2,0.107142857143,0.302325581395,0,False,209,0.406698564593,0.0813397129187,0.0426515075124,0.126168224299,exploratory_post_main
+scifact,lead,3,2,"Multiple minimal sets, no supersets",depth_penalty,85,70,4.23529411765,2.93023255814,6.20430718475,3,False,209,0.406698564593,1.72248803828,1.10144760569,2.58716778587,exploratory_post_main
+scifact,lead,3,2,"Multiple minimal sets, no supersets",tokens_penalty,85,70,119.576470588,82.6426393728,173.67659632,73,False,209,0.406698564593,48.6315789474,31.0207148681,72.7095012634,exploratory_post_main
+scifact,lead,3,3,Multiple minimal sets plus supersets,complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,lead,3,3,Multiple minimal sets plus supersets,depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,lead,3,3,Multiple minimal sets plus supersets,tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,random,3,0,One distinct set,complete_without_union,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,random,3,0,One distinct set,depth_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,random,3,0,One distinct set,tokens_penalty,124,102,0,0,0,0,False,209,0.593301435407,0,0,0,exploratory_post_main
+scifact,random,3,1,"Multiple sets, one minimal set",complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,random,3,1,"Multiple sets, one minimal set",depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,random,3,1,"Multiple sets, one minimal set",tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,random,3,2,"Multiple minimal sets, no supersets",complete_without_union,85,70,0.564705882353,0.456790123457,0.670735566533,1,False,209,0.406698564593,0.22966507177,0.169014084507,0.289858695652,exploratory_post_main
+scifact,random,3,2,"Multiple minimal sets, no supersets",depth_penalty,85,70,5.04705882353,3.91463414634,6.51807228916,4,False,209,0.406698564593,2.05263157895,1.45640776699,2.76213592233,exploratory_post_main
+scifact,random,3,2,"Multiple minimal sets, no supersets",tokens_penalty,85,70,138.317647059,108.41102115,178.409863636,101,False,209,0.406698564593,56.2535885167,40.03121875,75.3037304371,exploratory_post_main
+scifact,random,3,3,Multiple minimal sets plus supersets,complete_without_union,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,random,3,3,Multiple minimal sets plus supersets,depth_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main
+scifact,random,3,3,Multiple minimal sets plus supersets,tokens_penalty,0,0,,,,,True,209,0,0,0,0,exploratory_post_main

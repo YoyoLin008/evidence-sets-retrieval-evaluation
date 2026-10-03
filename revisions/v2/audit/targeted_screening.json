@@ -1,0 +1,243 @@
+[
+  {
+    "index": 47,
+    "canonical": "github.com/gittycat/ragbench",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/gittycat/ragbench/main/docs/internal/eval-framework.md",
+        "file": "screen_1d13ab13.txt",
+        "sha256": "0695631776295830fe7b5cd27b23b0e6add8fc5db4fa99ad8b7eb28380ea043d",
+        "lines": [
+          "| `qasper` | QA over scientific papers with evidence spans | end_to_end only | citation + generation focus; loads via the `refs/convert/parquet` revision and handles both the dict-of-lists and list-of-dicts `qas` shapes. Verified working on `datasets` 4.5 \u2014 the in-repo \"broken under `datasets>=4.0`\""
+        ]
+      }
+    ]
+  },
+  {
+    "index": 52,
+    "canonical": "github.com/volcengine/OpenViking",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/volcengine/OpenViking/main/benchmark/RAG/README.md",
+        "file": "screen_55d00869.txt",
+        "sha256": "c6597419e530bd1b5089391a67ff026403385a60f18956f52049af0f473b3a28",
+        "lines": [
+          "\u2502   \u2502   \u251c\u2500\u2500 qasper_adapter.py    # Qasper dataset adapter",
+          "\u2502   \u251c\u2500\u2500 qasper_config.yaml       # Qasper dataset configuration",
+          "\u251c\u2500\u2500 qasper_config.yaml",
+          "- **Qasper**:",
+          "  dataset_name: \"Qasper\"",
+          "    dataset_path: \"datasets/Qasper\"",
+          "**Note:** For datasets with multiple files like SyllabusQA and Qasper, `dataset_path` should be set to the directory path, and the adapter will automatically find and load all relevant files.",
+          "| **Qasper**       | Academic   | 1585 | 5049 | Research domain, 1585 NLP papers, 3 answer types (extractive, free-form, yes/no)                                               |",
+          "   - `config/qasper_config.yaml` - For Qasper dataset",
+          "   # Evaluate with Qasper dataset"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 75,
+    "canonical": "github.com/castorini/anserini",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/castorini/anserini/master/docs/fatjar-regressions/fatjar-regressions-v0.36.1.md",
+        "file": "screen_2ee3f59a.txt",
+        "sha256": "cfe7eba57f8374aba66caf3329e4db3671ded5ec04cf0de911e7e30e9f02445f",
+        "lines": [
+          "| `scifact`                  | 0.6789 | 0.6647 | 0.7041 | 0.7036 | 0.7408 | 0.7408 |",
+          "CORPORA=(trec-covid bioasq nfcorpus nq hotpotqa fiqa signal1m trec-news robust04 arguana webis-touche2020 cqadupstack-android cqadupstack-english cqadupstack-gaming cqadupstack-gis cqadupstack-mathematica cqadupstack-physics cqadupstack-programmers cqadupstack-stats cqadupstack-tex cqadupstack-unix ",
+          "CORPORA=(trec-covid bioasq nfcorpus nq hotpotqa fiqa signal1m trec-news robust04 arguana webis-touche2020 cqadupstack-android cqadupstack-english cqadupstack-gaming cqadupstack-gis cqadupstack-mathematica cqadupstack-physics cqadupstack-programmers cqadupstack-stats cqadupstack-tex cqadupstack-unix "
+        ]
+      },
+      {
+        "url": "https://raw.githubusercontent.com/castorini/anserini/master/docs/reproduce/from-document-collection/beir-v1.0.0-scifact.flat.md",
+        "file": "screen_18cd795e.txt",
+        "sha256": "ec2d584fe9ede087b9b8ed487b3c9ab0c4c01b6ad5f87bcad930a873647fc26a",
+        "lines": [
+          "# Anserini Regressions: BEIR (v1.0.0) &mdash; SciFact",
+          "This page documents BM25 regression experiments for [BEIR (v1.0.0) &mdash; SciFact](http://beir.ai/).",
+          "The exact configurations for these regressions are stored in [this YAML file](../../../src/main/resources/reproduce/from-document-collection/configs/beir-v1.0.0-scifact.flat.yaml).",
+          "Note that this page is automatically generated from [this template](../../../src/main/resources/reproduce/from-document-collection/docgen/beir-v1.0.0-scifact.flat.template) as part of Anserini's regression pipeline, so do not modify this page directly; modify the template instead.",
+          "bin/run.sh io.anserini.reproduce.ReproduceFromDocumentCollection --index --verify --search --config beir-v1.0.0-scifact.flat",
+          "  -input /path/to/beir-v1.0.0-scifact.flat \\",
+          "  -index indexes/lucene-inverted.beir-v1.0.0-scifact.flat/ \\",
+          "  >& logs/log.beir-v1.0.0-scifact.flat &",
+          "  -index indexes/lucene-inverted.beir-v1.0.0-scifact.flat/ \\",
+          "  -topics beir-v1.0.0-scifact.test \\"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 82,
+    "canonical": "github.com/ogx-ai/ogx",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/ogx-ai/ogx/main/benchmarking/rag/README.md",
+        "file": "screen_39c613c2.txt",
+        "sha256": "3805c2d6396de69b3bb67985ae74784922990f06b4d3a36976bd617b8d7d466d",
+        "lines": [
+          "| **BEIR** | Retrieval-only | nDCG@10 | Standard IR benchmarks (nfcorpus, scifact, arguana, fiqa, trec-covid) |",
+          "  --dataset         BEIR dataset name (nfcorpus, scifact, arguana, fiqa, trec-covid)"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 92,
+    "canonical": "github.com/huggingface/lighteval",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/huggingface/lighteval/main/src/lighteval/tasks/tasks/qasper.py",
+        "file": "screen_d348583b.txt",
+        "sha256": "f24a5b530b063de32f197788b316bdb347f57147f275a36aae68d91d8f3e015a",
+        "lines": [
+          "Qasper",
+          "allenai/qasper",
+          "QASPER is a dataset for question answering on scientific research papers. It",
+          "def qasper_prompt(line, task_name: str = None):",
+          "qasper = LightevalTaskConfig(",
+          "    name=\"qasper\",",
+          "    prompt_function=qasper_prompt,",
+          "    hf_repo=\"allenai/qasper\",",
+          "    hf_subset=\"qasper\",",
+          "    qasper,"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 94,
+    "canonical": "github.com/open-compass/opencompass",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/open-compass/opencompass/main/dataset-index.yml",
+        "file": "screen_3c09b987.txt",
+        "sha256": "229e907c17fe65a9fd6201dd40ce15c66fa43a932340b163d9dd3860f6d285ab",
+        "lines": [
+          "- qasper:",
+          "    name: Qasper",
+          "    configpath: opencompass/configs/datasets/qasper/qasper_gen.py",
+          "- qaspercut:",
+          "    name: Qasper-Cut",
+          "    configpath: opencompass/configs/datasets/qaspercut/qaspercut_gen.py"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 97,
+    "canonical": "github.com/princeton-nlp/CEPE",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/princeton-nlp/CEPE/main/dataset_utils.py",
+        "file": "screen_b0f8a192.txt",
+        "sha256": "6fd7823e2f791d727089254a578760b71fc4c768d8075026436e701e2f36bdaa",
+        "lines": [
+          "    elif dataset == \"qasper\":",
+          "        # instead of using allenai/qasper, we use tau/scrolls, because it's nicely preprocessed",
+          "        all_dataset = load_dataset(\"tau/scrolls\", \"qasper\")",
+          "        # note: zeroscrolls use F1 for qasper",
+          "    \"qasper\": \"generate\","
+        ]
+      }
+    ]
+  },
+  {
+    "index": 104,
+    "canonical": "github.com/turbobeest/modelspec",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/turbobeest/modelspec/main/benchmarks/qasper.md",
+        "file": "screen_b00e388e.txt",
+        "sha256": "a0823449b3e8be93d91860ef8eaf60761f01fba18def04eeac3dae24f573f28d",
+        "lines": [
+          "id: qasper",
+          "name: \"QASPER\"",
+          "  QASPER pairs 5,049 questions, written from only a title and abstract, with 1,585 full NLP papers",
+          "  QASPER tests whether a model can answer information-seeking questions by reading an entire research",
+          "  built to require the full document, which is what makes QASPER a long-context benchmark in practice",
+          "    other QA benchmarks underperform human annotators by at least 27 F1 points when answering QASPER",
+          "  url: \"https://huggingface.co/datasets/allenai/qasper\"",
+          "  url: \"https://allenai.org/data/qasper\"",
+          "repo_url: \"https://github.com/allenai/qasper-led-baseline\"",
+          "    No dedicated QASPER-only leaderboard was found. It appears as a member task inside the SCROLLS"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 109,
+    "canonical": "github.com/Saiyam26/openai_ft",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/Saiyam26/openai_ft/main/qasper_evaluator.py",
+        "file": "screen_71414979.txt",
+        "sha256": "bdf8f30f4e08573f60b4d6ba8f41062391932dc25c11536b8d64fd800595527a",
+        "lines": [
+          "Official script for evaluating models built for the Qasper dataset. The script"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 117,
+    "canonical": "github.com/KRLabsOrg/acl-verbatim",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/KRLabsOrg/acl-verbatim/main/docs/GENERIC_EVAL.md",
+        "file": "screen_341ea347.txt",
+        "sha256": "f613e33d7174f42c4226a645e8a7543013ce83297e5cb9e138339efbc8c1b0fe",
+        "lines": [
+          "| QASPER test | `allenai/qasper` native test split | human evidence | paragraph/table chunks | Scientific-paper QA with paragraph/table/figure evidence; useful out-of-domain check for the generic model |",
+          "# QASPER native test",
+          "python scripts/experiments/qasper_to_gold_file.py \\",
+          "    --output runs/eval/test_slices/qasper.gold.jsonl",
+          "python scripts/experiments/qasper_to_gold_file.py \\",
+          "    --output runs/eval/test_slices/qasper.full_paper.gold.jsonl",
+          "SLICES=(acl ragbench squeez multispanqa qasper)",
+          "for S in acl ragbench squeez multispanqa qasper; do",
+          "- **QASPER is chunked by default.** The main QASPER slice uses evidence"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 122,
+    "canonical": "github.com/ZexueHe/MemoryArena",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/ZexueHe/MemoryArena/main/memory/memory_systems/MemoRAG/README.md",
+        "file": "screen_ca66d17a.txt",
+        "sha256": "bc0c2ea4600180ca3c86c022d36126dfe3ac3e28aa3c1bf8371d1ca71c9e3176",
+        "lines": [
+          "            <th>Qasper</th>"
+        ]
+      }
+    ]
+  },
+  {
+    "index": 125,
+    "canonical": "github.com/metareflection/claimcheck",
+    "screening_files": [
+      {
+        "url": "https://raw.githubusercontent.com/metareflection/claimcheck/main/SCIFACT.md",
+        "file": "screen_91c3920a.txt",
+        "sha256": "06549209868fbc1ac975cd5d7216e23fc7cdeef06e89970c532ab85b82a87e81",
+        "lines": [
+          "# SciFact Benchmark",
+          "Two-pass claim verification applied to [SciFact](https://github.com/allenai/scifact) \u2014 scientific claim verification against research paper evidence. Tests whether summarizing evidence before seeing the claim (preventing anchoring bias) improves verdict accuracy.",
+          "300 expert-written biomedical claims from the SciFact dev set, paired with evidence sentences (rationales) from paper abstracts. Three-way classification:",
+          "Data is downloaded from the [SciFact S3 bucket](https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz) to `data/scifact/data/`.",
+          "mkdir -p data/scifact && cd data/scifact",
+          "curl -sL https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz | tar xz",
+          "node eval/bench-scifact.js --mode baseline --label scifact-baseline --limit 10",
+          "node eval/bench-scifact.js --mode single-prompt --label scifact-single --limit 10",
+          "node eval/bench-scifact.js --mode two-pass --label scifact-two-pass --limit 10",
+          "node eval/bench-scifact.js --mode baseline --label scifact-baseline"
+        ]
+      }
+    ]
+  }
+]

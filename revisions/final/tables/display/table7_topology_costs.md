@@ -1,0 +1,10 @@
+# Table 7. Exploratory post-main completion costs in each populated topology category. Values are mean additional ranked units and lexical tokens with 95% cluster intervals. Units are QASPER paragraphs or SciFact sentences; category denominators are in the preceding table.
+
+| Corpus and category | Extra units [CI] | Extra lexical tokens [CI] |
+| --- | --- | --- |
+| QASPER: One distinct set | 0.00 [0.00, 0.00] | 0.0 [0.0, 0.0] |
+| QASPER: Multiple sets, one minimal | 10.18 [8.02, 12.49] | 783.3 [629.2, 946.5] |
+| QASPER: Multiple minimal, no supersets | 12.66 [10.82, 14.63] | 1047.2 [907.9, 1201.2] |
+| QASPER: Multiple minimal plus supersets | 20.05 [14.20, 26.64] | 1721.7 [1177.5, 2342.5] |
+| SciFact: One distinct set | 0.00 [0.00, 0.00] | 0.0 [0.0, 0.0] |
+| SciFact: Multiple minimal, no supersets | 4.96 [4.05, 6.12] | 143.9 [117.4, 178.4] |

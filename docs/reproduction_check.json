@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-03",
+  "scope": "Isolated copy of public tree using the existing locked Python environment and already-acquired hash-verified inputs; no fresh network acquisition or full new retrieval claimed.",
+  "steps": [
+    {
+      "command": "python src/check_release.py",
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"files_verified\": 236,\n  \"extra_files\": [],\n  \"scope\": \"Exact delivered release bytes, before reproduction\"\n}\n"
+    },
+    {
+      "command": "python src/prepare.py",
+      "returncode": 0,
+      "output": "Verified and extracted fixed public inputs.\n"
+    },
+    {
+      "command": "python src/replay_saved.py",
+      "returncode": 0,
+      "output": "{\"mode\": \"saved-ranking replay; no new retrieval\", \"qasper\": 875, \"scifact\": 209, \"reconstructed_instances_match_frozen_hash\": true}\n"
+    },
+    {
+      "command": "python src/verify_reproduction.py",
+      "returncode": 0,
+      "output": "{\n  \"records\": 5420,\n  \"rankings_and_outcomes_identical\": true,\n  \"maximum_score_difference\": 0.0\n}\n"
+    },
+    {
+      "command": "python src/validate_results.py",
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"rank_records\": 5420,\n  \"score_points\": 32520,\n  \"primary_rows\": 90,\n  \"source_mapping\": \"all included QASPER questions\",\n  \"cost_recomputation\": \"all rankings; independent prefix search\",\n  \"cluster_check\": \"all SciFact claim/doc links\",\n  \"frozen_hashes\": \"all checked\",\n  \"interval_audit\": \"bootstrap fixtures plus bounds; separate end-to-end resampling check in supplemental audit\"\n}\n"
+    },
+    {
+      "command": "python src/verify_revision_v2.py",
+      "returncode": 0,
+      "output": "{\n  \"passed\": true,\n  \"protected_files\": 42,\n  \"historical_byte_check\": \"passed\",\n  \"estimate_rows_recomputed\": 804,\n  \"original_and_topology_cluster_intervals_recomputed\": true,\n  \"independent_direct_bootstrap_reproduced\": [\n    {\n      \"dataset\": \"qasper\",\n      \"metric\": \"hit_without_complete\",\n      \"lo\": 0.11710677382319173,\n      \"hi\": 0.16510619212341274\n    },\n    {\n      \"dataset\": \"qasper\",\n      \"metric\": \"complete_without_union\",\n      \"lo\": 0.1535796766743649,\n      \"hi\": 0.2037940478710987\n    },\n    {\n      \"dataset\": \"scifact\",\n      \"metric\": \"hit_without_complete\",\n      \"lo\": 0.018433179723502304,\n      \"hi\": 0.07246376811594203\n    },\n    {\n      \"dataset\": \"scifact\",\n      \"metric\": \"complete_without_union\",\n      \"lo\": 0.21255725764060976,\n      \"hi\": 0.34343544137022397\n    }\n  ],\n  \"joint_post_main_recomputed\": true,\n  \"qwen_timing_projection_reconstructed\": true,\n  \"source_ledger_entries\": 26,\n  \"overlapping_headline_figure_removed\": true,\n  \"no_original_output_changed\": true\n}\n"
+    },
+    {
+      "command": "python -m pytest -q",
+      "returncode": 0,
+      "output": ".......................................                                  [100%]\n39 passed in 7.73s\n"
+    },
+    {
+      "command": "python src/analyze.py",
+      "returncode": 0,
+      "output": "dataset method  k   n  clusters                 metric     mean       lo       hi\n qasper   bm25  5 875       367                    hit 0.650286 0.615654 0.683915\n qasper   bm25  5 875       367               complete 0.509714 0.475029 0.543759\n qasper   bm25  5 875       367         union_complete 0.331429 0.298139 0.364788\n qasper   bm25  5 875       367   hit_without_complete 0.140571 0.117311 0.164286\n qasper   bm25  5 875       367 complete_without_union 0.178286 0.153243 0.203769\nscifact   bm25  3 209       164                    hit 0.837321 0.781910 0.888889\nscifact   bm25  3 209       164               complete 0.794258 0.735929 0.848624\nscifact   bm25  3 209       164         union_complete 0.516746 0.447115 0.587970\nscifact   bm25  3 209       164   hit_without_complete 0.043062 0.018349 0.072464\nscifact   bm25  3 209       164 complete_without_union 0.277512 0.211978 0.342995\n"
+    },
+    {
+      "command": "python src/supplemental.py",
+      "returncode": 0,
+      "output": "dataset method   n  clusters  k                 variant                status                 metric     mean       lo       hi\n qasper   bm25 195       149  5 joint_agreement_minimal exploratory post-main                    hit 0.574359 0.507389 0.640216\n qasper   bm25 195       149  5 joint_agreement_minimal exploratory post-main               complete 0.523077 0.453269 0.592180\n qasper   bm25 195       149  5 joint_agreement_minimal exploratory post-main         union_complete 0.441026 0.369231 0.510641\n qasper   bm25 195       149  5 joint_agreement_minimal exploratory post-main   hit_without_complete 0.051282 0.023807 0.084665\n qasper   bm25 195       149  5 joint_agreement_minimal exploratory post-main complete_without_union 0.082051 0.045000 0.124378\nscifact   bm25 209       164  3 joint_agreement_minimal exploratory post-main                    hit 0.837321 0.781910 0.888889\nscifact   bm25 209       164  3 joint_agreement_minimal exploratory post-main               complete 0.794258 0.735929 0.848624\nscifact   bm25 209       164  3 joint_agreement_minimal exploratory post-main         union_complete 0.516746 0.447115 0.587970\nscifact   bm25 209       164  3 joint_agreement_minimal exploratory post-main   hit_without_complete 0.043062 0.018349 0.072464\nscifact   bm25 209       164  3 joint_agreement_minimal exploratory post-main complete_without_union 0.277512 0.211978 0.342995\n{'qasper': {'items': 875, 'unique_clusters': 367, 'largest_cluster': 7, 'overlapping_distinct_refs': 255, 'duplicate_unit_items': 89, 'distinct_evidence_multiset_items': 472, 'query_truncated_items': 0, 'any_unit_truncated_items': 556, 'gold_truncated_items': 125}, 'scifact': {'items': 209, 'unique_clusters': 164, 'largest_cluster': 8, 'overlapping_distinct_refs': 0, 'duplicate_unit_items': 0, 'distinct_evidence_multiset_items': 85, 'query_truncated_items': 0, 'any_unit_truncated_items': 1, 'gold_truncated_items': 0}}\n"
+    },
+    {
+      "command": "python src/revision_analysis.py",
+      "returncode": 0,
+      "output": "{\n  \"qasper\": {\n    \"counts\": [\n      403,\n      187,\n      243,\n      42\n    ],\n    \"n\": 875,\n    \"exhaustive\": true,\n    \"disjoint\": true,\n    \"bm25_reconstructed_gap\": 0.1782857142857143,\n    \"tfidf_reconstructed_gap\": 0.17485714285714288,\n    \"dense_reconstructed_gap\": 0.21485714285714286,\n    \"lead_reconstructed_gap\": 0.10628571428571429,\n    \"random_reconstructed_gap\": 0.09485714285714286\n  },\n  \"scifact\": {\n    \"counts\": [\n      124,\n      0,\n      85,\n      0\n    ],\n    \"n\": 209,\n    \"exhaustive\": true,\n    \"disjoint\": true,\n    \"bm25_reconstructed_gap\": 0.27751196172248804,\n    \"tfidf_reconstructed_gap\": 0.2727272727272727,\n    \"dense_reconstructed_gap\": 0.27751196172248804,\n    \"lead_reconstructed_gap\": 0.08133971291866028,\n    \"random_reconstructed_gap\": 0.22966507177033493\n  }\n}\ndataset method  k  category                                label                 metric   n  clusters     mean       lo       hi  median  sparse  overall_n   weight  contribution  contribution_lo  contribution_hi                status\n qasper   bm25  5         0                     One distinct set complete_without_union 403       246 0.000000 0.000000 0.000000     0.0   False        875 0.460571      0.000000         0.000000         0.000000 exploratory_post_main\n qasper   bm25  5         1       Multiple sets, one minimal set complete_without_union 187       145 0.278075 0.216216 0.344090     0.0   False        875 0.213714      0.059429         0.044167         0.075862 exploratory_post_main\n qasper   bm25  5         2  Multiple minimal sets, no supersets complete_without_union 243       180 0.362140 0.305785 0.421688     0.0   False        875 0.277714      0.100571         0.081291         0.120510 exploratory_post_main\n qasper   bm25  5         3 Multiple minimal sets plus supersets complete_without_union  42        33 0.380952 0.219512 0.547619     0.0   False        875 0.048000      0.018286         0.008899         0.029182 exploratory_post_main\nscifact   bm25  3         0                     One distinct set complete_without_union 124       102 0.000000 0.000000 0.000000     0.0   False        209 0.593301      0.000000         0.000000         0.000000 exploratory_post_main\nscifact   bm25  3         1       Multiple sets, one minimal set complete_without_union   0         0      NaN      NaN      NaN     NaN    True        209 0.000000      0.000000         0.000000         0.000000 exploratory_post_main\nscifact   bm25  3         2  Multiple minimal sets, no supersets complete_without_union  85        70 0.682353 0.578313 0.779070     1.0   False        209 0.406699      0.277512         0.211978         0.342995 exploratory_post_main\nscifact   bm25  3         3 Multiple minimal sets plus supersets complete_without_union   0         0      NaN      NaN      NaN     NaN    True        209 0.000000      0.000000         0.000000         0.000000 exploratory_post_main\n"
+    },
+    {
+      "command": "python src/figures.py",
+      "returncode": 0,
+      "output": "Exported four figures as vector PDF and PNG.\n"
+    },
+    {
+      "command": "python src/revision_figures.py",
+      "returncode": 0,
+      "output": ""
+    },
+    {
+      "command": "python src/render_final.py",
+      "returncode": 0,
+      "output": "Current bibliography: 26 records\nBuilt manuscript model with 133 blocks, 109 source-linked values, 26 verified references.\nExported 11 revised tables under revisions/final/tables/display; frozen tables untouched.\nWrote conventional IRRJ LaTeX, PDF reading copy, and Markdown companion.\nExported final official-style main and supplementary PDFs.\n"
+    },
+    {
+      "command": "python src/render_final.py (after URL wrapping correction)",
+      "returncode": 0,
+      "output": "Clean-directory render succeeded; both generated TeX sources match the release."
+    }
+  ],
+  "passed": true,
+  "tests_passed": 39,
+  "rankings_replayed": 5420,
+  "score_points_checked": 32520,
+  "estimate_rows_checked": 804,
+  "source_models_bibliography_tex_identical": true
+}

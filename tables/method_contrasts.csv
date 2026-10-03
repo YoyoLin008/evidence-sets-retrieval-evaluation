@@ -1,0 +1,25 @@
+dataset,k,method_a,method_b,metric,n,mean_difference,lo,hi,note
+qasper,5,bm25,tfidf,complete,875,0.02285714286,0.002378050675,0.04337905892,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,bm25,tfidf,union_complete,875,0.01942857143,0.001107358529,0.03769146694,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,bm25,tfidf,max_f1,875,0.00764004884,4.247340574e-06,0.01556336608,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,bm25,tfidf,union_f1,875,0.007408174881,-0.0008002606255,0.01565428517,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,bm25,dense,complete,875,-0.03885714286,-0.07941964087,0.00115078113,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,bm25,dense,union_complete,875,-0.002285714286,-0.03571528332,0.03052547942,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,bm25,dense,max_f1,875,-0.02081862665,-0.03504932772,-0.00687971614,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,bm25,dense,union_f1,875,-0.01723870522,-0.03235838041,-0.002206014957,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,tfidf,dense,complete,875,-0.06171428571,-0.09929138735,-0.02410987233,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,tfidf,dense,union_complete,875,-0.02171428571,-0.05504612927,0.01157440936,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,tfidf,dense,max_f1,875,-0.02845867549,-0.0423779165,-0.01471072813,Exploratory pointwise interval; no multiplicity-controlled significance claim
+qasper,5,tfidf,dense,union_f1,875,-0.0246468801,-0.03946965773,-0.01004763471,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,bm25,tfidf,complete,209,0.03349282297,0.00487804878,0.06465517241,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,bm25,tfidf,union_complete,209,0.02870813397,0.004761904762,0.05641025641,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,bm25,tfidf,max_f1,209,0.01866028708,0.002525252525,0.03571514838,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,bm25,tfidf,union_f1,209,0.02447026658,0.008400478895,0.0421227225,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,bm25,dense,complete,209,0.00956937799,-0.05154639175,0.07035175879,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,bm25,dense,union_complete,209,0.00956937799,-0.04694835681,0.0695220422,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,bm25,dense,max_f1,209,0.005422647528,-0.02582420449,0.03689936323,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,bm25,dense,union_f1,209,0.005202399939,-0.0293856556,0.03905708874,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,tfidf,dense,complete,209,-0.02392344498,-0.08333333333,0.035,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,tfidf,dense,union_complete,209,-0.01913875598,-0.07582938389,0.03902439024,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,tfidf,dense,max_f1,209,-0.01323763955,-0.043628314,0.01761051645,Exploratory pointwise interval; no multiplicity-controlled significance claim
+scifact,3,tfidf,dense,union_f1,209,-0.01926786664,-0.05421471331,0.01576620624,Exploratory pointwise interval; no multiplicity-controlled significance claim

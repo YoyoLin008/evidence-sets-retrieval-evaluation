@@ -1,0 +1,2015 @@
+[
+  {
+    "index": 0,
+    "canonical": "github.com/scolladon/dataset-loader",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0,
+      8
+    ],
+    "screening_source": "sources/a4e36ea5181138d5/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 1,
+    "canonical": "github.com/SEACrowd/seacrowd-datahub",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0
+    ],
+    "screening_source": "sources/e7d33809b9d023e0/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 2,
+    "canonical": "github.com/forcedotcom/Analytics-Cloud-Dataset-Utils",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0,
+      8
+    ],
+    "screening_source": "sources/4975f18daf1f2b22/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 3,
+    "canonical": "github.com/openproblems-bio/datasets",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0,
+      8
+    ],
+    "screening_source": "sources/17ae88a5b229c2d1/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 4,
+    "canonical": "github.com/fabiofumarola/polimorfo",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0
+    ],
+    "screening_source": "sources/3b2392850e6e1649/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 5,
+    "canonical": "github.com/DigitalBiomarkerDiscoveryPipeline/DBDP-Autonomic",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0
+    ],
+    "screening_source": "sources/7054bf9e2e3cba3d/README.source",
+    "inaccessible": true
+  },
+  {
+    "index": 6,
+    "canonical": "github.com/robometer/robometer",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0
+    ],
+    "screening_source": "sources/e474ca35a5044eb7/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 7,
+    "canonical": "github.com/BenMcEwen1/Stratified-Sampling",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0
+    ],
+    "screening_source": "sources/b87e981b5225ce45/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 8,
+    "canonical": "github.com/nc-fortiss/2025_ESA_anomaly",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0
+    ],
+    "screening_source": "sources/b80ddcd1ae7b7e27/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 9,
+    "canonical": "github.com/IndoNLP/nusa-crowd",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      0
+    ],
+    "screening_source": "sources/62302e6863686876/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 10,
+    "canonical": "huggingface.co/universal-dependencies/universal_dependencies",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1,
+      9
+    ],
+    "screening_source": "sources/b21f17b0fcd61ba7/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 11,
+    "canonical": "huggingface.co/rIsHu009/github-issues-updated",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1,
+      9
+    ],
+    "screening_source": "sources/65c88082095e40f3/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 12,
+    "canonical": "huggingface.co/crossingminds/shopping-queries-image-dataset",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1,
+      9
+    ],
+    "screening_source": "sources/c2cedc25cdcc3fe3/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 13,
+    "canonical": "huggingface.co/KRadim/github-issues-minimal",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1,
+      9
+    ],
+    "screening_source": "sources/fb3ebab11e1d472d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 14,
+    "canonical": "huggingface.co/bioscan-ml/BIOSCAN-5M",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1,
+      9
+    ],
+    "screening_source": "sources/174d7956ac9549f8/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 15,
+    "canonical": "huggingface.co/jhu-clsp/paradocs",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1,
+      9
+    ],
+    "screening_source": "sources/a3acea8d4aa32512/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 16,
+    "canonical": "huggingface.co/DarthReca/california_burned_areas",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1
+    ],
+    "screening_source": "sources/4c0001bcb9a9e9b4/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 17,
+    "canonical": "huggingface.co/hltcoe/megawika",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1
+    ],
+    "screening_source": "sources/bb06119c2602a44b/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 18,
+    "canonical": "huggingface.co/Naholav/cukurova_university_chatbot",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      1
+    ],
+    "screening_source": "sources/9437494be726dbf2/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 19,
+    "canonical": "github.com/Richmiz/docvqa-evidence-retrieval",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2,
+      10
+    ],
+    "screening_source": "sources/752eddaf60ebceca/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 20,
+    "canonical": "github.com/takuma-yoneda/fever-baselines",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2,
+      10
+    ],
+    "screening_source": "sources/0f8dde0a2ee1794f/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 21,
+    "canonical": "github.com/odvcencio/eos",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/odvcencio/eos",
+    "benchmark": "SciFact",
+    "queries": [
+      2,
+      10
+    ],
+    "screening_source": "sources/87a9e317b06c4693/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 22,
+    "canonical": "github.com/zhaoxinyu2002/wechat-assistant-nanobot",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2
+    ],
+    "screening_source": "sources/70a25f1f61f1af51/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 23,
+    "canonical": "github.com/j6mes/fever-baselines",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2,
+      10
+    ],
+    "screening_source": "sources/84c6fb589e624b6b/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 24,
+    "canonical": "github.com/andrejr03/lexibench-ai",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2,
+      10
+    ],
+    "screening_source": "sources/9bb14d2ad8c3bfdf/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 25,
+    "canonical": "github.com/vollero/hf-daily-paper-summaries",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2,
+      10
+    ],
+    "screening_source": "sources/e5effc2d79de7c79/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 26,
+    "canonical": "github.com/UKPLab/PeerQA",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2
+    ],
+    "screening_source": "sources/0b17da2ec6576c55/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 27,
+    "canonical": "github.com/simonmang/ScoutRAG",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2,
+      10
+    ],
+    "screening_source": "sources/f082fff8e7fd2505/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 28,
+    "canonical": "github.com/maxzhang646/medical-clip",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      2
+    ],
+    "screening_source": "sources/06800d9d276a015d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 29,
+    "canonical": "huggingface.co/ReaganWZY/RECIPER",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      3
+    ],
+    "screening_source": "sources/73a2890476962eac/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 30,
+    "canonical": "github.com/nyu-dl/dl4marco-bert",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      4,
+      12
+    ],
+    "screening_source": "sources/946fca9e22cdfb77/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 31,
+    "canonical": "github.com/Zefan-Cai/Open-Jev",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      4,
+      12,
+      14
+    ],
+    "screening_source": "sources/5a1627db66aecad1/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 32,
+    "canonical": "github.com/Yuqi-Zhou/LRAT",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      4,
+      12
+    ],
+    "screening_source": "sources/48e1f2b7c41c7e56/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 33,
+    "canonical": "github.com/embeddings-benchmark/mteb",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      4,
+      12
+    ],
+    "screening_source": "sources/abdb323cc7739fd0/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 34,
+    "canonical": "github.com/trec-auto-judge/auto-judge-evaluate",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      4,
+      12
+    ],
+    "screening_source": "sources/0f10544bf702c471/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 35,
+    "canonical": "github.com/castorini/pyserini",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      4
+    ],
+    "screening_source": "sources/a0bb41d097229c2a/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 36,
+    "canonical": "github.com/yesi07111/SRI_Project_BM25",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      4,
+      12
+    ],
+    "screening_source": "sources/127a9cee91967de2/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 37,
+    "canonical": "huggingface.co/ufca-llms/quati",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/c4d0d6f2d837b241/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 38,
+    "canonical": "huggingface.co/Hyukkyu/rteb-AILAStatutes",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/3d0c743f23d12066/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 39,
+    "canonical": "huggingface.co/sionic-ai/NanoBEIR-en",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/sionic-ai/NanoBEIR-en",
+    "benchmark": "SciFact",
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/938c868525dde4d1/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 40,
+    "canonical": "huggingface.co/Jerichog0731/vidore_v3_computer_science",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      5
+    ],
+    "screening_source": "sources/8bcc161a6cd856fa/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 41,
+    "canonical": "huggingface.co/kaamd/kllm-bench-qrels",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/64e2bbfcceb8e8d0/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 42,
+    "canonical": "huggingface.co/lightonai/scifact-decontaminated",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/lightonai/scifact-decontaminated",
+    "benchmark": "SciFact",
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/63517b1ef1931902/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 43,
+    "canonical": "huggingface.co/lightonai/quora-decontaminated",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/fa87fc067d34387e/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 44,
+    "canonical": "huggingface.co/taeminlee/Ko-StrategyQA",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      5,
+      13
+    ],
+    "screening_source": "sources/d3307868316a17f4/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 45,
+    "canonical": "huggingface.co/sionic-ai/NanoBEIR-ja",
+    "status": "lineage_duplicate",
+    "reason": "same NanoBEIR statement-to-question distribution family; language variant",
+    "family": "huggingface.co/sionic-ai/NanoBEIR-en",
+    "benchmark": null,
+    "queries": [
+      5
+    ],
+    "screening_source": "sources/7236f075116f4f9d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 46,
+    "canonical": "github.com/IBM/RagWorkbench",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/IBM/RagWorkbench",
+    "benchmark": "QASPER",
+    "queries": [
+      6,
+      22
+    ],
+    "screening_source": "sources/af6a6e8e2402a015/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 47,
+    "canonical": "github.com/gittycat/ragbench",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/gittycat/ragbench",
+    "benchmark": "QASPER",
+    "queries": [
+      6,
+      22
+    ],
+    "screening_source": "sources/ffad93e8a301529e/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 48,
+    "canonical": "github.com/Li-Evan/awesome-jev",
+    "status": "excluded",
+    "reason": "curated benchmark links only",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      6,
+      14
+    ],
+    "screening_source": "sources/1da90bba25171ffa/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 49,
+    "canonical": "github.com/rucdatascience/VikingRAG",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/rucdatascience/VikingRAG",
+    "benchmark": "QASPER",
+    "queries": [
+      6
+    ],
+    "screening_source": "sources/8425b53b045f0835/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 50,
+    "canonical": "github.com/wf802222/loqi",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      6
+    ],
+    "screening_source": "sources/3743605104276409/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 51,
+    "canonical": "github.com/facebookresearch/CRAG",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      6
+    ],
+    "screening_source": "sources/35e1fc540e263447/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 52,
+    "canonical": "github.com/volcengine/OpenViking",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/volcengine/OpenViking",
+    "benchmark": "QASPER",
+    "queries": [
+      6,
+      22
+    ],
+    "screening_source": "sources/b44f52925239d1a7/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 53,
+    "canonical": "github.com/surpradhan/rag-benchmark",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      6,
+      14
+    ],
+    "screening_source": "sources/5f5365d0e6269bcc/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 54,
+    "canonical": "github.com/Diyago/rag-benchmark",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      6
+    ],
+    "screening_source": "sources/196f17b898b77c0d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 55,
+    "canonical": "github.com/hasura/rag-benchmark",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      6
+    ],
+    "screening_source": "sources/b8654ad2fb438abf/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 56,
+    "canonical": "huggingface.co/galileo-ai/ragbench",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      7,
+      15
+    ],
+    "screening_source": "sources/420f50c4425bd784/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 57,
+    "canonical": "huggingface.co/AmazonScience/GaRAGe",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      7,
+      15
+    ],
+    "screening_source": "sources/5e7efebac95bd08e/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 58,
+    "canonical": "huggingface.co/silma-ai/silma-rag-qa-benchmark-v1.0",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      7
+    ],
+    "screening_source": "sources/fc628ad2db71ada8/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 59,
+    "canonical": "huggingface.co/zhanxxx/nexa-rag-benchmark",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/zhanxxx/nexa-rag-benchmark",
+    "benchmark": "QASPER",
+    "queries": [
+      7
+    ],
+    "screening_source": "sources/780934556d3ff5fd/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 60,
+    "canonical": "huggingface.co/Ayanami0730/rag_test",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      7,
+      15
+    ],
+    "screening_source": "sources/dcbcb5d2fb0b339f/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 61,
+    "canonical": "huggingface.co/102202132zbz/rag_test",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      7,
+      15
+    ],
+    "screening_source": "sources/ff3b66fa3fb72487/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 62,
+    "canonical": "huggingface.co/wanghaofei/rag_test",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      7,
+      15
+    ],
+    "screening_source": "sources/86b637ae0501913c/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 63,
+    "canonical": "github.com/North-Shore-AI/datasets_ex",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/North-Shore-AI/datasets_ex",
+    "benchmark": "SciFact",
+    "queries": [
+      8,
+      24
+    ],
+    "screening_source": "sources/ae89f96b1d9806f7/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 64,
+    "canonical": "github.com/jonathanonglq/comparing-basic-search-retrieval",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/jonathanonglq/comparing-basic-search-retrieval",
+    "benchmark": "SciFact",
+    "queries": [
+      8,
+      28
+    ],
+    "screening_source": "sources/e00e8755c2bd14d4/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 65,
+    "canonical": "github.com/Vincksi/Fact-Verification-with-Evidence-Retrieval",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Vincksi/Fact-Verification-with-Evidence-Retrieval",
+    "benchmark": "SciFact",
+    "queries": [
+      8
+    ],
+    "screening_source": "sources/6d5c4d39e3bef24d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 66,
+    "canonical": "github.com/inclusionAI/AReno",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      8
+    ],
+    "screening_source": "sources/72496460b7635cab/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 67,
+    "canonical": "github.com/SYLee1996/Structural_Chunking",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/SYLee1996/Structural_Chunking",
+    "benchmark": "SciFact",
+    "queries": [
+      8
+    ],
+    "screening_source": "sources/eef6dfab4a919880/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 68,
+    "canonical": "github.com/navarmn/scig-fault-dataset",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      8
+    ],
+    "screening_source": "sources/752dcb8042761928/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 69,
+    "canonical": "github.com/zhu-xlab/SpaXFus",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      8
+    ],
+    "screening_source": "sources/1ef43a895e7a8744/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 70,
+    "canonical": "huggingface.co/tau/fs",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      9
+    ],
+    "screening_source": "sources/d1cfcedffc23c3a8/README.source",
+    "inaccessible": true
+  },
+  {
+    "index": 71,
+    "canonical": "huggingface.co/Kafoo/therascribe-gold-1M-with-images",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      9
+    ],
+    "screening_source": "sources/30a10f0a9ac15a2d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 72,
+    "canonical": "github.com/ydemers/scifact-evidence-retrieval",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/ydemers/scifact-evidence-retrieval",
+    "benchmark": "SciFact",
+    "queries": [
+      10,
+      26
+    ],
+    "screening_source": "sources/b564841ddb3e1ffb/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 73,
+    "canonical": "github.com/CyriacAssan79/fact-checker-ai",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      10
+    ],
+    "screening_source": "sources/20ae63f31e001cf5/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 74,
+    "canonical": "github.com/vp1410/opslens-ai",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      10
+    ],
+    "screening_source": "sources/77d40eb38d9a3ecd/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 75,
+    "canonical": "github.com/castorini/anserini",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/castorini/anserini",
+    "benchmark": "SciFact",
+    "queries": [
+      12,
+      28
+    ],
+    "screening_source": "sources/61a2b98767423900/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 76,
+    "canonical": "github.com/yomacleo/chatbotCYG",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      12
+    ],
+    "screening_source": "sources/cc9bb649b3de0812/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 77,
+    "canonical": "github.com/TREMA-UNH/rubric-trec-rag",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      12
+    ],
+    "screening_source": "sources/75273b058ae3886d/README.source",
+    "inaccessible": true
+  },
+  {
+    "index": 78,
+    "canonical": "huggingface.co/SoroushVahidi/scidocs",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      13
+    ],
+    "screening_source": "sources/3ef91870553c9b62/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 79,
+    "canonical": "huggingface.co/kaengreg/rus-scifact-qrels",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/kaengreg/rus-scifact-qrels",
+    "benchmark": "SciFact",
+    "queries": [
+      13
+    ],
+    "screening_source": "sources/30be6e756cfcda0f/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 80,
+    "canonical": "github.com/emretheus/jev-rag-benchmark",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/emretheus/jev-rag-benchmark",
+    "benchmark": "SciFact",
+    "queries": [
+      14,
+      30
+    ],
+    "screening_source": "sources/43438e463871bc02/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 81,
+    "canonical": "github.com/erendikmenn/jev-rag-benchmark",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/erendikmenn/jev-rag-benchmark",
+    "benchmark": "SciFact",
+    "queries": [
+      14,
+      30
+    ],
+    "screening_source": "sources/367480a163d6b754/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 82,
+    "canonical": "github.com/ogx-ai/ogx",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/ogx-ai/ogx",
+    "benchmark": "SciFact",
+    "queries": [
+      14
+    ],
+    "screening_source": "sources/1f8e28536804374d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 83,
+    "canonical": "github.com/Zelros02/hybrid-rag-benchmark",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Zelros02/hybrid-rag-benchmark",
+    "benchmark": "SciFact",
+    "queries": [
+      14,
+      30
+    ],
+    "screening_source": "sources/032fcca2bce97242/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 84,
+    "canonical": "github.com/linggm3/awesome-jev-robokrunch",
+    "status": "excluded",
+    "reason": "curated links only",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      14
+    ],
+    "screening_source": "sources/cf4d907e433d82fe/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 85,
+    "canonical": "github.com/NomaDamas/AutoRAG-Research",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/NomaDamas/AutoRAG-Research",
+    "benchmark": "SciFact",
+    "queries": [
+      14
+    ],
+    "screening_source": "sources/b3359342bff7e05e/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 86,
+    "canonical": "github.com/topics/beir",
+    "status": "excluded",
+    "reason": "GitHub topic navigation",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      14
+    ],
+    "screening_source": "sources/329876fbb1a37068/README.source",
+    "inaccessible": true
+  },
+  {
+    "index": 87,
+    "canonical": "huggingface.co/emretheus/jev-rag-benchmark",
+    "status": "lineage_duplicate",
+    "reason": "same named project and linked GitHub distribution",
+    "family": "github.com/emretheus/jev-rag-benchmark",
+    "benchmark": null,
+    "queries": [
+      15,
+      31
+    ],
+    "screening_source": "sources/5ea18a51f24563a5/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 88,
+    "canonical": "huggingface.co/SJChen02/EnterpriseRAG-Bench",
+    "status": "excluded",
+    "reason": "screened result describes another dataset/task or is a mention-only result; no target benchmark pipeline established from discovered artifact",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      15
+    ],
+    "screening_source": "sources/bd5253a7a83ebc3a/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 89,
+    "canonical": "github.com/allenai/data-efficient-finetuning",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/allenai/data-efficient-finetuning",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      18
+    ],
+    "screening_source": "sources/888aa0e09f41c05e/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 90,
+    "canonical": "github.com/tau-nlp/scrolls",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/tau-nlp/scrolls",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/22761e56870fc392/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 91,
+    "canonical": "github.com/JerrryNie/CGSN",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/JerrryNie/CGSN",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      20
+    ],
+    "screening_source": "sources/0e503055eebd598c/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 92,
+    "canonical": "github.com/huggingface/lighteval",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/huggingface/lighteval",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      18,
+      20
+    ],
+    "screening_source": "sources/46ce73907e4f3c90/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 93,
+    "canonical": "github.com/BCJonkhout/msc-thesis-code",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/BCJonkhout/msc-thesis-code",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/b44ae14ecc2a5c7d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 94,
+    "canonical": "github.com/open-compass/opencompass",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/open-compass/opencompass",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/e970c734614afe42/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 95,
+    "canonical": "github.com/jerrrynie/unsupervised-long-document-qa",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/jerrrynie/unsupervised-long-document-qa",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      20
+    ],
+    "screening_source": "sources/f7b546ed49226a59/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 96,
+    "canonical": "github.com/Ahren09/SARA",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Ahren09/SARA",
+    "benchmark": "QASPER",
+    "queries": [
+      16,
+      20,
+      22
+    ],
+    "screening_source": "sources/ab7ed493588d6d84/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 97,
+    "canonical": "github.com/princeton-nlp/CEPE",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/princeton-nlp/CEPE",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/032561fa9c274556/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 98,
+    "canonical": "github.com/Ojiyumm/LongBench_RWKV",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Ojiyumm/LongBench_RWKV",
+    "benchmark": "QASPER",
+    "queries": [
+      16
+    ],
+    "screening_source": "sources/48aa0102cc1c5b10/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 99,
+    "canonical": "huggingface.co/allenai/qasper",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/allenai/qasper",
+    "benchmark": "QASPER",
+    "queries": [
+      17,
+      19,
+      21,
+      23
+    ],
+    "screening_source": "sources/3dc62749a8dff15d/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 100,
+    "canonical": "huggingface.co/albertgong1/qasper",
+    "status": "excluded",
+    "reason": "inaccessible HF dataset (401); eligibility unverified",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      17,
+      23
+    ],
+    "screening_source": "sources/d69019ea8cc0e9df/README.source",
+    "inaccessible": true
+  },
+  {
+    "index": 101,
+    "canonical": "huggingface.co/Ahren09/SARA-QASPER",
+    "status": "lineage_duplicate",
+    "reason": "SARA release linked from SARA implementation",
+    "family": "github.com/Ahren09/SARA",
+    "benchmark": null,
+    "queries": [
+      17,
+      23
+    ],
+    "screening_source": "sources/8fdcaf7da7a60db1/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 102,
+    "canonical": "huggingface.co/DinoStackAI/qasper-rag",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/DinoStackAI/qasper-rag",
+    "benchmark": "QASPER",
+    "queries": [
+      17,
+      19,
+      21,
+      23
+    ],
+    "screening_source": "sources/a77b0a6d69e7c927/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 103,
+    "canonical": "huggingface.co/ddlKillMe/qasper",
+    "status": "lineage_duplicate",
+    "reason": "byte-identical qasper.py loader",
+    "family": "huggingface.co/allenai/qasper",
+    "benchmark": null,
+    "queries": [
+      17
+    ],
+    "screening_source": "sources/5dd9d86306027281/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 104,
+    "canonical": "github.com/turbobeest/modelspec",
+    "status": "excluded",
+    "reason": "benchmark description only; no loader/converter/evaluator in discovered page",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      18,
+      22
+    ],
+    "screening_source": "sources/395a2ab42abfaebf/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 105,
+    "canonical": "github.com/Ludovico-Chieffallo/chunklab",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Ludovico-Chieffallo/chunklab",
+    "benchmark": "QASPER",
+    "queries": [
+      18,
+      20,
+      22
+    ],
+    "screening_source": "sources/7632708e246c0ece/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 106,
+    "canonical": "github.com/UKPLab/emnlp2024-attribute-or-abstain",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/UKPLab/emnlp2024-attribute-or-abstain",
+    "benchmark": "QASPER",
+    "queries": [
+      18
+    ],
+    "screening_source": "sources/c83b00d115792774/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 107,
+    "canonical": "github.com/allenai/qasper-led-baseline",
+    "status": "official_reference",
+    "reason": "original benchmark implementation/evaluator",
+    "family": "github.com/allenai/qasper-led-baseline",
+    "benchmark": "QASPER",
+    "queries": [
+      18
+    ],
+    "screening_source": "sources/b88fc91ffb09b639/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 108,
+    "canonical": "github.com/gmftbyGMFTBY/EvidenceRetrievalLeaderboard",
+    "status": "excluded",
+    "reason": "leaderboard only",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      18
+    ],
+    "screening_source": "sources/42f7de89ec3ad0c5/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 109,
+    "canonical": "github.com/Saiyam26/openai_ft",
+    "status": "excluded",
+    "reason": "copy of official evaluator, no separate pipeline exposed",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      18
+    ],
+    "screening_source": "sources/9ff63a25d539234a/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 110,
+    "canonical": "github.com/rnrn/ai-context",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/rnrn/ai-context",
+    "benchmark": "QASPER",
+    "queries": [
+      18
+    ],
+    "screening_source": "sources/4a1a8b1d0831e9e5/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 111,
+    "canonical": "huggingface.co/Zen-XD/qasper",
+    "status": "lineage_duplicate",
+    "reason": "byte-identical qasper.py loader",
+    "family": "huggingface.co/allenai/qasper",
+    "benchmark": null,
+    "queries": [
+      19,
+      23
+    ],
+    "screening_source": "sources/a9c67e254344ca6a/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 112,
+    "canonical": "huggingface.co/mteb/QASPER",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/mteb/QASPER",
+    "benchmark": "QASPER",
+    "queries": [
+      19,
+      23
+    ],
+    "screening_source": "sources/0f4442b169ee113f/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 113,
+    "canonical": "huggingface.co/ag2435/qasper",
+    "status": "excluded",
+    "reason": "inaccessible HF dataset (401); eligibility unverified",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      19
+    ],
+    "screening_source": "sources/76feb15f181333f4/README.source",
+    "inaccessible": true
+  },
+  {
+    "index": 114,
+    "canonical": "huggingface.co/leonli66/qasper",
+    "status": "excluded",
+    "reason": "inaccessible HF dataset (401); eligibility unverified",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      19,
+      23
+    ],
+    "screening_source": "sources/24f46ffebd43bc21/README.source",
+    "inaccessible": true
+  },
+  {
+    "index": 115,
+    "canonical": "huggingface.co/DylanKuangzi/qasper",
+    "status": "lineage_duplicate",
+    "reason": "byte-identical qasper.py loader",
+    "family": "huggingface.co/allenai/qasper",
+    "benchmark": null,
+    "queries": [
+      19,
+      23
+    ],
+    "screening_source": "sources/cab509ad07c1ca13/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 116,
+    "canonical": "github.com/unseen1980/IDC",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/unseen1980/IDC",
+    "benchmark": "QASPER",
+    "queries": [
+      20
+    ],
+    "screening_source": "sources/245a949b4c8d9ff0/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 117,
+    "canonical": "github.com/KRLabsOrg/acl-verbatim",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/KRLabsOrg/acl-verbatim",
+    "benchmark": "QASPER",
+    "queries": [
+      20,
+      22
+    ],
+    "screening_source": "sources/19cc11d60d646489/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 118,
+    "canonical": "github.com/allenai/multicite",
+    "status": "excluded",
+    "reason": "MultiCite data converted to QASPER schema; not QASPER benchmark annotations",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      20
+    ],
+    "screening_source": "sources/52a356ae9530e393/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 119,
+    "canonical": "github.com/hyundong98/TrapDoc",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/hyundong98/TrapDoc",
+    "benchmark": "QASPER",
+    "queries": [
+      20
+    ],
+    "screening_source": "sources/65b7b8f263c2afdb/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 120,
+    "canonical": "github.com/QasperAI/mcp-server",
+    "status": "excluded",
+    "reason": "unrelated QasperAI product",
+    "family": null,
+    "benchmark": null,
+    "queries": [
+      20
+    ],
+    "screening_source": "sources/66d62af9552d98dc/README.source",
+    "inaccessible": true
+  },
+  {
+    "index": 121,
+    "canonical": "github.com/VectorSpaceLab/MemoRAG",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/VectorSpaceLab/MemoRAG",
+    "benchmark": "QASPER",
+    "queries": [
+      22
+    ],
+    "screening_source": "sources/9dae76c5d24bc3e2/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 122,
+    "canonical": "github.com/ZexueHe/MemoryArena",
+    "status": "lineage_duplicate",
+    "reason": "vendored MemoRAG subtree with upstream README",
+    "family": "github.com/VectorSpaceLab/MemoRAG",
+    "benchmark": null,
+    "queries": [
+      22
+    ],
+    "screening_source": "sources/e73fca8cd4744eeb/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 123,
+    "canonical": "github.com/qarkapp/sscc-rag-paper",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/qarkapp/sscc-rag-paper",
+    "benchmark": "QASPER",
+    "queries": [
+      22
+    ],
+    "screening_source": "sources/635055cc7f32e666/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 124,
+    "canonical": "github.com/allenai/scifact",
+    "status": "official_reference",
+    "reason": "original benchmark implementation/evaluator",
+    "family": "github.com/allenai/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      24,
+      26,
+      28,
+      30
+    ],
+    "screening_source": "sources/b1d2d9920172fc50/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 125,
+    "canonical": "github.com/metareflection/claimcheck",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/metareflection/claimcheck",
+    "benchmark": "SciFact",
+    "queries": [
+      24,
+      30
+    ],
+    "screening_source": "sources/ecd1fccec604a1fa/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 126,
+    "canonical": "github.com/beir-cellar/beir",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/beir-cellar/beir",
+    "benchmark": "SciFact",
+    "queries": [
+      24,
+      28
+    ],
+    "screening_source": "sources/94d3adc1b921a6c2/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 127,
+    "canonical": "github.com/dwadden/scifact-open",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/dwadden/scifact-open",
+    "benchmark": "SciFact",
+    "queries": [
+      24
+    ],
+    "screening_source": "sources/656a3a66d8349182/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 128,
+    "canonical": "github.com/MaryamAsgarinezhad/information-retrieval-sparse-dense-scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/MaryamAsgarinezhad/information-retrieval-sparse-dense-scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      24,
+      26,
+      28
+    ],
+    "screening_source": "sources/2573e5f992319140/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 129,
+    "canonical": "huggingface.co/allenai/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/allenai/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      25,
+      27,
+      31
+    ],
+    "screening_source": "sources/140e6a375a364697/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 130,
+    "canonical": "huggingface.co/bigbio/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/bigbio/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      25,
+      27
+    ],
+    "screening_source": "sources/6d53577ebcbaa0cd/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 131,
+    "canonical": "huggingface.co/Tevatron/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/Tevatron/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      25
+    ],
+    "screening_source": "sources/ee5b8b95323a7d4a/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 132,
+    "canonical": "huggingface.co/BeIR/scifact",
+    "status": "lineage_duplicate",
+    "reason": "BEIR SciFact distribution linked to BEIR implementation",
+    "family": "github.com/beir-cellar/beir",
+    "benchmark": null,
+    "queries": [
+      25,
+      27,
+      29,
+      31
+    ],
+    "screening_source": "sources/71338f1f875d8829/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 133,
+    "canonical": "huggingface.co/Dipto084/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/Dipto084/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      25
+    ],
+    "screening_source": "sources/e54a183e742f5732/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 134,
+    "canonical": "github.com/lachtarnour/scifact-verifier",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/lachtarnour/scifact-verifier",
+    "benchmark": "SciFact",
+    "queries": [
+      26,
+      28,
+      30
+    ],
+    "screening_source": "sources/a4497a85256bf217/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 135,
+    "canonical": "github.com/Jonas-Gustafsson/retrieval-evaluation-thesis",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/Jonas-Gustafsson/retrieval-evaluation-thesis",
+    "benchmark": "SciFact",
+    "queries": [
+      26,
+      28,
+      30
+    ],
+    "screening_source": "sources/cee2b7be2f988f35/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 136,
+    "canonical": "github.com/allenai/scifact-evaluator",
+    "status": "official_reference",
+    "reason": "original benchmark implementation/evaluator",
+    "family": "github.com/allenai/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      26
+    ],
+    "screening_source": "sources/67777b0eb1817338/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 137,
+    "canonical": "huggingface.co/jeffnyman/scifact",
+    "status": "lineage_duplicate",
+    "reason": "Hugging Face SciFact loader derivative; same source dataset schema; code differences retained for lineage check",
+    "family": "huggingface.co/allenai/scifact",
+    "benchmark": null,
+    "queries": [
+      27
+    ],
+    "screening_source": "sources/9ac3674acb7fdec5/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 138,
+    "canonical": "huggingface.co/orgrctera/beir_scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/orgrctera/beir_scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      27
+    ],
+    "screening_source": "sources/5be69f7d3aed3c19/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 139,
+    "canonical": "huggingface.co/MCINext/scifact-fa",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/MCINext/scifact-fa",
+    "benchmark": "SciFact",
+    "queries": [
+      27
+    ],
+    "screening_source": "sources/86827be174e0bdaa/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 140,
+    "canonical": "huggingface.co/andreiaalexa/scifact-relevance-pairs",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/andreiaalexa/scifact-relevance-pairs",
+    "benchmark": "SciFact",
+    "queries": [
+      27
+    ],
+    "screening_source": "sources/fa8ea36b0e63e984/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 141,
+    "canonical": "github.com/neilwen987/CSR_Adaptive_Rep",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/neilwen987/CSR_Adaptive_Rep",
+    "benchmark": "SciFact",
+    "queries": [
+      28
+    ],
+    "screening_source": "sources/d36dcd93410bb1ee/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 142,
+    "canonical": "huggingface.co/mteb/scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/mteb/scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      29,
+      31
+    ],
+    "screening_source": "sources/f1632dd7a02f6854/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 143,
+    "canonical": "huggingface.co/Hyukkyu/beir-scifact",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/Hyukkyu/beir-scifact",
+    "benchmark": "SciFact",
+    "queries": [
+      29
+    ],
+    "screening_source": "sources/4e5cc1307db35498/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 144,
+    "canonical": "huggingface.co/BeIR/scifact-qrels",
+    "status": "lineage_duplicate",
+    "reason": "BEIR qrels companion distribution",
+    "family": "github.com/beir-cellar/beir",
+    "benchmark": null,
+    "queries": [
+      29
+    ],
+    "screening_source": "sources/4dc92664bb5d17c8/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 145,
+    "canonical": "github.com/1ay1/rag-cpp",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "github.com/1ay1/rag-cpp",
+    "benchmark": "SciFact",
+    "queries": [
+      30
+    ],
+    "screening_source": "sources/dd2f9dc56e5a129c/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 146,
+    "canonical": "huggingface.co/andreiaalexa/adaptive-rag-scifact-150",
+    "status": "eligible",
+    "reason": "public benchmark-specific loader, distribution, conversion, or evaluation pipeline evidenced by README or discovered file",
+    "family": "huggingface.co/andreiaalexa/adaptive-rag-scifact-150",
+    "benchmark": "SciFact",
+    "queries": [
+      31
+    ],
+    "screening_source": "sources/15b848107745fe71/README.source",
+    "inaccessible": false
+  },
+  {
+    "index": 147,
+    "canonical": "huggingface.co/andreiaalexa/scifact-adaptive-rag",
+    "status": "lineage_duplicate",
+    "reason": "BEIR dataset copy; no separate converter documented",
+    "family": "github.com/beir-cellar/beir",
+    "benchmark": null,
+    "queries": [
+      31
+    ],
+    "screening_source": "sources/3406dd6ce1e9d13e/README.source",
+    "inaccessible": false
+  }
+]

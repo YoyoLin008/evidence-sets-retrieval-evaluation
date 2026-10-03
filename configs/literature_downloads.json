@@ -1,0 +1,16 @@
+{
+  "literature/sources/dmerit.pdf": "https://aclanthology.org/2024.emnlp-main.171.pdf",
+  "literature/sources/lab.pdf": "https://aclanthology.org/2024.emnlp-main.463.pdf",
+  "literature/sources/fever.pdf": "https://aclanthology.org/N18-1074.pdf",
+  "literature/sources/erag.pdf": "https://arxiv.org/pdf/2404.13781",
+  "literature/sources/ev2r_preprint.pdf": "https://arxiv.org/pdf/2411.05375",
+  "literature/sources/conjunctive_2026.pdf": "https://arxiv.org/pdf/2607.24165",
+  "literature/sources/relational_recall_2026.pdf": "https://arxiv.org/pdf/2608.18448",
+  "literature/sources/document_structure.pdf": "https://aclanthology.org/2024.eacl-long.64.pdf",
+  "literature/sources/sufficient_context.pdf": "https://proceedings.iclr.cc/paper_files/paper/2025/file/33dffa2e3d2ab74a783d1a8c292f66d9-Paper-Conference.pdf",
+  "literature/sources/dense_x.pdf": "https://arxiv.org/pdf/2312.06648",
+  "literature/sources/late_chunking.pdf": "https://arxiv.org/pdf/2409.04701",
+  "literature/sources/hichunk.pdf": "https://arxiv.org/pdf/2509.11552",
+  "literature/sources/metadata_dates.pdf": "https://arxiv.org/pdf/2009.06139",
+  "literature/sources/metadata_discrepancies.pdf": "https://arxiv.org/pdf/2508.18620"
+}

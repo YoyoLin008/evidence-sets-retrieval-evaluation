@@ -1,0 +1,893 @@
+[
+  {
+    "dataset": "qasper",
+    "id": "1d10e069b4304fabfbed69acf409f0a311bdc441",
+    "cluster": "1806.09652",
+    "category": "union",
+    "category_n": 290,
+    "query": "Which models do they use for NMT?",
+    "gold": [
+      [
+        29
+      ],
+      [
+        29
+      ]
+    ],
+    "retrieved": [
+      29,
+      8,
+      28,
+      24,
+      0
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 1,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "4485e32052741972877375667901f61e602ec4de",
+    "cluster": "1805.11850",
+    "category": "union",
+    "category_n": 290,
+    "query": "How big is the self-collected corpus?",
+    "gold": [
+      [
+        9
+      ],
+      [
+        9
+      ],
+      [
+        9
+      ]
+    ],
+    "retrieved": [
+      14,
+      7,
+      9,
+      0,
+      3
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 3,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 1,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "28a8a1542b45f67674a2f1d54fff7a1e45bfad66",
+    "cluster": "2002.04326",
+    "category": "union",
+    "category_n": 290,
+    "query": "How are biases identified in the dataset?",
+    "gold": [
+      [
+        14
+      ],
+      [
+        11
+      ]
+    ],
+    "retrieved": [
+      13,
+      4,
+      11,
+      10,
+      14
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 2,
+      "union_size": 2,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 2.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "14fdc8087f2a62baea9d50c4aa3a3f8310b38d17",
+    "cluster": "1909.12208",
+    "category": "one_not_union",
+    "category_n": 156,
+    "query": "What supports the claim that enhancement in training is advisable as long as enhancement in test is at least as strong as in training?",
+    "gold": [
+      [
+        17,
+        22,
+        23,
+        34
+      ],
+      [
+        23
+      ]
+    ],
+    "retrieved": [
+      34,
+      1,
+      2,
+      23,
+      3
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 1,
+      "union_size": 4,
+      "min_set_size": 1,
+      "max_set_size": 4,
+      "union_to_min_size": 4.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "5a7d1ae6796e09299522ebda7bfcfad312d6d128",
+    "cluster": "1912.07076",
+    "category": "one_not_union",
+    "category_n": 156,
+    "query": "What previous proposed methods did they explore?",
+    "gold": [
+      [
+        3
+      ],
+      [
+        19,
+        24,
+        30,
+        31
+      ]
+    ],
+    "retrieved": [
+      3,
+      2,
+      25,
+      52,
+      20
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 2,
+      "union_size": 5,
+      "min_set_size": 1,
+      "max_set_size": 4,
+      "union_to_min_size": 5.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "0bde3ecfdd7c4a9af23f53da2cda6cd7a8398220",
+    "cluster": "1804.07445",
+    "category": "one_not_union",
+    "category_n": 156,
+    "query": "what language was the data in?",
+    "gold": [
+      [
+        24
+      ],
+      [
+        20
+      ],
+      [
+        24
+      ]
+    ],
+    "retrieved": [
+      27,
+      29,
+      20,
+      26,
+      0
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 3,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 2,
+      "union_size": 2,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 2.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "ec2045e0da92989642a5b5f2b1130c8bd765bcc5",
+    "cluster": "1901.03253",
+    "category": "no_hit",
+    "category_n": 306,
+    "query": "Did they use The Onion as their dataset?",
+    "gold": [
+      [
+        21
+      ],
+      [
+        21
+      ]
+    ],
+    "retrieved": [
+      3,
+      6,
+      67,
+      34,
+      46
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 1,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "2aeabec8a734a6e8ca9e7a308dd8c9a1011b3d6e",
+    "cluster": "1801.05617",
+    "category": "no_hit",
+    "category_n": 306,
+    "query": "How long is the training dataset for English?",
+    "gold": [
+      [
+        57,
+        59
+      ],
+      [
+        28
+      ]
+    ],
+    "retrieved": [
+      70,
+      27,
+      80,
+      18,
+      53
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 2,
+      "union_size": 3,
+      "min_set_size": 1,
+      "max_set_size": 2,
+      "union_to_min_size": 3.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "578add9d3dadf86cd0876d42b03bf0114f83d0e7",
+    "cluster": "1907.04072",
+    "category": "no_hit",
+    "category_n": 306,
+    "query": "How did they obtain the tweets?",
+    "gold": [
+      [
+        10
+      ],
+      [
+        10
+      ],
+      [
+        10
+      ]
+    ],
+    "retrieved": [
+      37,
+      41,
+      2,
+      8,
+      9
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 3,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 1,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "860257956b83099cccf1359e5d960289d7d50265",
+    "cluster": "1702.02367",
+    "category": "partial",
+    "category_n": 123,
+    "query": "Which neural network architecture do they use?",
+    "gold": [
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        12
+      ]
+    ],
+    "retrieved": [
+      37,
+      31,
+      33,
+      0,
+      12
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 2,
+      "min_set_size": 2,
+      "max_set_size": 2,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 1
+    },
+    "answer_agreement": false,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "79e61134a6e29141cd19252571ffc92a0b4bc97f",
+    "cluster": "1907.05338",
+    "category": "partial",
+    "category_n": 123,
+    "query": "did they test with other pretrained models besides bert?",
+    "gold": [
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        14
+      ]
+    ],
+    "retrieved": [
+      15,
+      2,
+      11,
+      13,
+      12
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 3,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 1,
+      "union_size": 2,
+      "min_set_size": 1,
+      "max_set_size": 2,
+      "union_to_min_size": 2.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "qasper",
+    "id": "0f9c1586f1b4b531fa4fd113e767d06af90b1ae8",
+    "cluster": "1603.07252",
+    "category": "partial",
+    "category_n": 123,
+    "query": "Do they compare to abstractive summarization methods?",
+    "gold": [
+      [
+        41,
+        43
+      ],
+      [
+        11,
+        41
+      ],
+      [
+        41
+      ]
+    ],
+    "retrieved": [
+      11,
+      13,
+      43,
+      1,
+      9
+    ],
+    "k": 5,
+    "topology": {
+      "n_references": 3,
+      "n_distinct_sets": 3,
+      "n_minimal_sets": 1,
+      "union_size": 3,
+      "min_set_size": 1,
+      "max_set_size": 2,
+      "union_to_min_size": 3.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "261:10697096",
+    "cluster": "261:10697096",
+    "category": "union",
+    "category_n": 108,
+    "query": "Chronic aerobic exercise alters endothelial function, improving vasodilating mechanisms mediated by NO.",
+    "gold": [
+      [
+        12
+      ]
+    ],
+    "retrieved": [
+      4,
+      0,
+      12
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 1,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 1,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "1202:3475317",
+    "cluster": "1202:3475317",
+    "category": "union",
+    "category_n": 108,
+    "query": "The center of the granuloma in an immune cell induces a pro-inflammatory immune response.",
+    "gold": [
+      [
+        4
+      ]
+    ],
+    "retrieved": [
+      2,
+      4,
+      8
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 1,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 1,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "993:16472469",
+    "cluster": "993:16472469",
+    "category": "union",
+    "category_n": 108,
+    "query": "Pyridostatin destabilizes the G - quadruplex in the telomeric region.",
+    "gold": [
+      [
+        4
+      ]
+    ],
+    "retrieved": [
+      3,
+      4,
+      0
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 1,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 1,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "873:1180972",
+    "cluster": "873:1180972",
+    "category": "one_not_union",
+    "category_n": 58,
+    "query": "Obesity is determined solely by environmental factors.",
+    "gold": [
+      [
+        3,
+        4
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "retrieved": [
+      7,
+      0,
+      1
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 3,
+      "n_distinct_sets": 3,
+      "n_minimal_sets": 3,
+      "union_size": 4,
+      "min_set_size": 1,
+      "max_set_size": 2,
+      "union_to_min_size": 4.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "399:791050",
+    "cluster": "399:791050",
+    "category": "one_not_union",
+    "category_n": 58,
+    "query": "Exposure to fine particulate air pollution is relate to anxiety prevalence.",
+    "gold": [
+      [
+        7
+      ],
+      [
+        11
+      ]
+    ],
+    "retrieved": [
+      0,
+      11,
+      12
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 2,
+      "union_size": 2,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 2.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "236:4388470",
+    "cluster": "233:4388470",
+    "category": "one_not_union",
+    "category_n": 58,
+    "query": "Cell autonomous sex determination in somatic cells occurs in Passeriformes.",
+    "gold": [
+      [
+        3
+      ],
+      [
+        6
+      ],
+      [
+        7
+      ]
+    ],
+    "retrieved": [
+      7,
+      0,
+      3
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 3,
+      "n_distinct_sets": 3,
+      "n_minimal_sets": 3,
+      "union_size": 3,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 3.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "314:4347374",
+    "cluster": "314:4347374",
+    "category": "partial",
+    "category_n": 9,
+    "query": "Deamination of cytidine to uridine on the minus strand of viral DNA results in catastrophic G-to-A mutations in the viral genome.",
+    "gold": [
+      [
+        3,
+        5
+      ]
+    ],
+    "retrieved": [
+      5,
+      4,
+      6
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 1,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 2,
+      "min_set_size": 2,
+      "max_set_size": 2,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 1
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "597:36355784",
+    "cluster": "597:12779444",
+    "category": "partial",
+    "category_n": 9,
+    "query": "Incidence rates of cervical cancer have decreased.",
+    "gold": [
+      [
+        6,
+        7
+      ]
+    ],
+    "retrieved": [
+      1,
+      14,
+      6
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 1,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 2,
+      "min_set_size": 2,
+      "max_set_size": 2,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 1
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "295:20310709",
+    "cluster": "295:20310709",
+    "category": "partial",
+    "category_n": 9,
+    "query": "Crosstalk between dendritic cells (DCs) and innate lymphoid cells (ILCs) is important in the regulation of intestinal homeostasis.",
+    "gold": [
+      [
+        2,
+        4
+      ],
+      [
+        5,
+        6
+      ]
+    ],
+    "retrieved": [
+      2,
+      6,
+      1
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 2,
+      "union_size": 4,
+      "min_set_size": 2,
+      "max_set_size": 2,
+      "union_to_min_size": 2.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 1
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "1382:17755060",
+    "cluster": "1382:17755060",
+    "category": "no_hit",
+    "category_n": 34,
+    "query": "aPKCz causes tumour enhancement by affecting glutamine metabolism.",
+    "gold": [
+      [
+        3
+      ],
+      [
+        5
+      ]
+    ],
+    "retrieved": [
+      1,
+      0,
+      2
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 2,
+      "n_distinct_sets": 2,
+      "n_minimal_sets": 2,
+      "union_size": 2,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 2.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "957:123859",
+    "cluster": "957:123859",
+    "category": "no_hit",
+    "category_n": 34,
+    "query": "Podocytes are motile and migrate in the presence of injury.",
+    "gold": [
+      [
+        2
+      ]
+    ],
+    "retrieved": [
+      0,
+      6,
+      1
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 1,
+      "n_distinct_sets": 1,
+      "n_minimal_sets": 1,
+      "union_size": 1,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 1.0,
+      "has_alternatives": 0,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  },
+  {
+    "dataset": "scifact",
+    "id": "532:12991445",
+    "cluster": "532:12991445",
+    "category": "no_hit",
+    "category_n": 34,
+    "query": "Hyperfibrinogenemia decreases rates of femoropopliteal bypass thrombosis.",
+    "gold": [
+      [
+        5
+      ],
+      [
+        9
+      ],
+      [
+        11
+      ],
+      [
+        12
+      ]
+    ],
+    "retrieved": [
+      1,
+      0,
+      6
+    ],
+    "k": 3,
+    "topology": {
+      "n_references": 4,
+      "n_distinct_sets": 4,
+      "n_minimal_sets": 4,
+      "union_size": 4,
+      "min_set_size": 1,
+      "max_set_size": 1,
+      "union_to_min_size": 4.0,
+      "has_alternatives": 1,
+      "has_compound_requirement": 0
+    },
+    "answer_agreement": true,
+    "selection": "First 3 IDs ordered by SHA256 within BM25 category"
+  }
+]

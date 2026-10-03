@@ -1,0 +1,23 @@
+{
+  "projected_seconds": 10568.897547174774,
+  "threshold_seconds": 7200,
+  "bin_mean_seconds": [
+    0.14214826251598867,
+    0.1396134381542321,
+    0.1786548358804518,
+    1.6413168447325006
+  ],
+  "bin_counts": [
+    5028,
+    5028,
+    5028,
+    5028
+  ],
+  "load_seconds": 0.9996452920022421,
+  "warmup_seconds": 0.38246079097734764,
+  "passed": false,
+  "effectiveness_computed": false,
+  "sample_n": 132,
+  "unique_inputs": 20112,
+  "note": "Length-bin sample includes longest; projection is an estimate, not a confidence bound."
+}

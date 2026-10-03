@@ -1,0 +1,11 @@
+numpy==2.3.5
+scipy==1.16.3
+pandas==2.2.3
+matplotlib==3.10.8
+scikit-learn==1.7.2
+pytest==8.4.2
+pypdf==6.10.0
+onnxruntime==1.23.2
+tokenizers==0.22.1
+reportlab==4.4.4
+pypdfium2==4.30.0

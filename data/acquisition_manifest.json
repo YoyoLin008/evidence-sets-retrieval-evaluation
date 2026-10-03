@@ -1,0 +1,370 @@
+{
+  "literature/sources/qasper_card.md": {
+    "url": "https://huggingface.co/datasets/allenai/qasper/raw/main/README.md",
+    "final_url": "https://huggingface.co/datasets/allenai/qasper/raw/main/README.md",
+    "retrieved_utc": "2026-10-03T00:18:26.331829+00:00",
+    "bytes": 9639,
+    "sha256": "da348d3f8277f8a93ca397941f6a525433e282858b1c0562aed3f667d8e55b05",
+    "status": 200
+  },
+  "literature/sources/qasper_loader.py.txt": {
+    "url": "https://huggingface.co/datasets/allenai/qasper/raw/main/qasper.py",
+    "final_url": "https://huggingface.co/datasets/allenai/qasper/raw/main/qasper.py",
+    "retrieved_utc": "2026-10-03T00:18:26.462126+00:00",
+    "bytes": 5950,
+    "sha256": "381d623d4992118738c0a17b9c8219136f493eda381125716ab32b814d0b3c0a",
+    "status": 200
+  },
+  "literature/sources/scifact_license.md": {
+    "url": "https://raw.githubusercontent.com/allenai/scifact/master/LICENSE.md",
+    "final_url": "https://raw.githubusercontent.com/allenai/scifact/master/LICENSE.md",
+    "retrieved_utc": "2026-10-03T00:18:26.745450+00:00",
+    "bytes": 542,
+    "sha256": "56ee69bc639cbab8f0b2e4b67091ec5e9390aa99a1d65f0a35e4274686c9a806",
+    "status": 200
+  },
+  "literature/sources/scifact_data.md": {
+    "url": "https://raw.githubusercontent.com/allenai/scifact/master/doc/data.md",
+    "final_url": "https://raw.githubusercontent.com/allenai/scifact/master/doc/data.md",
+    "retrieved_utc": "2026-10-03T00:18:27.020034+00:00",
+    "bytes": 4290,
+    "sha256": "f8f4cc2f7bf32347dd47d419be731a5d0eeb60ebb75423619e02919c7f337df7",
+    "status": 200
+  },
+  "literature/sources/scifact_evaluation.md": {
+    "url": "https://raw.githubusercontent.com/allenai/scifact/master/doc/evaluation.md",
+    "final_url": "https://raw.githubusercontent.com/allenai/scifact/master/doc/evaluation.md",
+    "retrieved_utc": "2026-10-03T00:18:27.290515+00:00",
+    "bytes": 5852,
+    "sha256": "daf79d500b0e5df27b29d28d5c14c6876f72cb4dfc2826eb93ca552d80ca0803",
+    "status": 200
+  },
+  "literature/sources/scifact_evaluator.py.txt": {
+    "url": "https://raw.githubusercontent.com/allenai/scifact-evaluator/master/evaluator/eval.py",
+    "final_url": "https://raw.githubusercontent.com/allenai/scifact-evaluator/master/evaluator/eval.py",
+    "retrieved_utc": "2026-10-03T00:18:27.480553+00:00",
+    "bytes": 8847,
+    "sha256": "2554fed44c3f5592bdeed59ab0d3918a412b452ba1c77da73ba0f62e74c9987f",
+    "status": 200
+  },
+  "literature/sources/qasper_paper.pdf": {
+    "url": "https://aclanthology.org/2021.naacl-main.365.pdf",
+    "final_url": "https://aclanthology.org/2021.naacl-main.365.pdf",
+    "retrieved_utc": "2026-10-03T00:18:27.850314+00:00",
+    "bytes": 524772,
+    "sha256": "b15b4378988ed4e553dd312eaf334411abcf1fb28c53b846d360435eb55cd193",
+    "status": 200
+  },
+  "literature/sources/scifact_paper.pdf": {
+    "url": "https://aclanthology.org/2020.emnlp-main.609.pdf",
+    "final_url": "https://aclanthology.org/2020.emnlp-main.609.pdf",
+    "retrieved_utc": "2026-10-03T00:18:28.906318+00:00",
+    "bytes": 4114861,
+    "sha256": "e51a1fab569f2dcb00f7806fe95094e25a34c027140709725d3d05b7a0af9ac7",
+    "status": 200
+  },
+  "literature/sources/qasper_heuristics.py.txt": {
+    "url": "https://raw.githubusercontent.com/allenai/qasper-led-baseline/main/scripts/evidence_retrieval_heuristic_baselines.py",
+    "final_url": "https://raw.githubusercontent.com/allenai/qasper-led-baseline/main/scripts/evidence_retrieval_heuristic_baselines.py",
+    "retrieved_utc": "2026-10-03T00:18:29.102285+00:00",
+    "bytes": 2755,
+    "sha256": "034c3053367e35e72f0e2a2efe8abaf49a512c547d2f3568ee75542a1acfc48e",
+    "status": 200
+  },
+  "literature/sources/scifact_annotation_guide.pdf": {
+    "url": "https://scifact.s3-us-west-2.amazonaws.com/doc/evidence-annotation-instructions.pdf",
+    "final_url": "https://scifact.s3-us-west-2.amazonaws.com/doc/evidence-annotation-instructions.pdf",
+    "retrieved_utc": "2026-10-03T00:18:30.288093+00:00",
+    "bytes": 3937303,
+    "sha256": "915197d9e60ca540d403d0ffd46302ec75cc521648b802e8894297d44514f04d",
+    "status": 200
+  },
+  "data/raw/scifact.tar.gz": {
+    "url": "https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz",
+    "final_url": "https://scifact.s3-us-west-2.amazonaws.com/release/latest/data.tar.gz",
+    "retrieved_utc": "2026-10-03T00:18:32.569490+00:00",
+    "bytes": 3115079,
+    "sha256": "11c621288d41ac144d29b13b0f8503b3820b7d6e8b1f6ff24dff335c196d76be",
+    "status": 200
+  },
+  "literature/sources/irrj_submissions.html": {
+    "url": "https://irrj.org/about/submissions",
+    "final_url": "https://irrj.org/about/submissions",
+    "retrieved_utc": "2026-10-03T00:18:33.400522+00:00",
+    "bytes": 21268,
+    "sha256": "c23be89013496ff5cc5c8b6d75f8681b5d00ec2effa566fd943986b8f41d268f",
+    "status": 200
+  },
+  "literature/sources/irrj_about.html": {
+    "url": "https://irrj.org/about",
+    "final_url": "https://irrj.org/about",
+    "retrieved_utc": "2026-10-03T00:18:33.911594+00:00",
+    "bytes": 16230,
+    "sha256": "8e79861b89b6d6fe00896cae5ff852549ba1fc4441477503084ca3c0419ac8b6",
+    "status": 200
+  },
+  "literature/sources/information_research_submissions.html": {
+    "url": "https://informationr.net/infres/about/submissions",
+    "final_url": "https://informationr.net/infres/about/submissions",
+    "retrieved_utc": "2026-10-03T00:18:34.730520+00:00",
+    "bytes": 51770,
+    "sha256": "7ddcebac3e80d60a2b9359c53b737818c4fe84941b658e9c794f3510e2269180",
+    "status": 200
+  },
+  "data/raw/qasper-train-dev-v0.3.tgz": {
+    "url": "https://qasper-dataset.s3.us-west-2.amazonaws.com/qasper-train-dev-v0.3.tgz",
+    "final_url": "https://qasper-dataset.s3.us-west-2.amazonaws.com/qasper-train-dev-v0.3.tgz",
+    "retrieved_utc": "2026-10-03T00:19:38.331770+00:00",
+    "bytes": 10835856,
+    "sha256": "a28fdf966db827bcee3d873107d6b6669864fb7ca8fbf73a192f5e39191bdb5a",
+    "status": 200
+  },
+  "data/raw/qasper-test-and-evaluator-v0.3.tgz": {
+    "url": "https://qasper-dataset.s3.us-west-2.amazonaws.com/qasper-test-and-evaluator-v0.3.tgz",
+    "final_url": "https://qasper-dataset.s3.us-west-2.amazonaws.com/qasper-test-and-evaluator-v0.3.tgz",
+    "retrieved_utc": "2026-10-03T00:19:40.788627+00:00",
+    "bytes": 3865061,
+    "sha256": "72a52a41193e2838b8074f80ac074b94f956b84886c36a61c58a7df4171bdd72",
+    "status": 200
+  },
+  "literature/sources/dmerit.pdf": {
+    "url": "https://aclanthology.org/2024.emnlp-main.171.pdf",
+    "final_url": "https://aclanthology.org/2024.emnlp-main.171.pdf",
+    "retrieved_utc": "2026-10-03T00:30:54.681653+00:00",
+    "bytes": 2462292,
+    "sha256": "e8f2f218834b41e27cbc313a5b0f2ba2fc500a48e3a5955ebda7ab2029561baf",
+    "status": 200
+  },
+  "literature/sources/lab.pdf": {
+    "url": "https://aclanthology.org/2024.emnlp-main.463.pdf",
+    "final_url": "https://aclanthology.org/2024.emnlp-main.463.pdf",
+    "retrieved_utc": "2026-10-03T00:30:55.331411+00:00",
+    "bytes": 1770576,
+    "sha256": "14b69e6caf0af7ee96897cf4a88882bcb822a65bf87a575dd1a09b74ff5e4583",
+    "status": 200
+  },
+  "literature/sources/fever.pdf": {
+    "url": "https://aclanthology.org/N18-1074.pdf",
+    "final_url": "https://aclanthology.org/N18-1074.pdf",
+    "retrieved_utc": "2026-10-03T00:30:55.652442+00:00",
+    "bytes": 460896,
+    "sha256": "5d328bad901f488c4cff1dd073b55e30653b29c9c21c48700b926421cb84c9f7",
+    "status": 200
+  },
+  "literature/sources/erag.pdf": {
+    "url": "https://arxiv.org/pdf/2404.13781",
+    "final_url": "https://arxiv.org/pdf/2404.13781",
+    "retrieved_utc": "2026-10-03T00:30:56.196365+00:00",
+    "bytes": 750644,
+    "sha256": "61038714c72045524d4168940f07096766139bbe5962cdc6a88d75747a15bc6d",
+    "status": 200
+  },
+  "literature/sources/ev2r_preprint.pdf": {
+    "url": "https://arxiv.org/pdf/2411.05375",
+    "final_url": "https://arxiv.org/pdf/2411.05375",
+    "retrieved_utc": "2026-10-03T00:30:57.017133+00:00",
+    "bytes": 1443069,
+    "sha256": "7da651aebb24a34fa8bb28a80c2e95f35afabf7f4efe9b574735998ed1ab0a34",
+    "status": 200
+  },
+  "literature/sources/conjunctive_2026.pdf": {
+    "url": "https://arxiv.org/pdf/2607.24165",
+    "final_url": "https://arxiv.org/pdf/2607.24165",
+    "retrieved_utc": "2026-10-03T00:30:57.923765+00:00",
+    "bytes": 1935885,
+    "sha256": "305ebf7faf0dad052f5143e9e985ce5e12f145ed77f3e8fa5bba18c6a9b624b4",
+    "status": 200
+  },
+  "literature/sources/relational_recall_2026.pdf": {
+    "url": "https://arxiv.org/pdf/2608.18448",
+    "final_url": "https://arxiv.org/pdf/2608.18448",
+    "retrieved_utc": "2026-10-03T00:30:58.384165+00:00",
+    "bytes": 545266,
+    "sha256": "43d5af465fd953a063b4d9c9081d90f6ae0c602893886e1191d6ba8a87667cf5",
+    "status": 200
+  },
+  "literature/sources/document_structure.pdf": {
+    "url": "https://aclanthology.org/2024.eacl-long.64.pdf",
+    "final_url": "https://aclanthology.org/2024.eacl-long.64.pdf",
+    "retrieved_utc": "2026-10-03T00:30:58.752150+00:00",
+    "bytes": 513209,
+    "sha256": "cb0fe620ca78072c1e7f2e68e6fe8fde3ffbd7354781a45ccd4020de81175901",
+    "status": 200
+  },
+  "literature/sources/sufficient_context.pdf": {
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/33dffa2e3d2ab74a783d1a8c292f66d9-Paper-Conference.pdf",
+    "final_url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/33dffa2e3d2ab74a783d1a8c292f66d9-Paper-Conference.pdf",
+    "retrieved_utc": "2026-10-03T00:30:59.709513+00:00",
+    "bytes": 970808,
+    "sha256": "1d48ccb637e44694bf41fbef81d087c60aa2e38a31bb9641554b422c47de8f3e",
+    "status": 200
+  },
+  "literature/sources/dense_x.pdf": {
+    "url": "https://arxiv.org/pdf/2312.06648",
+    "final_url": "https://arxiv.org/pdf/2312.06648",
+    "retrieved_utc": "2026-10-03T00:31:00.328113+00:00",
+    "bytes": 935698,
+    "sha256": "307d756e825845e1b8c60306151c5c53d95d025d5352e3afd22030208911d3d1",
+    "status": 200
+  },
+  "literature/sources/late_chunking.pdf": {
+    "url": "https://arxiv.org/pdf/2409.04701",
+    "final_url": "https://arxiv.org/pdf/2409.04701",
+    "retrieved_utc": "2026-10-03T00:31:00.746657+00:00",
+    "bytes": 470179,
+    "sha256": "3415e83ae4d180859481349fd5d0c6fdf22bbe3d864c4d276f499491a8eed109",
+    "status": 200
+  },
+  "literature/sources/hichunk.pdf": {
+    "url": "https://arxiv.org/pdf/2509.11552",
+    "final_url": "https://arxiv.org/pdf/2509.11552",
+    "retrieved_utc": "2026-10-03T00:31:01.287331+00:00",
+    "bytes": 696138,
+    "sha256": "6f854d5bb3a1651ae3cda155c3b191442c99a90cffc19b6c9bff73a25ea0b205",
+    "status": 200
+  },
+  "literature/sources/metadata_dates.pdf": {
+    "url": "https://arxiv.org/pdf/2009.06139",
+    "final_url": "https://arxiv.org/pdf/2009.06139",
+    "retrieved_utc": "2026-10-03T00:31:01.559814+00:00",
+    "bytes": 190757,
+    "sha256": "3a1bb195c877d2b30f8f6555c5442c16acfd58989060ef2b54002fc89844e3fb",
+    "status": 200
+  },
+  "literature/sources/metadata_discrepancies.pdf": {
+    "url": "https://arxiv.org/pdf/2508.18620",
+    "final_url": "https://arxiv.org/pdf/2508.18620",
+    "retrieved_utc": "2026-10-03T00:31:01.987406+00:00",
+    "bytes": 464011,
+    "sha256": "a0809838bedf2feb0ae317b6407ea9b3af166282d1b6164627ba25055b236cfd",
+    "status": 200
+  },
+  "data/models/minilm/model_metadata.json": {
+    "url": "https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2",
+    "final_url": "https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2",
+    "retrieved_utc": "2026-10-03T00:32:47.387427+00:00",
+    "bytes": 7052,
+    "sha256": "e055cb065cb890a741d3841db5e8daa9151f1929a61f35496997c1f2509f3059",
+    "status": 200
+  },
+  "data/models/minilm/onnx/model.onnx": {
+    "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/onnx/model.onnx",
+    "final_url": "https://us.aws.cdn.hf.co/xet-bridge-us/621ffdc136468d709f180294/f6041cb139310735d267939642554a0199a828a08edc37b0ddaf3b035eea5df4",
+    "retrieved_utc": "2026-10-03T00:32:56.546634+00:00",
+    "bytes": 90405214,
+    "sha256": "6fd5d72fe4589f189f8ebc006442dbb529bb7ce38f8082112682524616046452",
+    "status": 200
+  },
+  "data/models/minilm/tokenizer.json": {
+    "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer.json",
+    "final_url": "https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2F1110a243fdf4706b3f48f1d95db1a4f5529b4d41%2Ftokenizer.json=&etag=%22cb202bfe2e3c98645018a6d12f182a434c9d3e02%22",
+    "retrieved_utc": "2026-10-03T00:32:56.941913+00:00",
+    "bytes": 466247,
+    "sha256": "be50c3628f2bf5bb5e3a7f17b1f74611b2561a3a27eeab05e5aa30f411572037",
+    "status": 200
+  },
+  "data/models/minilm/config.json": {
+    "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json",
+    "final_url": "https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2F1110a243fdf4706b3f48f1d95db1a4f5529b4d41%2Fconfig.json=&etag=%2272b987fd805cfa2b58c4c8c952b274a11bfd5a00%22",
+    "retrieved_utc": "2026-10-03T00:32:57.142902+00:00",
+    "bytes": 612,
+    "sha256": "953f9c0d463486b10a6871cc2fd59f223b2c70184f49815e7efbcab5d8908b41",
+    "status": 200
+  },
+  "data/models/minilm/README.md": {
+    "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md",
+    "final_url": "https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2F1110a243fdf4706b3f48f1d95db1a4f5529b4d41%2FREADME.md=&etag=%2244af2e3b0fa3a0b6239e48422972bf755f28fde0%22",
+    "retrieved_utc": "2026-10-03T00:32:57.374595+00:00",
+    "bytes": 10502,
+    "sha256": "dcd602d2fd35c203a247304a06fec6654a12f7941b739f9221a064fe8dc3b7f0",
+    "status": 200
+  },
+  "data/models/minilm/sentence_bert_config.json": {
+    "url": "https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json",
+    "final_url": "https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json?%2Fsentence-transformers%2Fall-MiniLM-L6-v2%2Fresolve%2F1110a243fdf4706b3f48f1d95db1a4f5529b4d41%2Fsentence_bert_config.json=&etag=%2259d594003bf59880a884c574bf88ef7555bb0202%22",
+    "retrieved_utc": "2026-10-03T00:32:57.591700+00:00",
+    "bytes": 53,
+    "sha256": "fc1993fde0a95c24ec6c022539d41cf6e2f7c9721e5415d6fb6897472a9cd4b7",
+    "status": 200
+  },
+  "literature/sources/irrj_template.zip": {
+    "url": "https://irrj.org/libraryFiles/downloadPublic/157",
+    "final_url": "https://irrj.org/libraryFiles/downloadPublic/157",
+    "retrieved_utc": "2026-10-03T00:51:27.019960+00:00",
+    "bytes": 181539,
+    "sha256": "bf1bf6515722e37a8290efbb727d5e8522689e88c7ab4ac014b05d66851b2971",
+    "status": 200
+  },
+  "literature/sources/qasper.bib": {
+    "url": "https://aclanthology.org/2021.naacl-main.365.bib",
+    "final_url": "https://aclanthology.org/2021.naacl-main.365.bib",
+    "retrieved_utc": "2026-10-03T00:57:21.574166+00:00",
+    "bytes": 958,
+    "sha256": "a174e0f137dd005dc905e9861df8082047878f728e669ecc02e4651564338d18",
+    "status": 200
+  },
+  "literature/sources/scifact.bib": {
+    "url": "https://aclanthology.org/2020.emnlp-main.609.bib",
+    "final_url": "https://aclanthology.org/2020.emnlp-main.609.bib",
+    "retrieved_utc": "2026-10-03T00:57:21.755100+00:00",
+    "bytes": 752,
+    "sha256": "353cd6aaaef9213d338726595195800e712c534ba22d2d7e1e9797a97a94a6e4",
+    "status": 200
+  },
+  "literature/sources/fever.bib": {
+    "url": "https://aclanthology.org/N18-1074.bib",
+    "final_url": "https://aclanthology.org/N18-1074.bib",
+    "retrieved_utc": "2026-10-03T00:57:21.932015+00:00",
+    "bytes": 757,
+    "sha256": "2a7be035b7ce273f300c2426524c9d7350451be857cda434210fae1807a559fd",
+    "status": 200
+  },
+  "literature/sources/dmerit.bib": {
+    "url": "https://aclanthology.org/2024.emnlp-main.171.bib",
+    "final_url": "https://aclanthology.org/2024.emnlp-main.171.bib",
+    "retrieved_utc": "2026-10-03T00:57:22.102624+00:00",
+    "bytes": 778,
+    "sha256": "e532be59a9a351af9c30db8710cbd8f1f2f1139911fbbfe461c407f7418c5207",
+    "status": 200
+  },
+  "literature/sources/lab.bib": {
+    "url": "https://aclanthology.org/2024.emnlp-main.463.bib",
+    "final_url": "https://aclanthology.org/2024.emnlp-main.463.bib",
+    "retrieved_utc": "2026-10-03T00:57:22.293249+00:00",
+    "bytes": 667,
+    "sha256": "3b9c07b88d124200a0c54e02ee1fad6ac2a54951d4ae992da790b82a8071af2b",
+    "status": 200
+  },
+  "literature/sources/document_structure.bib": {
+    "url": "https://aclanthology.org/2024.eacl-long.64.bib",
+    "final_url": "https://aclanthology.org/2024.eacl-long.64.bib",
+    "retrieved_utc": "2026-10-03T00:57:22.454206+00:00",
+    "bytes": 721,
+    "sha256": "66eb8d397e66df4026fab11c5ce41340356c75fcf83778ee2273cb896cbde137",
+    "status": 200
+  },
+  "literature/sources/feverous.bib": {
+    "url": "https://aclanthology.org/2021.fever-1.1.bib",
+    "final_url": "https://aclanthology.org/2021.fever-1.1.bib",
+    "retrieved_utc": "2026-10-03T00:57:22.626279+00:00",
+    "bytes": 972,
+    "sha256": "2c2ca68fdbd0a21d73d6dd57699195105dbe077a30ad10e053d4849835160bab",
+    "status": 200
+  },
+  "literature/sources/ev2r_crossref.json": {
+    "url": "https://api.crossref.org/works/10.1162/tacl.a.647",
+    "final_url": "https://api.crossref.org/works/10.1162/tacl.a.647",
+    "retrieved_utc": "2026-10-03T00:57:22.879207+00:00",
+    "bytes": 21488,
+    "sha256": "896bc5f0a4c5c031e4d28a589d51086744998ec68ad874357d7426add341d181",
+    "status": 200
+  },
+  "literature/sources/erag_crossref.json": {
+    "url": "https://api.crossref.org/works/10.1145/3626772.3657957",
+    "final_url": "https://api.crossref.org/works/10.1145/3626772.3657957",
+    "retrieved_utc": "2026-10-03T00:57:23.051826+00:00",
+    "bytes": 11373,
+    "sha256": "75a453c9ea7bc21ca156ee056e200d78ba43e943219477247b50915024986e14",
+    "status": 200
+  }
+}

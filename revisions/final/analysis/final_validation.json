@@ -1,0 +1,76 @@
+{
+  "passed": true,
+  "protected_files": 81,
+  "unchanged_original_and_exploratory_evidence": true,
+  "rankings": 5420,
+  "score_points": 32520,
+  "primary": {
+    "qasper": {
+      "hit": 0.6502857143,
+      "complete": 0.5097142857,
+      "union_complete": 0.3314285714,
+      "complete_without_union": 0.1782857143
+    },
+    "scifact": {
+      "hit": 0.8373205742,
+      "complete": 0.7942583732,
+      "union_complete": 0.5167464115,
+      "complete_without_union": 0.2775119617
+    }
+  },
+  "topology": {
+    "qasper": {
+      "counts": [
+        403,
+        187,
+        243,
+        42
+      ],
+      "contributions": [
+        0.0,
+        0.0594285714286,
+        0.100571428571,
+        0.0182857142857
+      ],
+      "sum": 0.17828571428530002
+    },
+    "scifact": {
+      "counts": [
+        124,
+        0,
+        85,
+        0
+      ],
+      "contributions": [
+        0.0,
+        0.0,
+        0.277511961722,
+        0.0
+      ],
+      "sum": 0.277511961722
+    }
+  },
+  "audit_counts": {
+    "QASPER": {
+      "preserved": 0,
+      "flat_only": 2,
+      "both_exposed": 3,
+      "other_not_applicable": 9,
+      "undetermined": 1
+    },
+    "SciFact": {
+      "preserved": 1,
+      "flat_only": 0,
+      "both_exposed": 1,
+      "other_not_applicable": 13,
+      "undetermined": 0
+    }
+  },
+  "no_primary_f1_ranking_reversal": true,
+  "median_extra_depth_zero_both": true,
+  "references": 26,
+  "ai_disclosure_identical_three_documents": true,
+  "deterministic_manuscript_regeneration": true,
+  "numerical_corrections": 0,
+  "scope": "Internal verification, not independent human review or independent replication"
+}

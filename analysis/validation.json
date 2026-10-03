@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "rank_records": 5420,
+  "score_points": 32520,
+  "primary_rows": 90,
+  "source_mapping": "all included QASPER questions",
+  "cost_recomputation": "all rankings; independent prefix search",
+  "cluster_check": "all SciFact claim/doc links",
+  "frozen_hashes": "all checked",
+  "interval_audit": "bootstrap fixtures plus bounds; separate end-to-end resampling check in supplemental audit"
+}

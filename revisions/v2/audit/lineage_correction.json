@@ -1,0 +1,27 @@
+{
+  "utc": "2026-10-03T03:20:34.003877+00:00",
+  "original_selection_preserved": "selected_families.json",
+  "indices_merged": [
+    49,
+    52
+  ],
+  "canonical_retained": "github.com/rucdatascience/VikingRAG",
+  "rule": "First-discovered identifier retained within this newly established lineage. Its selected representative was already index 49; no selected representative changes.",
+  "evidence": "openviking_lineage_check.json: adapter conversion body identical; differences confined to imports and prompt text.",
+  "eligible_counts_corrected": {
+    "QASPER": 24,
+    "SciFact": 32
+  },
+  "official_reference_correction": {
+    "excluded_downstream_indices": [
+      99,
+      129
+    ],
+    "replacement_indices": [
+      89,
+      139
+    ],
+    "rule": "Official dataset distributions were mistakenly counted downstream in the first pass. Apply original reference-case exclusion, then take the next SHA-256-ranked eligible family in each benchmark. Correction is post-inspection and disclosed."
+  },
+  "limitation": "Lineage and reference-case corrections were established after initial selection and some code inspection; original freeze and first-pass counts retained, not rewritten."
+}

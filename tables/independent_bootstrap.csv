@@ -1,0 +1,5 @@
+dataset,metric,lo,hi,replicates,seed,implementation
+qasper,hit_without_complete,0.1171067738,0.1651061921,10000,91827,direct cluster draw and loop aggregation
+qasper,complete_without_union,0.1535796767,0.2037940479,10000,91827,direct cluster draw and loop aggregation
+scifact,hit_without_complete,0.01843317972,0.07246376812,10000,91827,direct cluster draw and loop aggregation
+scifact,complete_without_union,0.2125572576,0.3434354414,10000,91827,direct cluster draw and loop aggregation

@@ -1,0 +1,17 @@
+{
+  "scope": "Curated public copy; original local records preserved",
+  "redactions": [
+    {
+      "path": "configs/acquisition_expected.json",
+      "change": "removed signed download query parameters; canonical source URLs and content hashes retained",
+      "original_sha256": "e7869b790c8766363e18d8d53210ae3902ef59ee763a9bcb87b99c206f8e8d7c"
+    },
+    {
+      "path": "data/acquisition_manifest.json",
+      "change": "removed signed download query parameters; canonical source URLs and content hashes retained",
+      "original_sha256": "e7869b790c8766363e18d8d53210ae3902ef59ee763a9bcb87b99c206f8e8d7c"
+    }
+  ],
+  "excluded": "Private correspondence/briefs, internal approval records, unneeded development logs, external source collections, datasets, weights, caches, and temporary build files",
+  "historical_records": "Frozen plans and material scientific correction evidence retained"
+}

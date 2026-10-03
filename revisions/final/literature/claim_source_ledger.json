@@ -1,0 +1,886 @@
+[
+  {
+    "key": "qasper",
+    "claim": "Answer-specific evidence and best-reference Evidence F1 are already part of QASPER.",
+    "url": "https://aclanthology.org/2021.naacl-main.365/",
+    "reading": "Original paper and official loader/evaluator; pre-revision reading retained and code rechecked.",
+    "source": "literature/sources/qasper_paper.pdf",
+    "sha256": "b15b4378988ed4e553dd312eaf334411abcf1fb28c53b846d360435eb55cd193",
+    "limitation": "Answer annotations are not independently proven minimal sufficient evidence.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2021.naacl-main.365.bib",
+        "local": "revisions/final/literature/sources/qasper_final.bib",
+        "sha256": "a174e0f137dd005dc905e9861df8082047878f728e669ecc02e4651564338d18",
+        "bytes": 958,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2021.naacl-main.365/",
+        "local": "revisions/final/literature/sources/qasper_final.html",
+        "sha256": "59770d4301baeb396fe4e204f38ac1e3f5a9498443d97be14ef24149e6014197",
+        "bytes": 47420,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "scifact",
+    "claim": "SciFact represents alternative sentence rationales and complete-rationale abstract scoring.",
+    "url": "https://aclanthology.org/2020.emnlp-main.609/",
+    "reading": "Original paper, annotation guide, and official evaluator; revised pinned code reference.",
+    "source": "literature/sources/scifact_paper.pdf",
+    "sha256": "e51a1fab569f2dcb00f7806fe95094e25a34c027140709725d3d05b7a0af9ac7",
+    "limitation": "Current acquired archive has up to more rationales than paper description; archive hash governs this study.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2020.emnlp-main.609.bib",
+        "local": "revisions/final/literature/sources/scifact_final.bib",
+        "sha256": "353cd6aaaef9213d338726595195800e712c534ba22d2d7e1e9797a97a94a6e4",
+        "bytes": 752,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2020.emnlp-main.609/",
+        "local": "revisions/final/literature/sources/scifact_final.html",
+        "sha256": "5a2f4a6960de24683b5c3c72b9de3f30ba1c218952c5d87451e0476b850a2842",
+        "bytes": 44144,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "fever",
+    "claim": "FEVER uses complete evidence sets for verification.",
+    "url": "https://aclanthology.org/N18-1074/",
+    "reading": "Original dataset/evaluation source retained from initial research.",
+    "source": "literature/sources/fever.pdf",
+    "sha256": "5d328bad901f488c4cff1dd073b55e30653b29c9c21c48700b926421cb84c9f7",
+    "limitation": "Not a novel complete-set criterion.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/N18-1074.bib",
+        "local": "revisions/final/literature/sources/fever_final.bib",
+        "sha256": "2a7be035b7ce273f300c2426524c9d7350451be857cda434210fae1807a559fd",
+        "bytes": 757,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/N18-1074/",
+        "local": "revisions/final/literature/sources/fever_final.html",
+        "sha256": "75a0ef7e726023b45e2cc59ee97b4417a5dcc5c14479712cfb5f09c3e984051c",
+        "bytes": 42011,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "feverous",
+    "claim": "FEVEROUS combines structured/unstructured evidence and accepts a complete gold set plus correct label.",
+    "url": "https://aclanthology.org/2021.fever-1.1/",
+    "reading": "Original published shared-task paper section 2.4, p. 3.",
+    "source": "revisions/v2/literature/sources/feverous.pdf",
+    "sha256": "5d50bc606c41d276f47cb5c494f4f19c8b2916c66dfa46151df1e141bcb2bb89",
+    "limitation": "Current retrieval-only C omits verdict and official output caps.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2021.fever-1.1.bib",
+        "local": "revisions/final/literature/sources/feverous_final.bib",
+        "sha256": "2c2ca68fdbd0a21d73d6dd57699195105dbe077a30ad10e053d4849835160bab",
+        "bytes": 972,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2021.fever-1.1/",
+        "local": "revisions/final/literature/sources/feverous_final.html",
+        "sha256": "fcb3d46c2de97bf542e3c7d5a1bf1ceab1ad272de56be5660d391caf2e7b20b0",
+        "bytes": 48024,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "ACL BibTeX gives Michael Sejr Schlichtkrull; HTML metadata abbreviates Michael Schlichtkrull. Retained full BibTeX name."
+  },
+  {
+    "key": "dmerit",
+    "claim": "Partial unit judgments can affect evaluation.",
+    "url": "https://aclanthology.org/2024.emnlp-main.171/",
+    "reading": "Original published EMNLP paper and official metadata retained; claim limited to its annotation problem.",
+    "source": "literature/sources/dmerit.pdf",
+    "sha256": "e8f2f218834b41e27cbc313a5b0f2ba2fc500a48e3a5955ebda7ab2029561baf",
+    "limitation": "Distinct from keeping all observed units and changing aggregation.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2024.emnlp-main.171.bib",
+        "local": "revisions/final/literature/sources/dmerit_final.bib",
+        "sha256": "e532be59a9a351af9c30db8710cbd8f1f2f1139911fbbfe461c407f7418c5207",
+        "bytes": 778,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2024.emnlp-main.171/",
+        "local": "revisions/final/literature/sources/dmerit_final.html",
+        "sha256": "27374fb071fe3c2cf15cafa4c29462a7a08ae66becd5f1682038c81d86ce5bf8",
+        "bytes": 38496,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "lab",
+    "claim": "Attribution and abstention are separate long-document evaluation targets.",
+    "url": "https://aclanthology.org/2024.emnlp-main.463/",
+    "reading": "Published EMNLP paper and ACL BibTeX.",
+    "source": "literature/sources/lab.pdf",
+    "sha256": "14b69e6caf0af7ee96897cf4a88882bcb822a65bf87a575dd1a09b74ff5e4583",
+    "limitation": "Disambiguated as Buchmann et al. 2024a.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2024.emnlp-main.463.bib",
+        "local": "revisions/final/literature/sources/lab_final.bib",
+        "sha256": "3b9c07b88d124200a0c54e02ee1fad6ac2a54951d4ae992da790b82a8071af2b",
+        "bytes": 667,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2024.emnlp-main.463/",
+        "local": "revisions/final/literature/sources/lab_final.html",
+        "sha256": "ce9a3a331d67c641bbb0744a1ace3e93cf1b6ad56a2f7c1572675745d3100517",
+        "bytes": 43520,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "structure",
+    "claim": "Document structure is studied as a modeling representation.",
+    "url": "https://aclanthology.org/2024.eacl-long.64/",
+    "reading": "Published EACL paper and ACL BibTeX.",
+    "source": "literature/sources/document_structure.pdf",
+    "sha256": "cb0fe620ca78072c1e7f2e68e6fe8fde3ffbd7354781a45ccd4020de81175901",
+    "limitation": "Disambiguated as Buchmann et al. 2024b; not evidence for score changes here.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2024.eacl-long.64.bib",
+        "local": "revisions/final/literature/sources/structure_final.bib",
+        "sha256": "66eb8d397e66df4026fab11c5ce41340356c75fcf83778ee2273cb896cbde137",
+        "bytes": 721,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2024.eacl-long.64/",
+        "local": "revisions/final/literature/sources/structure_final.html",
+        "sha256": "592b99201c3a99a2e23a77d73d3c9927879f3d8f8adb6de7a4757d03e10ec13c",
+        "bytes": 43680,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "erag",
+    "claim": "eRAG studies generator-conditioned utility of retrieved information.",
+    "url": "https://doi.org/10.1145/3626772.3657957",
+    "reading": "Original paper; publisher-deposited SIGIR metadata.",
+    "source": "literature/sources/erag.pdf",
+    "sha256": "61038714c72045524d4168940f07096766139bbe5962cdc6a88d75747a15bc6d",
+    "limitation": "No answer-quality result is inferred for this study.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F3626772.3657957",
+        "local": "revisions/final/literature/sources/erag_final.json",
+        "sha256": "75a453c9ea7bc21ca156ee056e200d78ba43e943219477247b50915024986e14",
+        "bytes": 11373,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "ev2r",
+    "claim": "Evidence quality can combine reference alignment and verdict-level proxy assessment.",
+    "url": "https://aclanthology.org/2026.tacl-1.25/",
+    "reading": "Published TACL 2026 paper pp. 530–532 checked against previously read preprint.",
+    "source": "revisions/v2/literature/sources/ev2r_published.pdf",
+    "sha256": "b357d50466a63306a33be300e39fbee1f5ef9123c521d4735e10a1ff544c4d06",
+    "limitation": "Published venue/date/pages replace preprint bibliographic identity.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2026.tacl-1.25.bib",
+        "local": "revisions/final/literature/sources/ev2r_final.bib",
+        "sha256": "2eccfb23931d3006e8031c49778418c785bf7ea2d85ad78c07d3bc53fbca6c1b",
+        "bytes": 499,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2026.tacl-1.25/",
+        "local": "revisions/final/literature/sources/ev2r_final.html",
+        "sha256": "021dd54d1785ad05c048a10188e0deb40e38e37ee235fdf2140c1934a342e30a",
+        "bytes": 39489,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "sufficient",
+    "claim": "Having sufficient context and using it successfully differ.",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/33dffa2e3d2ab74a783d1a8c292f66d9-Abstract-Conference.html",
+    "reading": "Original ICLR 2025 paper; official proceedings record.",
+    "source": "literature/sources/sufficient_context.pdf",
+    "sha256": "1d48ccb637e44694bf41fbef81d087c60aa2e38a31bb9641554b422c47de8f3e",
+    "limitation": "Our C does not measure semantic sufficiency.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/33dffa2e3d2ab74a783d1a8c292f66d9-Abstract-Conference.html",
+        "local": "revisions/final/literature/sources/sufficient_final.html",
+        "sha256": "06af5ca7bdb6ec126269e7c2c990a95039aa4dac6ab3746bdf1be179be2fa96e",
+        "bytes": 9943,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Added official ICLR proceedings pages 20310–20334."
+  },
+  {
+    "key": "conjunctive",
+    "claim": "Recent retrieval work examines conjunctive cross-page requirements.",
+    "url": "https://arxiv.org/abs/2607.24165v2",
+    "reading": "Original 2607.24165v2 preprint and version metadata retained.",
+    "source": "literature/sources/conjunctive_2026.pdf",
+    "sha256": "305ebf7faf0dad052f5143e9e985ce5e12f145ed77f3e8fa5bba18c6a9b624b4",
+    "limitation": "Preprint, not an established published result or a novelty-free zone.",
+    "publication_status": "preprint",
+    "metadata_evidence": [
+      {
+        "url": "https://arxiv.org/abs/2607.24165",
+        "local": "revisions/final/literature/sources/conjunctive_final.html",
+        "sha256": "e7ce7cc4bf7f2985e347c620a6b0aa026f7325f150e1ecb2d613e33bac171ccf",
+        "bytes": 42928,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Official arXiv version remains v2; no formal publication verified in targeted exact-title search."
+  },
+  {
+    "key": "relational",
+    "claim": "Recent work examines complete support recovery under context budgets.",
+    "url": "https://arxiv.org/abs/2608.18448v1",
+    "reading": "Original 2608.18448v1 preprint and version metadata retained.",
+    "source": "literature/sources/relational_recall_2026.pdf",
+    "sha256": "43d5af465fd953a063b4d9c9081d90f6ae0c602893886e1191d6ba8a87667cf5",
+    "limitation": "Preprint; different retrieval intervention and benchmark.",
+    "publication_status": "preprint",
+    "metadata_evidence": [
+      {
+        "url": "https://arxiv.org/abs/2608.18448",
+        "local": "revisions/final/literature/sources/relational_final.html",
+        "sha256": "a91949fe3f88cfd44c378bb7ef9371d3b762758e1a779e63211926a35e643745",
+        "bytes": 42238,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Official arXiv version remains v1; no formal publication verified in targeted exact-title search."
+  },
+  {
+    "key": "bm25",
+    "claim": "BM25 belongs to the probabilistic relevance framework.",
+    "url": "https://doi.org/10.1561/1500000019",
+    "reading": "Publisher monograph front matter/abstract and recorded formula implementation.",
+    "source": "",
+    "sha256": null,
+    "limitation": "Paper explicitly states local IDF, k1, b, and its positive-IDF variant.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1561%2F1500000019",
+        "local": "revisions/final/literature/sources/bm25_final.json",
+        "sha256": "8540a9a4359cd6e29e4c15c7d0419db6c925ba40a41890465821aa61b9e126f1",
+        "bytes": 19516,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Crossref currently gives 4(1–2):1–174. Original monograph front matter confirms retained 3(4):333–389; no silent replacement. Publisher direct request returned 403; original PDF copy and indexed publisher text checked."
+  },
+  {
+    "key": "saracevic",
+    "claim": "Relevance has multiple manifestations and cannot be reduced to every use of a single label.",
+    "url": "https://doi.org/10.1002/asi.20682",
+    "reading": "Publisher metadata and abstract, as recorded before revision.",
+    "source": "",
+    "sha256": null,
+    "limitation": "Broad framing only; no detailed theoretical claim based on unread full text.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1002%2Fasi.20682",
+        "local": "revisions/final/literature/sources/saracevic_final.json",
+        "sha256": "80b672f238b1bea0055c1df4525b86e7f528a3bd13daf34440cff6f5d98f80f5",
+        "bytes": 13365,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "voorhees2002",
+    "claim": "Controlled Cranfield comparisons use documents, topics and judgments; assumptions and appropriate use matter.",
+    "url": "https://doi.org/10.1007/3-540-45691-0_34",
+    "reading": "Original NIST paper pp. 1–4 visually read; publisher metadata cross-checked.",
+    "source": "revisions/v2/literature/sources/voorhees2002.pdf",
+    "sha256": "6647deafcb420c49159b71ae323a48a536c5428499f855a9933d144be7823a62",
+    "limitation": "Full original available; limited cited scope.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1007%2F3-540-45691-0_34",
+        "local": "revisions/final/literature/sources/voorhees2002_final.json",
+        "sha256": "bf95f50f27050b230e518e0be5d51dbbf0014178e12becc83afb003bebd71cbd",
+        "bytes": 12016,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "zobel1998",
+    "claim": "Relative TREC comparisons can remain reliable despite incomplete discovery of relevant documents.",
+    "url": "https://doi.org/10.1145/290941.291014",
+    "reading": "Original author-hosted abstract/introduction accessed in indexed PDF text; Crossref bibliographic record verified.",
+    "source": "revisions/v2/literature/v2_zobel_cached_method.json",
+    "sha256": "5026a5c79d644b535dae2d28a83e0ab94d38c8734817c8e35f601749e76c6fd0",
+    "limitation": "Direct author PDF returned a bot-check HTML page; alternative copies failed. Detailed pooling experiments were not read and are not described or relied on. Further full-text reading remains desirable.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F290941.291014",
+        "local": "revisions/final/literature/sources/zobel1998_final.json",
+        "sha256": "2f4f7bbf883175794c7ab40d240f725d7c4be76817c0450305d6fc9ee4a77107",
+        "bytes": 5355,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "buckley2004",
+    "claim": "bpref uses judged relevant/nonrelevant preferences to address incomplete judgments.",
+    "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=150469",
+    "reading": "Original pp. 2–3, sections 2.1–2.3, plus abstract and experimental framing.",
+    "source": "revisions/v2/literature/sources/buckley2004.pdf",
+    "sha256": "0653a564f5b61652dbd88cdc967d3cff42de5dd324cf1ddd3e517fcbad291bdd",
+    "limitation": "Not evidence about loss of evidence-family relations.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F1008992.1009000",
+        "local": "revisions/final/literature/sources/buckley2004_final.json",
+        "sha256": "1b0fa88d8e74dade2f2ce6583f94ffe71448364be19a1514e2fe27557f7311a8",
+        "bytes": 5300,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "zhai2003",
+    "claim": "Subtopic retrieval and coverage address dependent usefulness beyond independent relevance.",
+    "url": "https://doi.org/10.1145/860435.860440",
+    "reading": "Original pp. 1–3, data and subtopic metrics.",
+    "source": "revisions/v2/literature/sources/zhai2003.pdf",
+    "sha256": "b22a45aa85d244a771a83cb0c5cb80b1b4fd131966d352863e9581b0c6341582",
+    "limitation": "Not a new discovery of dependence in the current paper.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F860435.860440",
+        "local": "revisions/final/literature/sources/zhai2003_final.json",
+        "sha256": "88e8ec0d573ef72e00f845d9dd6ce8fc3c73cf16fa665b1a5b271dcf87bee72c",
+        "bytes": 6731,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Crossref short title omits subtitle; original paper supports retained full title."
+  },
+  {
+    "key": "clarke2008",
+    "claim": "Nugget-based alpha-nDCG rewards novelty and discounts repeated coverage.",
+    "url": "https://doi.org/10.1145/1390334.1390446",
+    "reading": "Original sections 3–4; relevance/nugget model and ranking-dependent gain.",
+    "source": "revisions/v2/literature/sources/clarke2008.pdf",
+    "sha256": "0ad580c306a87d082383d15a4a013e7e2a42430a1c5508fe104ed2c605d09599",
+    "limitation": "No claim that this representation cannot be extended to combinations; only that ordinary labels do not specify them automatically.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F1390334.1390446",
+        "status": "inaccessible",
+        "error": "HTTP Error 429: Too Many Requests"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Fresh Crossref initially unavailable; retry succeeded, all authors and pp.659–666 verified."
+  },
+  {
+    "key": "agrawal2009",
+    "claim": "Intent-aware measures aggregate per-intent performance by an intent distribution.",
+    "url": "https://doi.org/10.1145/1498759.1498766",
+    "reading": "Original methodological sections 3–4.2 read through web PDF extraction.",
+    "source": "revisions/v2/literature/v2_classic_sources.json",
+    "sha256": "7bd48a04d72921d662471a44d8b86b6412e3ddb614d107bc505a7cf0bd3ca6f7",
+    "limitation": "Direct download returned 403; web rendering provided original method text.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F1498759.1498766",
+        "local": "revisions/final/literature/sources/agrawal2009_final.json",
+        "sha256": "a221d0b6fb9176381c2db4e8d70ef563d9dfdc6249ac7aa999226d4488d6507b",
+        "bytes": 6282,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "voorhees2003",
+    "claim": "TREC definition answers are evaluated with vital/other information nuggets.",
+    "url": "https://trec.nist.gov/pubs/trec12/papers/QA.OVERVIEW.pdf",
+    "reading": "Original definition-question evaluation, pp. 4–5.",
+    "source": "revisions/v2/literature/sources/voorhees2003.pdf",
+    "sha256": "4d9a00bcf9f7c3e23ee80d7900faaa6224f7bf4aa43b58e11431461057f0a07d",
+    "limitation": "Coverage of answer content differs from exact source-unit combinations.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://trec.nist.gov/pubs/trec12/papers/QA.OVERVIEW.pdf",
+        "local": "revisions/final/literature/sources/voorhees2003_final.pdf",
+        "sha256": "4d9a00bcf9f7c3e23ee80d7900faaa6224f7bf4aa43b58e11431461057f0a07d",
+        "bytes": 177508,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Changed citation publication year to 2004 per NIST record; conference/track remains TREC 2003. Historical citation key retained."
+  },
+  {
+    "key": "lin2006",
+    "claim": "Nugget pyramids use multiple assessor judgments to refine importance.",
+    "url": "https://aclanthology.org/N06-1049/",
+    "reading": "Original abstract and sections 1–2.",
+    "source": "revisions/v2/literature/sources/lin2006.pdf",
+    "sha256": "da9adf67750b45835741f404267940c8ae3861332945954a5be5988d76df54ac",
+    "limitation": "No detailed comparative results imported.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/N06-1049.bib",
+        "local": "revisions/final/literature/sources/lin2006_final.bib",
+        "sha256": "00551b3eaf92e345c3896212a3a2b36bc20357176de61d8879795229326b901f",
+        "bytes": 594,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/N06-1049/",
+        "local": "revisions/final/literature/sources/lin2006_final.html",
+        "sha256": "96b2e277c6997af7595174b6e175bfff8909b1f8e3c9d9e45c1f6b359a3ab57d",
+        "bytes": 34198,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "trecrag2025",
+    "claim": "TREC 2025 RAG separates relevance, response completeness/nugget coverage, and attribution.",
+    "url": "https://trec.nist.gov/pubs/trec34/papers/Overview_rag.pdf",
+    "reading": "Original overview sections 1 and 3; official TREC34 index.",
+    "source": "revisions/v2/literature/sources/trecrag2025.pdf",
+    "sha256": "b29563048227483cb2665e8c2aa1530e153ad9eb7a5409b77b8831b92cfa29c3",
+    "limitation": "Track year 2025; hosted accessible version dated 10 March 2026. Official index SP1344 is used; generic proceedings page has inconsistent serial metadata.",
+    "publication_status": "published",
+    "metadata_evidence": [
+      {
+        "url": "https://trec.nist.gov/pubs/trec34/t34_proceedings.html",
+        "status": "inaccessible",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://trec.nist.gov/pubs/trec34/papers/Overview_rag.pdf",
+        "local": "revisions/final/literature/sources/trecrag2025_final.pdf",
+        "sha256": "b29563048227483cb2665e8c2aa1530e153ad9eb7a5409b77b8831b92cfa29c3",
+        "bytes": 3652650,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Official TREC34 index confirms SP1344; hosted overview bears 10 March 2026. Condensed venue without changing identity."
+  },
+  {
+    "key": "qwen",
+    "claim": "Official model configuration supports 1024-dimensional embeddings, last-token pooling, instruction queries and normalization.",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/tree/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "reading": "Pinned official model card/config/tokenizer/model metadata.",
+    "source": "revisions/v2/literature/../compute/model/README.md",
+    "sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+    "limitation": "Timing only. No effectiveness evidence; model-card statements are documentation, not independent validation.",
+    "publication_status": "model_documentation",
+    "metadata_evidence": [
+      {
+        "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
+        "local": "revisions/final/literature/sources/qwen_final.md",
+        "sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+        "bytes": 17237,
+        "status": "acquired"
+      }
+    ],
+    "revision_cutoff": "2026-10-03 UTC",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "alt2026",
+    "claim": "Multiple gold evidence sets, earliest prefix containing one accepted set, Minimal Sufficient Rank and reading-effort evaluation.",
+    "url": "https://aclanthology.org/2026.eacl-long.340/",
+    "reading": "Entire 23-page EACL paper, including sections 3–4 (pp. 7217–7218), effort/user study sections 6–7 and Appendix A (p. 7227).",
+    "source": "revisions/final/literature/sources/alt2026.pdf",
+    "sha256": "1abc8d8ff2eaae064e3cabd6fa8aa374f005bbaeed77d4b90cb5c873e02ee8e3",
+    "limitation": "Under the empirical gold-set criterion MSR equals dC. Do not claim novelty for complete-set retrieval, multiple alternatives, or depth to sufficient evidence. Their goal improves ordering; ours pairs C and A under fixed rankings.",
+    "publication_status": "published",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2026.eacl-long.340.bib",
+        "local": "revisions/final/literature/sources/alt2026_final.bib",
+        "sha256": "842dc14d24b03cfe40e0b5a5799eac6e9c8cc6a17c6a68e301676be9310d2108",
+        "bytes": 775,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2026.eacl-long.340/",
+        "local": "revisions/final/literature/sources/alt2026_final.html",
+        "sha256": "1e2db21fc1fb1399f1cc216313f199f68953b21ad1f7fcac2acaf95cdcb5a48c",
+        "bytes": 44892,
+        "status": "acquired"
+      }
+    ],
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  },
+  {
+    "key": "li2025",
+    "claim": "Minimal evidence groups, union-based labels, group-versus-union claim reconstruction under word/sentence budgets.",
+    "url": "https://aclanthology.org/2025.trustnlp-main.8/",
+    "reading": "Entire 9-page paper: section 2 union labels, section 3 group scoring, section 8 group/union comparison, limitations and Appendix A.3 nesting.",
+    "source": "revisions/final/literature/sources/li2025.pdf",
+    "sha256": "5b70027f23d538f4e7a58dd48bda6cac1b7bd0385235988f01f19b852a0ca249",
+    "limitation": "Do not claim novelty for minimal evidence groups, union contrast or nesting. Prior downstream reconstruction differs from this fixed-ranking paired completion audit.",
+    "publication_status": "published",
+    "final_cutoff": "2026-10-03 UTC",
+    "metadata_evidence": [
+      {
+        "url": "https://aclanthology.org/2025.trustnlp-main.8.bib",
+        "local": "revisions/final/literature/sources/li2025_final.bib",
+        "sha256": "80b76993cdf9c077f428fe202b6e275107ec4d361ed9b7d082ad09b0750628f4",
+        "bytes": 946,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2025.trustnlp-main.8/",
+        "local": "revisions/final/literature/sources/li2025_final.html",
+        "sha256": "baa2a4f21334444897fca233d103dab4280fca5d116375d83620fb56639635b0",
+        "bytes": 45716,
+        "status": "acquired"
+      }
+    ],
+    "metadata_fields_checked": [
+      "title",
+      "authors",
+      "year",
+      "venue",
+      "volume/pages where applicable",
+      "DOI/canonical URL"
+    ],
+    "final_claim_support": "Claim scoped to recorded primary-source reading; no unsupported detailed inference",
+    "metadata_resolution": "Primary metadata agrees; capitalization and dash normalization only."
+  }
+]

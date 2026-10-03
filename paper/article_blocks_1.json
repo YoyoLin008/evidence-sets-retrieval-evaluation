@@ -1,0 +1,250 @@
+[
+  [
+    "section",
+    "Introduction"
+  ],
+  [
+    "p",
+    "A scientific question-answering workflow may export annotated evidence into ordinary query–passage relevance judgments before comparing retrievers. That export can preserve every marked passage while losing which passages were selected together and which selections were alternatives. The practical question is whether the resulting score still measures the outcome that the workflow intends to report."
+  ],
+  [
+    "p",
+    "Suppose one annotation contains paragraphs a and b together, while another contains paragraph c alone. Retrieving a finds evidence but completes neither annotation; retrieving c completes an annotation without covering all marked paragraphs. These outcomes matter when a report moves from “relevant evidence was retrieved” to “the annotated support was recovered.” The distinction depends on the target, not on whether a metric is conventionally named recall."
+  ],
+  [
+    "p",
+    "We measure that difference by holding candidates, eligibility, and rankings fixed, then comparing any annotated hit (H), completion of at least one original set (C), and completion of the annotated union (A). The study includes {Qn} QASPER test questions and {Sn} SciFact development claim–abstract pairs, evaluated with three retrieval methods and two controls. It isolates scoring and representation from improvements to retrieval."
+  ],
+  [
+    "p",
+    "At the prespecified BM25 budgets, C and A are {QC}% and {QA}% for QASPER, and {SC}% and {SA}% for SciFact. The paired gaps are {QCA} and {SCA} percentage points. Mean additional union-completion depth is positive, but its median is zero in both corpora. No primary F1 ranking reversal occurs. A post-main QASPER check combining answer agreement and minimal-reference pruning reduces its gap to {QJointGap} points."
+  ],
+  [
+    "p",
+    "The contribution is the paired measurement of C−A and additional union-completion cost under fixed rankings, together with their decomposition by annotation topology. Earlier work already studies sufficient-set ranking and minimal evidence groups [[alt2026;li2025]]. We do not introduce complete-set relevance, depth to sufficient evidence, or group-versus-union comparison. An exploratory bounded implementation audit supplies concrete conversion examples without estimating prevalence. The official QASPER and SciFact evaluators preserve alternatives for their relevant objectives."
+  ],
+  [
+    "section",
+    "Related work and evaluation targets"
+  ],
+  [
+    "subsection",
+    "Test collections, pooling, and incomplete judgments"
+  ],
+  [
+    "p",
+    "The Cranfield paradigm uses documents, information needs, and relevance judgments to compare retrieval systems under controlled conditions. Its value is comparative experimental control, not a claim that one label represents every aspect of user relevance [[voorhees2002;saracevic]]. Flat binary or graded qrels support their intended Recall, AP, nDCG, and MRR calculations. Their suitability depends on the task definition and the available judgments. Our result does not make those measures invalid for ordinary document retrieval."
+  ],
+  [
+    "p",
+    "Pooling addresses the cost of finding documents to judge. Zobel’s investigation of large TREC experiments found reasonably reliable relative system comparisons alongside incomplete discovery of relevant documents [[zobel1998]]. Buckley and Voorhees explicitly tested substantial judgment incompleteness and developed bpref, which compares judged relevant and judged nonrelevant documents rather than treating every unjudged document as a known negative [[buckley2004]]. D-MERIT revisits the consequences of partial annotation for retrieval assessment [[dmerit]]."
+  ],
+  [
+    "p",
+    "Those problems concern missing or uncertain unit-level judgments. Our controlled intervention retains every observed annotated unit and removes only the original grouping when forming the union target. It therefore neither corrects incomplete qrels nor assumes that the observed union contains all semantically relevant evidence. Missing relevant units and discarded relationships can coexist, but they are different changes to the evaluation input."
+  ],
+  [
+    "subsection",
+    "Dependent relevance, diversity, and information coverage"
+  ],
+  [
+    "p",
+    "Beyond Independent Relevance already makes the usefulness of a result depend on other retrieved results. Its subtopic-retrieval formulation uses document-to-subtopic judgments and evaluates coverage of distinct subtopics [[zhai2003]]. This directly overlaps with our concern that unit membership alone may be inadequate. The distinction is narrower: subtopic coverage does not, without an additional interpretation, specify that a particular pair of evidence units is jointly required while another unit is an accepted alternative."
+  ],
+  [
+    "p",
+    "Clarke et al. model information nuggets and reduce the marginal gain from repeatedly covered nuggets in alpha-nDCG; this supports novelty and diversity under a ranked-list objective [[clarke2008]]. Agrawal et al. define intent-aware measures by evaluating rankings with respect to individual intents and weighting by the intent distribution [[agrawal2009]]. These are richer representations than one relevance bit. They could be extended or configured to express evidence requirements, but their usual labels and objectives do not automatically encode the accepted combinations measured by C. Conversely, our exact binary completion endpoint lacks their graded utility, rank discounting, and intent weighting."
+  ],
+  [
+    "p",
+    "Information-unit coverage is also central to TREC question answering. Definition-answer evaluation distinguishes vital and other nuggets, and nugget pyramids aggregate assessor judgments about nugget importance [[voorhees2003;lin2006]]. The TREC 2025 RAG overview describes sub-narrative relevance, nugget-based response completeness, and attribution evaluation [[trecrag2025]]. These precedents prevent treating “coverage beyond a document hit” as a new contribution. Recovering source evidence sets is related to, but not identical with, covering semantic nuggets or verifying generated claims."
+  ],
+  [
+    "subsection",
+    "Structured evidence and modern retrieval evaluation"
+  ],
+  [
+    "p",
+    "QASPER associates answer annotations with evidence and uses best-reference Evidence F1. SciFact represents sentence rationales and accepts a complete rationale for its abstract-level evidence condition; sentence-level coverage is a different objective. FEVER and FEVEROUS likewise use composite evidence annotations [[qasper;scifact;fever;feverous]]. These benchmarks already supply relationships whose retention enables multiple legitimate scoring choices. QASPER answer-writer evidence is not independently certified as a smallest sufficient justification; SciFact rationales are more directly tied to supporting or refuting a claim."
+  ],
+  [
+    "p",
+    "Other modern evaluations ask questions outside exact annotation completion. eRAG studies generator-conditioned retrieval utility; Sufficient Context distinguishes the availability of sufficient context from a model’s ability to use it [[erag;sufficient]]. Attribute or Abstain studies attribution and abstention, while Document Structure in Long Document Transformers examines structural modeling [[lab;structure]]. Ev2R combines reference alignment and verdict-oriented evidence assessment [[ev2r]]. None licenses interpreting C as semantic sufficiency or as measured downstream answer quality."
+  ],
+  [
+    "subsection",
+    "Closest work: sufficient-set ranking and evidence groups"
+  ],
+  [
+    "p",
+    "Alt et al. represent multiple gold evidence sets and treat a prefix as sufficient when it contains a complete accepted set. Their Minimal Sufficient Rank measures the earliest sufficient prefix, and they study evidence ordering and reading effort [[alt2026]]. Under their gold-set completion criterion, that rank is our dC. Their intervention improves ordering to reach sufficient evidence earlier; ours holds ordering fixed and compares C with A at the same prefixes. Thus complete-set retrieval and depth to one accepted set are precedents, not contributions claimed here."
+  ],
+  [
+    "p",
+    "Li et al. identify minimal evidence groups, discuss union-based annotation labels, and compare group-based and union-based claim reconstruction under word and sentence budgets [[li2025]]. The general contrast between an evidence group and its union is therefore also established. Our narrower measurement pairs C and A on every unchanged ranking in two scientific cohorts, decomposes the observed gaps into disjoint annotation topologies, and quantifies the additional depth and tokens needed to complete the union. These costs describe annotated prefixes, not demonstrated savings in human effort."
+  ],
+  [
+    "p",
+    "Recent preprints study conjunctive cross-page evidence and budget-constrained support recovery [[conjunctive;relational]]. The literature ledger records a final targeted search and full reading of the two close published precedents above. This supports a bounded positioning claim, not an exhaustive novelty claim; search scope and source-access limits are documented in the supplement."
+  ],
+  [
+    "table",
+    "representations"
+  ],
+  [
+    "section",
+    "Research questions and formalization"
+  ],
+  [
+    "p",
+    "We ask how H, C, and A differ at fixed budgets, what additional prefix cost the union requires, and whether max-reference versus union F1 changes method comparisons. The last question is secondary; demonstrating a ranking reversal is not a success criterion."
+  ],
+  [
+    "p",
+    "Let E_1,...,E_m be nonempty subsets of a document's retrieval units, U their union, and R the retrieved prefix. Define:"
+  ],
+  [
+    "eq",
+    "H(R)=\\mathbf{1}[R\\cap U\\ne\\varnothing],\\quad C(R)=\\mathbf{1}[\\exists j:E_j\\subseteq R],\\quad A(R)=\\mathbf{1}[U\\subseteq R]."
+  ],
+  [
+    "p",
+    "For every item, A is no larger than C, and C is no larger than H. We call H-C the fragment gap and C-A the union gap. Their nonnegativity is guaranteed by the definitions; we estimate their magnitude and do not test the inequalities as empirical hypotheses. The gaps do not count incorrect answers. H and A are boundary conditions on ordinary union recall: H indicates nonzero recall, and A indicates recall equal to one."
+  ],
+  [
+    "p",
+    "For the family E1={a,b}, E2={c}, the following prefixes separate the three targets. The unannotated unit d is included to make a zero-hit case explicit. These are illustrative calculations, not new empirical observations."
+  ],
+  [
+    "table",
+    "concept"
+  ],
+  [
+    "subsection",
+    "Why flat membership is insufficient"
+  ],
+  [
+    "p",
+    "Consider two annotation families, {{a},{b}} and {{a,b}}, with the same union {a,b}. For retrieved set {a}, every metric that sees only retrieved units and flat binary membership receives identical information. Yet C is one for the first family and zero for the second. Thus no function of R and U alone can recover annotation completion for all possible annotation families. This elementary counterexample identifies the lost information; it is not claimed as a new theory of relevance. Flattening does not itself require an evaluator to use A; it removes the grouping information needed to recover C from flat membership alone."
+  ],
+  [
+    "p",
+    "Duplicate sets do not change H, C, or A. Removing a strict superset of another reference preserves C but can shrink U, changing H and A. We call a set minimal within the observed family if no other observed reference is its strict subset. This is an order-theoretic property of annotations, not a semantic assertion that every sentence in the remaining set is necessary."
+  ],
+  [
+    "subsection",
+    "Ranked completion and budget"
+  ],
+  [
+    "p",
+    "Let rank(e) be a unit's one-based position in a complete ranking. The first depth completing one reference and the depth completing the union are:"
+  ],
+  [
+    "eq",
+    "d_C=\\min_j\\max_{e\\in E_j}\\operatorname{rank}(e),\\qquad d_A=\\max_{e\\in U}\\operatorname{rank}(e),\\qquad \\Delta d=d_A-d_C."
+  ],
+  [
+    "p",
+    "Under Alt et al.’s gold-set criterion, dC is Minimal Sufficient Rank [[alt2026]]. Here the contrast of interest is dA−dC. Its token counterpart subtracts cumulative lexical-token costs at the two depths. These are annotation-defined oracle stopping depths, unavailable to a deployed retriever; they are not measured inference charges or avoidable real-world costs."
+  ],
+  [
+    "p",
+    "We also report union recall and max-reference recall, and two F1 definitions:"
+  ],
+  [
+    "eq",
+    "F_{1,\\max}(R)=\\max_j\\frac{2|R\\cap E_j|}{|R|+|E_j|},\\qquad F_{1,U}(R)=\\frac{2|R\\cap U|}{|R|+|U|}."
+  ],
+  [
+    "p",
+    "Unlike the binary completion endpoints, the two F1 scores have no universal order. A union can increase both the number of matched units and the reference denominator. Exact best-reference F1 is appropriate to compare with the QASPER implementation; these retrieval-only scores are not the full official task scores."
+  ],
+  [
+    "section",
+    "Data and experimental design"
+  ],
+  [
+    "subsection",
+    "QASPER cohort"
+  ],
+  [
+    "p",
+    "We use QASPER v0.3 test, containing {Qtotal} questions in {Qpapers} papers. Candidate units are nonempty full-text paragraphs; whitespace-normalized duplicate paragraphs collapse to one content unit. A question is retained only when every answer annotation is answerable and has nonempty, wholly mappable textual evidence. Any figure/table marker, missing evidence, or unmapped textual evidence excludes the whole question. We do not remove an inconvenient piece of a reference while retaining the rest."
+  ],
+  [
+    "p",
+    "This yields {Qn} questions from {Qclusters} papers. The strict cohort excludes {Qexcluded} questions. Overlapping exclusion reasons comprise {Qfloat} with figure/table evidence, {Qempty} with empty evidence, {Qunanswerable} with an unanswerable annotation, and {Qunmapped} with unmapped text. These counts overlap; the accompanying eligibility CSV records an alphabetical first-reason hierarchy separately. Results cannot be generalized without qualification to all QASPER questions, especially multimodal and disputed-answer items."
+  ],
+  [
+    "subsection",
+    "SciFact cohort"
+  ],
+  [
+    "p",
+    "We use the official SciFact development release downloaded on 3 October 2026 UTC. Its {Sclaims} claims include {Sevidenceclaims} with evidence and {Snoevidence} without evidence. The evidence-bearing claims produce {Sn} eligible claim-abstract pairs. Candidate units are all sentences within the known gold abstract. Every rationale must be nonempty, in range, and consistently labelled with the other rationales for that pair."
+  ],
+  [
+    "p",
+    "The abstract is supplied, so this experiment evaluates rationale retrieval rather than discovering relevant abstracts or predicting scientific verdicts. We preserve sentence identifiers and do not collapse distinct positions. Claim-abstract pairs sharing either a claim or an abstract form connected components for statistical resampling, yielding {Sclusters} groups. No-evidence claims are not eligible pairs, and their counts must not be subtracted directly from the pair denominator."
+  ],
+  [
+    "p",
+    "The acquired SciFact release contains up to {Smaxrefs} rationales per pair, beyond the original paper’s description of up to three. We analyze those acquired annotations; the supplement identifies the pinned archive."
+  ],
+  [
+    "table",
+    "cohort"
+  ],
+  [
+    "subsection",
+    "Pilot and frozen design"
+  ],
+  [
+    "p",
+    "A disjoint pilot contained 88 eligible QASPER development questions and 47 SciFact training items. Inclusion rules, metrics, models, and analysis were then frozen locally; this was not public preregistration. No retriever was tuned on either main cohort. The saved experiment contains {RankRecords} full rankings and {ScorePoints} unit-budget scoring points. Source-access chronology and computational provenance are recorded in the supplement."
+  ],
+  [
+    "subsection",
+    "Retrieval methods"
+  ],
+  [
+    "p",
+    "BM25 uses k1=1.2 and b=0.75, with within-document inverse document frequencies and positive IDF log(1+(N-df+0.5)/(df+0.5)). Query terms are deduplicated and sorted before summation. The implementation follows the probabilistic relevance model family [[bm25]], with this variant stated explicitly. TF-IDF uses word unigrams, smoothed IDF, L2 normalization, and cosine similarity. Both lexical methods tokenize lowercase Unicode word sequences without stop-word removal."
+  ],
+  [
+    "p",
+    "The neural method is sentence-transformers/all-MiniLM-L6-v2, with the official model revision and weights pinned in the supplement. It uses ONNX weights, attention-mask mean pooling, L2 normalization, and cosine similarity, truncating inputs to 256 wordpieces including special tokens. CPU inference uses batches of 16 and two intra-operation threads. MiniLM is a robustness instrument, not a state-of-the-art or uncontaminated scientific-retrieval benchmark; scientific pretraining overlap is possible."
+  ],
+  [
+    "p",
+    "Lead-position and deterministic random rankings provide controls. Random scores use a per-item seed derived from the fixed seed, corpus, and item ID, giving one reproducible permutation per item. Ties in all methods resolve by original unit order. Full rankings are saved. The same ranking is reused for every scoring rule, preventing retrieval variation from confounding the comparison."
+  ],
+  [
+    "subsection",
+    "Budgets, estimands, and uncertainty"
+  ],
+  [
+    "p",
+    "Primary comparisons are BM25 at five paragraphs for QASPER and three sentences for SciFact. Curves report k=1, 2, 3, 5, 10, 20. Prefixes saturate at document length; the denominator remains all eligible items. Supplementary lexical-token budgets are 64, 128, 256, 512, 1024, 2048. A token-bounded prefix stops before the first complete unit that would exceed its budget; it does not skip or truncate that unit. Lexical tokens differ from the encoder's wordpieces, and equal token budgets across corpora do not imply equal tasks."
+  ],
+  [
+    "p",
+    "For each corpus separately, we estimate item-weighted means and 95% percentile cluster-bootstrap intervals using 10,000 replicates and seed 20261002. Each replicate samples observed clusters with replacement and divides summed item outcomes by the resulting number of sampled items. The same cluster weights are used for paired scores and method contrasts. Unequal cluster sizes are therefore retained rather than averaging cluster means with equal weight."
+  ],
+  [
+    "p",
+    "The main sample is a census of eligible benchmark items, not a probability sample of scientific information needs. Intervals quantify stability under resampling the observed paper or connected-component structure. They do not capture annotation error, benchmark selection, or population representativeness. We report no p-values for deterministic inequalities. Exploratory method contrasts use pointwise intervals without multiplicity-adjusted significance claims, and no statistically established ranking reversal is asserted."
+  ],
+  [
+    "subsection",
+    "Robustness and implementation validation"
+  ],
+  [
+    "p",
+    "Prespecified sensitivities cover answer agreement, superset pruning, 100 deterministic single-reference selections, neural versus lexical rankings, token versus unit budgets, and corpus-specific dependence. Single-reference selection deliberately changes the accepted family; it is not improved gold."
+  ],
+  [
+    "p",
+    "The joint answer-agreement/minimal-reference check, direct-bootstrap validation, disjoint topology decomposition, implementation sample, and result-blind modern-encoder timing gate are post-main additions. Their analyses are explicitly exploratory. They do not alter the frozen cohorts, rankings, budgets, or primary analyses."
+  ]
+]

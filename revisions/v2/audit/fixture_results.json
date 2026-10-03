@@ -1,0 +1,63 @@
+[
+  {
+    "index": 99,
+    "check": "nested references survive loader",
+    "passed": true
+  },
+  {
+    "index": 129,
+    "check": "rationale rows regroup without loss",
+    "passed": true
+  },
+  {
+    "index": 123,
+    "check": "distinct families yield identical paragraph qrels while retaining every fixture unit",
+    "passed": true,
+    "input_families": [
+      [
+        [
+          "a",
+          "b"
+        ],
+        [
+          "c"
+        ]
+      ],
+      [
+        [
+          "a"
+        ],
+        [
+          "b",
+          "c"
+        ]
+      ]
+    ],
+    "output": {
+      "q": {
+        "paper::1::0": 1,
+        "paper::1::1": 1,
+        "paper::1::2": 1
+      }
+    }
+  },
+  {
+    "index": 91,
+    "check": "training converter discards family linkage; tokenizer stub does not change these single-word inputs",
+    "passed": true
+  },
+  {
+    "index": 105,
+    "check": "first-reference selection distinguished from union conversion",
+    "passed": true,
+    "output": [
+      "a",
+      "b"
+    ]
+  },
+  {
+    "index": 65,
+    "check": "flat helper and intact structured input coexist",
+    "passed": true
+  }
+]

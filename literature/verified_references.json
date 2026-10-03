@@ -1,0 +1,452 @@
+{
+  "qasper": {
+    "authors": [
+      "Pradeep Dasigi",
+      "Kyle Lo",
+      "Iz Beltagy",
+      "Arman Cohan",
+      "Noah A. Smith",
+      "Matt Gardner"
+    ],
+    "title": "A Dataset of Information-Seeking Questions and Answers Anchored in Research Papers",
+    "year": 2021,
+    "venue": "Proceedings of the 2021 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies",
+    "doi": "10.18653/v1/2021.naacl-main.365",
+    "url": "https://aclanthology.org/2021.naacl-main.365/",
+    "pages": "4599–4610",
+    "label": "Dasigi et al.",
+    "verification": "Official ACL Anthology BibTeX matched to source paper",
+    "source_file": "literature/sources/qasper.bib",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "scifact": {
+    "authors": [
+      "David Wadden",
+      "Shanchuan Lin",
+      "Kyle Lo",
+      "Lucy Lu Wang",
+      "Madeleine van Zuylen",
+      "Arman Cohan",
+      "Hannaneh Hajishirzi"
+    ],
+    "title": "Fact or Fiction: Verifying Scientific Claims",
+    "year": 2020,
+    "venue": "Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing (EMNLP)",
+    "doi": "10.18653/v1/2020.emnlp-main.609",
+    "url": "https://aclanthology.org/2020.emnlp-main.609/",
+    "pages": "7534–7550",
+    "label": "Wadden et al.",
+    "verification": "Official ACL Anthology BibTeX matched to source paper",
+    "source_file": "literature/sources/scifact.bib",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "fever": {
+    "authors": [
+      "James Thorne",
+      "Andreas Vlachos",
+      "Christos Christodoulopoulos",
+      "Arpit Mittal"
+    ],
+    "title": "FEVER: a Large-scale Dataset for Fact Extraction and VERification",
+    "year": 2018,
+    "venue": "Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies, Volume 1 (Long Papers)",
+    "doi": "10.18653/v1/N18-1074",
+    "url": "https://aclanthology.org/N18-1074/",
+    "pages": "809–819",
+    "label": "Thorne et al.",
+    "verification": "Official ACL Anthology BibTeX matched to source paper",
+    "source_file": "literature/sources/fever.bib",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "feverous": {
+    "authors": [
+      "Rami Aly",
+      "Zhijiang Guo",
+      "Michael Sejr Schlichtkrull",
+      "James Thorne",
+      "Andreas Vlachos",
+      "Christos Christodoulopoulos",
+      "Oana Cocarascu",
+      "Arpit Mittal"
+    ],
+    "title": "The Fact Extraction and VERification Over Unstructured and Structured information (FEVEROUS) Shared Task",
+    "year": 2021,
+    "venue": "Proceedings of the Fourth Workshop on Fact Extraction and VERification (FEVER)",
+    "doi": "10.18653/v1/2021.fever-1.1",
+    "url": "https://aclanthology.org/2021.fever-1.1/",
+    "pages": "1–13",
+    "label": "Aly et al.",
+    "verification": "Official ACL Anthology BibTeX matched to source paper",
+    "source_file": "literature/sources/feverous.bib",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "dmerit": {
+    "authors": [
+      "Royi Rassin",
+      "Yaron Fairstein",
+      "Oren Kalinsky",
+      "Guy Kushilevitz",
+      "Nachshon Cohen",
+      "Alexander Libov",
+      "Yoav Goldberg"
+    ],
+    "title": "Evaluating D-MERIT of Partial-annotation on Information Retrieval",
+    "year": 2024,
+    "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2024.emnlp-main.171",
+    "url": "https://aclanthology.org/2024.emnlp-main.171/",
+    "pages": "2913–2932",
+    "label": "Rassin et al.",
+    "verification": "Official ACL Anthology BibTeX matched to source paper",
+    "source_file": "literature/sources/dmerit.bib",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "lab": {
+    "authors": [
+      "Jan Buchmann",
+      "Xiao Liu",
+      "Iryna Gurevych"
+    ],
+    "title": "Attribute or Abstain: Large Language Models as Long Document Assistants",
+    "year": 2024,
+    "venue": "Proceedings of the 2024 Conference on Empirical Methods in Natural Language Processing",
+    "doi": "10.18653/v1/2024.emnlp-main.463",
+    "url": "https://aclanthology.org/2024.emnlp-main.463/",
+    "pages": "8113–8140",
+    "label": "Buchmann et al.",
+    "verification": "Official ACL Anthology BibTeX matched to source paper",
+    "source_file": "literature/sources/lab.bib",
+    "year_label": "2024a",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "structure": {
+    "authors": [
+      "Jan Buchmann",
+      "Max Eichler",
+      "Jan-Micha Bodensohn",
+      "Ilia Kuznetsov",
+      "Iryna Gurevych"
+    ],
+    "title": "Document Structure in Long Document Transformers",
+    "year": 2024,
+    "venue": "Proceedings of the 18th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2024.eacl-long.64",
+    "url": "https://aclanthology.org/2024.eacl-long.64/",
+    "pages": "1056–1073",
+    "label": "Buchmann et al.",
+    "verification": "Official ACL Anthology BibTeX matched to source paper",
+    "source_file": "literature/sources/document_structure.bib",
+    "year_label": "2024b",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "erag": {
+    "authors": [
+      "Alireza Salemi",
+      "Hamed Zamani"
+    ],
+    "title": "Evaluating Retrieval Quality in Retrieval-Augmented Generation",
+    "year": 2024,
+    "venue": "Proceedings of the 47th International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "doi": "10.1145/3626772.3657957",
+    "url": "https://doi.org/10.1145/3626772.3657957",
+    "pages": "2395-2400",
+    "volume": "",
+    "label": "Salemi and Zamani",
+    "verification": "Crossref publisher-deposited metadata and source paper",
+    "source_file": "literature/sources/erag_crossref.json",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "ev2r": {
+    "authors": [
+      "Mubashara Akhtar",
+      "Michael Schlichtkrull",
+      "Andreas Vlachos"
+    ],
+    "title": "Ev2R: Evaluating Evidence Retrieval in Automated Fact-Checking",
+    "year": 2026,
+    "venue": "Transactions of the Association for Computational Linguistics",
+    "doi": "10.1162/tacl.a.647",
+    "url": "https://aclanthology.org/2026.tacl-1.25/",
+    "pages": "530-561",
+    "volume": "14",
+    "label": "Akhtar et al.",
+    "verification": "Crossref publisher-deposited metadata and source paper",
+    "source_file": "literature/sources/ev2r_crossref.json",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "sufficient": {
+    "authors": [
+      "Hailey Joren",
+      "Jianyi Zhang",
+      "Chun-Sung Ferng",
+      "Da-Cheng Juan",
+      "Ankur Taly",
+      "Cyrus Rashtchian"
+    ],
+    "title": "Sufficient Context: A New Lens on Retrieval Augmented Generation Systems",
+    "year": 2025,
+    "venue": "International Conference on Learning Representations",
+    "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/33dffa2e3d2ab74a783d1a8c292f66d9-Abstract-Conference.html",
+    "label": "Joren et al.",
+    "verification": "Official ICLR proceedings and paper first page",
+    "source_file": "literature/sources/sufficient_context.pdf",
+    "pages": "20310–20334",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "conjunctive": {
+    "authors": [
+      "Sungguk Cha",
+      "DongWook Kim",
+      "Mintae Kim",
+      "Youngsub Han",
+      "Byoung-Ki Jeon",
+      "Sangyeob Lee"
+    ],
+    "title": "Do Current Retrievers Cover All the Evidence? A Controlled Study of Conjunctive Cross-Page Retrieval",
+    "year": 2026,
+    "venue": "arXiv preprint 2607.24165v2",
+    "doi": "10.48550/arXiv.2607.24165",
+    "url": "https://arxiv.org/abs/2607.24165v2",
+    "label": "Cha et al.",
+    "verification": "arXiv version page and downloaded paper first page",
+    "source_file": "literature/sources/conjunctive_2026.pdf",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "relational": {
+    "authors": [
+      "Thomson D. Nguy"
+    ],
+    "title": "More Context, Same Budget: Dual-Bounded Relational Recall Beyond Top-K Retrieval",
+    "year": 2026,
+    "venue": "arXiv preprint 2608.18448v1",
+    "doi": "10.48550/arXiv.2608.18448",
+    "url": "https://arxiv.org/abs/2608.18448v1",
+    "label": "Nguy",
+    "verification": "arXiv version page and downloaded paper first page",
+    "source_file": "literature/sources/relational_recall_2026.pdf",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "bm25": {
+    "authors": [
+      "Stephen Robertson",
+      "Hugo Zaragoza"
+    ],
+    "title": "The Probabilistic Relevance Framework: BM25 and Beyond",
+    "year": 2009,
+    "venue": "Foundations and Trends in Information Retrieval",
+    "volume": "3(4)",
+    "pages": "333–389",
+    "doi": "10.1561/1500000019",
+    "url": "https://doi.org/10.1561/1500000019",
+    "label": "Robertson and Zaragoza",
+    "verification": "Original monograph front matter confirms 3(4):333–389; current Crossref volume/page fields conflict and were not adopted",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "saracevic": {
+    "authors": [
+      "Tefko Saracevic"
+    ],
+    "title": "Relevance: A review of the literature and a framework for thinking on the notion in information science. Part II: nature and manifestations of relevance",
+    "year": 2007,
+    "venue": "Journal of the American Society for Information Science and Technology",
+    "volume": "58(13)",
+    "pages": "1915–1933",
+    "doi": "10.1002/asi.20682",
+    "url": "https://doi.org/10.1002/asi.20682",
+    "label": "Saracevic",
+    "verification": "Publisher metadata and abstract; cited only for broad relevance framing",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "voorhees2002": {
+    "authors": [
+      "Ellen M. Voorhees"
+    ],
+    "title": "The Philosophy of Information Retrieval Evaluation",
+    "year": 2002,
+    "venue": "Evaluation of Cross-Language Information Retrieval Systems. Lecture Notes in Computer Science, volume 2406",
+    "pages": "355-370",
+    "url": "https://doi.org/10.1007/3-540-45691-0_34",
+    "label": "Voorhees",
+    "verification": "Publisher-deposited Crossref metadata; original-source reading separately logged",
+    "doi": "10.1007/3-540-45691-0_34",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "zobel1998": {
+    "authors": [
+      "Justin Zobel"
+    ],
+    "title": "How Reliable are the Results of Large-Scale Information Retrieval Experiments?",
+    "year": 1998,
+    "venue": "Proceedings of the 21st Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "pages": "307-314",
+    "url": "https://doi.org/10.1145/290941.291014",
+    "label": "Zobel",
+    "verification": "Publisher-deposited Crossref metadata; original-source reading separately logged",
+    "doi": "10.1145/290941.291014",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "buckley2004": {
+    "authors": [
+      "Chris Buckley",
+      "Ellen M. Voorhees"
+    ],
+    "title": "Retrieval Evaluation with Incomplete Information",
+    "year": 2004,
+    "venue": "Proceedings of the 27th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "pages": "25-32",
+    "url": "https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=150469",
+    "label": "Buckley and Voorhees",
+    "verification": "Publisher-deposited Crossref metadata; original-source reading separately logged",
+    "doi": "10.1145/1008992.1009000",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "zhai2003": {
+    "authors": [
+      "Cheng Xiang Zhai",
+      "William W. Cohen",
+      "John Lafferty"
+    ],
+    "title": "Beyond Independent Relevance: Methods and Evaluation Metrics for Subtopic Retrieval",
+    "year": 2003,
+    "venue": "Proceedings of the 26th Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "pages": "10-17",
+    "url": "https://doi.org/10.1145/860435.860440",
+    "label": "Zhai et al.",
+    "verification": "Publisher-deposited Crossref metadata; original-source reading separately logged",
+    "doi": "10.1145/860435.860440",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "clarke2008": {
+    "authors": [
+      "Charles L. A. Clarke",
+      "Maheedhar Kolla",
+      "Gordon V. Cormack",
+      "Olga Vechtomova",
+      "Azin Ashkan",
+      "Stefan Büttcher",
+      "Ian MacKinnon"
+    ],
+    "title": "Novelty and Diversity in Information Retrieval Evaluation",
+    "year": 2008,
+    "venue": "Proceedings of the 31st Annual International ACM SIGIR Conference on Research and Development in Information Retrieval",
+    "pages": "659-666",
+    "url": "https://doi.org/10.1145/1390334.1390446",
+    "label": "Clarke et al.",
+    "verification": "Publisher-deposited Crossref metadata; original-source reading separately logged",
+    "doi": "10.1145/1390334.1390446",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "agrawal2009": {
+    "authors": [
+      "Rakesh Agrawal",
+      "Sreenivas Gollapudi",
+      "Alan Halverson",
+      "Samuel Ieong"
+    ],
+    "title": "Diversifying Search Results",
+    "year": 2009,
+    "venue": "Proceedings of the Second ACM International Conference on Web Search and Data Mining",
+    "pages": "5-14",
+    "url": "https://doi.org/10.1145/1498759.1498766",
+    "label": "Agrawal et al.",
+    "verification": "Publisher-deposited Crossref metadata; original-source reading separately logged",
+    "doi": "10.1145/1498759.1498766",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "voorhees2003": {
+    "authors": [
+      "Ellen M. Voorhees"
+    ],
+    "title": "Overview of the TREC 2003 Question Answering Track",
+    "year": 2004,
+    "venue": "Proceedings of the Twelfth Text REtrieval Conference (TREC 2003), NIST Special Publication 500-255",
+    "pages": "54–68",
+    "url": "https://trec.nist.gov/pubs/trec12/papers/QA.OVERVIEW.pdf",
+    "label": "Voorhees",
+    "verification": "NIST publication record dated 1 March 2004; 2003 is the track/conference year, not publication year",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "lin2006": {
+    "authors": [
+      "Jimmy Lin",
+      "Dina Demner-Fushman"
+    ],
+    "title": "Will Pyramids Built of Nuggets Topple Over?",
+    "year": 2006,
+    "venue": "Proceedings of the Human Language Technology Conference of the NAACL, Main Conference",
+    "pages": "383–390",
+    "url": "https://aclanthology.org/N06-1049/",
+    "label": "Lin and Demner-Fushman",
+    "verification": "Primary-source metadata and reading locations recorded in revisions/v2/literature/claim_source_ledger.json",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "trecrag2025": {
+    "authors": [
+      "Shivani Upadhyay",
+      "Nandan Thakur",
+      "Ronak Pradeep",
+      "Nick Craswell",
+      "Daniel Campos",
+      "Jimmy Lin"
+    ],
+    "title": "Overview of the TREC 2025 Retrieval Augmented Generation (RAG) Track",
+    "year": 2026,
+    "venue": "TREC 2025 Proceedings, NIST Special Publication 1344",
+    "pages": "",
+    "url": "https://trec.nist.gov/pubs/trec34/papers/Overview_rag.pdf",
+    "label": "Upadhyay et al.",
+    "verification": "Primary-source metadata and reading locations recorded in revisions/v2/literature/claim_source_ledger.json",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "qwen": {
+    "authors": [
+      "Qwen Team"
+    ],
+    "title": "Qwen3-Embedding-0.6B: Model Card",
+    "year": 2025,
+    "venue": "Hugging Face model documentation, revision 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "pages": "",
+    "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/tree/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+    "label": "Qwen Team",
+    "verification": "Primary-source metadata and reading locations recorded in revisions/v2/literature/claim_source_ledger.json",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "alt2026": {
+    "authors": [
+      "Guy Alt",
+      "Eran Hirsch",
+      "Serwar Basch",
+      "Ido Dagan",
+      "Oren Glickman"
+    ],
+    "title": "User-Centric Evidence Ranking for Attribution and Fact Verification",
+    "year": 2026,
+    "venue": "Proceedings of the 19th Conference of the European Chapter of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "doi": "10.18653/v1/2026.eacl-long.340",
+    "url": "https://aclanthology.org/2026.eacl-long.340/",
+    "pages": "7215–7237",
+    "label": "Alt et al.",
+    "verification": "ACL Anthology publication record, BibTeX and full 23-page paper",
+    "source_file": "revisions/final/literature/sources/alt2026_final.bib",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "li2025": {
+    "authors": [
+      "Xiangci Li",
+      "Sihao Chen",
+      "Rajvi Kapadia",
+      "Jessica Ouyang",
+      "Fan Zhang"
+    ],
+    "title": "Minimal Evidence Group Identification for Claim Verification",
+    "year": 2025,
+    "venue": "Proceedings of the 5th Workshop on Trustworthy NLP (TrustNLP 2025)",
+    "doi": "10.18653/v1/2025.trustnlp-main.8",
+    "url": "https://aclanthology.org/2025.trustnlp-main.8/",
+    "pages": "103–111",
+    "label": "Li et al.",
+    "verification": "ACL Anthology publication record, BibTeX and full 9-page paper",
+    "source_file": "revisions/final/literature/sources/li2025_final.bib",
+    "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  }
+}

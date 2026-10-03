@@ -1,0 +1,4 @@
+{"event": "start", "limit": null, "utc": "2026-10-03T00:51:19.731341+00:00"}
+{"complete": true, "event": "finish", "expected_records": 5420, "new_records": 5420, "records": 5420, "seconds": 626.5225941250101, "utc": "2026-10-03T01:01:46.248262+00:00"}
+{"event": "start", "limit": 1, "utc": "2026-10-03T01:23:18.582966+00:00"}
+{"complete": true, "event": "finish", "expected_records": 5420, "new_records": 0, "records": 5420, "seconds": 3.8186043750029057, "utc": "2026-10-03T01:23:22.401492+00:00"}

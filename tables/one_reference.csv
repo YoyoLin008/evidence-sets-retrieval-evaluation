@@ -1,0 +1,19 @@
+dataset,method,k,metric,n,selections,selection_mean,selection_min,selection_max,note
+qasper,bm25,5,complete,875,100,0.4203885714,0.4091428571,0.4411428571,Selection variability; not confidence interval
+qasper,bm25,5,hit_without_complete,875,100,0.1299657143,0.112,0.1451428571,Selection variability; not confidence interval
+qasper,bm25,5,complete_without_union,875,100,0,0,0,Selection variability; not confidence interval
+qasper,tfidf,5,complete,875,100,0.40136,0.3885714286,0.4274285714,Selection variability; not confidence interval
+qasper,tfidf,5,hit_without_complete,875,100,0.1318285714,0.1131428571,0.1462857143,Selection variability; not confidence interval
+qasper,tfidf,5,complete_without_union,875,100,0,0,0,Selection variability; not confidence interval
+qasper,dense,5,complete,875,100,0.4393257143,0.4251428571,0.4582857143,Selection variability; not confidence interval
+qasper,dense,5,hit_without_complete,875,100,0.1500914286,0.1337142857,0.1634285714,Selection variability; not confidence interval
+qasper,dense,5,complete_without_union,875,100,0,0,0,Selection variability; not confidence interval
+scifact,bm25,3,complete,209,100,0.6492344498,0.6124401914,0.6985645933,Selection variability; not confidence interval
+scifact,bm25,3,hit_without_complete,209,100,0.05488038278,0.04306220096,0.06698564593,Selection variability; not confidence interval
+scifact,bm25,3,complete_without_union,209,100,0,0,0,Selection variability; not confidence interval
+scifact,tfidf,3,complete,209,100,0.6144497608,0.5837320574,0.6650717703,Selection variability; not confidence interval
+scifact,tfidf,3,hit_without_complete,209,100,0.05009569378,0.03827751196,0.06220095694,Selection variability; not confidence interval
+scifact,tfidf,3,complete_without_union,209,100,0,0,0,Selection variability; not confidence interval
+scifact,dense,3,complete,209,100,0.6368899522,0.5980861244,0.6698564593,Selection variability; not confidence interval
+scifact,dense,3,hit_without_complete,209,100,0.05244019139,0.04306220096,0.06698564593,Selection variability; not confidence interval
+scifact,dense,3,complete_without_union,209,100,0,0,0,Selection variability; not confidence interval

@@ -1,0 +1,16 @@
+{
+  "utc": "2026-10-03T02:57:22.058259+00:00",
+  "original_selection_preserved": "selected_families.json",
+  "indices_merged": [
+    49,
+    52
+  ],
+  "canonical_retained": "github.com/rucdatascience/VikingRAG",
+  "rule": "First-discovered identifier retained within this newly established lineage. Its selected representative was already index 49; no selected representative changes.",
+  "evidence": "openviking_lineage_check.json: adapter conversion body identical; differences confined to imports and prompt text.",
+  "eligible_counts_corrected": {
+    "QASPER": 25,
+    "SciFact": 33
+  },
+  "limitation": "Lineage established after initial selection and some code inspection; original freeze retained, not rewritten."
+}

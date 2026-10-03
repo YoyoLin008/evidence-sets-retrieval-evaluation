@@ -1,0 +1,19 @@
+{
+  "input_sha256": "50f3a7f67fb534724f115793df1c0e96da5b3c00683db46b3f05fc086706e16d",
+  "analysis_source_sha256": "ff36b512ae141db433be45ce3e12d86d823666a8886a873c3264b662fc56868a",
+  "bootstrap": "item-weighted percentile connected-cluster bootstrap",
+  "replicates": 10000,
+  "seed": 20261002,
+  "tables": {
+    "tables/cohort_flow.csv": "4c35bdae00a4bf634ffefca57ecd92c44b290003b675cbb0f57e0599af49b45d",
+    "tables/structure.csv": "a235951e91e4a610db5d49239ab6e06ecbabd33e7a32495172103f3ca680fd9c",
+    "tables/robustness.csv": "0d8718a5ff9d5a3f94209e2fde8c147eac96160a8520164533feff6bfc1fef3b",
+    "tables/primary.csv": "0bee1ae903ec5fd469383ad7946f456d0621e8e9da25676b9729289c197d576a",
+    "tables/curve_estimates.csv": "65d3684f81640708079ef9948a6a51204feb6ff434e969650d47237a3ddef36c",
+    "tables/costs.csv": "51d4c66ef2eafda54ae42b94a2df3f0bfc1d04e734b51a574d1fbe49999a6c1b",
+    "tables/one_reference.csv": "dc63730611d216f9e5a76f133554ba6e98a9efc49d7eeb2bd67925b7dfc22101",
+    "tables/topology.csv": "1b54244701e235c0826a93a8f4fe611396b17978fc76de4ae4c6d19703e61798",
+    "tables/method_contrasts.csv": "e340e14775cc74fe040994e009180a9e922a87e5209604b48abbb2d641c22d72",
+    "tables/token_budget.csv": "5c0fbcb190f5b128b61203a4f64a141fc117695d25b581533d5dfaee71f3e713"
+  }
+}

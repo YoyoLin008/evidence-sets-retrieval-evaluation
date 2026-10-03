@@ -1,0 +1,438 @@
+{
+  "QH": {
+    "value": "65.0",
+    "source": "tables/primary.csv:qasper/bm25/hit/mean"
+  },
+  "QHlo": {
+    "value": "61.6",
+    "source": "tables/primary.csv:qasper/bm25/hit/lo"
+  },
+  "QHhi": {
+    "value": "68.4",
+    "source": "tables/primary.csv:qasper/bm25/hit/hi"
+  },
+  "QC": {
+    "value": "51.0",
+    "source": "tables/primary.csv:qasper/bm25/complete/mean"
+  },
+  "QClo": {
+    "value": "47.5",
+    "source": "tables/primary.csv:qasper/bm25/complete/lo"
+  },
+  "QChi": {
+    "value": "54.4",
+    "source": "tables/primary.csv:qasper/bm25/complete/hi"
+  },
+  "QA": {
+    "value": "33.1",
+    "source": "tables/primary.csv:qasper/bm25/union_complete/mean"
+  },
+  "QAlo": {
+    "value": "29.8",
+    "source": "tables/primary.csv:qasper/bm25/union_complete/lo"
+  },
+  "QAhi": {
+    "value": "36.5",
+    "source": "tables/primary.csv:qasper/bm25/union_complete/hi"
+  },
+  "QHC": {
+    "value": "14.1",
+    "source": "tables/primary.csv:qasper/bm25/hit_without_complete/mean"
+  },
+  "QHClo": {
+    "value": "11.7",
+    "source": "tables/primary.csv:qasper/bm25/hit_without_complete/lo"
+  },
+  "QHChi": {
+    "value": "16.4",
+    "source": "tables/primary.csv:qasper/bm25/hit_without_complete/hi"
+  },
+  "QCA": {
+    "value": "17.8",
+    "source": "tables/primary.csv:qasper/bm25/complete_without_union/mean"
+  },
+  "QCAlo": {
+    "value": "15.3",
+    "source": "tables/primary.csv:qasper/bm25/complete_without_union/lo"
+  },
+  "QCAhi": {
+    "value": "20.4",
+    "source": "tables/primary.csv:qasper/bm25/complete_without_union/hi"
+  },
+  "QdenseC": {
+    "value": "54.9",
+    "source": "tables/primary.csv"
+  },
+  "QdenseA": {
+    "value": "33.4",
+    "source": "tables/primary.csv"
+  },
+  "QFmax": {
+    "value": "0.227",
+    "source": "tables/primary.csv"
+  },
+  "QFUnion": {
+    "value": "0.228",
+    "source": "tables/primary.csv"
+  },
+  "QDepth": {
+    "value": "6.65",
+    "source": "tables/costs.csv"
+  },
+  "QDepthLo": {
+    "value": "5.69",
+    "source": "tables/costs.csv"
+  },
+  "QDepthHi": {
+    "value": "7.70",
+    "source": "tables/costs.csv"
+  },
+  "QZero": {
+    "value": "54.9",
+    "source": "tables/costs.csv"
+  },
+  "QTokens": {
+    "value": "540.9",
+    "source": "tables/costs.csv"
+  },
+  "Qn": {
+    "value": "875",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Qclusters": {
+    "value": "367",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Qdistinct": {
+    "value": "472",
+    "source": "analysis/diagnostics.json"
+  },
+  "Qminimal": {
+    "value": "285",
+    "source": "tables/structure.csv"
+  },
+  "Qsingleminimal": {
+    "value": "590",
+    "source": "tables/structure.csv"
+  },
+  "Qcompound": {
+    "value": "127",
+    "source": "tables/structure.csv"
+  },
+  "QSingleGap": {
+    "value": "8.8",
+    "source": "tables/topology.csv"
+  },
+  "QAltGap": {
+    "value": "36.5",
+    "source": "tables/topology.csv"
+  },
+  "QOneC": {
+    "value": "42.0",
+    "source": "tables/one_reference.csv"
+  },
+  "QNoHitN": {
+    "value": "306",
+    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+  },
+  "QPartialN": {
+    "value": "123",
+    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+  },
+  "QOneN": {
+    "value": "156",
+    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+  },
+  "QAllN": {
+    "value": "290",
+    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+  },
+  "SH": {
+    "value": "83.7",
+    "source": "tables/primary.csv:scifact/bm25/hit/mean"
+  },
+  "SHlo": {
+    "value": "78.2",
+    "source": "tables/primary.csv:scifact/bm25/hit/lo"
+  },
+  "SHhi": {
+    "value": "88.9",
+    "source": "tables/primary.csv:scifact/bm25/hit/hi"
+  },
+  "SC": {
+    "value": "79.4",
+    "source": "tables/primary.csv:scifact/bm25/complete/mean"
+  },
+  "SClo": {
+    "value": "73.6",
+    "source": "tables/primary.csv:scifact/bm25/complete/lo"
+  },
+  "SChi": {
+    "value": "84.9",
+    "source": "tables/primary.csv:scifact/bm25/complete/hi"
+  },
+  "SA": {
+    "value": "51.7",
+    "source": "tables/primary.csv:scifact/bm25/union_complete/mean"
+  },
+  "SAlo": {
+    "value": "44.7",
+    "source": "tables/primary.csv:scifact/bm25/union_complete/lo"
+  },
+  "SAhi": {
+    "value": "58.8",
+    "source": "tables/primary.csv:scifact/bm25/union_complete/hi"
+  },
+  "SHC": {
+    "value": "4.3",
+    "source": "tables/primary.csv:scifact/bm25/hit_without_complete/mean"
+  },
+  "SHClo": {
+    "value": "1.8",
+    "source": "tables/primary.csv:scifact/bm25/hit_without_complete/lo"
+  },
+  "SHChi": {
+    "value": "7.2",
+    "source": "tables/primary.csv:scifact/bm25/hit_without_complete/hi"
+  },
+  "SCA": {
+    "value": "27.8",
+    "source": "tables/primary.csv:scifact/bm25/complete_without_union/mean"
+  },
+  "SCAlo": {
+    "value": "21.2",
+    "source": "tables/primary.csv:scifact/bm25/complete_without_union/lo"
+  },
+  "SCAhi": {
+    "value": "34.3",
+    "source": "tables/primary.csv:scifact/bm25/complete_without_union/hi"
+  },
+  "SdenseC": {
+    "value": "78.5",
+    "source": "tables/primary.csv"
+  },
+  "SdenseA": {
+    "value": "50.7",
+    "source": "tables/primary.csv"
+  },
+  "SFmax": {
+    "value": "0.421",
+    "source": "tables/primary.csv"
+  },
+  "SFUnion": {
+    "value": "0.434",
+    "source": "tables/primary.csv"
+  },
+  "SDepth": {
+    "value": "2.02",
+    "source": "tables/costs.csv"
+  },
+  "SDepthLo": {
+    "value": "1.48",
+    "source": "tables/costs.csv"
+  },
+  "SDepthHi": {
+    "value": "2.63",
+    "source": "tables/costs.csv"
+  },
+  "SZero": {
+    "value": "59.3",
+    "source": "tables/costs.csv"
+  },
+  "STokens": {
+    "value": "58.5",
+    "source": "tables/costs.csv"
+  },
+  "Sn": {
+    "value": "209",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Sclusters": {
+    "value": "164",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Sdistinct": {
+    "value": "85",
+    "source": "analysis/diagnostics.json"
+  },
+  "Sminimal": {
+    "value": "85",
+    "source": "tables/structure.csv"
+  },
+  "Ssingleminimal": {
+    "value": "124",
+    "source": "tables/structure.csv"
+  },
+  "Scompound": {
+    "value": "14",
+    "source": "tables/structure.csv"
+  },
+  "SSingleGap": {
+    "value": "0.0",
+    "source": "tables/topology.csv"
+  },
+  "SAltGap": {
+    "value": "68.2",
+    "source": "tables/topology.csv"
+  },
+  "SOneC": {
+    "value": "64.9",
+    "source": "tables/one_reference.csv"
+  },
+  "SNoHitN": {
+    "value": "34",
+    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+  },
+  "SPartialN": {
+    "value": "9",
+    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+  },
+  "SOneN": {
+    "value": "58",
+    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+  },
+  "SAllN": {
+    "value": "108",
+    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+  },
+  "Qtotal": {
+    "value": "1451",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Qpapers": {
+    "value": "416",
+    "source": "QASPER test source"
+  },
+  "Qexcluded": {
+    "value": "576",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Qfloat": {
+    "value": "253",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Qempty": {
+    "value": "288",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Qunanswerable": {
+    "value": "243",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Qunmapped": {
+    "value": "89",
+    "source": "tables/cohort_flow.csv"
+  },
+  "Sclaims": {
+    "value": "300",
+    "source": "SciFact dev source"
+  },
+  "Sevidenceclaims": {
+    "value": "188",
+    "source": "SciFact dev source"
+  },
+  "Snoevidence": {
+    "value": "112",
+    "source": "SciFact dev source"
+  },
+  "Smaxrefs": {
+    "value": "6",
+    "source": "tables/structure.csv"
+  },
+  "FreezeTime": {
+    "value": "2026-10-03T00:51:19 UTC",
+    "source": "logs/main_freeze.json"
+  },
+  "RankRecords": {
+    "value": "5420",
+    "source": "outputs/main_v1/rankings.jsonl"
+  },
+  "ScorePoints": {
+    "value": "32520",
+    "source": "outputs/main_v1/rankings.jsonl"
+  },
+  "RunSeconds": {
+    "value": "626.5",
+    "source": "logs/main_jobs.jsonl"
+  },
+  "QdenseAdvC": {
+    "value": "3.9",
+    "source": "tables/primary.csv:paired point estimate"
+  },
+  "QdenseAdvA": {
+    "value": "0.2",
+    "source": "tables/primary.csv:paired point estimate"
+  },
+  "QAgreeGap": {
+    "value": "12.3",
+    "source": "tables/robustness.csv"
+  },
+  "QagreeN": {
+    "value": "195",
+    "source": "tables/robustness.csv"
+  },
+  "QPrunedGap": {
+    "value": "11.8",
+    "source": "tables/robustness.csv"
+  },
+  "QPrunedN": {
+    "value": "875",
+    "source": "tables/robustness.csv"
+  },
+  "QNoTruncGap": {
+    "value": "20.4",
+    "source": "tables/robustness.csv"
+  },
+  "QNoTruncN": {
+    "value": "750",
+    "source": "tables/robustness.csv"
+  },
+  "QJointGap": {
+    "value": "8.2",
+    "source": "tables/joint_sensitivity.csv"
+  },
+  "QJointLo": {
+    "value": "4.5",
+    "source": "tables/joint_sensitivity.csv"
+  },
+  "QJointHi": {
+    "value": "12.4",
+    "source": "tables/joint_sensitivity.csv"
+  },
+  "QJointClusters": {
+    "value": "149",
+    "source": "tables/joint_sensitivity.csv"
+  },
+  "QAnyTrunc": {
+    "value": "556",
+    "source": "analysis/diagnostics.json"
+  },
+  "QGoldTrunc": {
+    "value": "125",
+    "source": "analysis/diagnostics.json"
+  },
+  "QEligiblePct": {
+    "value": "60.3",
+    "source": "tables/cohort_flow.csv"
+  },
+  "BootstrapMaxDiff": {
+    "value": "0.08",
+    "source": "tables/independent_bootstrap.csv vs primary.csv"
+  },
+  "QTokenC": {
+    "value": "50.2",
+    "source": "tables/token_budget.csv"
+  },
+  "QTokenA": {
+    "value": "31.4",
+    "source": "tables/token_budget.csv"
+  },
+  "STokenC": {
+    "value": "63.2",
+    "source": "tables/token_budget.csv"
+  },
+  "STokenA": {
+    "value": "37.3",
+    "source": "tables/token_budget.csv"
+  }
+}

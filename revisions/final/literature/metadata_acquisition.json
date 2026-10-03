@@ -1,0 +1,420 @@
+[
+  {
+    "key": "qasper",
+    "utc": "2026-10-03T04:05:05.753011+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2021.naacl-main.365.bib",
+        "local": "revisions/final/literature/sources/qasper_final.bib",
+        "sha256": "a174e0f137dd005dc905e9861df8082047878f728e669ecc02e4651564338d18",
+        "bytes": 958,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2021.naacl-main.365/",
+        "local": "revisions/final/literature/sources/qasper_final.html",
+        "sha256": "59770d4301baeb396fe4e204f38ac1e3f5a9498443d97be14ef24149e6014197",
+        "bytes": 47420,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "scifact",
+    "utc": "2026-10-03T04:05:05.753717+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2020.emnlp-main.609.bib",
+        "local": "revisions/final/literature/sources/scifact_final.bib",
+        "sha256": "353cd6aaaef9213d338726595195800e712c534ba22d2d7e1e9797a97a94a6e4",
+        "bytes": 752,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2020.emnlp-main.609/",
+        "local": "revisions/final/literature/sources/scifact_final.html",
+        "sha256": "5a2f4a6960de24683b5c3c72b9de3f30ba1c218952c5d87451e0476b850a2842",
+        "bytes": 44144,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "fever",
+    "utc": "2026-10-03T04:05:05.753805+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/N18-1074.bib",
+        "local": "revisions/final/literature/sources/fever_final.bib",
+        "sha256": "2a7be035b7ce273f300c2426524c9d7350451be857cda434210fae1807a559fd",
+        "bytes": 757,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/N18-1074/",
+        "local": "revisions/final/literature/sources/fever_final.html",
+        "sha256": "75a0ef7e726023b45e2cc59ee97b4417a5dcc5c14479712cfb5f09c3e984051c",
+        "bytes": 42011,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "feverous",
+    "utc": "2026-10-03T04:05:05.753868+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2021.fever-1.1.bib",
+        "local": "revisions/final/literature/sources/feverous_final.bib",
+        "sha256": "2c2ca68fdbd0a21d73d6dd57699195105dbe077a30ad10e053d4849835160bab",
+        "bytes": 972,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2021.fever-1.1/",
+        "local": "revisions/final/literature/sources/feverous_final.html",
+        "sha256": "fcb3d46c2de97bf542e3c7d5a1bf1ceab1ad272de56be5660d391caf2e7b20b0",
+        "bytes": 48024,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "dmerit",
+    "utc": "2026-10-03T04:05:05.753924+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2024.emnlp-main.171.bib",
+        "local": "revisions/final/literature/sources/dmerit_final.bib",
+        "sha256": "e532be59a9a351af9c30db8710cbd8f1f2f1139911fbbfe461c407f7418c5207",
+        "bytes": 778,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2024.emnlp-main.171/",
+        "local": "revisions/final/literature/sources/dmerit_final.html",
+        "sha256": "27374fb071fe3c2cf15cafa4c29462a7a08ae66becd5f1682038c81d86ce5bf8",
+        "bytes": 38496,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "lab",
+    "utc": "2026-10-03T04:05:06.165338+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2024.emnlp-main.463.bib",
+        "local": "revisions/final/literature/sources/lab_final.bib",
+        "sha256": "3b9c07b88d124200a0c54e02ee1fad6ac2a54951d4ae992da790b82a8071af2b",
+        "bytes": 667,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2024.emnlp-main.463/",
+        "local": "revisions/final/literature/sources/lab_final.html",
+        "sha256": "ce9a3a331d67c641bbb0744a1ace3e93cf1b6ad56a2f7c1572675745d3100517",
+        "bytes": 43520,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "structure",
+    "utc": "2026-10-03T04:05:06.175804+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2024.eacl-long.64.bib",
+        "local": "revisions/final/literature/sources/structure_final.bib",
+        "sha256": "66eb8d397e66df4026fab11c5ce41340356c75fcf83778ee2273cb896cbde137",
+        "bytes": 721,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2024.eacl-long.64/",
+        "local": "revisions/final/literature/sources/structure_final.html",
+        "sha256": "592b99201c3a99a2e23a77d73d3c9927879f3d8f8adb6de7a4757d03e10ec13c",
+        "bytes": 43680,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "erag",
+    "utc": "2026-10-03T04:05:06.219604+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F3626772.3657957",
+        "local": "revisions/final/literature/sources/erag_final.json",
+        "sha256": "75a453c9ea7bc21ca156ee056e200d78ba43e943219477247b50915024986e14",
+        "bytes": 11373,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "ev2r",
+    "utc": "2026-10-03T04:05:06.219852+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2026.tacl-1.25.bib",
+        "local": "revisions/final/literature/sources/ev2r_final.bib",
+        "sha256": "2eccfb23931d3006e8031c49778418c785bf7ea2d85ad78c07d3bc53fbca6c1b",
+        "bytes": 499,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2026.tacl-1.25/",
+        "local": "revisions/final/literature/sources/ev2r_final.html",
+        "sha256": "021dd54d1785ad05c048a10188e0deb40e38e37ee235fdf2140c1934a342e30a",
+        "bytes": 39489,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "sufficient",
+    "utc": "2026-10-03T04:05:06.220684+00:00",
+    "sources": [
+      {
+        "url": "https://proceedings.iclr.cc/paper_files/paper/2025/hash/33dffa2e3d2ab74a783d1a8c292f66d9-Abstract-Conference.html",
+        "local": "revisions/final/literature/sources/sufficient_final.html",
+        "sha256": "06af5ca7bdb6ec126269e7c2c990a95039aa4dac6ab3746bdf1be179be2fa96e",
+        "bytes": 9943,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "conjunctive",
+    "utc": "2026-10-03T04:05:06.398405+00:00",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2607.24165",
+        "local": "revisions/final/literature/sources/conjunctive_final.html",
+        "sha256": "e7ce7cc4bf7f2985e347c620a6b0aa026f7325f150e1ecb2d613e33bac171ccf",
+        "bytes": 42928,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "relational",
+    "utc": "2026-10-03T04:05:06.589284+00:00",
+    "sources": [
+      {
+        "url": "https://arxiv.org/abs/2608.18448",
+        "local": "revisions/final/literature/sources/relational_final.html",
+        "sha256": "a91949fe3f88cfd44c378bb7ef9371d3b762758e1a779e63211926a35e643745",
+        "bytes": 42238,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "bm25",
+    "utc": "2026-10-03T04:05:06.641514+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1561%2F1500000019",
+        "local": "revisions/final/literature/sources/bm25_final.json",
+        "sha256": "8540a9a4359cd6e29e4c15c7d0419db6c925ba40a41890465821aa61b9e126f1",
+        "bytes": 19516,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "saracevic",
+    "utc": "2026-10-03T04:05:06.644127+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1002%2Fasi.20682",
+        "local": "revisions/final/literature/sources/saracevic_final.json",
+        "sha256": "80b672f238b1bea0055c1df4525b86e7f528a3bd13daf34440cff6f5d98f80f5",
+        "bytes": 13365,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "voorhees2002",
+    "utc": "2026-10-03T04:05:06.668146+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1007%2F3-540-45691-0_34",
+        "local": "revisions/final/literature/sources/voorhees2002_final.json",
+        "sha256": "bf95f50f27050b230e518e0be5d51dbbf0014178e12becc83afb003bebd71cbd",
+        "bytes": 12016,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "zobel1998",
+    "utc": "2026-10-03T04:05:06.683432+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F290941.291014",
+        "local": "revisions/final/literature/sources/zobel1998_final.json",
+        "sha256": "2f4f7bbf883175794c7ab40d240f725d7c4be76817c0450305d6fc9ee4a77107",
+        "bytes": 5355,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "buckley2004",
+    "utc": "2026-10-03T04:05:06.758737+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F1008992.1009000",
+        "local": "revisions/final/literature/sources/buckley2004_final.json",
+        "sha256": "1b0fa88d8e74dade2f2ce6583f94ffe71448364be19a1514e2fe27557f7311a8",
+        "bytes": 5300,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "zhai2003",
+    "utc": "2026-10-03T04:05:06.809332+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F860435.860440",
+        "local": "revisions/final/literature/sources/zhai2003_final.json",
+        "sha256": "88e8ec0d573ef72e00f845d9dd6ce8fc3c73cf16fa665b1a5b271dcf87bee72c",
+        "bytes": 6731,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "clarke2008",
+    "utc": "2026-10-03T04:05:06.819457+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F1390334.1390446",
+        "status": "inaccessible",
+        "error": "HTTP Error 429: Too Many Requests"
+      }
+    ]
+  },
+  {
+    "key": "agrawal2009",
+    "utc": "2026-10-03T04:05:06.827779+00:00",
+    "sources": [
+      {
+        "url": "https://api.crossref.org/works/10.1145%2F1498759.1498766",
+        "local": "revisions/final/literature/sources/agrawal2009_final.json",
+        "sha256": "a221d0b6fb9176381c2db4e8d70ef563d9dfdc6249ac7aa999226d4488d6507b",
+        "bytes": 6282,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "voorhees2003",
+    "utc": "2026-10-03T04:05:06.842322+00:00",
+    "sources": [
+      {
+        "url": "https://trec.nist.gov/pubs/trec12/papers/QA.OVERVIEW.pdf",
+        "local": "revisions/final/literature/sources/voorhees2003_final.pdf",
+        "sha256": "4d9a00bcf9f7c3e23ee80d7900faaa6224f7bf4aa43b58e11431461057f0a07d",
+        "bytes": 177508,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "lin2006",
+    "utc": "2026-10-03T04:05:06.923337+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/N06-1049.bib",
+        "local": "revisions/final/literature/sources/lin2006_final.bib",
+        "sha256": "00551b3eaf92e345c3896212a3a2b36bc20357176de61d8879795229326b901f",
+        "bytes": 594,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/N06-1049/",
+        "local": "revisions/final/literature/sources/lin2006_final.html",
+        "sha256": "96b2e277c6997af7595174b6e175bfff8909b1f8e3c9d9e45c1f6b359a3ab57d",
+        "bytes": 34198,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "trecrag2025",
+    "utc": "2026-10-03T04:05:06.979697+00:00",
+    "sources": [
+      {
+        "url": "https://trec.nist.gov/pubs/trec34/t34_proceedings.html",
+        "status": "inaccessible",
+        "error": "HTTP Error 404: Not Found"
+      },
+      {
+        "url": "https://trec.nist.gov/pubs/trec34/papers/Overview_rag.pdf",
+        "local": "revisions/final/literature/sources/trecrag2025_final.pdf",
+        "sha256": "b29563048227483cb2665e8c2aa1530e153ad9eb7a5409b77b8831b92cfa29c3",
+        "bytes": 3652650,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "qwen",
+    "utc": "2026-10-03T04:05:07.039792+00:00",
+    "sources": [
+      {
+        "url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/resolve/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
+        "local": "revisions/final/literature/sources/qwen_final.md",
+        "sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+        "bytes": 17237,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "alt2026",
+    "utc": "2026-10-03T04:05:07.044672+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2026.eacl-long.340.bib",
+        "local": "revisions/final/literature/sources/alt2026_final.bib",
+        "sha256": "842dc14d24b03cfe40e0b5a5799eac6e9c8cc6a17c6a68e301676be9310d2108",
+        "bytes": 775,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2026.eacl-long.340/",
+        "local": "revisions/final/literature/sources/alt2026_final.html",
+        "sha256": "1e2db21fc1fb1399f1cc216313f199f68953b21ad1f7fcac2acaf95cdcb5a48c",
+        "bytes": 44892,
+        "status": "acquired"
+      }
+    ]
+  },
+  {
+    "key": "li2025",
+    "utc": "2026-10-03T04:05:07.252212+00:00",
+    "sources": [
+      {
+        "url": "https://aclanthology.org/2025.trustnlp-main.8.bib",
+        "local": "revisions/final/literature/sources/li2025_final.bib",
+        "sha256": "80b76993cdf9c077f428fe202b6e275107ec4d361ed9b7d082ad09b0750628f4",
+        "bytes": 946,
+        "status": "acquired"
+      },
+      {
+        "url": "https://aclanthology.org/2025.trustnlp-main.8/",
+        "local": "revisions/final/literature/sources/li2025_final.html",
+        "sha256": "baa2a4f21334444897fca233d103dab4280fca5d116375d83620fb56639635b0",
+        "bytes": 45716,
+        "status": "acquired"
+      }
+    ]
+  }
+]

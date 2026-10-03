@@ -1,0 +1,12 @@
+# Table 1. Source and analysis denominators. QASPER exclusion reasons overlap; SciFact claims and claim-abstract pairs are different units.
+
+| Quantity | QASPER test | SciFact dev |
+| --- | --- | --- |
+| Source questions / claims | 1451 | 300 |
+| Source papers | 416 | Known abstract supplied |
+| Eligible questions / pairs | 875 | 209 |
+| Resampling clusters | 367 | 164 |
+| Multiple distinct evidence sets | 472 | 85 |
+| Multiple minimal evidence sets | 285 | 85 |
+| No singleton reference | 127 | 14 |
+| Exact answer agreement | 195 | Consistent rationale labels |

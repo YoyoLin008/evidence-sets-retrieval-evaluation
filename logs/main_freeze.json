@@ -1,0 +1,20 @@
+{
+  "utc": "2026-10-03T00:51:19.705512+00:00",
+  "statement": "Local prospective freeze before QASPER test deserialization and SciFact dev scoring; not public preregistration.",
+  "frozen_files": {
+    "src/evidence.py": "55d90b859465568b446c84a6e72b8bd8a763f31b98ab7ac2908be81f26912051",
+    "src/dense.py": "4687ba40400f0634f891683845bf174073574fb4345ce870d03c58716494899c",
+    "src/main_study.py": "bb8cb2a844b428e86ebc0c735efbb4423d82f6e36f8fae107b10b65e658e715e",
+    "configs/main_v1.json": "b9268972197d1d7ff8bead2b4738c9068c79e935e9c22ce81c5d18339074ec41",
+    "planning/analysis_plan.md": "7cc234916ee40d25ac6d5bf8ecd1bbb9d911ac80b638950d33e083852c8f8bae",
+    "planning/contribution_statement.md": "1438e1720debe70af3200dde91f023dde87ddd3ece8d52c63fdbc78be967bbf3"
+  },
+  "input_files": {
+    "data/raw/qasper-test-and-evaluator-v0/qasper-test-v0.3.json": "6e29ad410e6e39aa1936017fb965b30a20eb2e7751997f55b97c9d281aa884e5",
+    "data/raw/scifact/data/claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217",
+    "data/raw/scifact/data/corpus.jsonl": "b8d6c89624cb2ed74dee8938effc4f5d8bd2086887880af8110d64be4ceade62"
+  },
+  "test_log": "e00eb9e576ecdee1b5ba1ac15799b26742bd6df43aa9fe8fff448a04d7017ecd",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "platform": "macOS-15.2-arm64-arm-64bit"
+}

@@ -1,0 +1,11 @@
+{
+  "utc": "2026-10-03T02:36:55.010905+00:00",
+  "eligibility_counts": {
+    "QASPER": 26,
+    "SciFact": 33
+  },
+  "selected_per_benchmark": 15,
+  "selection_sha256": "1dcd348441917c359b504c06e0f9cb985cdd3d96ec1e12eb5a56975058e984ae",
+  "source_sha256": "041085a54cfb5ee1aa6d349c774fe3ed3d6ec20a065cc9a97d325117962a64ba",
+  "note": "Selection frozen before representation classification. Mirrors of selected projects inspected as provenance, not independent counts. Unknown lineage relationships will be disclosed if later evidence changes deduplication."
+}

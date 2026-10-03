@@ -1,0 +1,13 @@
+{
+  "tables": {
+    "topology_gaps": "revisions/v2/tables/topology_disjoint.csv",
+    "topology_costs": "revisions/v2/tables/topology_disjoint.csv",
+    "ecosystem": "revisions/v2/audit/counts.json",
+    "concept": "revisions/v2/analysis/concept_example.json",
+    "case_qasper": "revisions/v2/analysis/case_panels.json",
+    "case_scifact": "revisions/v2/analysis/case_panels.json",
+    "representations": "Primary-source definitions in revisions/v2/literature/claim_source_ledger.json"
+  },
+  "abstract": "Original numeric registry plus exploratory audit summary",
+  "analysis_status": "Topology and implementation audit are exploratory and post-main"
+}
