@@ -90,7 +90,7 @@ The MiniLM revision is 1110a243fdf4706b3f48f1d95db1a4f5529b4d41. The acquired Sc
 
 Adapters validate nonempty evidence families and source-unit mappings. Scores treat predicted IDs as sets; duplicate references do not change H, C, A, or max-reference overlap. Fingerprints bind rankings to queries, units, annotations, configuration, and retrieval code.
 
-The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is \url{https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation}; the present revision is v1.1.0 in the verified Zenodo concept family \url{https://doi.org/10.5281/zenodo.23122619}. Exact tag v1.1.0 identifies this frozen source and its PDFs; the version DOI is recorded on the release landing page after automatic archiving.
+The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is \url{https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation}; the present revision is v1.1.1 in the verified Zenodo concept family \url{https://doi.org/10.5281/zenodo.23122619}. Exact tag v1.1.1 identifies this frozen source and its PDFs; the version DOI is recorded on the release landing page after automatic archiving.
 
 
 \subsection{Neural truncation and token budgets}
@@ -112,7 +112,7 @@ Alt et al. (2026) and Li et al. (2025) were read in full for the comparison of s
 
 
 \section{Revision-added statistics and executed path}
-The new subgroup/pruning, uniform-budget, converter/scorer, example, and full-encoder plans were recorded after the v1.0.0 findings were known. They are revision-added exploratory work, not an extension of the original preregistration. The historical joint sensitivity and two-hour timing decision remain archived; the new complete encoder run uses a separately frozen configuration and cache.
+The new subgroup/pruning, uniform-budget, converter/scorer, example, and full-encoder plans were recorded after the v1.0.0 findings were known. They are revision-added exploratory work, not part of the original frozen design. The historical joint sensitivity and two-hour timing decision remain archived; the new complete encoder run uses a separately frozen configuration and cache.
 
 \begin{table}[!htbp]\centering\small\caption{Revision-added exploratory QASPER BM25 at k=5. n/p gives questions/papers; papers overlap across subsets. Gap values are percentage points with paired paper-cluster 95\% intervals. The last column is a within-item target transformation, not a causal comparison between cohorts.}
 \begin{tabular}{>{\raggedright\arraybackslash}p{57.0pt}>{\raggedright\arraybackslash}p{38.0pt}>{\raggedright\arraybackslash}p{93.0pt}>{\raggedright\arraybackslash}p{92.0pt}>{\raggedright\arraybackslash}p{92.0pt}}
@@ -231,7 +231,7 @@ The new panel uses the first SHA-256-ranked eligible ID without substitution. Al
 
 
 \section{Topology costs and original paired gaps}
-\begin{table}[!htbp]\centering\small\caption{Exploratory post-main completion costs in each populated topology category. Values are mean additional ranked units and lexical tokens with 95\% cluster intervals. Units are QASPER paragraphs or SciFact sentences; category denominators are in the preceding table.}
+\begin{table}[!htbp]\centering\small\caption{Exploratory post-main completion costs in each populated topology category. Values are mean additional ranked units and lexical tokens with 95\% cluster intervals. Units are QASPER paragraphs or SciFact sentences. Category denominators are reported in Table 7 of the main article.}
 \begin{tabular}{>{\raggedright\arraybackslash}p{161.0pt}>{\raggedright\arraybackslash}p{105.0pt}>{\raggedright\arraybackslash}p{130.0pt}}
 \toprule
 \textbf{Corpus and category} & \textbf{Extra units [CI]} & \textbf{Extra lexical tokens [CI]} \\

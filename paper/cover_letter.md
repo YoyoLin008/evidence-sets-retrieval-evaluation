@@ -10,7 +10,7 @@ Revision-added exploratory evidence includes a pinned real conversion/scoring pa
 
 Alt et al. (2026) and Li et al. (2025) establish important precedents for complete-set success, Minimal Sufficient Rank and group/union comparisons. Our contribution is a bounded paired measurement audit, structural decomposition, executed representation tracing and uniform-budget interpretation. This empirical focus on evaluation validity fits IRRJ’s scope.
 
-The reproducibility repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation, exact version v1.1.0; its verified Zenodo version family is https://doi.org/10.5281/zenodo.23122619. The tag includes final PDFs, source, frozen plans, code, saved rankings and revision evidence. Data and weights are acquired separately. Historical v1.0.0 remains unchanged.
+The reproducibility repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation, exact version v1.1.1; its verified Zenodo version family is https://doi.org/10.5281/zenodo.23122619. The tag includes final PDFs, source, frozen plans, code, saved rankings and revision evidence. Data and weights are acquired separately. Historical v1.0.0 remains unchanged.
 
 Generative AI tools (OpenAI Codex) supported grammar checking, language refinement, clarity, and organization. The author conceived the study, made the substantive methodological and interpretive decisions, conducted and verified the research, and wrote the substantive content. Under the author’s direction, tool assistance also supported code edits, reruns, numerical and reference checks, and preparation of figures and manuscript files. The author reviewed AI-assisted material and takes responsibility for the final work. AI is not an author.
 

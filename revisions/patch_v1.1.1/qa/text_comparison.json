@@ -1,0 +1,34 @@
+{
+  "checked_utc": "2026-10-03T19:12:05.864294+00:00",
+  "models_exact_after_requested_replacements": [
+    "paper/article.json",
+    "paper/supplement.json",
+    "analysis/manuscript_numbers.json",
+    "analysis/manuscript_values.json"
+  ],
+  "all_table_data_unchanged": true,
+  "protected_declarations_unchanged": true,
+  "main_table7": "topology_gaps; n/g values verified",
+  "PDF_comparisons": [
+    {
+      "file": "paper/manuscript_official_style.pdf",
+      "full_text_matches_expected_patch": true,
+      "normalization": "Collapse whitespace and omit hyphens for extraction/layout; exact underlying JSON models checked separately."
+    },
+    {
+      "file": "paper/supplement_official_style.pdf",
+      "full_text_matches_expected_patch": true,
+      "normalization": "Collapse whitespace and omit hyphens for extraction/layout; exact underlying JSON models checked separately."
+    },
+    {
+      "file": "paper/manuscript_reading_copy.pdf",
+      "full_text_matches_expected_patch": true,
+      "normalization": "Collapse whitespace and omit hyphens for extraction/layout; exact underlying JSON models checked separately."
+    },
+    {
+      "file": "paper/cover_letter.pdf",
+      "full_text_matches_expected_patch": true,
+      "normalization": "Collapse whitespace and omit hyphens for extraction/layout; exact underlying JSON models checked separately."
+    }
+  ]
+}

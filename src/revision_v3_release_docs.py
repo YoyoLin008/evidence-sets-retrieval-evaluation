@@ -4,6 +4,8 @@ import json
 import pandas as pd
 R=Path(__file__).resolve().parents[1]
 def put(rel,text):
+ if rel in ['README.md','paper/cover_letter.md']:
+  text=text.replace('v1.1.0','v1.1.1')
  p=R/rel;p.parent.mkdir(parents=True,exist_ok=True);p.write_text(text.strip()+'\n')
 def main():
  from revision_v3_manuscript import Revision
@@ -141,10 +143,13 @@ Original primary, previous post-main and present revision-added analyses remain 
 
 No independent human semantic annotation, external independent replication, deployment-cost study or ecosystem-wide prevalence estimate was performed. These remain scientific limits, not missing tasks required by this revision. Formal IRRJ submission and any new journal terms remain author actions. The [reviewer-risk table](reviewer_risks.md) covers eight concerns; authorship/disclosure was explicitly excluded from this revision's editing scope.
 ''')
- cff=(R/'CITATION.cff').read_text().replace('version: 1.0.0','version: 1.1.0').replace('doi: "10.5281/zenodo.23122620"','doi: "10.5281/zenodo.23122619"')
- if 'url:' not in cff:cff+='url: "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0"\n'
+ cff=(R/'CITATION.cff').read_text().replace('version: 1.0.0','version: 1.1.1').replace('version: 1.1.0','version: 1.1.1').replace('/releases/tag/v1.1.0','/releases/tag/v1.1.1').replace('doi: "10.5281/zenodo.23122620"','doi: "10.5281/zenodo.23122619"')
+ if 'url:' not in cff:cff+='url: "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.1"\n'
  (R/'CITATION.cff').write_text(cff)
- landing=R/'docs/release_landing_v1.1.md'
+ patch=R/'revisions/patch_v1.1.1/readme_note.md'
+ if patch.exists():
+  readme=R/'README.md';readme.write_text(readme.read_text()+'\n'+patch.read_text())
+ landing=R/'docs/release_landing_v1.1.1.md'
  if landing.exists():
   readme=R/'README.md';readme.write_text(readme.read_text()+'\n'+landing.read_text())
  print('Generated README, cover research prose, revision memo and citation metadata from complete results.')

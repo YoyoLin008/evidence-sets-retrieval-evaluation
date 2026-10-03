@@ -3,7 +3,7 @@
 **When Evidence Sets Become Relevance Lists: A Controlled Audit of Scientific Retrieval Evaluation**  
 Yunya Lin · University of Illinois Urbana-Champaign
 
-Reproducibility package **v1.1.0** for an IRRJ Normal Paper submission manuscript. This is not an accepted journal article. The contribution is an empirical measurement audit, building on established complete-set, sufficient-rank and group-versus-union evaluation.
+Reproducibility package **v1.1.1** for an IRRJ Normal Paper submission manuscript. This is not an accepted journal article. The contribution is an empirical measurement audit, building on established complete-set, sufficient-rank and group-versus-union evaluation.
 
 - **H**: at least one annotated unit retrieved.
 - **C**: every unit of at least one original annotated set retrieved.
@@ -58,7 +58,7 @@ The archive excludes full source corpora, model weights, virtual environments, d
 
 ## Versions and citation
 
-Current package: [v1.1.0 release](https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0). Frozen documents cite the verified [Zenodo concept DOI 10.5281/zenodo.23122619](https://doi.org/10.5281/zenodo.23122619) together with the exact tag. The concept DOI identifies the version family. The version-specific DOI is recorded in release notes and publication verification only after automatic archiving succeeds; frozen same-version files are not replaced to insert it.
+Current package: [v1.1.1 release](https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.1). Frozen documents cite the verified [Zenodo concept DOI 10.5281/zenodo.23122619](https://doi.org/10.5281/zenodo.23122619) together with the exact tag. The concept DOI identifies the version family. The version-specific DOI is recorded in release notes and publication verification only after automatic archiving succeeds; frozen same-version files are not replaced to insert it.
 
 Historical [v1.0.0](https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.0.0), [DOI 10.5281/zenodo.23122620](https://doi.org/10.5281/zenodo.23122620), remains unchanged. Its tag commit is `ed2d6f6ca6f3e17b3b89c593bda5668c83b44e78`. Zenodo automatically archives the tagged source snapshot, not arbitrary GitHub assets; all four PDFs and the submission ZIP are therefore included in the new tag.
 
@@ -68,6 +68,10 @@ Code and usage documentation: [MIT](LICENSE). Original scholarly materials and d
 
 Author-confirmed authorship, AI and funding disclosures remain unchanged. The human author retains responsibility; no external funding or third-party computational resources were used. Contact: yoyolin2@illinois.edu. IRRJ formal submission has not been performed by this workflow.
 
-## Verified publication status
+## Final patch v1.1.1
 
-**v1.1.0 is published and its remote files are verified.** [GitHub release](https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0) · [Zenodo record](https://zenodo.org/records/23125121) · [version DOI 10.5281/zenodo.23125121](https://doi.org/10.5281/zenodo.23125121). All nine uploaded release assets match the local accepted files, and all 403 files in the automatic Zenodo source archive match tag commit `ff7f51142aa7bb253ed4a587309654ac5d6101e7`. See [the publication correspondence and hashes](docs/release_verification_v1.1.md). Historical v1.0.0 and frozen v1.1.0 PDFs/ZIP/tag remain unchanged. Formal IRRJ submission remains an author action.
+This patch corrects the pip-free installation route for the strict frozen encoder environment and three editorial defects. It adds no experiment and preserves the original scientific sources, dependency lock/freeze, inputs, rankings and numerical outputs. The historical substantive revision is [v1.1.0](https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0), [DOI 10.5281/zenodo.23125121](https://doi.org/10.5281/zenodo.23125121).
+
+Follow the corrected [encoder setup and read-only preflight](revisions/v3/encoder/README.md#commands). Create a new target without pip, install the unchanged lock from an external installer, and require the complete dependency dictionary to match. Keep analysis, pipeline and encoder environments separate. See the [patch memo](revisions/patch_v1.1.1/patch_memo.md), [patch validation](revisions/patch_v1.1.1/validation_report.md), and [current submission checklist](revisions/patch_v1.1.1/submission_checklist.md). Earlier revision memos and QA records describe their historical executions, not new patch test runs. Fresh installation/preflight does not constitute full-inference replication.
+
+Current patch assets are in [release_artifacts/v1.1.1](release_artifacts/v1.1.1), including the submission ZIP, asset manifest and checksums. Files directly under `release_artifacts/` retain the older v1.1.0 release.

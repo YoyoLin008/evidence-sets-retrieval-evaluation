@@ -133,7 +133,7 @@
   ],
   [
     "p",
-    "Among the {QagreeN} questions in {QJointClusters} papers satisfying exact normalized answer agreement, pruning yields a {QJointGap}-point gap (95% interval {QJointLo}–{QJointHi}). This characterizes a restricted cohort and annotation target. It establishes no formal bound on the full-cohort gap and does not isolate the causal effect of answer disagreement. Paired pruning differences in the table describe within-item transformations only. SciFact has no strict supersets to remove."
+    "Among the {QagreeN} questions in {QJointClusters} papers satisfying exact normalized answer agreement, pruning yields an {QJointGap}-point gap (95% interval {QJointLo}–{QJointHi}). This characterizes a restricted cohort and annotation target. It establishes no formal bound on the full-cohort gap and does not isolate the causal effect of answer disagreement. Paired pruning differences in the table describe within-item transformations only. SciFact has no strict supersets to remove."
   ],
   [
     "table",
@@ -289,6 +289,6 @@
   ],
   [
     "p",
-    "The repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation. This revision is frozen as v1.1.0 at https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0, within the verified Zenodo version family https://doi.org/10.5281/zenodo.23122619. The concept DOI identifies the version family; the exact tag identifies these files. The archive contains the tag source snapshot, all four final PDFs, frozen plans, acquisition hashes, code, saved rankings, mapping audits, and revision evidence. GitHub also supplies the submission ZIP. Original, earlier post-main, and revision-added outputs remain separate. Third-party source collections and model weights are acquired from their distributors and are not redistributed."
+    "The repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation. This revision is frozen as v1.1.1 at https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.1, within the verified Zenodo version family https://doi.org/10.5281/zenodo.23122619. The concept DOI identifies the version family; the exact tag identifies these files. The archive contains the tag source snapshot, all four final PDFs, frozen plans, acquisition hashes, code, saved rankings, mapping audits, and revision evidence. GitHub also supplies the submission ZIP. Original, earlier post-main, and revision-added outputs remain separate. Third-party source collections and model weights are acquired from their distributors and are not redistributed."
   ]
 ]

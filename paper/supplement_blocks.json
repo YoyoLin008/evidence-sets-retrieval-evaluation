@@ -105,7 +105,7 @@
   ],
   [
     "p",
-    "The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation; the present revision is v1.1.0 in the verified Zenodo concept family https://doi.org/10.5281/zenodo.23122619. Exact tag v1.1.0 identifies this frozen source and its PDFs; the version DOI is recorded on the release landing page after automatic archiving."
+    "The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation; the present revision is v1.1.1 in the verified Zenodo concept family https://doi.org/10.5281/zenodo.23122619. Exact tag v1.1.1 identifies this frozen source and its PDFs; the version DOI is recorded on the release landing page after automatic archiving."
   ],
   [
     "subsection",

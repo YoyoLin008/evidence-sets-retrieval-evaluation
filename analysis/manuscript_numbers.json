@@ -480,7 +480,7 @@
     "source": "revisions/v3/encoder/runtime_freeze.json"
   },
   "RevisionTiming": {
-    "value": "The new subgroup/pruning, uniform-budget, converter/scorer, example, and full-encoder plans were recorded after the v1.0.0 findings were known. They are revision-added exploratory work, not an extension of the original preregistration. The historical joint sensitivity and two-hour timing decision remain archived; the new complete encoder run uses a separately frozen configuration and cache.",
+    "value": "The new subgroup/pruning, uniform-budget, converter/scorer, example, and full-encoder plans were recorded after the v1.0.0 findings were known. They are revision-added exploratory work, not part of the original frozen design. The historical joint sensitivity and two-hour timing decision remain archived; the new complete encoder run uses a separately frozen configuration and cache.",
     "source": "revisions/v3/plan.md; statistics/protocol.md; encoder/runtime_freeze.json"
   },
   "QwenResults": {

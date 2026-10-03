@@ -1,6 +1,6 @@
 """Check and render every final PDF; visual status must be set only after actual inspection."""
 from pathlib import Path
-import json,hashlib,re
+import json,hashlib,re,argparse
 from pypdf import PdfReader
 import pypdfium2
 from PIL import Image,ImageDraw
@@ -30,4 +30,7 @@ def main():
    canvas.save(O/f'{stem}_sheet_{start//2+1:02d}.png')
   reports.append({'file':str(path.relative_to(R)),'pages':len(reader.pages),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'text_checks':'passed','all_pages_rendered':True,'visual_inspection':'pending'})
  (O.parent/'document_checks.json').write_text(json.dumps(reports,indent=2)+'\n');print(json.dumps(reports,indent=2))
-if __name__=='__main__':main()
+if __name__=='__main__':
+ parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--output-dir',type=Path,default=O)
+ O=parser.parse_args().output_dir.resolve()
+ main()

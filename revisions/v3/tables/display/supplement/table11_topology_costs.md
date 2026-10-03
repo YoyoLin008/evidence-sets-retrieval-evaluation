@@ -1,4 +1,4 @@
-# Table 11. Exploratory post-main completion costs in each populated topology category. Values are mean additional ranked units and lexical tokens with 95% cluster intervals. Units are QASPER paragraphs or SciFact sentences; category denominators are in the preceding table.
+# Table 11. Exploratory post-main completion costs in each populated topology category. Values are mean additional ranked units and lexical tokens with 95% cluster intervals. Units are QASPER paragraphs or SciFact sentences. Category denominators are reported in Table 7 of the main article.
 
 | Corpus and category | Extra units [CI] | Extra lexical tokens [CI] |
 | --- | --- | --- |

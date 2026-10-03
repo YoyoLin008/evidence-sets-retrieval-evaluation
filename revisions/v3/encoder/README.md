@@ -10,14 +10,38 @@ The official Qwen model card documents query-only instructions, last-token pooli
 
 The reported run uses CPython 3.12.14 (see `execution_environment.json`). Run from the repository root. Acquire the original dataset inputs with the project's existing acquisition instructions. The dedicated helper below acquires only the pinned Qwen model, without requiring unrelated ecosystem-audit downloads. Do not run the old v2 timing script to reproduce v3.
 
+The strict runtime compares **all** installed distributions with `runtime_freeze.json`. A default venv adds pip, which is absent from that frozen dictionary. Keep the original lock and guard unchanged: create a new target without pip and use an external installer. Do not install extra tools into the target (pytest already present in the historical lock must retain its locked version).
+
+Select an existing **CPython 3.12.14 on macOS ARM64**. The commands below default to the analysis environment's `.venv/bin/python` only after checking its actual version/platform; set `ENCODER_PYTHON` to another installed interpreter if necessary. `INSTALLER_PYTHON` must be outside the target and have pip supporting `--python` (pip >=22.3); the recorded patch validation used `/opt/homebrew/bin/python3` with pip 26.2.1. These commands install nothing into that external interpreter or the system environment. Run from the repository root in a clean reproduction checkout.
+
 ```sh
-python -m venv .venv-revision
-.venv-revision/bin/python src/revision_v3_encoder_acquire.py
-.venv-revision/bin/python -m pip install -r revisions/v3/encoder/requirements.lock.txt
-.venv-revision/bin/python src/revision_v3_encoder.py infer
-.venv-revision/bin/python src/revision_v3_encoder.py score
-.venv-revision/bin/python src/revision_v3_encoder.py validate
+ENCODER_PYTHON="${ENCODER_PYTHON:-.venv/bin/python}"
+INSTALLER_PYTHON="${INSTALLER_PYTHON:-python3}"
+"$ENCODER_PYTHON" -c 'import sys,platform; assert sys.version_info[:3] == (3,12,14); assert platform.system() == "Darwin" and platform.machine() == "arm64"; print(sys.version); print(platform.platform())'
+"$INSTALLER_PYTHON" -m pip --version
+"$INSTALLER_PYTHON" -m pip --help
+if [ -e .venv-final-repro-v1.1.1 ]; then
+  echo "Choose a new target directory; do not reuse an installed environment." >&2
+  exit 1
+fi
+"$ENCODER_PYTHON" -m venv --without-pip .venv-final-repro-v1.1.1
+"$INSTALLER_PYTHON" -m pip --python .venv-final-repro-v1.1.1 install -r revisions/v3/encoder/requirements.lock.txt
+.venv-final-repro-v1.1.1/bin/python src/encoder_dependency_preflight.py
 ```
+
+Before installing, confirm `--python` is listed in the external pip help. Do not enable `--system-site-packages`. The helper calls the frozen encoder's actual `dependencies()` function without filtering distributions and reports missing, unexpected and mismatched packages. It also checks the frozen encoder/scorer source hashes and virtual-environment isolation. It does not load weights, start inference, alter the freeze or write scientific outputs. Require `passed: true`, `exact_dictionary_match: true` and empty difference dictionaries. The supported platform matches `execution_environment.json`; other platforms are not validated by this check and may add platform-specific packages.
+
+The approach follows [Python's pip-free venv option](https://docs.python.org/3.12/library/venv.html) and [pip's external-interpreter option](https://pip.pypa.io/en/stable/topics/python-option/). The actual fresh-install commands, identity and results are in `revisions/patch_v1.1.1/installation.json` and `dependency_preflight.json`. This validation is installation and dependency preflight, **not a new full inference replication**.
+
+Only if intentionally reproducing the full experiment in a separate clean checkout, after obtaining original inputs and passing preflight, use:
+
+```sh
+.venv-final-repro-v1.1.1/bin/python src/revision_v3_encoder_acquire.py
+.venv-final-repro-v1.1.1/bin/python src/revision_v3_encoder.py infer
+.venv-final-repro-v1.1.1/bin/python src/revision_v3_encoder.py score
+.venv-final-repro-v1.1.1/bin/python src/revision_v3_encoder.py validate
+```
+
 
 The `infer` command verifies the frozen configuration, environment and model and resumes atomic per-text checkpoints under `cache/<configuration hash>/`. Only this locally generated cache is excluded from Git; weights and source datasets are acquired under their respective terms. The published cache fingerprint manifest permits vector integrity checks without redistributing model weights. The cache namespace includes model/tokenizer file hashes, input data, instruction, length, pooling, precision, attention, backend, source and dependencies. A different environment/backend requires a separately labeled run rather than silently sharing this cache.
 
