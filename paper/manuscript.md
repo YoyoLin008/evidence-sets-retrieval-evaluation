@@ -386,7 +386,7 @@ No external funding or third-party computational resources were received or used
 
 ## Data and code availability
 
-The reproducibility repository is available at https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation. It contains frozen plans and source snapshots, acquisition URLs and hashes, retrieval and analysis code, saved rankings, eligibility/mapping audits, and manuscript generators. Primary and post-main exploratory outputs are separated. External datasets and model weights are obtained from their original distributors using the supplied acquisition instructions and hashes.
+The reproducibility repository is available at https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation. The immutable submission-time release v1.0.0 is archived on Zenodo at https://doi.org/10.5281/zenodo.23122620. It contains frozen plans and source snapshots, acquisition URLs and hashes, retrieval and analysis code, saved rankings, eligibility/mapping audits, and manuscript generators. Primary and post-main exploratory outputs are separated. Third-party datasets and model weights are not redistributed; acquisition instructions and hashes identify the original sources.
 
 ## References
 

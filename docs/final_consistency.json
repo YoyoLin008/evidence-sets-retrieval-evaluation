@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "doi": "10.5281/zenodo.23122620",
+  "repository": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation",
+  "sources_consistent": [
+    "manuscript",
+    "supplement",
+    "cover",
+    "README",
+    "CFF"
+  ],
+  "ai_disclosure_identical": true,
+  "funding_statement_main_supplement_identical": true,
+  "author_declarations_confirmed": true,
+  "cff_schema": "1.2.0 validated with cffconvert",
+  "official_style_sha256": "5952d152ce89b9446587f8e4182da420f8228a8a85248a692b83d52962fd2910",
+  "clean_latex_builds": true,
+  "pdfs": [
+    {
+      "file": "manuscript_official_style.pdf",
+      "pages": 20,
+      "doi_text_present": true,
+      "availability_link_annotations_verified": true,
+      "sha256": "479ef4fb7dd2629e57071cdccb5a867d81da72157abfed28a9692dfd8d64578e"
+    },
+    {
+      "file": "supplement_official_style.pdf",
+      "pages": 5,
+      "doi_text_present": true,
+      "availability_link_annotations_verified": true,
+      "sha256": "2196a86149d565e3014e16452c2e822d4a2e20782a44a0dd92c119a0904a2812"
+    },
+    {
+      "file": "manuscript_reading_copy.pdf",
+      "pages": 20,
+      "doi_text_present": true,
+      "availability_link_annotations_verified": false,
+      "sha256": "d217aa8612ef80d4922400aaa60dac14ebcd9680071339f2f70911136d1c4297"
+    },
+    {
+      "file": "cover_letter.pdf",
+      "pages": 1,
+      "doi_text_present": true,
+      "availability_link_annotations_verified": false,
+      "sha256": "f83626d60984b607b956774966853cb44dce7459808751b506cd798fb17cc8e0"
+    }
+  ],
+  "visual_pages": 46,
+  "unchanged_page_images": 42,
+  "changed_pages_reinspected": [
+    "cover_letter_01.png",
+    "manuscript_official_style_17.png",
+    "manuscript_reading_copy_18.png",
+    "supplement_official_style_04.png"
+  ],
+  "numerical_changes": 0,
+  "empirical_verification": "81 protected files unchanged; 5,420 rankings and all primary values reverified by verify_final.py",
+  "archive_verification": "Published archive all 238 files match v1.0.0 commit ed2d6f6",
+  "validation_limit": "Internal checks and isolated saved-ranking replay, not independent external replication"
+}

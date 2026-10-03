@@ -1,6 +1,8 @@
 {
-  "files": 233,
-  "redacted_records": 2,
-  "issues": [],
-  "maximum_file_bytes": 17218652
+  "date": "2026-10-03",
+  "scope": "Final public tree after DOI documentation update",
+  "credential_pattern_findings": 0,
+  "local_absolute_path_findings": 0,
+  "files_checked": 241,
+  "private_cover_and_approval_records_excluded": true
 }

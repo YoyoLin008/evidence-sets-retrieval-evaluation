@@ -111,3 +111,11 @@ Original software and usage documentation: [MIT](LICENSE). Original scholarly te
 The manuscript and supplement disclose generative-AI editing and technical assistance under the author's direction; the human author retains intellectual authorship and responsibility. No external funding or third-party computational resources were used; experiments ran on the author's personal computer.
 
 Use [CITATION.cff](CITATION.cff) to cite the reproduction package. The manuscript is a submission manuscript, not an accepted or published journal article. Contact: yoyolin2@illinois.edu.
+
+## Archived submission release
+
+The submission-time package is [v1.0.0](https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.0.0), archived at [Zenodo DOI 10.5281/zenodo.23122620](https://doi.org/10.5281/zenodo.23122620) on 3 October 2026. This version DOI identifies the immutable package at commit `ed2d6f6ca6f3e17b3b89c593bda5668c83b44e78`.
+
+The current branch adds the verified DOI to the manuscript, supplement and citation documentation after archiving. The v1.0.0 snapshot is retained unchanged; its manuscript files necessarily precede that DOI insertion. The scientific code, saved rankings and empirical results are identical. The published archive was downloaded and all 238 files were checked against the release commit.
+
+Suggested citation: Lin, Y. (2026). *When Evidence Sets Become Relevance Lists: A Controlled Audit of Scientific Retrieval Evaluation* (v1.0.0) [Software and reproducibility package]. Zenodo. https://doi.org/10.5281/zenodo.23122620
