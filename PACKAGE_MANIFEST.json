@@ -1,6 +1,7 @@
 {
   "version": "v1.1.1",
-  "scope": "Public content excluding this manifest itself; validate before reproduction modifies files.",
+  "scope": "Current main after publication: includes later landing/citation/download-verification documentation; the immutable release remains tag v1.1.1. Excludes this manifest itself.",
+  "release_tag_commit": "25654c3cd12f358145b4f50ef4f97bb86101b53a",
   "files": {
     ".gitattributes": {
       "sha256": "d573c6c667f2992cf4289e5520e4f2a3ca34181d28b6b170027a1be50e7572db",
@@ -11,7 +12,7 @@
       "bytes": 1182
     },
     "CITATION.cff": {
-      "sha256": "ddaf3dc8049d95e62836c02118f951a7f6cbcc4cea22411783dbd5f823028b17",
+      "sha256": "11e2a39110fed5448a30c55ec7327688cb6f009b95710559ec29698f2260dfa8",
       "bytes": 962
     },
     "LICENSE": {
@@ -27,8 +28,8 @@
       "bytes": 1387
     },
     "README.md": {
-      "sha256": "1c1af3728ba763bc200a1f7684338960551182ef668a5e0e5b3d70447c85e50b",
-      "bytes": 9469
+      "sha256": "4dd42e202622aac94f3269f5a4228d84cef1ca725f64a2e97a29fcd52e5ca371",
+      "bytes": 10276
     },
     "REPRODUCIBILITY.md": {
       "sha256": "6bcc9b1cb7f9dc4ac220f89635436bfdc1e142a5bfa0e5c9bed6e6d673db3449",
@@ -118,9 +119,21 @@
       "sha256": "a5e35395a7414343badd3b2d5a60e3e99da9c29964a295ce215886e8182e8813",
       "bytes": 1493
     },
+    "docs/release_landing_v1.1.1.md": {
+      "sha256": "bd3c158151f41ffb73c169b1b08f03268b644fd137c88a80404e13d9e17e036f",
+      "bytes": 806
+    },
     "docs/release_landing_v1.1.md": {
       "sha256": "8b685baa245f226b3902625ea82df06c09832d8d0c4521471f7e562321278be3",
       "bytes": 716
+    },
+    "docs/release_verification_v1.1.1.json": {
+      "sha256": "fbfd43f1ed820e6b1406c0723dcfe4b5939ea23db9bb11f42f87e41a12a37588",
+      "bytes": 10136
+    },
+    "docs/release_verification_v1.1.1.md": {
+      "sha256": "c32cdb49bdda719ecd74ed08fb4588d2637306c090d03783ac2cbb73e33cb75d",
+      "bytes": 4302
     },
     "docs/release_verification_v1.1.json": {
       "sha256": "47c5b49c8e937d17ec2258890d99dede1979ef3f578ff4cdc0ce2a8dbb15d807",

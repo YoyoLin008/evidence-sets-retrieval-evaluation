@@ -1,0 +1,237 @@
+{
+  "checked_utc": "2026-10-03T19:22:49.202040+00:00",
+  "version": "v1.1.1",
+  "scientific_source_commit": "45c5c57e2de2fd45cb6691e7274bc600e731b5a0",
+  "reviewed_v1.1.0_tag_commit": "ff7f51142aa7bb253ed4a587309654ac5d6101e7",
+  "baseline_commit": "d656c69217bd77ae600f09607486980cf9b6c6f8",
+  "correction_build_commit": "e77374837ce5891b5ff38b932438f02491d6809e",
+  "release_tag_commit": "25654c3cd12f358145b4f50ef4f97bb86101b53a",
+  "github": {
+    "checked_utc": "2026-10-03T19:19:26.058306+00:00",
+    "release_id": 402655790,
+    "release_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.1",
+    "draft": false,
+    "tag": "v1.1.1",
+    "target_commitish": "25654c3cd12f358145b4f50ef4f97bb86101b53a",
+    "assets": [
+      {
+        "name": "asset_manifest.json",
+        "bytes": 1289,
+        "sha256": "3f3a6d0854659608e4868f77459b1daa85a8dcacc22577024d9efc73913c880a",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/asset_manifest.json",
+        "download_matches_local": true
+      },
+      {
+        "name": "cover_letter.pdf",
+        "bytes": 46269,
+        "sha256": "457e3e7095bebf07b0a28d60bd428f83f0aec4424ebefcf56693e8c76ca8ed94",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/cover_letter.pdf",
+        "download_matches_local": true
+      },
+      {
+        "name": "manuscript_official_style.pdf",
+        "bytes": 397755,
+        "sha256": "b2044275325f8a1317ffc1a571d8b010f5d027b1a5aa39f4886516dc7707e580",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/manuscript_official_style.pdf",
+        "download_matches_local": true
+      },
+      {
+        "name": "manuscript_reading_copy.pdf",
+        "bytes": 401633,
+        "sha256": "3ef55e26ae7b8a4c27c73b02d61d1658581be8c4c2f16f8911e811e37667bf29",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/manuscript_reading_copy.pdf",
+        "download_matches_local": true
+      },
+      {
+        "name": "patch_memo.md",
+        "bytes": 4056,
+        "sha256": "0acd4d2589c99eed87f7c0a365623245b4d50c3538aba4de7aa758bdab74c291",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/patch_memo.md",
+        "download_matches_local": true
+      },
+      {
+        "name": "SHA256SUMS",
+        "bytes": 624,
+        "sha256": "577434ae59602c289770bdeaff865a6cab45a9d8dee2218c1d6914cac829e49a",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/SHA256SUMS",
+        "download_matches_local": true
+      },
+      {
+        "name": "submission-v1.1.1.zip",
+        "bytes": 1166535,
+        "sha256": "f2ed4d64bc2fb0005130d41e01c72569d53541b3b8780b614c0b655b9b7da12d",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/submission-v1.1.1.zip",
+        "download_matches_local": true
+      },
+      {
+        "name": "supplement_official_style.pdf",
+        "bytes": 305768,
+        "sha256": "8478c6beb495f0f656f557708f5efda0f6b89567bbe1b6ed55750bd5a2ef11ad",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/supplement_official_style.pdf",
+        "download_matches_local": true
+      },
+      {
+        "name": "validation_report.md",
+        "bytes": 6495,
+        "sha256": "4c562bc2c864f8f88041762c4326ed167ffd869aace9bc6f3f2542781c41b0c9",
+        "download_url": "https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/download/v1.1.1/validation_report.md",
+        "download_matches_local": true
+      }
+    ]
+  },
+  "zenodo": {
+    "checked_utc": "2026-10-03T19:19:52.287430+00:00",
+    "published": true,
+    "version": "v1.1.1",
+    "record_id": 23126392,
+    "record_url": "https://zenodo.org/records/23126392",
+    "doi": "10.5281/zenodo.23126392",
+    "conceptdoi": "10.5281/zenodo.23122619",
+    "conceptrecid": "23122619",
+    "doi_http_status": 200,
+    "doi_resolved_url": "https://zenodo.org/records/23126392",
+    "archive_scope": "Automatic GitHub tag repository snapshot, including final four PDFs and submission ZIP; arbitrary release attachments are not separately fetched by this integration.",
+    "source_commit": "25654c3cd12f358145b4f50ef4f97bb86101b53a",
+    "archive_download_url": "https://zenodo.org/api/records/23126392/files/YoyoLin008/evidence-sets-retrieval-evaluation-v1.1.1.zip/content",
+    "archive_bytes": 15109009,
+    "archive_md5": "d41870b88f0a6cc35c8187f9dd7aec6c",
+    "archive_sha256": "ec960f4340d2ba4aa620af60221a291fd96741224b22b1770d6e7eb78e66875e",
+    "all_files_match_tag": true,
+    "files_compared": 424,
+    "key_files": {
+      "figures/figure1_completion_curves.pdf": {
+        "bytes": 17350,
+        "sha256": "f7af436fafec083d51c373c8f99de1089fd28a49b514085a91d24a99c07172b6"
+      },
+      "figures/figure2_paired_gaps.pdf": {
+        "bytes": 15725,
+        "sha256": "0c96f5bd96fe248ba8750d15fa4fa1a2a550f143f9671f116e1f3cfe6b5e6296"
+      },
+      "figures/figure3_extra_depth.pdf": {
+        "bytes": 15745,
+        "sha256": "c40c60d703134703e47d0005909f5ccde71ddb11dbff1473b0baaccf17462a5b"
+      },
+      "figures/figure4_annotation_structure.pdf": {
+        "bytes": 12372,
+        "sha256": "a9ed482b0207025fd369cae14b4a31e8576cf4ab3b16df5a8edfe31c07090ab6"
+      },
+      "paper/cover_letter.pdf": {
+        "bytes": 46269,
+        "sha256": "457e3e7095bebf07b0a28d60bd428f83f0aec4424ebefcf56693e8c76ca8ed94"
+      },
+      "paper/manuscript_official_style.pdf": {
+        "bytes": 397755,
+        "sha256": "b2044275325f8a1317ffc1a571d8b010f5d027b1a5aa39f4886516dc7707e580"
+      },
+      "paper/manuscript_reading_copy.pdf": {
+        "bytes": 401633,
+        "sha256": "3ef55e26ae7b8a4c27c73b02d61d1658581be8c4c2f16f8911e811e37667bf29"
+      },
+      "paper/supplement_official_style.pdf": {
+        "bytes": 305768,
+        "sha256": "8478c6beb495f0f656f557708f5efda0f6b89567bbe1b6ed55750bd5a2ef11ad"
+      },
+      "release_artifacts/v1.1.1/submission-v1.1.1.zip": {
+        "bytes": 1166535,
+        "sha256": "f2ed4d64bc2fb0005130d41e01c72569d53541b3b8780b614c0b655b9b7da12d"
+      }
+    },
+    "metadata": {
+      "title": "When Evidence Sets Become Relevance Lists: A Controlled Audit of Scientific Retrieval Evaluation",
+      "creators": [
+        {
+          "name": "Lin, Yunya",
+          "affiliation": "University of Illinois Urbana-Champaign"
+        }
+      ],
+      "license": {
+        "id": "mit-license"
+      },
+      "version": "v1.1.1"
+    },
+    "comparison_method": "Compared every decompressed path and byte to git archive of the verified tag commit, independent of ZIP wrapper metadata."
+  },
+  "historical_releases_unchanged": [
+    {
+      "tag": "v1.0.0",
+      "tag_commit": "ed2d6f6ca6f3e17b3b89c593bda5668c83b44e78",
+      "id": 402548579,
+      "published_at": "2026-10-03T14:47:40Z",
+      "assets": []
+    },
+    {
+      "tag": "v1.1.0",
+      "tag_commit": "ff7f51142aa7bb253ed4a587309654ac5d6101e7",
+      "id": 402618719,
+      "published_at": "2026-10-03T17:34:29Z",
+      "assets": [
+        {
+          "id": 608232484,
+          "name": "asset_manifest.json",
+          "size": 1315,
+          "digest": "sha256:d2d09ed23a0ee72a8ab541b88e648e963406ba598af07d91c1ffddd16f1e1603",
+          "updated_at": "2026-10-03T17:34:03Z"
+        },
+        {
+          "id": 608232415,
+          "name": "cover_letter.pdf",
+          "size": 46270,
+          "digest": "sha256:178ea207485d92f5f35ce2f27753985f0757bada47bc0e513835d326150cc297",
+          "updated_at": "2026-10-03T17:34:00Z"
+        },
+        {
+          "id": 608232378,
+          "name": "manuscript_official_style.pdf",
+          "size": 397758,
+          "digest": "sha256:453b9d6dee8433b7d7b2eccf772ec97aaea74cbb3fe6961bdf9c762a2f04b12a",
+          "updated_at": "2026-10-03T17:33:59Z"
+        },
+        {
+          "id": 608232424,
+          "name": "manuscript_reading_copy.pdf",
+          "size": 401633,
+          "digest": "sha256:5c1f9b11ba218bc524b869254f2c9aef6d34da43a0cf96db01503ad40fd4ca6d",
+          "updated_at": "2026-10-03T17:34:01Z"
+        },
+        {
+          "id": 608232453,
+          "name": "revision_memo.md",
+          "size": 5507,
+          "digest": "sha256:b067481c2a1c33cc9482998a2309bbc3dabe205cd7c3dfc92cc08f0676d286fa",
+          "updated_at": "2026-10-03T17:34:02Z"
+        },
+        {
+          "id": 608232492,
+          "name": "SHA256SUMS",
+          "size": 627,
+          "digest": "sha256:3fd59ad843ec60198289a27ddc40753600c60838ee44c1549b778e2bde923107",
+          "updated_at": "2026-10-03T17:34:04Z"
+        },
+        {
+          "id": 608232434,
+          "name": "submission-v1.1.0.zip",
+          "size": 1118416,
+          "digest": "sha256:7ac7526746c4481bcaafea4811883b0c202adccf5babca0d02b89b8e776869f0",
+          "updated_at": "2026-10-03T17:34:02Z"
+        },
+        {
+          "id": 608232387,
+          "name": "supplement_official_style.pdf",
+          "size": 305757,
+          "digest": "sha256:3256005b3206db9fbccc48aa4732b2051fc37ff8089916f5e84b66b2bb07d7d2",
+          "updated_at": "2026-10-03T17:34:00Z"
+        },
+        {
+          "id": 608232473,
+          "name": "validation_report.md",
+          "size": 6422,
+          "digest": "sha256:38e2c6710cbaf8cf474697cc244921ce28008c54323d7fcb6bcf8009b555b9ab",
+          "updated_at": "2026-10-03T17:34:03Z"
+        }
+      ]
+    }
+  ],
+  "historical_verification": "Compared remote tag commit, release identity/publication time, complete asset IDs/names/sizes/SHA-256 digests/update times before and after v1.1.1 publication. No old tag or asset was replaced.",
+  "post_publication_scope": "This record and landing/citation metadata are added after publication. The tag, PDFs, ZIP and frozen asset manifest/checksums are not rewritten.",
+  "formal_journal_submission": false
+}
