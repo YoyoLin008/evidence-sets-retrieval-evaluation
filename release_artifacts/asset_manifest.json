@@ -1,0 +1,35 @@
+{
+  "version": "v1.1.0",
+  "source_provenance": "revisions/v3/build_provenance.json",
+  "scope": "Final PDF/ZIP/report release assets; source-tag commit is recorded after commit without embedding a self hash.",
+  "files": {
+    "paper/manuscript_official_style.pdf": {
+      "sha256": "453b9d6dee8433b7d7b2eccf772ec97aaea74cbb3fe6961bdf9c762a2f04b12a",
+      "bytes": 397758
+    },
+    "paper/supplement_official_style.pdf": {
+      "sha256": "3256005b3206db9fbccc48aa4732b2051fc37ff8089916f5e84b66b2bb07d7d2",
+      "bytes": 305757
+    },
+    "paper/cover_letter.pdf": {
+      "sha256": "178ea207485d92f5f35ce2f27753985f0757bada47bc0e513835d326150cc297",
+      "bytes": 46270
+    },
+    "paper/manuscript_reading_copy.pdf": {
+      "sha256": "5c1f9b11ba218bc524b869254f2c9aef6d34da43a0cf96db01503ad40fd4ca6d",
+      "bytes": 401633
+    },
+    "release_artifacts/submission-v1.1.0.zip": {
+      "sha256": "7ac7526746c4481bcaafea4811883b0c202adccf5babca0d02b89b8e776869f0",
+      "bytes": 1118416
+    },
+    "revisions/v3/revision_memo.md": {
+      "sha256": "b067481c2a1c33cc9482998a2309bbc3dabe205cd7c3dfc92cc08f0676d286fa",
+      "bytes": 5507
+    },
+    "revisions/v3/qa/validation_report.md": {
+      "sha256": "38e2c6710cbaf8cf474697cc244921ce28008c54323d7fcb6bcf8009b555b9ab",
+      "bytes": 6422
+    }
+  }
+}

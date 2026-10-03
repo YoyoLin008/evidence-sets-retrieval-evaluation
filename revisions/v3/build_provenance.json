@@ -1,0 +1,68 @@
+{
+  "version": "v1.1.0",
+  "recorded_utc": "2026-10-03T17:32:11.615115+00:00",
+  "scientific_source_commit": "45c5c57e2de2fd45cb6691e7274bc600e731b5a0",
+  "source_branch": "revision/practical-evidence-v1.1",
+  "source_commit_role": "Contains complete final scientific source, saved results, four PDFs and QA. The final release commit adds this provenance and the package/manifests; it is recorded externally after commit to avoid a self-hash cycle.",
+  "build_commands": [
+    ".venv/bin/python src/revision_v3_statistics.py --rankings-only --qwen revisions/v3/encoder/rankings.jsonl",
+    ".venv/bin/python src/revision_v3_pipeline.py --summarize-saved",
+    ".venv/bin/python src/revision_v3_release_docs.py",
+    ".venv/bin/python src/render_final.py"
+  ],
+  "environment": {
+    "python": "3.12.14",
+    "system": "Darwin",
+    "machine": "arm64",
+    "libraries": {
+      "numpy": "2.3.5",
+      "pandas": "2.2.3",
+      "reportlab": "4.4.4",
+      "pypdf": "6.10.0",
+      "pypdfium2": "4.30.0"
+    },
+    "pdflatex": "pdfTeX 3.141592653-2.6-1.40.29 (TeX Live 2026)"
+  },
+  "source_sha256": {
+    "src/build_manuscript.py": "06db98726c368ebf172b4ae5c44c339a7bf959a90c855785df6a23e6aca7df8f",
+    "src/revision_v3_statistics.py": "fc2d563d69dbe761f6d47ef2b39251aecfd4c540bc41bd6627e283cfdca755ef",
+    "src/revision_v3_manuscript.py": "de18ca37ebd576b0d0d8bbb79af2fbb0d62d1b4d0c7a639c8d051a5ec575aa0e",
+    "src/revision_v3_release_docs.py": "98f232bfb696da976fc4d96eb5c8f1ae63874896424931fef8e35c2950077df6",
+    "src/render_final.py": "463f273cb865d240cf96bbcf2d1db171ff7f9555fb571ee7ab86764fcd552c73",
+    "src/render_manuscript.py": "c43370c4b00f21081f7dd0b1bf88c3641cd4b5629f49c7f072abc2a19e796195",
+    "src/revision_v3_package.py": "393de7ad67a3b0badfe5e37147c34d302286a06a022878f0fa08c5ec812f6f76",
+    "paper/article_blocks_1.json": "02813fa680e9d87ed54f1b9dfa9a4c2257291005c7201606aff0aed1f2966566",
+    "paper/article_blocks_2.json": "0eb9a1950512c2886351060eb8b401eb3891256ad67502f7191d319878103659",
+    "paper/supplement_blocks.json": "196d0be168191c17716fae5bd6258cadd77fa7fd62dc62dc945091e502c12b6e",
+    "paper/irrj2e.sty": "5952d152ce89b9446587f8e4182da420f8228a8a85248a692b83d52962fd2910",
+    "literature/verified_references.json": "01d58fcb5c431da2a8f47631049e0036d87f5c14bbcc4b695d11c5485684e0af",
+    "requirements.lock.txt": "c5c6260550b7985b8a34cf849a8c336255e90b5f2fe795bd468d1bff7356b40b",
+    "revisions/v3/encoder/requirements.lock.txt": "ba2f1761918ca063b6531945c1245a440105b60a98cc4f2a54b89301a3ea73f9",
+    "revisions/v3/pipeline/requirements.txt": "e7d2dc1f2630509beae61f81e37b2a09098380fe2aba948f2657f86018b6c641"
+  },
+  "PDFs": {
+    "paper/manuscript_official_style.pdf": {
+      "sha256": "453b9d6dee8433b7d7b2eccf772ec97aaea74cbb3fe6961bdf9c762a2f04b12a",
+      "pages": 21,
+      "visual_inspection": "passed"
+    },
+    "paper/supplement_official_style.pdf": {
+      "sha256": "3256005b3206db9fbccc48aa4732b2051fc37ff8089916f5e84b66b2bb07d7d2",
+      "pages": 12,
+      "visual_inspection": "passed"
+    },
+    "paper/manuscript_reading_copy.pdf": {
+      "sha256": "5c1f9b11ba218bc524b869254f2c9aef6d34da43a0cf96db01503ad40fd4ca6d",
+      "pages": 20,
+      "visual_inspection": "passed"
+    },
+    "paper/cover_letter.pdf": {
+      "sha256": "178ea207485d92f5f35ce2f27753985f0757bada47bc0e513835d326150cc297",
+      "pages": 1,
+      "visual_inspection": "passed"
+    }
+  },
+  "isolated_replay": "revisions/v3/qa/isolated_replay.json",
+  "public_raw_data_or_model_weights": false,
+  "DOI_strategy": "Verified concept DOI 10.5281/zenodo.23122619 plus exact v1.1.0 tag in frozen documents; actual automatically assigned version DOI added only to post-publication landing documentation."
+}
