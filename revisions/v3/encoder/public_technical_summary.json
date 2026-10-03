@@ -1,0 +1,263 @@
+{
+  "derived_utc": "2026-10-03T17:15:08.061384+00:00",
+  "freeze_sha256": "17ee328d3a079c9186d1aea87619d6bb4fb6755f00961b2b6d86047e592d77d0",
+  "record": {
+    "backends": {
+      "cpu": {
+        "batch_comparison": {
+          "max_coordinate_difference": 5.96512109041214e-07,
+          "minimum_cosine": 0.9999997904371841,
+          "passes": true
+        },
+        "batched_seconds": 54.566155084001366,
+        "load_seconds": 1.2499575410038233,
+        "passes": true,
+        "peak_process_rss_bytes": 5270388736,
+        "repeat_comparison": {
+          "max_coordinate_difference": 0.0,
+          "minimum_cosine": 0.9999999424480246,
+          "passes": true
+        },
+        "single_seconds": 56.13504912488861,
+        "singleton_timings": [
+          {
+            "bin": 0,
+            "hash": "00000d98ac7835424604cbc3dd9b39a914919e656a618d934cd2fbe5f2f6f3c7",
+            "length": 19,
+            "seconds": 0.1525119579746388
+          },
+          {
+            "bin": 0,
+            "hash": "00038b5850d188755c264fb5f0f56505274548e74923783b38083830f5aab7e3",
+            "length": 28,
+            "seconds": 0.15301229199394584
+          },
+          {
+            "bin": 0,
+            "hash": "00057ffcdc604727d3d3806e374f1b61d5c66cd5e7fd749122bdd35ff98ed647",
+            "length": 21,
+            "seconds": 0.1471789589850232
+          },
+          {
+            "bin": 0,
+            "hash": "0017720391b851de5bb9448ae2e897f4d1a5e229183763e0540cda2cfa00cb35",
+            "length": 23,
+            "seconds": 0.14725366700440645
+          },
+          {
+            "bin": 0,
+            "hash": "81e83674cc564f3c8a29af7fdca1dfe47c96f12beb0e3446bf462f195b96da88",
+            "length": 35,
+            "seconds": 0.14826654101489112
+          },
+          {
+            "bin": 1,
+            "hash": "002c01b11f2d003fd11028bd5d8b61e80c670e466cd556db6b1318bca4ded381",
+            "length": 49,
+            "seconds": 0.13737045897869393
+          },
+          {
+            "bin": 1,
+            "hash": "0042b0348e9f342b6f73273d3a672f8a47d4140ad3c232b7053ce5525bb7549a",
+            "length": 63,
+            "seconds": 0.16679287498118356
+          },
+          {
+            "bin": 1,
+            "hash": "0043f38940abe03a448826f0c88628f04790b2fc62e4d2075b07a1c6bc386103",
+            "length": 36,
+            "seconds": 0.15533845801837742
+          },
+          {
+            "bin": 1,
+            "hash": "004ecfd3b281d133d59f515675ced1df2370fac351b33f84b8545557e1409e89",
+            "length": 36,
+            "seconds": 0.15055020799627528
+          },
+          {
+            "bin": 1,
+            "hash": "f093576de3d8f8da434aa9801172ee7c41913226e9813f8fb093f132d96dc9f7",
+            "length": 73,
+            "seconds": 0.17328329099109396
+          },
+          {
+            "bin": 2,
+            "hash": "000db25701c71c7be261111a37bce0f2ac3b4a798fb84a9320f63162a46dee50",
+            "length": 113,
+            "seconds": 0.21685341699048877
+          },
+          {
+            "bin": 2,
+            "hash": "001e8fc91207b739ab83855bf87a2a2736f020522cd68aeb68a38872e79363bd",
+            "length": 121,
+            "seconds": 0.2158978749648668
+          },
+          {
+            "bin": 2,
+            "hash": "002e17a1816efcd36ba77f09e4c6fd2cea1db773644a9cd41a776b5ac7d1fb10",
+            "length": 93,
+            "seconds": 0.2087827500072308
+          },
+          {
+            "bin": 2,
+            "hash": "0037d36427ac44bd60a5ab2dd1cc0f66d9ce76c0a11f59fcfc2975f44b22f071",
+            "length": 87,
+            "seconds": 0.18655949999811128
+          },
+          {
+            "bin": 2,
+            "hash": "d89803c8e1f1fbe591d262790015357c69cd34c794a886d89c98044547597346",
+            "length": 126,
+            "seconds": 0.21444312494713813
+          },
+          {
+            "bin": 3,
+            "hash": "00055caa295ae1d9ea677fecc77332767589193e8b3cfd2f5b9958a51373dd82",
+            "length": 136,
+            "seconds": 0.25951337500009686
+          },
+          {
+            "bin": 3,
+            "hash": "0008adbe4e8ab7fde97fe96de6078a08f3506902fb01a9ff578c1f1aa160349f",
+            "length": 135,
+            "seconds": 0.2545765000395477
+          },
+          {
+            "bin": 3,
+            "hash": "001ad4879c512e0623beeaf0dda6416e770222f4dd8f4c7ba774849f825a7083",
+            "length": 213,
+            "seconds": 0.33870362502057105
+          },
+          {
+            "bin": 3,
+            "hash": "00213e093a80c5d0a03d4426f4473e73f7e43ce71a84acc9601b1fe4f10d467b",
+            "length": 188,
+            "seconds": 0.3056675840052776
+          },
+          {
+            "bin": 3,
+            "hash": "d8bf731e9aee0c0ad35093a11cc079b78e7c39ebf5b13c4d16ec69cb75181834",
+            "length": 4826,
+            "seconds": 52.40249266597675
+          }
+        ]
+      },
+      "mps": {
+        "error": "ValueError('Invalid embedding shape or values')",
+        "passes": false,
+        "traceback": "Traceback (most recent call last):\n  File \"<PROJECT_ROOT>/src/revision_v3_encoder.py\", line 222, in technical\n    arr = encode(model, tok, [texts[h] for h in batch], device)\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"<PROJECT_ROOT>/src/revision_v3_encoder.py\", line 169, in encode\n    check_vectors(arr, len(texts))\n  File \"<PROJECT_ROOT>/src/revision_v3_encoder.py\", line 110, in check_vectors\n    raise ValueError('Invalid embedding shape or values')\nValueError: Invalid embedding shape or values\n"
+      }
+    },
+    "cpu_threads": 2,
+    "effectiveness_computed": false,
+    "mps_available": true,
+    "platform": "macOS-15.2-arm64-arm-64bit",
+    "prior_results_known": true,
+    "sample": [
+      {
+        "bin": 0,
+        "hash": "00000d98ac7835424604cbc3dd9b39a914919e656a618d934cd2fbe5f2f6f3c7",
+        "length": 19
+      },
+      {
+        "bin": 0,
+        "hash": "00038b5850d188755c264fb5f0f56505274548e74923783b38083830f5aab7e3",
+        "length": 28
+      },
+      {
+        "bin": 0,
+        "hash": "00057ffcdc604727d3d3806e374f1b61d5c66cd5e7fd749122bdd35ff98ed647",
+        "length": 21
+      },
+      {
+        "bin": 0,
+        "hash": "0017720391b851de5bb9448ae2e897f4d1a5e229183763e0540cda2cfa00cb35",
+        "length": 23
+      },
+      {
+        "bin": 0,
+        "hash": "81e83674cc564f3c8a29af7fdca1dfe47c96f12beb0e3446bf462f195b96da88",
+        "length": 35
+      },
+      {
+        "bin": 1,
+        "hash": "002c01b11f2d003fd11028bd5d8b61e80c670e466cd556db6b1318bca4ded381",
+        "length": 49
+      },
+      {
+        "bin": 1,
+        "hash": "0042b0348e9f342b6f73273d3a672f8a47d4140ad3c232b7053ce5525bb7549a",
+        "length": 63
+      },
+      {
+        "bin": 1,
+        "hash": "0043f38940abe03a448826f0c88628f04790b2fc62e4d2075b07a1c6bc386103",
+        "length": 36
+      },
+      {
+        "bin": 1,
+        "hash": "004ecfd3b281d133d59f515675ced1df2370fac351b33f84b8545557e1409e89",
+        "length": 36
+      },
+      {
+        "bin": 1,
+        "hash": "f093576de3d8f8da434aa9801172ee7c41913226e9813f8fb093f132d96dc9f7",
+        "length": 73
+      },
+      {
+        "bin": 2,
+        "hash": "000db25701c71c7be261111a37bce0f2ac3b4a798fb84a9320f63162a46dee50",
+        "length": 113
+      },
+      {
+        "bin": 2,
+        "hash": "001e8fc91207b739ab83855bf87a2a2736f020522cd68aeb68a38872e79363bd",
+        "length": 121
+      },
+      {
+        "bin": 2,
+        "hash": "002e17a1816efcd36ba77f09e4c6fd2cea1db773644a9cd41a776b5ac7d1fb10",
+        "length": 93
+      },
+      {
+        "bin": 2,
+        "hash": "0037d36427ac44bd60a5ab2dd1cc0f66d9ce76c0a11f59fcfc2975f44b22f071",
+        "length": 87
+      },
+      {
+        "bin": 2,
+        "hash": "d89803c8e1f1fbe591d262790015357c69cd34c794a886d89c98044547597346",
+        "length": 126
+      },
+      {
+        "bin": 3,
+        "hash": "00055caa295ae1d9ea677fecc77332767589193e8b3cfd2f5b9958a51373dd82",
+        "length": 136
+      },
+      {
+        "bin": 3,
+        "hash": "0008adbe4e8ab7fde97fe96de6078a08f3506902fb01a9ff578c1f1aa160349f",
+        "length": 135
+      },
+      {
+        "bin": 3,
+        "hash": "001ad4879c512e0623beeaf0dda6416e770222f4dd8f4c7ba774849f825a7083",
+        "length": 213
+      },
+      {
+        "bin": 3,
+        "hash": "00213e093a80c5d0a03d4426f4473e73f7e43ce71a84acc9601b1fe4f10d467b",
+        "length": 188
+      },
+      {
+        "bin": 3,
+        "hash": "d8bf731e9aee0c0ad35093a11cc079b78e7c39ebf5b13c4d16ec69cb75181834",
+        "length": 4826
+      }
+    ],
+    "utc": "2026-10-03T16:24:09.439255+00:00"
+  },
+  "source_file": "technical_results.json",
+  "source_sha256": "36b8bd17057b344b9ef6b759231a983e2780b5d42aaf2337a62543beddc4b605",
+  "transformation": "All fields retained; only absolute local diagnostic path prefixes normalized. No numeric or sample evidence altered."
+}

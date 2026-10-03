@@ -78,5 +78,7 @@
   "rankings_replayed": 5420,
   "score_points_checked": 32520,
   "estimate_rows_checked": 804,
-  "source_models_bibliography_tex_identical": true
+  "source_models_bibliography_tex_identical": true,
+  "historical_scope": "v1.0.0 and its post-archive DOI presentation update; retained as historical evidence, not validation of v1.1.0",
+  "current_revision_evidence": "revisions/v3/qa/"
 }

@@ -1,0 +1,12 @@
+{
+  "repo": "YoyoLin008/evidence-sets-retrieval-evaluation",
+  "remote_main": "faf730ea4c25161b6b2dc350ff9890e344bc3524",
+  "main_protected": false,
+  "rulesets": [],
+  "existing_tags": [
+    "v1.0.0"
+  ],
+  "candidate_tag": "v1.1.0",
+  "note": "Read-only GitHub API preflight. Publication checks rules and remote commit again immediately before draft creation.",
+  "recorded_utc": "2026-10-03T17:02:38.940054+00:00"
+}

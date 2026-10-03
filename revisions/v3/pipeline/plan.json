@@ -1,0 +1,39 @@
+{
+  "status": "revision-added exploratory",
+  "frozen_utc": "2026-10-03T16:23:39.097614+00:00",
+  "known_results": "v1.0.0 primary outcomes and earlier audit visible. sscc fixture union preservation and unmatched filtering known. MTEB historical 576/1335 union equality known, not the main-cohort denominator. No new conversion/scoring outcomes inspected before this plan.",
+  "candidates": [
+    {
+      "canonical": "github.com/qarkapp/sscc-rag-paper",
+      "revision": "da7e8fb13f297969d344bad90295b15c2917a47d",
+      "prior_audit_index": 123,
+      "known": "executable loader unions references; unmatched text filtered; actual scorer delegates to ir_measures. Native train/dev inputs; pooled abstract+body candidates."
+    },
+    {
+      "canonical": "huggingface.co/mteb/QASPER",
+      "revision": "898f2eced48890f19b6a88f1b616e9ca6c5dda1c",
+      "prior_audit_index": 112,
+      "known": "flat distributed qrels, generator not available in audited source"
+    }
+  ],
+  "selection": "Prioritize verified source converter and source scorer over distribution-only target. Thus sscc first; use MTEB only if sscc cannot execute after local dependency installation. Stop after one completed path. Selection does not depend on effectiveness.",
+  "input": "First execute unchanged native sscc dev loader; validate injected data-supply interface against unchanged loader byte-for-byte outputs on dev. Then apply same converter to frozen original test JSON through that data-only interface. Test is a documented extension, not native split support.",
+  "granularity": "sscc raw paragraph IDs include abstract and pooled other-paper candidates. Preserve and count full export. Controlled scoring maps each original candidate to an exported paragraph ID, using only original body universe and unchanged rankings. Explicitly report this candidate restriction; no claim of whole-product or cross-paper retrieval reproduction.",
+  "membership_categories": [
+    "pure grouping loss (mapped original union exactly equals export qrels membership)",
+    "grouped preserved",
+    "both grouped and aggregate exposed",
+    "missing or filtered membership",
+    "granularity or candidate/task change",
+    "undetermined source correspondence"
+  ],
+  "eligible_scoring": "All original 875 QASPER test questions with exact whole source-candidate alignment and exact union membership; show all exclusion categories; one distinct group is retained as degenerate case. Other raw converted questions are reported in counts but not incorporated into original cohort.",
+  "rankings": "Fixed original bm25, tfidf, dense MiniLM, lead, random, no new tuning",
+  "measures": [
+    "original defaults: nDCG@10,R@5,R@10,Success@5,Success@10,RR@10",
+    "C,A,H,best-reference/union F1 at k=5; union recall@5 parity with R@5 and H@5 parity with Success@5",
+    "finite paired BM25 versus dense contrast at k=5"
+  ],
+  "uncertainty": "Original 10000 paper-cluster bootstrap, seed 20261002, item-weighted; descriptive exploratory comparisons only.",
+  "stopping": "One completed real conversion/export/alignment/scorer path; record genuine component failures; no substitution chosen by effect size."
+}

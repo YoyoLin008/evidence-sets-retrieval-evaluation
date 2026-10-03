@@ -31,4 +31,23 @@ __pycache__/
 .env.*
 *.pem
 *.key
-/paper/cover_letter*
+
+# Revision-added inputs, environments, and private operational material
+/revisions/v3/encoder/cache/
+/revisions/v3/pipeline/source_cache/
+/revisions/v3/pipeline/runtime/
+/revisions/v3/examples/source_cache/
+/revisions/v3/literature/source_cache/
+/revisions/v3/private/
+/revisions/v3/qa/rendered/
+/.venv
+/.venv-revision
+/data/raw
+/data/models
+/literature/sources
+/revisions/v2/audit/sources
+/revisions/v2/compute/model
+/revisions/final/literature/sources
+/revisions/v3/encoder/technical_results.json
+/revisions/v3/encoder/technical.log
+/revisions/v3/encoder/official_model_card.md

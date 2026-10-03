@@ -1,0 +1,2 @@
+{"already_cached": 0, "cache_key": "79ccd7137d190382673fc6beb6aab5dabc8710587e8495034343df93752518d4", "event": "start", "missing": 20112, "utc": "2026-10-03T16:26:48.827025+00:00"}
+{"event": "complete", "new_embeddings": 20112, "seconds": 2816.136554333032, "total": 20112, "utc": "2026-10-03T17:13:45.018113+00:00"}

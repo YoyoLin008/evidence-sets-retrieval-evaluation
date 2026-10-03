@@ -1,0 +1,1 @@
+{"device": "mps", "error": "ValueError('Invalid embedding shape or values')", "phase": "technical", "utc": "2026-10-03T16:26:19.937588+00:00"}

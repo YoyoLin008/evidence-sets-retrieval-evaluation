@@ -1,0 +1,42 @@
+{
+  "created_utc": "2026-10-03T17:03:15.012601+00:00",
+  "environment": {
+    "ir-measures": "0.4.3",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "platform": "macOS-15.2-arm64-arm-64bit",
+    "python": "3.12.14",
+    "pytrec-eval-terrier": "0.5.10",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.18.1"
+  },
+  "input_hashes": {
+    "frozen_rankings": "50f3a7f67fb534724f115793df1c0e96da5b3c00683db46b3f05fc086706e16d",
+    "qasper_dev": "2ae7ee62a65b1c4225791c70de80c2aad4e8998cf1fd4f09a53103db4f21af93",
+    "qasper_test": "6e29ad410e6e39aa1936017fb965b30a20eb2e7751997f55b97c9d281aa884e5"
+  },
+  "outputs_sha256": {
+    "all_raw_question_flow.csv": "a574a7dd93d0192aa8fc44cf0ce80be540b14fba00eb7a3b02bdfa98bad5fe4e",
+    "export_corpus_index.json": "b9e36ad5b537f59ffb5d78d2a977d4c476c31637354c301548af56bec69428b7",
+    "export_qrels.json": "554b189d6fb97b00ef230b112dd89d10e1bb2feb2e102d7ef6176194ca9e3a2e",
+    "main_cohort_alignment.json": "977f8be445ff38b64e11e08869e5c93894935a98982c7b1233fe15849f4579e5",
+    "paired_contrasts.csv": "03a878cb28ee49605dda51d317feecb02c6bf4a8db649f9051298286073ec928",
+    "per_query_scores.csv": "7e24588b9851307c5df267e59843adf07cdc3a284c53077f1b18b72146e6d8f6",
+    "report.json": "21ce3d8603cf7d83232d118518c54d2d0bbfcd9e882dab420ee36a4403395326",
+    "run_bm25.json": "bf846a979cc480761334508be726cd9bc57046085fe6c0fa7dc36b7961cbd924",
+    "run_dense.json": "5eecbeb61ee06959f11e5b532ce3384f552e57169164ec08473d259a2a46cdd8",
+    "run_lead.json": "b63a0dc6994e3748327f048ab5f792ae2273604b656f2a1736440d44af2d7c44",
+    "run_random.json": "819cb239d5a129617b13f079a01d067fac0bfc38e344629be6db2c4f3c7234a5",
+    "run_tfidf.json": "eeeb5ed920b695014b341eaf40e3f345761a500bbb90ea2d9fe75a7d74f0ff15",
+    "score_summary.csv": "7b68c65aeac21530054714fec2b9cabc9f08216f855fdbadbd45ff696699a9d0"
+  },
+  "scope": "Manifest records completed outputs; excludes itself, diagnostic logs and subsequent review reports to avoid self-reference.",
+  "selection_plan_sha256": "e33a280511f77e30f3dbbb33f5b41135c9001a60d9ce94ac445de0a88083beef",
+  "source_code_sha256": "2ff8ff327df8aba184ef14afa34583aca018df7c5ccd610f175609e6fac3b6f5",
+  "status": "revision-added exploratory executed conversion/scoring outputs",
+  "upstream_source_hashes": {
+    "src/sage/eval/benchmarks.py": "a63f3d5d5fbaaa6636717ec5a8887f3c265cb857403b7f4b65d9afa1c5a276c6",
+    "src/sage/eval/dataset.py": "4c9026b49e8989da74ccbd250ef47e67d087c34391030d6fcf366b09644a3f11",
+    "src/sage/eval/metrics.py": "e344792d6f57ea0613f587ccd2a2370bfc3f09c9a71950df9dbf47c1e234cc72"
+  }
+}

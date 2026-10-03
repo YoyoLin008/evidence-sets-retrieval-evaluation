@@ -1,0 +1,32 @@
+{
+  "started_utc": "2026-10-03T17:15:29.389516+00:00",
+  "finished_utc": "2026-10-03T17:15:58.242680+00:00",
+  "status": "revision-added exploratory",
+  "protocol_sha256": "a6502f67b608d98b54e7f3906cc636bfa85baa0d2ffa2d6563cc0168d36209c7",
+  "source_sha256": "fc2d563d69dbe761f6d47ef2b39251aecfd4c540bc41bd6627e283cfdca755ef",
+  "input_sha256": {
+    "instances": "f84d5bf1f7d0642a05a0be9cfba37bd2244d0fe43153f5460072ea5294459f85",
+    "original_rankings": "50f3a7f67fb534724f115793df1c0e96da5b3c00683db46b3f05fc086706e16d",
+    "qwen_rankings": "95b84ba6f20e0fe91350a47d96ddb9201dbe4a1fd4ac7a3d8279f6a2e3c8ce23"
+  },
+  "mode": "source-text score/cost verification and statistics",
+  "bootstrap": {
+    "replicates": 10000,
+    "seed": 20261002,
+    "unit": "original connected clusters",
+    "weighting": "item-weighted after whole-cluster resampling",
+    "interval": "pointwise 95% percentile, linear interpolation"
+  },
+  "outputs": {
+    "agreement_pruning.csv": "b98963f2dfdb08a047c0cf5bc41273f7187d35ac45243f11aaa110160bfbd15e",
+    "budget_thresholds.csv": "52a3e5090bd4803dad0cbf267b84fc918ed07f7af6278c5362e518995db496a0",
+    "cohort_membership.csv": "84a87f3a02bf3b090e504a051461e1f3b97e2c2f540825c114bb2135ac15a94a",
+    "cost_distributions.csv": "135b22e4de05fa07976509a6b60cb76bf4e44962536f4c8acf03fc5054904c10",
+    "costs.csv": "db1a9a2ac857566e935471892e6d9295c4a1c80c56de955c081c32cca362eb0f",
+    "curves.csv": "51e9bf07d4ae8b67ce44cbca13f1c621304d915c7a58d304573249150c5c6aee",
+    "item_completion_costs.csv": "b37e27d2f3ecebc3dfd59cba9c0e16abf2b624b855235b146f778c3fcf63c328",
+    "method_contrasts.csv": "41b3d16f250d7dec593a365e0857f47cb137b2bb7e155fd813cc9b56f705fb36",
+    "primary.csv": "5788f705a2dcb66a0be6a39d9abc217f7daaba4ccbbea6c7469cbc968d78855e"
+  },
+  "validation_sha256": "ecaec95b71750927e3ecd222c8ae5920b4eaecb52c20b76efc15c73a162ac3a6"
+}

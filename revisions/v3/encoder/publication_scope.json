@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-03T17:17:22.863391+00:00",
+  "private_local_only": [
+    "cache/",
+    "*.log",
+    "technical_results.json",
+    "official_model_card.md"
+  ],
+  "public_technical_summary": "public_technical_summary.json",
+  "normalization_check_passed": true,
+  "technical_numerical_and_sample_fields_preserved": true,
+  "unexpected_personal_paths_in_public_artifacts": [],
+  "private_log_note": "The raw scoring.log prints the local output path; like other .log files it is globally ignored. Its item count and output hash are public in scoring_complete.json.",
+  "scope": "Encoder artifacts only. Original private technical logs and full third-party card retained locally; technical measurements appear in the hash-identified normalized record. No weights, source datasets or virtual environment are published."
+}

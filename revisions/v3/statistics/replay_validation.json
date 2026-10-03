@@ -1,0 +1,109 @@
+{
+  "status": "passed",
+  "comparison": "complete six-method source-text verification versus archived rankings and saved costs only",
+  "all_csv_byte_identical": {
+    "budget_thresholds.csv": true,
+    "primary.csv": true,
+    "cost_distributions.csv": true,
+    "agreement_pruning.csv": true,
+    "costs.csv": true,
+    "item_completion_costs.csv": true,
+    "method_contrasts.csv": true,
+    "cohort_membership.csv": true,
+    "curves.csv": true
+  },
+  "rankings_only_mode_requires_article_text": false,
+  "rankings_only_validation": {
+    "status": "revision-added exploratory",
+    "ranking_rows": 6504,
+    "scoring_points": 39024,
+    "original_ranking_rows": 5420,
+    "original_scoring_points": 32520,
+    "methods": [
+      "bm25",
+      "tfidf",
+      "dense",
+      "lead",
+      "random",
+      "qwen3"
+    ],
+    "replicates": 10000,
+    "seed": 20261002,
+    "checks": {
+      "qasper": {
+        "n": 875,
+        "clusters": 367,
+        "topology_counts": [
+          403,
+          187,
+          243,
+          42
+        ],
+        "answer_groups": {
+          "agreement_items": 195,
+          "agreement_papers": 149,
+          "complement_items": 680,
+          "complement_papers": 337,
+          "papers_shared_across_subsets": 119,
+          "rule": "all saved adapter-normalized answer strings exactly equal"
+        },
+        "historical_BM25_categories": [
+          306,
+          123,
+          156,
+          290
+        ]
+      },
+      "scifact": {
+        "n": 209,
+        "clusters": 164,
+        "topology_counts": [
+          124,
+          0,
+          85,
+          0
+        ],
+        "historical_BM25_categories": [
+          34,
+          9,
+          58,
+          108
+        ]
+      },
+      "valid_permutations": true,
+      "frozen_score_depth_replay": true,
+      "source_text_lexical_cost_replay": false,
+      "pruning_all_integer_prefixes_via_event_depths": true,
+      "answer_subgroup_weighted_reconstruction": true,
+      "full_cohort_thresholds_all_attained": true
+    },
+    "pruning_event_checks": 38056,
+    "best_reference_F1_counterexample": {
+      "family": [
+        [
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "prefix": [
+        0,
+        1
+      ],
+      "original": 1.0,
+      "pruned": 0.6666666666666666
+    },
+    "Qwen_status": "full cohort included"
+  },
+  "historical_primary_csv_comparison": {
+    "rows": 90,
+    "maximum_absolute_differences_due_to_CSV_display_precision": {
+      "mean": 5.000000413701855e-11,
+      "lo": 5.000000413701855e-11,
+      "hi": 4.799999286930756e-11
+    },
+    "within_1e_9": true
+  }
+}

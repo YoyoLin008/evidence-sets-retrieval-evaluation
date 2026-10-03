@@ -36,7 +36,7 @@ def refs_text(v):
     return ", ".join(v["authors"])+f". ({v.get('year_label',v['year'])}). "+v["title"]+(" " if v["title"].endswith(("?","!",".")) else ". ")+v["venue"]+((", "+v["volume"]) if v.get("volume") else "")+((", pp. "+v["pages"]) if v.get("pages") else "")+"."
 def pgf_figure(name):
     curves=pd.read_csv(ROOT/"tables/curve_estimates.csv");p=pd.read_csv(ROOT/"tables/primary.csv");topo=pd.read_csv(ROOT/"tables/topology.csv")
-    raw=[json.loads(s) for s in (ROOT/"outputs/main_v1/rankings.jsonl").read_text().splitlines()]
+    raw=[json.loads(s) for s in (ROOT/"reference_outputs/main_v1/rankings.jsonl").read_text().splitlines()]
     pieces=[]
     colors={"hit":"brown","complete":"blue","union_complete":"violet"}
     for d in ["qasper","scifact"]:

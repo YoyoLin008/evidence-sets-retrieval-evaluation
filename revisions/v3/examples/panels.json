@@ -1,0 +1,567 @@
+{
+  "status": "completed revision-added exploratory examples",
+  "utc": "2026-10-03T16:38:15.431409+00:00",
+  "known_outcomes": "All original outcomes were visible; new example is explicitly selected on C=1,A=0, so illustrates the mechanism without estimating semantic prevalence.",
+  "new_candidate_count": 16,
+  "new_candidate_ids_hash_order": [
+    {
+      "id": "0bde3ecfdd7c4a9af23f53da2cda6cd7a8398220",
+      "sha256": "047e84296c45d1be47131c1aa455a080094f9924754abfc43f5dd298cd72e383"
+    },
+    {
+      "id": "26e32f24fe0c31ef25de78935daa479534b9dd58",
+      "sha256": "14970aeda2c46d40026c1870076140ec8785deb985229b8c060122361eb9730c"
+    },
+    {
+      "id": "74a17eb3bf1d4f36e2db1459a342c529b9785f6e",
+      "sha256": "1fc11cc55d57dbb44d34ba35b46c7e35a8ced303636eb363d03a9d35f00a504d"
+    },
+    {
+      "id": "d206f2cbcc3d2a6bd0ccaa3b57fece396159f609",
+      "sha256": "28b207f9f2b95426de552c190c05a9336a7dbbf631645613a7bb8aa754a6fba7"
+    },
+    {
+      "id": "5499440674f0e4a9d6912b9ac29fa1f7b7cd5253",
+      "sha256": "2b4e6baf5e2d97f7191d985fc2fbbf24249bbbf686242fb3e6fe93d1e483268e"
+    },
+    {
+      "id": "61e96abdc924c34c6b82a587168ea3d14fe792d1",
+      "sha256": "2d0ca65b257d82f6f883b7f729f117ef8ca902fea24b84de14de4d3cd76b59a4"
+    },
+    {
+      "id": "051034cc94f2c02d3041575c53f969b3311c9ea1",
+      "sha256": "33573e44979ecb358a00eb7be3b7f8a5f690f2ca932c3e6c72564137c3f441b1"
+    },
+    {
+      "id": "425d17465ff91019eb87c28ff3942f781ba1bbcb",
+      "sha256": "5c81edbe5081ca55c9e5404a73b18f4d354d48821e98264205d584cbfcfe2623"
+    },
+    {
+      "id": "a9eb8039431e2cb885cfcf96eb58c0675b36b3bd",
+      "sha256": "7c8947b5f60af8e560091772a919876a1a735bf05f2225e7558b6d2006dd4c9c"
+    },
+    {
+      "id": "b424ad7f9214076b963a0077d7345d7bb5a7a205",
+      "sha256": "97ccbfeec576ba8c1ab5d358f9affd6bff198f585eabd5adb61e4d93830eab4c"
+    },
+    {
+      "id": "183b385fb59ff1e3f658d4555a08b67c005a8734",
+      "sha256": "b7fc552d358c6ed99098edbfd15325f429639bde8f60456ded780748e7b69f1a"
+    },
+    {
+      "id": "8db11d9166474a0e98b99ac7f81d1f14539d79ec",
+      "sha256": "b8bec1ae32b2120274ffb859f4516078c25eb61a5745a4612d211a8c351ab39a"
+    },
+    {
+      "id": "7cf44877dae8873139aede381fb9908dd0c546c4",
+      "sha256": "cc3e0cf846fcac6bbb726cc37737a889cf865d6dca297872d01a382564c19009"
+    },
+    {
+      "id": "3a25f82512d56d9e1ffba72f977f515ae3ba3cca",
+      "sha256": "dc7146ecd77114a54a7ccf0eb52444ed1f4a84f0098fc0377b7c276aaca5fd27"
+    },
+    {
+      "id": "c4b621f573bbb411bdaa84a7562c9c4795a7eb3a",
+      "sha256": "ed2998663cb2638d2d961a8bf84f161fce865e6fc7805613442b44daecbbc0a2"
+    },
+    {
+      "id": "521a3e7300567f6e8e4c531f223dbc9fc306c393",
+      "sha256": "fff1820cebb07e45811dfa21a76129f3889f19ccb0097d463e2b3e204c64ac3b"
+    }
+  ],
+  "selected_new_id": "0bde3ecfdd7c4a9af23f53da2cda6cd7a8398220",
+  "selected_first_without_substitution": true,
+  "source_sha256": "c56399c0265c18724346226ebc467b00abd7b5e6502628d3c26f393b7fd701fd",
+  "original_qasper_case_retained": true,
+  "original_scifact_case_retained": true,
+  "panels": [
+    {
+      "status": "revision-added exploratory presentation",
+      "role": "retained preselected qasper case",
+      "dataset": "qasper",
+      "id": "14fdc8087f2a62baea9d50c4aa3a3f8310b38d17",
+      "paper_or_document_id": "1909.12208",
+      "query": "What supports the claim that enhancement in training is advisable as long as enhancement in test is at least as strong as in training?",
+      "gold": [
+        [
+          17,
+          22,
+          23,
+          34
+        ],
+        [
+          23
+        ]
+      ],
+      "distinct_sets": [
+        [
+          17,
+          22,
+          23,
+          34
+        ],
+        [
+          23
+        ]
+      ],
+      "ranking_prefix": [
+        34,
+        1,
+        2,
+        23,
+        3
+      ],
+      "completed_reference_sets": [
+        [
+          23
+        ]
+      ],
+      "method": "bm25",
+      "k": 5,
+      "scores": {
+        "hit": 1,
+        "complete": 1,
+        "union_complete": 0,
+        "union_recall": 0.5,
+        "max_recall": 1.0,
+        "max_f1": 0.4444444444444444,
+        "union_f1": 0.4444444444444444,
+        "hit_without_complete": 0,
+        "complete_without_union": 1
+      },
+      "costs": {
+        "depth_complete": 4,
+        "depth_penalty": 19,
+        "depth_union": 23,
+        "tokens_complete": 584,
+        "tokens_penalty": 2103,
+        "tokens_union": 2687
+      },
+      "topology": {
+        "n_references": 2,
+        "n_distinct_sets": 2,
+        "n_minimal_sets": 1,
+        "union_size": 4,
+        "min_set_size": 1,
+        "max_set_size": 4,
+        "union_to_min_size": 4.0,
+        "has_alternatives": 0,
+        "has_compound_requirement": 0
+      },
+      "strict_normalized_answer_agreement": false,
+      "units": [
+        {
+          "index": 1,
+          "source_id": "1909.12208:paragraph:1",
+          "text_sha256": "9c451e47c45db7f6bf362c5dcfc2aceaf53dcf68331d822db6629b55b47a49af",
+          "raw_source_positions": [
+            {
+              "section_index": 0,
+              "section_name": "Introduction",
+              "paragraph_index": 1,
+              "nonempty_body_ordinal": 1
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "source_id": "1909.12208:paragraph:2",
+          "text_sha256": "52ee0024ebd088efe1cee5089b1f46a5817a7f94cf5dbd828edd124637ce9403",
+          "raw_source_positions": [
+            {
+              "section_index": 0,
+              "section_name": "Introduction",
+              "paragraph_index": 2,
+              "nonempty_body_ordinal": 2
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "source_id": "1909.12208:paragraph:3",
+          "text_sha256": "19b8f416bf18a38666e062cab9a857f6145a199ceea5a81548c2e2cd6ab2b0aa",
+          "raw_source_positions": [
+            {
+              "section_index": 0,
+              "section_name": "Introduction",
+              "paragraph_index": 3,
+              "nonempty_body_ordinal": 3
+            }
+          ]
+        },
+        {
+          "index": 17,
+          "source_id": "1909.12208:paragraph:17",
+          "text_sha256": "d4d67d770c8548171b208e41c48f56e634daa50ff5b3b2680eec4c2d45b661b9",
+          "raw_source_positions": [
+            {
+              "section_index": 3,
+              "section_name": "Experiments ::: General configuration",
+              "paragraph_index": 0,
+              "nonempty_body_ordinal": 17
+            }
+          ],
+          "short_verbatim_excerpt": "Experiments were performed using the CHiME-5 data."
+        },
+        {
+          "index": 22,
+          "source_id": "1909.12208:paragraph:22",
+          "text_sha256": "5dfb30c7d09f229165321696fa31595bb8e9f595ec3e1c7d982d2db72a5aace0",
+          "raw_source_positions": [
+            {
+              "section_index": 5,
+              "section_name": "Experiments ::: Enhancement effectiveness for ASR training and test",
+              "paragraph_index": 0,
+              "nonempty_body_ordinal": 22
+            }
+          ],
+          "short_verbatim_excerpt": "An extensive set of experiments"
+        },
+        {
+          "index": 23,
+          "source_id": "1909.12208:paragraph:23",
+          "text_sha256": "48963ef870830a66085919f0181dfd4f2bfbc9571ddd2ea79106ee179b42fcd7",
+          "raw_source_positions": [
+            {
+              "section_index": 5,
+              "section_name": "Experiments ::: Enhancement effectiveness for ASR training and test",
+              "paragraph_index": 1,
+              "nonempty_body_ordinal": 23
+            }
+          ],
+          "short_verbatim_excerpt": "the recognition accuracy improves monotonically"
+        },
+        {
+          "index": 34,
+          "source_id": "1909.12208:paragraph:34",
+          "text_sha256": "fbcb1eff35ae41e2817bc5099ce4f6a73ef5cef747ded02ff5c5b6928898a0d7",
+          "raw_source_positions": [
+            {
+              "section_index": 9,
+              "section_name": "Conclusions",
+              "paragraph_index": 0,
+              "nonempty_body_ordinal": 34
+            }
+          ],
+          "short_verbatim_excerpt": "CHiME-5 dinner party data"
+        }
+      ],
+      "source_unit_index_base": 0,
+      "interpretation": "The singleton {23} is nested within {17,22,23,34}; completing the singleton makes C=1 before the full union is covered. The two recorded normalized answers differ. This illustrates annotation nesting and answer-text variation, not same-answer alternative sufficient evidence.",
+      "human_semantic_validation": false,
+      "answer_normalized_keys": [
+        "we performed extensive experimental evaluation on acoustically very challenging chime5 dinner party data",
+        "accuracy improves with increasing power of enhancement on training data however only as long as enhancement on training data is not stronger than on test data"
+      ],
+      "raw_answer_sha256": [
+        "81a20b89d2842e142a47d2a3b37364e20a5aa276aa3e6dd51765b42168239280",
+        "a9ef348b7d7806822d079f4f55be2ba8cb4d4aeccce87af0931f6c145934752e"
+      ],
+      "answer_display": [
+        "Paraphrase: an extensive experimental evaluation on difficult CHiME-5 dinner-party data.",
+        "Paraphrase: training enhancement improves accuracy provided it is no stronger than test enhancement."
+      ],
+      "source_url": "https://arxiv.org/abs/1909.12208",
+      "quoted_evidence_word_count": 21
+    },
+    {
+      "status": "revision-added exploratory presentation",
+      "role": "new agreement/no-superset hash-selected case",
+      "dataset": "qasper",
+      "id": "0bde3ecfdd7c4a9af23f53da2cda6cd7a8398220",
+      "paper_or_document_id": "1804.07445",
+      "query": "what language was the data in?",
+      "gold": [
+        [
+          24
+        ],
+        [
+          20
+        ],
+        [
+          24
+        ]
+      ],
+      "distinct_sets": [
+        [
+          20
+        ],
+        [
+          24
+        ]
+      ],
+      "ranking_prefix": [
+        27,
+        29,
+        20,
+        26,
+        0
+      ],
+      "completed_reference_sets": [
+        [
+          20
+        ]
+      ],
+      "method": "bm25",
+      "k": 5,
+      "scores": {
+        "hit": 1,
+        "complete": 1,
+        "union_complete": 0,
+        "union_recall": 0.5,
+        "max_recall": 1.0,
+        "max_f1": 0.3333333333333333,
+        "union_f1": 0.2857142857142857,
+        "hit_without_complete": 0,
+        "complete_without_union": 1
+      },
+      "costs": {
+        "depth_complete": 3,
+        "depth_penalty": 13,
+        "depth_union": 16,
+        "tokens_complete": 286,
+        "tokens_penalty": 1271,
+        "tokens_union": 1557
+      },
+      "topology": {
+        "n_references": 3,
+        "n_distinct_sets": 2,
+        "n_minimal_sets": 2,
+        "union_size": 2,
+        "min_set_size": 1,
+        "max_set_size": 1,
+        "union_to_min_size": 2.0,
+        "has_alternatives": 1,
+        "has_compound_requirement": 0
+      },
+      "strict_normalized_answer_agreement": true,
+      "units": [
+        {
+          "index": 0,
+          "source_id": "1804.07445:paragraph:0",
+          "text_sha256": "5afb7846c14fe673fb7885d4398fd99c83a26d15d4b8a16bccaf84ce4f48c253",
+          "raw_source_positions": [
+            {
+              "section_index": 0,
+              "section_name": "Introduction",
+              "paragraph_index": 0,
+              "nonempty_body_ordinal": 0
+            }
+          ]
+        },
+        {
+          "index": 20,
+          "source_id": "1804.07445:paragraph:20",
+          "text_sha256": "ea7bebca8aef301477bb48624b7d3dbea829ae88d86cbd9ea3907c82a8181770",
+          "raw_source_positions": [
+            {
+              "section_index": 4,
+              "section_name": "Datasets",
+              "paragraph_index": 0,
+              "nonempty_body_ordinal": 25
+            }
+          ],
+          "short_verbatim_excerpt": "aligned complex-simple sentence pairs from English Wikipedia"
+        },
+        {
+          "index": 24,
+          "source_id": "1804.07445:paragraph:24",
+          "text_sha256": "ff8d75c251c78d0f02e57982d15fce4d437d3e1c68922be548e0a2ad5c93ca38",
+          "raw_source_positions": [
+            {
+              "section_index": 7,
+              "section_name": "Evaluation",
+              "paragraph_index": 0,
+              "nonempty_body_ordinal": 29
+            }
+          ],
+          "short_verbatim_excerpt": "the output is grammatical English"
+        },
+        {
+          "index": 26,
+          "source_id": "1804.07445:paragraph:26",
+          "text_sha256": "24837044ee24f9da4a6d87bdaa9e30b15b9f7cd47551a5cc21110fa7ebc5c3fa",
+          "raw_source_positions": [
+            {
+              "section_index": 8,
+              "section_name": "Automatic Evaluation Measures",
+              "paragraph_index": 1,
+              "nonempty_body_ordinal": 31
+            }
+          ]
+        },
+        {
+          "index": 27,
+          "source_id": "1804.07445:paragraph:27",
+          "text_sha256": "735698110014c1a4c4b72a7270252efc31032054b7e2cff0fbad4af56678736f",
+          "raw_source_positions": [
+            {
+              "section_index": 9,
+              "section_name": "Human Judgments",
+              "paragraph_index": 0,
+              "nonempty_body_ordinal": 32
+            }
+          ]
+        },
+        {
+          "index": 29,
+          "source_id": "1804.07445:paragraph:29",
+          "text_sha256": "acf9df64dbf96a6f602e3b0b16b12add75c98a076bb64fa093dc2314d89c70b9",
+          "raw_source_positions": [
+            {
+              "section_index": 9,
+              "section_name": "Human Judgments",
+              "paragraph_index": 2,
+              "nonempty_body_ordinal": 34
+            }
+          ]
+        }
+      ],
+      "source_unit_index_base": 0,
+      "interpretation": "All three recorded answers normalize to English; duplicate {24} leaves two distinct singleton alternatives, {20} and {24}, with no nesting. Paragraph 20 describes English Wikipedia pairs, whereas paragraph 24 mentions grammatical English as a fluency criterion. The selected first case is retained despite this difference in how directly the paragraphs support the question. It demonstrates annotation-defined same-answer alternatives; no independent human judgment establishes semantic sufficiency of either singleton.",
+      "human_semantic_validation": false,
+      "answer_normalized_keys": [
+        "english",
+        "english",
+        "english"
+      ],
+      "raw_answer_sha256": [
+        "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06",
+        "926388c2e2830a5ec6c05c88cc2c29c6d6cb1209975dd3e44fef9c7e2ad49d5f",
+        "ba118bf7fc9c1aedc1edb28a0aa86e0b43b681f222af6616e13c43be87815b06"
+      ],
+      "answer_display": [
+        "English",
+        "English ",
+        "English"
+      ],
+      "source_url": "https://arxiv.org/abs/1804.07445",
+      "quoted_evidence_word_count": 12
+    },
+    {
+      "status": "revision-added exploratory presentation",
+      "role": "retained preselected scifact case",
+      "dataset": "scifact",
+      "id": "873:1180972",
+      "paper_or_document_id": "1180972",
+      "query": "Obesity is determined solely by environmental factors.",
+      "gold": [
+        [
+          3,
+          4
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ]
+      ],
+      "distinct_sets": [
+        [
+          3,
+          4
+        ],
+        [
+          6
+        ],
+        [
+          7
+        ]
+      ],
+      "ranking_prefix": [
+        7,
+        0,
+        1
+      ],
+      "completed_reference_sets": [
+        [
+          7
+        ]
+      ],
+      "method": "bm25",
+      "k": 3,
+      "scores": {
+        "hit": 1,
+        "complete": 1,
+        "union_complete": 0,
+        "union_recall": 0.25,
+        "max_recall": 1.0,
+        "max_f1": 0.5,
+        "union_f1": 0.2857142857142857,
+        "hit_without_complete": 0,
+        "complete_without_union": 1
+      },
+      "costs": {
+        "depth_complete": 1,
+        "depth_penalty": 7,
+        "depth_union": 8,
+        "tokens_complete": 33,
+        "tokens_penalty": 171,
+        "tokens_union": 204
+      },
+      "topology": {
+        "n_references": 3,
+        "n_distinct_sets": 3,
+        "n_minimal_sets": 3,
+        "union_size": 4,
+        "min_set_size": 1,
+        "max_set_size": 2,
+        "union_to_min_size": 4.0,
+        "has_alternatives": 1,
+        "has_compound_requirement": 0
+      },
+      "strict_normalized_answer_agreement": true,
+      "units": [
+        {
+          "index": 0,
+          "source_id": "1180972:sentence:0",
+          "text_sha256": "f31f995680ae4e47107dd3ee0e7ed91069fae3034765fe99ef1ed04b6e39af19",
+          "sentence_index": 0
+        },
+        {
+          "index": 1,
+          "source_id": "1180972:sentence:1",
+          "text_sha256": "38bfa0bbccf97538e838690cd53a7b2069e544d00bdec542b5c59a07e031fc7e",
+          "sentence_index": 1
+        },
+        {
+          "index": 3,
+          "source_id": "1180972:sentence:3",
+          "text_sha256": "5898cefc42242ba45751e08792602522ad4e9fd9af5ee6604e9d70c83d11f848",
+          "sentence_index": 3,
+          "short_verbatim_excerpt": "body mass index (kg/m2) significantly increased"
+        },
+        {
+          "index": 4,
+          "source_id": "1180972:sentence:4",
+          "text_sha256": "41d3e4683f5ff563671c08339ee3143e7f053a5f2fd8752e5776add160ae80ee",
+          "sentence_index": 4,
+          "short_verbatim_excerpt": "a steady but weaker increase"
+        },
+        {
+          "index": 6,
+          "source_id": "1180972:sentence:6",
+          "text_sha256": "d3cd476a8e2de1f74177c052e9f816a71c041f5210ac6b44ba6d00d89fcde504",
+          "sentence_index": 6,
+          "short_verbatim_excerpt": "a striking, significant increase"
+        },
+        {
+          "index": 7,
+          "source_id": "1180972:sentence:7",
+          "text_sha256": "54beba31d0bd5ed286663a5523a965b9532f24b3dfe76892e4e86176bc0371f0",
+          "sentence_index": 7,
+          "short_verbatim_excerpt": "influenced by genetic factors independent of sex"
+        }
+      ],
+      "source_unit_index_base": 0,
+      "interpretation": "The gold label is CONTRADICT and the family contains the two-sentence set {3,4} plus alternatives {6} and {7}. The retrieved prefix completes {7}, while {6} and {3,4} remain incomplete. This is an annotation-defined alternative-rationale control; completion is not a new semantic validation.",
+      "human_semantic_validation": false,
+      "label": "CONTRADICT",
+      "claim_id": 873,
+      "source_url": "https://github.com/allenai/scifact",
+      "source_record": "data/corpus.jsonl doc_id=1180972",
+      "quoted_evidence_word_count": 22
+    }
+  ]
+}

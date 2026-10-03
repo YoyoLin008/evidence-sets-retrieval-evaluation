@@ -1,0 +1,19 @@
+# Revision v3 full-cohort encoder plan
+
+Recorded before new retrieval effectiveness is calculated. All v1.0.0 effectiveness results and the prior result-blind Qwen timing estimate (2.94 hours, rejected under the then two-hour gate) are already known. The present revision removes that artificial time gate. This is a revision-added exploratory analysis, not original preregistration.
+
+## Model and scientific controls
+
+Use only Qwen/Qwen3-Embedding-0.6B, pinned revision `97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3`, already acquired and hash verified. Re-read current official model card on 2026-10-03: https://huggingface.co/Qwen/Qwen3-Embedding-0.6B . Preserve the full 1,084 original eligible items, candidate units, source IDs, lexical-token definition, evidence families, six original unit budgets and source-index ascending tie break. Queries alone receive `Instruct: Given a scientific question or claim, retrieve passages that provide evidence relevant to it\nQuery:`. Documents receive no prefix. Tokenizer: pinned model files, left padding, maximum 8,192 model tokens; last non-padding token pooling; L2 normalization; all 1,024 dimensions. Model tokens are distinct from the paper's lexical tokens. No new model selection based on retrieval outcomes.
+
+## Technical-only sample and backend choice
+
+Rebuild text SHA-256 keys and tokenizer lengths for every unique input. Sort by (length, hash), split into four equal-count length bins; choose the first four SHA-256 values plus the longest input per bin. No gold labels or retrieval outcomes enter this sample. Test CPU float32 and, if available, Apple MPS float32, both with SDPA attention, evaluation mode and disabled KV caching. Compare batched output with singleton output and CPU with MPS; require every vector finite, shape 1,024, norm within 1e-5 of one; cosine similarity at least 0.9999 and maximum coordinate difference at most 5e-4. Check repeated inference, input/output ordering, query/document prefixes and left/right-padding pooling fixtures. Use batch size at most four and maximum 4,096 padded tokens per batch (a longer singleton remains allowed up to 8,192). Include the longest input in the memory test. Prefer MPS only when it passes these checks and improves elapsed sample time; otherwise freeze CPU. Backend/dtype changes may occur only before retrieval-effectiveness calculations. No quantization or model alternative is planned.
+
+## Freeze and complete execution
+
+After the technical sample, write the selected configuration, environment, model/tokenizer hashes, source code hash, input hash and selection evidence to runtime_freeze.json. Its hash defines a new cache namespace separate from MiniLM and v2 timing. Encode every unique input with atomic per-input checkpoints; do not score until all embeddings exist. Record input role, lengths, truncation, all vector fingerprints, failures, runtime sessions and memory evidence. Any failure is retained; resume only when frozen code/config/input hashes match. Model/library limitations may require a documented technical repair and fresh freeze before effectiveness; never silently mix caches.
+
+## Fixed analysis scope
+
+Generate one full ranking for each original item, scored by cosine similarity with original tie-breaking. Save all 1,084 rankings and all six original budget points; report H/C/A, C-A, best-reference and union overlap scores, d_C/d_A and lexical-token completion costs. Use the original cluster structures and paired item-weighted cluster bootstrap settings for the main report. Finite comparisons are Qwen versus BM25 and MiniLM at the original primary budget (QASPER k=5; SciFact k=3), plus the original full budget grid descriptively. Preserve all results, including worse performance, smaller gaps, zero median cost and lack of rank reversal. Rank/permutation, universe, gold validity, A<=C<=H, single-distinct-set C=A, deterministic recomputation and frozen baseline hashes must pass.

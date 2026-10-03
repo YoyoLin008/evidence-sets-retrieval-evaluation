@@ -1,0 +1,22 @@
+{
+  "checked_utc": "2026-10-03T17:29:55.184417+00:00",
+  "passed": true,
+  "scope": "Current complete scientific model, current result manifests, original freeze, unchanged style, protected declarations and intended public tree; PDF visual/remote publication checks are separate.",
+  "original_freeze_files_checked": 6,
+  "historical_protected_files_checked": 42,
+  "unavailable_source_text_files": [],
+  "bibliography_records": 29,
+  "manuscript_abstract_generated_from_current_results": true,
+  "protected_AI_and_funding_exact": true,
+  "official_style_unchanged": true,
+  "all_display_tables_rectangular": true,
+  "public_text_files_scanned": 385,
+  "credential_or_personal_path_findings": [],
+  "complete_ranking_count": 6504,
+  "six_budget_scoring_points": 39024,
+  "limits": [
+    "No independent human semantic review",
+    "No cross-platform full-inference replication",
+    "No IRRJ submission performed"
+  ]
+}

@@ -1,17 +1,20 @@
 
 """Build the journal source and document model directly from verified numeric tables."""
 from pathlib import Path
-import json,re,hashlib,datetime
+import json,re,hashlib,datetime,argparse
 import pandas as pd,numpy as np
 ROOT=Path(__file__).resolve().parents[1]
-def main():
+def main(require_qwen=True):
+ from revision_v3_manuscript import Revision,source_denominators
+ revision=Revision(ROOT,require_qwen=require_qwen)
+ source_counts=source_denominators(ROOT)
  p=pd.read_csv(ROOT/"tables/primary.csv");c=pd.read_csv(ROOT/"tables/costs.csv")
  rob=pd.read_csv(ROOT/"tables/robustness.csv");joint=pd.read_csv(ROOT/"tables/joint_sensitivity.csv")
  flow=pd.read_csv(ROOT/"tables/cohort_flow.csv").set_index("dataset");structure=pd.read_csv(ROOT/"tables/structure.csv")
  topo=pd.read_csv(ROOT/"tables/topology.csv");one=pd.read_csv(ROOT/"tables/one_reference.csv")
  independent=pd.read_csv(ROOT/"tables/independent_bootstrap.csv")
  diag=json.loads((ROOT/"analysis/diagnostics.json").read_text())
- raw=[json.loads(s) for s in (ROOT/"outputs/main_v1/rankings.jsonl").read_text().splitlines()]
+ raw=[json.loads(s) for s in (ROOT/"reference_outputs/main_v1/rankings.jsonl").read_text().splitlines()]
  refs=json.loads((ROOT/"literature/verified_references.json").read_text())
  v={};provenance={}
  def add(key,value,source):v[key]=str(value);provenance[key]={"value":str(value),"source":source}
@@ -49,21 +52,18 @@ def main():
    point=next(x for x in record["points"] if x["k"]==(5 if d=="qasper" else 3))
    key="NoHitN" if not point["hit"] else "PartialN" if not point["complete"] else "OneN" if not point["union_complete"] else "AllN"
    m[key]+=1
-  for k,num in m.items():add(prefix+k,num,"outputs/main_v1/rankings.jsonl:BM25 primary taxonomy")
+  for k,num in m.items():add(prefix+k,num,"reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy")
  add("Qtotal",int(flow.loc["qasper","audit_units"]),"tables/cohort_flow.csv")
- qdata=json.loads((ROOT/"data/raw/qasper-test-and-evaluator-v0/qasper-test-v0.3.json").read_text())
- add("Qpapers",len(qdata),"QASPER test source")
+ assert source_counts["Qtotal"]==int(v["Qtotal"])
+ add("Qpapers",source_counts["Qpapers"],"revisions/v3/statistics/source_denominators.json:hash-verified QASPER source")
  add("Qexcluded",int(flow.loc["qasper","excluded"]),"tables/cohort_flow.csv")
  reason=json.loads(flow.loc["qasper","exclusion_reason_counts"])
  for k,source in [("Qfloat","any_float_evidence"),("Qempty","any_empty_evidence"),("Qunanswerable","any_unanswerable"),("Qunmapped","any_unmapped_text")]:add(k,reason[source],"tables/cohort_flow.csv")
- claims=[json.loads(s) for s in (ROOT/"data/raw/scifact/data/claims_dev.jsonl").read_text().splitlines()]
- add("Sclaims",len(claims),"SciFact dev source")
- add("Sevidenceclaims",sum(bool(x["evidence"]) for x in claims),"SciFact dev source")
- add("Snoevidence",sum(not x["evidence"] for x in claims),"SciFact dev source")
+ for key in ["Sclaims","Sevidenceclaims","Snoevidence"]:add(key,source_counts[key],"revisions/v3/statistics/source_denominators.json:hash-verified SciFact source")
  add("Smaxrefs",max(map(int,counts("scifact","n_references"))),"tables/structure.csv")
  freeze=json.loads((ROOT/"logs/main_freeze.json").read_text());add("FreezeTime",freeze["utc"].split(".")[0]+" UTC","logs/main_freeze.json")
- add("RankRecords",len(raw),"outputs/main_v1/rankings.jsonl")
- add("ScorePoints",sum(len(r["points"]) for r in raw),"outputs/main_v1/rankings.jsonl")
+ add("RankRecords",len(raw),"reference_outputs/main_v1/rankings.jsonl")
+ add("ScorePoints",sum(len(r["points"]) for r in raw),"reference_outputs/main_v1/rankings.jsonl")
  first=[json.loads(s) for s in (ROOT/"logs/main_jobs.jsonl").read_text().splitlines() if '"finish"' in s][0]
  add("RunSeconds",f"{first['seconds']:.1f}","logs/main_jobs.jsonl")
  for metric,short in [("complete","C"),("union_complete","A")]:
@@ -89,10 +89,11 @@ def main():
   for metric,short in [("complete","C"),("union_complete","A")]:
    a=row(tok,dataset=d,method="bm25",lexical_token_budget=budget,metric=metric)
    add(prefix+"Token"+short,f"{a['mean']*100:.1f}","tables/token_budget.csv")
+ revision.populate(add)
  blocks=json.loads((ROOT/"paper/article_blocks_1.json").read_text())+json.loads((ROOT/"paper/article_blocks_2.json").read_text())
  def replace(text):
   return re.sub(r"\{([A-Za-z][A-Za-z0-9]+)\}",lambda m:v[m[1]] if m[1] in v else m[0],text)
- abstract=replace("Evidence benchmarks often retain several annotated sets, yet a flat relevance list cannot express which units are jointly required or which sets are alternatives. We audit the consequences by rescoring fixed lexical and neural rankings on {Qn} eligible QASPER test questions and {Sn} SciFact development claim-abstract pairs. At prespecified BM25 budgets, completion of one original set versus the annotated union is {QC}% versus {QA}% in QASPER and {SC}% versus {SA}% in SciFact. The paired gaps are {QCA} percentage points (95% cluster interval {QCAlo}–{QCAhi}) and {SCA} points ({SCAlo}–{SCAhi}). Reaching the union requires a mean {QDepth} additional paragraphs or {SDepth} additional sentences, although the median penalty is zero in both corpora. Differences persist across lexical and neural rankings. A post-main QASPER check combining matching answer text with minimal-reference pruning reduces the gap to {QJointGap} points ({QJointLo}–{QJointHi}). No primary F1 ranking reversal is observed. The study quantifies annotation-completion sensitivity rather than semantic sufficiency or faults in the official evaluators. It supports retaining evidence-set membership and stating the intended aggregation target.")
+ abstract=revision.abstract(v)
  tables={}
  def estimate(a,scale=100,digits=1):
   return f"{a['mean']*scale:.{digits}f} [{a.lo*scale:.{digits}f}, {a.hi*scale:.{digits}f}]"
@@ -139,14 +140,21 @@ def main():
       "render_note":"The PDF reading copy is generated from this shared document model. The manuscript.tex source loads the separate unmodified official IRRJ style; official PDFs are exported from a clean directory."}
  from manuscript_revision_tables import enrich
  doc=enrich(doc)
+ doc=revision.enrich(doc)
+ doc["abstract"]=revision.abstract(v)
  for table in doc["tables"].values():
   table["caption"]=table["caption"].replace("SCIFACT","SciFact")
   table["rows"]=[[cell.replace("SCIFACT","SciFact") for cell in row] for row in table["rows"]]
  (ROOT/"paper/article.json").write_text(json.dumps(doc,ensure_ascii=False,indent=2)+"\n")
  supplement=dict(doc)
- supplement.update(title="Supplementary material: "+doc["title"],abstract="Supplementary distributions, implementation-audit details, encoder feasibility evidence, and computational provenance for the controlled evaluation study. No additional effectiveness experiment is reported.",blocks=[[kind,replace(value)] for kind,value in json.loads((ROOT/"paper/supplement_blocks.json").read_text())],references={k:refs[k] for k in ["alt2026","li2025","qwen"]})
+ supplement.update(title="Supplementary material: "+doc["title"],abstract=revision.supplement_abstract(),blocks=[[kind,replace(value)] for kind,value in json.loads((ROOT/"paper/supplement_blocks.json").read_text())],references={k:refs[k] for k in ["alt2026","li2025","qwen"]})
  (ROOT/"paper/supplement.json").write_text(json.dumps(supplement,ensure_ascii=False,indent=2)+"\n")
  (ROOT/"analysis/manuscript_numbers.json").write_text(json.dumps(provenance,indent=2)+"\n")
  (ROOT/"analysis/manuscript_values.json").write_text(json.dumps(v,indent=2)+"\n")
+ revision.save_provenance()
  print("Built manuscript model with",len(blocks),"blocks,",len(v),"source-linked values,",len(refs),"verified references.")
-if __name__=="__main__":main()
+if __name__=="__main__":
+ parser=argparse.ArgumentParser(description=__doc__)
+ parser.add_argument("--draft-without-qwen",action="store_true",help="Internal layout draft only; final builds require the complete validated encoder run")
+ args=parser.parse_args()
+ main(require_qwen=not args.draft_without_qwen)

@@ -1,0 +1,12 @@
+# Table 9. Exploratory annotation case: QASPER. Unit indices are zero-based in the released mapping; source-unit IDs use paper:paragraph:index or abstract:sentence:index. Brief excerpts are from the identified source. No new human semantic validation is claimed.
+
+| Field | Recorded example |
+| --- | --- |
+| Source IDs | 1909.12208; item 14fdc8087f2a62baea9d50c4aa3a3f8310b38d17 |
+| Question / claim | What supports the claim that enhancement in training is advisable as long as enhancement in test is at least as strong as in training? |
+| Answer / label | Paraphrase: an extensive experimental evaluation on difficult CHiME-5 dinner-party data.; Paraphrase: training enhancement improves accuracy provided it is no stronger than test enhancement. |
+| Evidence family | E1={17,22,23,34}; E2={23} |
+| Exact prefix | [34,1,2,23,3] at k=5 |
+| Completion | H=1, C=1, A=0; dC=4, dA=23 |
+| Brief unit excerpts | 17: “Experiments were performed using the CHiME-5 data.”; 22: “An extensive set of experiments”; 23: “the recognition accuracy improves monotonically”; 34: “CHiME-5 dinner party data” |
+| Interpretation | The singleton {23} is nested within {17,22,23,34}; completing the singleton makes C=1 before the full union is covered. The two recorded normalized answers differ. This illustrates annotation nesting and answer-text variation, not same-answer alternative sufficient evidence. |

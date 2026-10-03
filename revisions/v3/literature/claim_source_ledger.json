@@ -1,0 +1,80 @@
+{
+  "checked_utc": "2026-10-03T16:32:49.176265+00:00",
+  "cutoff_date": "2026-10-03",
+  "queries": [
+    "\"evidence sets\" \"union\" retrieval evaluation 2026",
+    "\"Minimal Sufficient Rank\" evidence ranking",
+    "\"grouped qrels\" OR \"alternative evidence sets\" evaluation",
+    "\"minimal evidence\" \"budget\" retrieval 2025 2026",
+    "retrieval \"evidence sets\" \"union\" 2026",
+    "\"sufficient evidence\" retrieval budget 2026",
+    "\"grouped qrels\" OR \"conjunctive evidence\" retrieval",
+    "\"alternative evidence sets\" evaluation"
+  ],
+  "last_four_domain_filter": [
+    "aclanthology.org",
+    "arxiv.org",
+    "openreview.net"
+  ],
+  "scope": "Eight bounded searches; no systematic-review or exhaustive novelty claim",
+  "full_original_reads": {
+    "alt2026": {
+      "pages": 23,
+      "pdf_sha256": "1abc8d8ff2eaae064e3cabd6fa8aa374f005bbaeed77d4b90cb5c873e02ee8e3",
+      "locations": [
+        "3.1",
+        "3.2",
+        "4",
+        "6.2",
+        "7",
+        "Appendix A",
+        "Appendix I"
+      ]
+    },
+    "li2025": {
+      "pages": 9,
+      "pdf_sha256": "5b70027f23d538f4e7a58dd48bda6cac1b7bd0385235988f01f19b852a0ca249",
+      "locations": [
+        "3.1",
+        "3.2",
+        "7",
+        "8",
+        "Limitations",
+        "Appendix A.3"
+      ]
+    }
+  },
+  "new_selected_method_reads": {
+    "rare2026": [
+      "3.2\u20133.4",
+      "5.1"
+    ],
+    "complement2026": [
+      "3",
+      "4"
+    ],
+    "rinse2026": [
+      "3",
+      "4"
+    ]
+  },
+  "claim_mapping": {
+    "C_and_dC_are_precedented": [
+      "alt2026:3\u20134,A"
+    ],
+    "group_union_and_budget_precedented": [
+      "li2025:8,Table3"
+    ],
+    "paired_fixed_ranking_C_A_increment": [
+      "revisions/v3/literature/novelty_matrix.md",
+      "original frozen results"
+    ],
+    "new_recent_boundary": [
+      "rare2026",
+      "complement2026",
+      "rinse2026"
+    ]
+  },
+  "excluded_search_hits": "Secondary aggregators, researcher indexes, Bayesian-network evidence, broad agent-policy papers without a closer representation/scoring intervention; no methods claim based on excluded snippets",
+  "bibliography_policy": "Original 26 verified records retained; three original-source records added; two new preprints explicitly identified. No claims of independent reproduction."
+}

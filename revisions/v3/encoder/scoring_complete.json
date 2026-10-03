@@ -1,0 +1,12 @@
+{
+  "counts": {
+    "qasper": 875,
+    "scifact": 209
+  },
+  "points": 6504,
+  "rankings": 1084,
+  "rankings_sha256": "95b84ba6f20e0fe91350a47d96ddb9201dbe4a1fd4ac7a3d8279f6a2e3c8ce23",
+  "stage": "revision_v3_exploratory",
+  "truncation_sha256": "85e40875445b147d319e213f93631166dab531aa443317a68c4831e6c69a27b9",
+  "utc": "2026-10-03T17:13:52.897892+00:00"
+}

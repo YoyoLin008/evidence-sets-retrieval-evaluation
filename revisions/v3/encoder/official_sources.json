@@ -1,0 +1,17 @@
+{
+  "access_date": "2026-10-03",
+  "model_card": {
+    "official_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B",
+    "pinned_raw_url": "https://huggingface.co/Qwen/Qwen3-Embedding-0.6B/raw/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3/README.md",
+    "local_sha256": "c34d9b7e5a267ad3fdd13227a253686bc90844ff4744a2a6a86c7c905e3d06f3",
+    "local_copy": "official_model_card.md",
+    "distribution": "Not redistributed in the public release. Retrieve from the pinned official URL to check this hash."
+  },
+  "revision_metadata_url": "https://huggingface.co/api/models/Qwen/Qwen3-Embedding-0.6B/revision/97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "method_reading_notes": [
+    "Official example applies a task instruction to queries, but no instruction to retrieval documents.",
+    "Official Transformers example uses left padding, last-token pooling, L2 normalization and a maximum input length of 8192 tokens.",
+    "The 0.6B model provides 1024-dimensional embeddings; its supported context length is 32K. The present experiment uses the fixed 8192-token cap.",
+    "The card specifies Transformers >=4.51.0; this experiment pins 4.57.1."
+  ]
+}

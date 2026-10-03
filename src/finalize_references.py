@@ -5,7 +5,7 @@ R=Path(__file__).resolve().parents[1]
 def main():
  refs=json.loads((R/'literature/verified_references.json').read_text());entries=[]
  for k,v in refs.items():
-  typ='article' if k in ['ev2r','bm25','saracevic'] else 'misc' if k in ['conjunctive','relational','qwen'] else 'inproceedings'
+  typ='article' if k in ['ev2r','bm25','saracevic'] else 'misc' if k in ['conjunctive','relational','qwen','complement2026','rinse2026'] else 'inproceedings'
   fields={'author':('{Qwen Team}' if k=='qwen' else ' and '.join(v['authors'])),'title':'{'+v['title']+'}','year':v['year'],('journal' if typ=='article' else 'booktitle' if typ=='inproceedings' else 'howpublished'):v['venue'],'url':v['url']}
   for f in ['doi','pages','volume']:
    if v.get(f):fields[f]=v[f]

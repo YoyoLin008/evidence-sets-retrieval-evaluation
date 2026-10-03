@@ -29,7 +29,7 @@
   ],
   [
     "p",
-    "Classification traces pinned input, conversion, output, and scoring roles where accessible. Grouped lists preserve relationships even without explicit set IDs. The classification ledger records commit/revision, code locations, source/output granularity, transformation, supporting evidence, and uncertainty. A second consistency pass rechecked these source records. It does not constitute independent human annotation. Six isolated conversion fixtures supplement static code and schema inspection; no complete downstream model pipeline was executed."
+    "Classification traces pinned input, conversion, output, and scoring roles where accessible. Grouped lists preserve relationships even without explicit set IDs. The classification ledger records commit/revision, code locations, source/output granularity, transformation, supporting evidence, and uncertainty. A second consistency pass rechecked these source records. It does not constitute independent human annotation. Six isolated conversion fixtures supplement static code and schema inspection; no complete downstream model pipeline was executed in that audit. The present revision separately executes a conversion-and-scoring path, without a downstream generator."
   ],
   [
     "p",
@@ -37,11 +37,15 @@
   ],
   [
     "p",
-    "For mteb/QASPER, comparison with source IDs finds exact raw-union targets for 576 of 1,335 matched questions. This prevents interpreting every released target as the controlled union intervention. The sscc-rag-paper fixture demonstrates relation loss when every evidence unit maps; real input can additionally lose unmatched evidence. These two failure modes are recorded separately."
+    "The historical mteb/QASPER comparison found exact raw-union targets for 576 of 1,335 matched source questions. That denominator is not the intersection with the 875-item main cohort. The revision case ledger keeps these scopes separate. This prevents interpreting every released target as the controlled union intervention. The sscc-rag-paper fixture demonstrates relation loss when every evidence unit maps; real input can additionally lose unmatched evidence. These two failure modes are recorded separately."
   ],
   [
     "p",
     "Final downstream counts in preserved/flat-only/both/other/undetermined order are QASPER 0/2/3/9/1 and SciFact 1/0/1/13/0. Unavailable and changed-task cases remain visible. These bounded counts do not estimate ecosystem prevalence."
+  ],
+  [
+    "table",
+    "ecosystem"
   ],
   [
     "subsection",
@@ -49,11 +53,11 @@
   ],
   [
     "p",
-    "The frozen error taxonomy contains {QNoHitN}/{QPartialN}/{QOneN}/{QAllN} QASPER items and {SNoHitN}/{SPartialN}/{SOneN}/{SAllN} SciFact pairs in the no-hit, fragment-only, one-set-without-union, and union-complete categories. Earlier examples were selected by SHA-256 order within each category, up to three per category. The panels in the main article present the first already-selected one-set-without-union case from each corpus; they are illustrations, not representative-sample estimates."
+    "The frozen error taxonomy contains {QNoHitN}/{QPartialN}/{QOneN}/{QAllN} QASPER items and {SNoHitN}/{SPartialN}/{SOneN}/{SAllN} SciFact pairs in the no-hit, fragment-only, one-set-without-union, and union-complete categories. Earlier examples were selected by SHA-256 order within each category, up to three per category. The historical panels below present the first already-selected one-set-without-union case from each corpus; they are illustrations, not representative-sample estimates."
   ],
   [
     "section",
-    "Result-blind modern-encoder feasibility gate"
+    "Historical timing gate and revision-added full encoder"
   ],
   [
     "p",
@@ -61,7 +65,7 @@
   ],
   [
     "p",
-    "The frozen gate sampled 32 inputs by SHA-256 from each equal-count tokenizer-length quartile, adding its longest input when absent. Timing 132 of 20,112 unique inputs projected 10,568.9 seconds (2.94 hours), exceeding the prespecified two-hour limit. Full inference was therefore omitted. No effectiveness outcomes were computed from the timing sample, and no substitute was tried. The conservative longest-input addition and local runtime conditions limit the precision of this projection; omission leaves the modern-retriever robustness question unresolved."
+    "The frozen gate sampled 32 inputs by SHA-256 from each equal-count tokenizer-length quartile, adding its longest input when absent. Timing 132 of 20,112 unique inputs projected 10,568.9 seconds (2.94 hours), exceeding the prespecified two-hour limit. Full inference was omitted in v1.0.0. No effectiveness outcomes were computed from the timing sample, and no substitute was tried. The conservative longest-input addition and local runtime conditions limit the precision of this projection; that historical omission was superseded by the revision-added full run after the author removed the artificial two-hour limit."
   ],
   [
     "p",
@@ -85,7 +89,7 @@
   ],
   [
     "p",
-    "QASPER test annotations were first deserialized after the freeze. SciFact development schema and availability had been inspected earlier, but rankings had not been scored. No retriever was tuned on either main cohort. The saved experiment contains {RankRecords} full rankings and {ScorePoints} unit-budget scoring points."
+    "QASPER test annotations were first deserialized after the freeze. SciFact development schema and availability had been inspected earlier, but rankings had not been scored. No retriever was tuned on either main cohort. The original saved experiment contains {RankRecords} full rankings and {ScorePoints} unit-budget scoring points."
   ],
   [
     "p",
@@ -101,7 +105,31 @@
   ],
   [
     "p",
-    "The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation; immutable release v1.0.0 is archived at https://doi.org/10.5281/zenodo.23122620."
+    "The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation; the present revision is v1.1.0 in the verified Zenodo concept family https://doi.org/10.5281/zenodo.23122619. Exact tag v1.1.0 identifies this frozen source and its PDFs; the version DOI is recorded on the release landing page after automatic archiving."
+  ],
+  [
+    "subsection",
+    "Neural truncation and token budgets"
+  ],
+  [
+    "p",
+    "No query is truncated by MiniLM. At least one candidate unit is truncated in {QAnyTrunc} QASPER items, and annotated evidence is truncated in {QGoldTrunc}. SciFact has one item with a truncated candidate sentence and none with truncated gold evidence. Excluding QASPER items with truncated gold leaves {QNoTruncN} items; the MiniLM union gap remains {QNoTruncGap} points. This sensitivity does not remove all effects of truncating nongold candidates, which can still influence rankings."
+  ],
+  [
+    "p",
+    "Supplementary token budgets admit complete prefixes without skipping an oversized next unit; this can yield an empty prefix. BM25 at 512 lexical tokens gives C={QTokenC}% and A={QTokenA}% in QASPER; at 64 tokens it gives C={STokenC}% and A={STokenA}% in SciFact. These are descriptive examples. SciFact saturates at 1024 tokens; QASPER remains incomplete at 2048. Equal token budgets do not equalize the tasks."
+  ],
+  [
+    "subsection",
+    "Numerical verification details"
+  ],
+  [
+    "p",
+    "A separate arithmetic verifier recomputed all {RankRecords} rankings' costs and all {ScorePoints} scoring points without calling the production scoring function. It reconstructed every included QASPER reference from the original source, checked shared SciFact claims/documents against cluster IDs, and verified all frozen input and code hashes. The separately implemented direct-resampling check reproduced primary interval endpoints within {BootstrapMaxDiff} percentage points of the production bootstrap using a different seed."
+  ],
+  [
+    "p",
+    "Additional automated checks cover paired pruning, weighted subgroup reconstruction, threshold inversion, saturation, unreachable bootstrap replicates, full new-model rankings and encoder configuration, real converter mappings, and parity with the actual scorer. Tests and rerun logs are included. These checks are not independent replication or human peer review."
   ],
   [
     "section",
@@ -114,6 +142,86 @@
   [
     "p",
     "Alt et al. (2026) and Li et al. (2025) were read in full for the comparison of sufficient-set ranking and group-versus-union evaluation [[alt2026;li2025]]. The claim-to-source ledger distinguishes bibliographic verification from methodological reading and records source-access limitations. Cha et al. and Nguy are cited as preprints."
+  ],
+  [
+    "section",
+    "Revision-added statistics and executed path"
+  ],
+  [
+    "p",
+    "{RevisionTiming}"
+  ],
+  [
+    "table",
+    "pruning_v3"
+  ],
+  [
+    "table",
+    "pruning_topology_v3"
+  ],
+  [
+    "p",
+    "{PruningDetails}"
+  ],
+  [
+    "table",
+    "budgets_tokens_v3"
+  ],
+  [
+    "table",
+    "affected_v3"
+  ],
+  [
+    "p",
+    "{BudgetDetails}"
+  ],
+  [
+    "table",
+    "qwen_contrasts_v3"
+  ],
+  [
+    "p",
+    "{QwenTechnicalDetails}"
+  ],
+  [
+    "table",
+    "pipeline_v3"
+  ],
+  [
+    "p",
+    "{PipelineSupplement}"
+  ],
+  [
+    "section",
+    "Readable source examples"
+  ],
+  [
+    "table",
+    "case_agreement_v3"
+  ],
+  [
+    "table",
+    "case_qasper"
+  ],
+  [
+    "table",
+    "case_scifact"
+  ],
+  [
+    "p",
+    "{ExampleDetails}"
+  ],
+  [
+    "section",
+    "Topology costs and original paired gaps"
+  ],
+  [
+    "table",
+    "topology_costs"
+  ],
+  [
+    "figure",
+    "figure2_paired_gaps"
   ],
   [
     "section",

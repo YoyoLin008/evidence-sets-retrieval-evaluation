@@ -1,0 +1,23 @@
+{
+  "rare2026": {
+    "url": "https://aclanthology.org/2026.acl-long.923.pdf",
+    "sha256": "13dedadcffcb291377788ac08d55adc77df00e09e05ade623d9fd210ad377c63",
+    "bytes": 2338405,
+    "retrieved_utc": "2026-10-03T16:25:40.860546+00:00",
+    "redistributed": false
+  },
+  "complement2026": {
+    "url": "https://arxiv.org/html/2609.20050v1",
+    "sha256": "4d81d488d01b846680f8b30dd3036c842001c8176f1e2d4ca333fa265d07113d",
+    "bytes": 450334,
+    "retrieved_utc": "2026-10-03T16:25:41.302770+00:00",
+    "redistributed": false
+  },
+  "rinse2026": {
+    "url": "https://arxiv.org/html/2609.37469v1",
+    "sha256": "e8a95c8bdaeca46eddf8a41b46f523f62cfad60cfd1110e37c11d58808646ba5",
+    "bytes": 484553,
+    "retrieved_utc": "2026-10-03T16:25:41.694863+00:00",
+    "redistributed": false
+  }
+}

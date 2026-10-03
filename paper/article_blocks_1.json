@@ -13,15 +13,15 @@
   ],
   [
     "p",
-    "We measure that difference by holding candidates, eligibility, and rankings fixed, then comparing any annotated hit (H), completion of at least one original set (C), and completion of the annotated union (A). The study includes {Qn} QASPER test questions and {Sn} SciFact development claim–abstract pairs, evaluated with three retrieval methods and two controls. It isolates scoring and representation from improvements to retrieval."
+    "We hold candidates, eligibility, and rankings fixed and compare any annotated hit (H), completion of one original set (C), and completion of the annotated union (A). The frozen analysis covers {Qn} QASPER questions and {Sn} SciFact claim–abstract pairs with three retrievers and two controls. Revision-added exploratory analyses trace a real conversion and scorer, invert completion curves into uniform budgets, and add Qwen3-Embedding-0.6B on the same cohorts."
   ],
   [
     "p",
-    "At the prespecified BM25 budgets, C and A are {QC}% and {QA}% for QASPER, and {SC}% and {SA}% for SciFact. The paired gaps are {QCA} and {SCA} percentage points. Mean additional union-completion depth is positive, but its median is zero in both corpora. No primary F1 ranking reversal occurs. A post-main QASPER check combining answer agreement and minimal-reference pruning reduces its gap to {QJointGap} points."
+    "At the prespecified BM25 budgets, the C−A gaps are {QCA} points for QASPER and {SCA} for SciFact. Both extra-depth medians are zero, and original primary F1 ordering is stable. These adverse findings limit the interpretation of positive average costs."
   ],
   [
     "p",
-    "The contribution is the paired measurement of C−A and additional union-completion cost under fixed rankings, together with their decomposition by annotation topology. Earlier work already studies sufficient-set ranking and minimal evidence groups [[alt2026;li2025]]. We do not introduce complete-set relevance, depth to sufficient evidence, or group-versus-union comparison. An exploratory bounded implementation audit supplies concrete conversion examples without estimating prevalence. The official QASPER and SciFact evaluators preserve alternatives for their relevant objectives."
+    "The contribution is an empirical measurement audit: paired completion and prefix-cost differences, their distribution and topology, and the budget consequences of choosing an annotation target. Complete-set retrieval, depth to sufficient evidence, and group-versus-union comparison have precedents [[alt2026;li2025]]. The executed conversion-and-scoring path connects this distinction to an actual flat export, without treating flat qrels as union completion or indicting the official evaluators, which preserve alternatives for their stated objectives."
   ],
   [
     "section",
@@ -77,15 +77,15 @@
   ],
   [
     "p",
-    "Alt et al. represent multiple gold evidence sets and treat a prefix as sufficient when it contains a complete accepted set. Their Minimal Sufficient Rank measures the earliest sufficient prefix, and they study evidence ordering and reading effort [[alt2026]]. Under their gold-set completion criterion, that rank is our dC. Their intervention improves ordering to reach sufficient evidence earlier; ours holds ordering fixed and compares C with A at the same prefixes. Thus complete-set retrieval and depth to one accepted set are precedents, not contributions claimed here."
+    "Alt et al. define sufficient ranked prefixes and Minimal Sufficient Rank (MSR), then compare evidence-ranking methods and user reading effort [[alt2026]]. Under their gold-set completion criterion, MSR equals our dC. Their normalized reciprocal rank is based on MSR minus ideal MSR plus one; we do not introduce that stopping-depth concept. Our intervention instead holds every ranking fixed and contrasts one-reference with union completion."
   ],
   [
     "p",
-    "Li et al. identify minimal evidence groups, discuss union-based annotation labels, and compare group-based and union-based claim reconstruction under word and sentence budgets [[li2025]]. The general contrast between an evidence group and its union is therefore also established. Our narrower measurement pairs C and A on every unchanged ranking in two scientific cohorts, decomposes the observed gaps into disjoint annotation topologies, and quantifies the additional depth and tokens needed to complete the union. These costs describe annotated prefixes, not demonstrated savings in human effort."
+    "Li et al. identify minimal evidence groups, score exact and best soft group matches, and compare group and union inputs for claim reconstruction under word and sentence budgets [[li2025]]. Thus group-versus-union and budget comparisons are established. Our narrower addition is the paired C−A and dA−dC distribution in two scientific cohorts, its annotation-topology decomposition, and uniform completion thresholds. We measure annotated prefixes rather than user effort or generation savings."
   ],
   [
     "p",
-    "Recent preprints study conjunctive cross-page evidence and budget-constrained support recovery [[conjunctive;relational]]. The literature ledger records a final targeted search and full reading of the two close published precedents above. This supports a bounded positioning claim, not an exhaustive novelty claim; search scope and source-access limits are documented in the supplement."
+    "Recent work further narrows the novelty boundary. RARE tracks interchangeable information across passages and evaluates redundancy-aware coverage and complete recall [[rare2026]]. The Missing Complement uses grouped requirements and alternative complete branches for state-conditioned coding-agent retrieval; RINSE scores evidence sufficiency before generation using paired support contrasts [[complement2026;rinse2026]]. These two September 2026 works are preprints. Together with conjunctive and budget-constrained retrieval studies [[conjunctive;relational]], they establish a broad set-oriented literature; our claim is this controlled representation audit, not the invention of set coverage."
   ],
   [
     "table",
@@ -129,7 +129,7 @@
   ],
   [
     "p",
-    "Duplicate sets do not change H, C, or A. Removing a strict superset of another reference preserves C but can shrink U, changing H and A. We call a set minimal within the observed family if no other observed reference is its strict subset. This is an order-theoretic property of annotations, not a semantic assertion that every sentence in the remaining set is necessary."
+    "Duplicates do not change H, C, or A. Pruning strict supersets preserves C and dC, shrinks or preserves U, can only increase A and decrease H, and cannot increase C−A. These properties do not extend to best-reference F1: with references {a} and {a,b} and prefix {a,b}, pruning the latter changes best-reference F1 from 1 to 2/3. “Minimal” means inclusion-minimal within the observed family, not semantically necessary."
   ],
   [
     "subsection",
@@ -145,7 +145,19 @@
   ],
   [
     "p",
-    "Under Alt et al.’s gold-set criterion, dC is Minimal Sufficient Rank [[alt2026]]. Here the contrast of interest is dA−dC. Its token counterpart subtracts cumulative lexical-token costs at the two depths. These are annotation-defined oracle stopping depths, unavailable to a deployed retriever; they are not measured inference charges or avoidable real-world costs."
+    "Under the gold-set criterion, dC is MSR [[alt2026]]. We contrast dA−dC and cumulative lexical-token costs at these depths. These oracle stopping depths require the annotations and are not measured reading time or inference charges."
+  ],
+  [
+    "p",
+    "For a target proportion tau, a uniform population budget is the smallest integer k at which the item-weighted completion rate reaches tau:"
+  ],
+  [
+    "eq",
+    "B_X(\\tau)=\\min\\{k:N^{-1}\\sum_i X_i(k)\\geq\\tau\\},\\quad X\\in\\{C,A\\},\\quad\\tau\\in\\{0.50,0.75,0.90\\}."
+  ],
+  [
+    "p",
+    "This is a quantile of completion depths, not the mean of individual dA−dC. We evaluate all available integer depths, retaining saturated documents in the denominator. Token thresholds use cumulative lexical tokens under the same complete-prefix rule. Paired cluster resampling carries both targets through each inverse; unreachable values remain explicit rather than discarded or extrapolated."
   ],
   [
     "p",
@@ -201,7 +213,7 @@
   ],
   [
     "p",
-    "A disjoint pilot contained 88 eligible QASPER development questions and 47 SciFact training items. Inclusion rules, metrics, models, and analysis were then frozen locally; this was not public preregistration. No retriever was tuned on either main cohort. The saved experiment contains {RankRecords} full rankings and {ScorePoints} unit-budget scoring points. Source-access chronology and computational provenance are recorded in the supplement."
+    "A disjoint pilot contained 88 QASPER development questions and 47 SciFact training items. The primary design was then frozen locally, not publicly preregistered. No retriever was tuned on either main cohort. The original experiment contains {RankRecords} full rankings and {ScorePoints} unit-budget points. Earlier post-main sensitivities and the present revision-added analyses are stored separately; their plans acknowledge the already observed primary results."
   ],
   [
     "subsection",
@@ -213,7 +225,11 @@
   ],
   [
     "p",
-    "The neural method is sentence-transformers/all-MiniLM-L6-v2, with the official model revision and weights pinned in the supplement. It uses ONNX weights, attention-mask mean pooling, L2 normalization, and cosine similarity, truncating inputs to 256 wordpieces including special tokens. CPU inference uses batches of 16 and two intra-operation threads. MiniLM is a robustness instrument, not a state-of-the-art or uncontaminated scientific-retrieval benchmark; scientific pretraining overlap is possible."
+    "The original neural retriever is sentence-transformers/all-MiniLM-L6-v2, pinned to official weights, using ONNX inference, attention-mask mean pooling, L2 normalization, cosine similarity, and a 256-wordpiece limit including special tokens. CPU batches contain 16 inputs with two intra-operation threads. It is a robustness instrument, not an uncontaminated scientific-retrieval benchmark."
+  ],
+  [
+    "p",
+    "{QwenMethods}"
   ],
   [
     "p",
@@ -233,7 +249,7 @@
   ],
   [
     "p",
-    "The main sample is a census of eligible benchmark items, not a probability sample of scientific information needs. Intervals quantify stability under resampling the observed paper or connected-component structure. They do not capture annotation error, benchmark selection, or population representativeness. We report no p-values for deterministic inequalities. Exploratory method contrasts use pointwise intervals without multiplicity-adjusted significance claims, and no statistically established ranking reversal is asserted."
+    "These cohorts are censuses of eligible benchmark items, not probability samples of scientific information needs. Intervals describe stability under observed-cluster resampling, excluding annotation and selection uncertainty. Exploratory contrasts use pointwise intervals without multiplicity-adjusted significance claims."
   ],
   [
     "subsection",
@@ -245,6 +261,6 @@
   ],
   [
     "p",
-    "The joint answer-agreement/minimal-reference check, direct-bootstrap validation, disjoint topology decomposition, implementation sample, and result-blind modern-encoder timing gate are post-main additions. Their analyses are explicitly exploratory. They do not alter the frozen cohorts, rankings, budgets, or primary analyses."
+    "The joint answer-agreement/pruning sensitivity, topology decomposition, implementation sample, and original result-blind Qwen timing gate were post-main additions reported in v1.0.0. The present revision adds the paired subgroup/pruning table, uniform-budget analysis, executed conversion/scoring path, a deterministic agreement example, and complete Qwen rankings. All are exploratory and were planned with the earlier results known. Original cohorts, primary rankings, budgets, and frozen outputs remain unchanged."
   ]
 ]

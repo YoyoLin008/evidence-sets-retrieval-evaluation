@@ -1,0 +1,9 @@
+{
+  "command": ".venv/bin/python src/revision_v3_pipeline.py --summarize-saved",
+  "stdout": "{\"status\": \"statistics rebuilt from public saved per-query results\", \"rows\": 4330, \"queries\": 866}\n",
+  "byte_identical_statistics": true,
+  "sha256": {
+    "score_summary.csv": "7b68c65aeac21530054714fec2b9cabc9f08216f855fdbadbd45ff696699a9d0",
+    "paired_contrasts.csv": "03a878cb28ee49605dda51d317feecb02c6bf4a8db649f9051298286073ec928"
+  }
+}

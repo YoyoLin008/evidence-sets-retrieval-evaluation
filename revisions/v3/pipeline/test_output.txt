@@ -1,0 +1,12 @@
+..........                                                               [100%]
+=============================== warnings summary ===============================
+tests/test_revision_v3_pipeline.py: 13 warnings
+  <repository>/revisions/v3/pipeline/runtime/lib/python3.12/site-packages/ir_measures/util.py:317: DeprecationWarning: ast.Num is deprecated and will be removed in Python 3.14; use ast.Constant instead
+    if isinstance(node, ast.Num):
+
+tests/test_revision_v3_pipeline.py: 12 warnings
+  <repository>/revisions/v3/pipeline/runtime/lib/python3.12/site-packages/ir_measures/util.py:318: DeprecationWarning: Attribute n is deprecated and will be removed in Python 3.14; use value instead
+    return node.n
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+10 passed, 25 warnings in 1.16s

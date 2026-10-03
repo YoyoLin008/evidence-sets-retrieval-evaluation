@@ -1,0 +1,59 @@
+{
+  "status": "complete integration",
+  "dependencies_sha256": {
+    "revisions/v3/statistics/validation.json": "ecaec95b71750927e3ecd222c8ae5920b4eaecb52c20b76efc15c73a162ac3a6",
+    "revisions/v3/statistics/manifest.json": "1e42f6e3d6e151f51297b119a05336ec83d3388e3646e47c5a6ebdd2c474877f",
+    "revisions/v3/pipeline/manifest.json": "22d29f0d57a14c001aa9024928fa13bdf35cad022c34f56a073d2bf3b6ac1ca1",
+    "revisions/v3/pipeline/report.json": "21ce3d8603cf7d83232d118518c54d2d0bbfcd9e882dab420ee36a4403395326",
+    "revisions/v3/examples/panels.json": "e1dc2ca5ad2f6f7293c10cf24d4e6f792b7e7a2e2f97a21fb2457feaf5270855",
+    "revisions/v3/encoder/runtime_freeze.json": "17ee328d3a079c9186d1aea87619d6bb4fb6755f00961b2b6d86047e592d77d0",
+    "revisions/v3/encoder/public_technical_summary.json": "c15f008b162dfa1c08bd971448c419459e8a660a12eb550ae078ba4e3cd71b32",
+    "revisions/v3/encoder/scoring_complete.json": "cace0771b86ed6989ee0f2b41c7993c90cdc23d29000cf5d0a8e4b8e1db6f99d",
+    "revisions/v3/encoder/inference_complete.json": "1579bb889b835a8ce0529b136a65484b8ac29ce761a02a85840eb385adc35244",
+    "revisions/v3/encoder/validation.json": "74497b4883139d9841d8c534c7cb5de36ed6714c32b695c41703a3e4a107aead",
+    "revisions/v3/statistics/agreement_pruning.csv": "b98963f2dfdb08a047c0cf5bc41273f7187d35ac45243f11aaa110160bfbd15e",
+    "revisions/v3/statistics/budget_thresholds.csv": "52a3e5090bd4803dad0cbf267b84fc918ed07f7af6278c5362e518995db496a0",
+    "revisions/v3/statistics/cost_distributions.csv": "135b22e4de05fa07976509a6b60cb76bf4e44962536f4c8acf03fc5054904c10",
+    "revisions/v3/statistics/costs.csv": "db1a9a2ac857566e935471892e6d9295c4a1c80c56de955c081c32cca362eb0f",
+    "revisions/v3/statistics/primary.csv": "5788f705a2dcb66a0be6a39d9abc217f7daaba4ccbbea6c7469cbc968d78855e",
+    "revisions/v3/statistics/method_contrasts.csv": "41b3d16f250d7dec593a365e0857f47cb137b2bb7e155fd813cc9b56f705fb36",
+    "revisions/v3/pipeline/score_summary.csv": "7b68c65aeac21530054714fec2b9cabc9f08216f855fdbadbd45ff696699a9d0",
+    "revisions/v3/pipeline/paired_contrasts.csv": "03a878cb28ee49605dda51d317feecb02c6bf4a8db649f9051298286073ec928",
+    "revisions/v3/pipeline/main_cohort_alignment.json": "977f8be445ff38b64e11e08869e5c93894935a98982c7b1233fe15849f4579e5",
+    "revisions/v3/encoder/truncation.jsonl": "85e40875445b147d319e213f93631166dab531aa443317a68c4831e6c69a27b9"
+  },
+  "tables": {
+    "pruning_v3": [
+      "revisions/v3/statistics/agreement_pruning.csv"
+    ],
+    "pruning_topology_v3": [
+      "revisions/v3/statistics/agreement_pruning.csv"
+    ],
+    "budgets_v3": [
+      "revisions/v3/statistics/budget_thresholds.csv"
+    ],
+    "budgets_tokens_v3": [
+      "revisions/v3/statistics/budget_thresholds.csv"
+    ],
+    "affected_v3": [
+      "revisions/v3/statistics/cost_distributions.csv"
+    ],
+    "pipeline_v3": [
+      "revisions/v3/pipeline/score_summary.csv",
+      "revisions/v3/pipeline/report.json"
+    ],
+    "case_qasper": [
+      "revisions/v3/examples/panels.json"
+    ],
+    "case_agreement_v3": [
+      "revisions/v3/examples/panels.json"
+    ],
+    "case_scifact": [
+      "revisions/v3/examples/panels.json"
+    ],
+    "qwen_contrasts_v3": [
+      "revisions/v3/statistics/method_contrasts.csv"
+    ]
+  },
+  "encoder_effectiveness_gate": "complete validated 1084-row run only; no partial outcomes"
+}

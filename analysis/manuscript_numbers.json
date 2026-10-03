@@ -133,19 +133,19 @@
   },
   "QNoHitN": {
     "value": "306",
-    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+    "source": "reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
   },
   "QPartialN": {
     "value": "123",
-    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+    "source": "reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
   },
   "QOneN": {
     "value": "156",
-    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+    "source": "reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
   },
   "QAllN": {
     "value": "290",
-    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+    "source": "reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
   },
   "SH": {
     "value": "83.7",
@@ -281,19 +281,19 @@
   },
   "SNoHitN": {
     "value": "34",
-    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+    "source": "reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
   },
   "SPartialN": {
     "value": "9",
-    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+    "source": "reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
   },
   "SOneN": {
     "value": "58",
-    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+    "source": "reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
   },
   "SAllN": {
     "value": "108",
-    "source": "outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
+    "source": "reference_outputs/main_v1/rankings.jsonl:BM25 primary taxonomy"
   },
   "Qtotal": {
     "value": "1451",
@@ -301,7 +301,7 @@
   },
   "Qpapers": {
     "value": "416",
-    "source": "QASPER test source"
+    "source": "revisions/v3/statistics/source_denominators.json:hash-verified QASPER source"
   },
   "Qexcluded": {
     "value": "576",
@@ -325,15 +325,15 @@
   },
   "Sclaims": {
     "value": "300",
-    "source": "SciFact dev source"
+    "source": "revisions/v3/statistics/source_denominators.json:hash-verified SciFact source"
   },
   "Sevidenceclaims": {
     "value": "188",
-    "source": "SciFact dev source"
+    "source": "revisions/v3/statistics/source_denominators.json:hash-verified SciFact source"
   },
   "Snoevidence": {
     "value": "112",
-    "source": "SciFact dev source"
+    "source": "revisions/v3/statistics/source_denominators.json:hash-verified SciFact source"
   },
   "Smaxrefs": {
     "value": "6",
@@ -345,11 +345,11 @@
   },
   "RankRecords": {
     "value": "5420",
-    "source": "outputs/main_v1/rankings.jsonl"
+    "source": "reference_outputs/main_v1/rankings.jsonl"
   },
   "ScorePoints": {
     "value": "32520",
-    "source": "outputs/main_v1/rankings.jsonl"
+    "source": "reference_outputs/main_v1/rankings.jsonl"
   },
   "RunSeconds": {
     "value": "626.5",
@@ -434,5 +434,73 @@
   "STokenA": {
     "value": "37.3",
     "source": "tables/token_budget.csv"
+  },
+  "BudgetResults": {
+    "value": "At 75% completion, BM25 requires 14 QASPER paragraphs under C and 27 under A: a uniform-budget difference of 13 [10, 15] paragraphs. SciFact requires 3 versus 6 sentences, a difference of 3 [2, 4]. The table retains all three prespecified thresholds; every point estimate and bootstrap threshold is attained.",
+    "source": "revisions/v3/statistics/budget_thresholds.csv"
+  },
+  "BudgetInterpretation": {
+    "value": "These exact minima invert the full empirical completion curves: every possible integer prefix depth is represented by its completion events. They describe one common budget for the population, whereas mean extra depth averages different item-specific stopping points. Short documents stay in the denominator after saturation. The supplementary lexical-token thresholds retain the same complete-prefix rule; neither statistic measures human reading time or deployed inference cost.",
+    "source": "revisions/v3/statistics/protocol.md; budget_thresholds.csv"
+  },
+  "PruningDetails": {
+    "value": "The three rows use the original exact normalized-answer Boolean. Questions partition into agreement and its complement, but 119 papers appear in both; no independent-groups comparison is inferred. Each within-row pruning difference uses the same item rankings and paired paper-cluster draws. The four structure categories remain mutually exclusive and exhaustive; their counts below describe the original annotations. Pruning preserves C and dC but may change best-reference F1, as the counterexample in the main text shows.",
+    "source": "revisions/v3/statistics/validation.json; agreement_pruning.csv"
+  },
+  "BudgetDetails": {
+    "value": "Thresholds use 10,000 paired resamples of the original paper clusters or connected SciFact components, seed 20261002, with item-weighted denominators. C and A budgets and their difference are recalculated inside each draw. Percentile endpoints use linear interpolation and may be fractional for this discrete statistic. Unattained thresholds remain infinite and are counted rather than dropped; none occurred here. Positive-cost distributions condition on affected items and their represented clusters. All-method unit/token thresholds, quantiles, zero shares, and pointwise comparisons at all six original k values are retained in the machine-readable tables.",
+    "source": "revisions/v3/statistics/protocol.md; budget_thresholds.csv; cost_distributions.csv"
+  },
+  "AgreeExampleCandidates": {
+    "value": "16",
+    "source": "revisions/v3/examples/panels.json"
+  },
+  "ExampleDetails": {
+    "value": "The new panel uses the first SHA-256-ranked eligible ID without substitution. All original outcomes were already visible, and C=1/A=0 was a selection criterion. The annotation answers agree exactly, but paragraph 20 describes the data while paragraph 24 describes a fluency criterion; the difference in directness is retained. This is an annotation-defined illustration, not a human-validated rate of semantic sufficiency. Source positions, unit hashes, selection candidates, brief excerpts, and original answer metadata are retained in the example ledger.",
+    "source": "revisions/v3/examples/panels.json"
+  },
+  "PipelineMethods": {
+    "value": "We selected the already-audited sscc-rag-paper converter and scorer under a written bounded rule. The pinned commit is da7e8fb13f29. Its unchanged native development loader exported 888 queries; a data-supply wrapper reproduced that output exactly, then supplied the frozen test data to the same conversion logic. The actual JSONL export/reload and ir_measures scorer were executed. Scoring maps the original normalized body-text units to canonical exported IDs and reuses the five frozen rankings, rather than reproducing the upstream pooled retrieval or generator.",
+    "source": "revisions/v3/pipeline/report.json"
+  },
+  "PipelineResults": {
+    "value": "All 875 eligible questions were exported. Under the explicit normalized-text mapping and candidate restriction, 866 questions in 364 papers have exact source-union/export-membership equality; 9 fail because strip-only matching loses evidence. At k=5 on the aligned subset, BM25 gives C=51.4%, A=33.5%, and a gap of 17.9 [15.4, 20.5] points. Actual Recall@5 is 46.4% and nDCG@10 is 42.3%; Recall@5 equals union overlap recall, and Success@5 equals H. Neither is union completion.",
+    "source": "revisions/v3/pipeline/report.json; score_summary.csv"
+  },
+  "PipelineInterpretation": {
+    "value": "MiniLM\u2019s completion advantage over BM25 is 3.70 points under C and 0.23 under A on this subset. The best-reference and union-F1 method orderings remain stable. The upstream scorer explicitly evaluates conventional relevance objectives; no mismatch between its stated objective and implementation is established. The case demonstrates lost information for recovering C and sensitivity of an added completion comparison, within a controlled candidate restriction. It does not show that ordinary relevance metrics should be replaced by A or C.",
+    "source": "revisions/v3/pipeline/report.json; paired_contrasts.csv"
+  },
+  "PipelineSupplement": {
+    "value": "The test export contains 1,309 queries and 20,233 paragraph IDs from 1,451 source questions. The raw flow differs from the strict main-cohort intersection. The aligned 866-question subset includes 464 items with multiple distinct source sets and 402 with one set. 90 aligned questions have multiple export candidates sharing normalized text (4 involving gold); 8 have a body unit mapped to an identical normalized abstract candidate (1 involving gold). IDs follow the first normalized-text match. The ledger retains these ambiguities; original body-text units and ranking order remain fixed, while abstract-only text and other papers are excluded. Thus exact membership equality is conditional on the stated text mapping; it is not an assertion that the entire native task underwent pure grouping loss. Every original item has a candidate-scope change relative to the upstream pooled task. The 9 membership failures and all IDs remain visible. Direct formulas match the actual scorer within 2.2e-16. The historical MTEB count 576/1,335 is not used as this intersection\u2019s denominator.",
+    "source": "revisions/v3/pipeline/report.json; main_cohort_alignment.json"
+  },
+  "QwenMethods": {
+    "value": "The revision adds Qwen3-Embedding-0.6B [[qwen]]. Its fixed revision is 97b0c614be4d, selected before its effectiveness was observed. It uses float32 CPU inference, last nonpadding token pooling with attention masks, left padding, L2 normalization, 1,024 dimensions, and an 8,192-model-token limit. Queries receive one fixed scientific-evidence instruction; documents do not. Original candidates, index-based tie breaking, budgets, and cluster labels are retained.",
+    "source": "revisions/v3/encoder/runtime_freeze.json"
+  },
+  "RevisionTiming": {
+    "value": "The new subgroup/pruning, uniform-budget, converter/scorer, example, and full-encoder plans were recorded after the v1.0.0 findings were known. They are revision-added exploratory work, not an extension of the original preregistration. The historical joint sensitivity and two-hour timing decision remain archived; the new complete encoder run uses a separately frozen configuration and cache.",
+    "source": "revisions/v3/plan.md; statistics/protocol.md; encoder/runtime_freeze.json"
+  },
+  "QwenResults": {
+    "value": "Complete Qwen3 rankings yield QASPER H/C/A=78.2/65.0/41.9%, C\u2212A=23.1 [20.2, 26.0] points, and mean extra depth 5.89 (median 0); SciFact H/C/A=90.4/86.6/59.3%, C\u2212A=27.3 [20.9, 33.9] points, and mean extra depth 1.61 (median 0). The revision contains 6,504 full rankings and 39,024 points across the six original unit budgets when the historical and new methods are counted together; the original block remains unchanged.",
+    "source": "revisions/v3/statistics/primary.csv; costs.csv; validation.json"
+  },
+  "QwenComparisons": {
+    "value": "QASPER Qwen3\u2212BM25 differences are 14.1 points under C and 8.8 under A; SciFact Qwen3\u2212BM25 differences are 7.2 points under C and 7.7 under A. The fixed revision-added exploratory comparisons show no new primary F1 ranking reversal. The supplement reports every primary paired comparison against BM25 and MiniLM; all six budgets and all fixed metrics remain in the machine-readable results. These are exploratory pointwise comparisons.",
+    "source": "revisions/v3/statistics/method_contrasts.csv"
+  },
+  "QwenLimitations": {
+    "value": "The single modern encoder is a robustness check, not a model survey or deployment evaluation. Its full audit records 0 truncated queries, 0 items with truncated candidates, and 0 with truncated annotated evidence. Its tokenizer counts differ from the lexical cost measure. Qwen\u2019s 8,192-token allowance and MiniLM\u2019s 256-wordpiece allowance differ: with candidates and evaluation fixed, any performance advantage cannot be attributed to architecture alone.",
+    "source": "revisions/v3/encoder/truncation.jsonl"
+  },
+  "QwenTechnicalDetails": {
+    "value": "The completed run encoded 20,112 distinct instructed-query/document inputs with CPU float32, batch size at most 4, at most 4,096 padded batch tokens (longer inputs singly), and 2 CPU threads. Full inference session time was 0.78 hours. The technical-only MPS trial failed the valid-vector check, so it was not used for effectiveness. CPU single-versus-batch maximum coordinate difference was 6e-07, and repeated encoding was exact. The 8,192-token limit truncated 0 unique inputs; maximum observed length was 4,826 model tokens. Query instruction: \u201cGiven a scientific question or claim, retrieve passages that provide evidence relevant to it.\u201d Model, tokenizer, dependencies, input roles, pooling, precision, and source fingerprints are bound in the cache key. All 1,084 rankings are complete original-candidate permutations; the encoder audit and separate statistics replay validate them.",
+    "source": "revisions/v3/encoder/runtime_freeze.json; public_technical_summary.json; inference_complete.json; scoring_complete.json"
+  },
+  "RevisionConclusion": {
+    "value": "The executed converter/scorer path shows that a legitimate flat relevance export can lose information needed for an added completion target, without establishing a fault in its stated relevance evaluation. Uniform completion thresholds translate that distinction into explicit annotation-defined population budgets; the full-encoder check tests its persistence under one additional ranking model.",
+    "source": "revisions/v3/pipeline/report.json; statistics/budget_thresholds.csv; encoder/scoring_complete.json"
   }
 }

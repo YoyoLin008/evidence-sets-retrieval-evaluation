@@ -37,11 +37,7 @@
   ],
   [
     "p",
-    "The union gap also appears under TF-IDF and MiniLM (Figure 2). For QASPER, MiniLM yields C={QdenseC}% and A={QdenseA}%; for SciFact, the rates are {SdenseC}% and {SdenseA}%. The result therefore does not depend on one lexical scoring formula. Controls have lower completion but can still exhibit aggregation gaps, because the relationships follow the annotations and retrieved prefixes rather than a model class."
-  ],
-  [
-    "figure",
-    "figure2_paired_gaps"
+    "The union gap also appears under TF-IDF and MiniLM. For QASPER, MiniLM yields C={QdenseC}% and A={QdenseA}%; for SciFact, the rates are {SdenseC}% and {SdenseA}%. The result therefore does not depend on one lexical scoring formula. Controls have lower completion but can still exhibit aggregation gaps, because the relationships follow the annotations and retrieved prefixes rather than a model class."
   ],
   [
     "subsection",
@@ -53,11 +49,27 @@
   ],
   [
     "p",
-    "The distributions are strongly heterogeneous. The median additional depth is zero in both corpora; {QZero}% of QASPER items and {SZero}% of SciFact items incur no BM25 depth penalty. A minority with divergent reference locations produces the positive mean. The cost table reports dispersion and uncertainty, and the cumulative distributions in Supplement section 1 expose the zero mass and long tail. Reporting only mean cost would imply a more universal penalty than the data support."
+    "Both BM25 depth medians are zero; {QZero}% of QASPER items and {SZero}% of SciFact items have no penalty. Positive means therefore summarize a heterogeneous tail. The supplement reports the distribution among all items and among affected items, while the next analysis asks a different population-budget question."
   ],
   [
     "table",
     "costs"
+  ],
+  [
+    "subsection",
+    "Revision-added uniform completion budgets"
+  ],
+  [
+    "p",
+    "{BudgetResults}"
+  ],
+  [
+    "table",
+    "budgets_v3"
+  ],
+  [
+    "p",
+    "{BudgetInterpretation}"
   ],
   [
     "subsection",
@@ -76,12 +88,8 @@
     "One distinct set forces C−A=0. QASPER’s four contributions are 0.00, 5.94, 10.06, and 1.83 percentage points, each obtained by multiplying its stratum mean by its cohort fraction. They reconstruct the 17.83-point overall gap before rounding. The two multiple-minimal-set categories account for most of that gap, while nested families with one minimal set contribute another 5.94 points. SciFact’s entire 27.75-point gap comes from its 85 pairs with multiple minimal sets. This identifies where flattening matters in the observed annotations; it does not estimate the causal effect of collecting another annotation."
   ],
   [
-    "table",
-    "topology_costs"
-  ],
-  [
     "p",
-    "Within-stratum intervals resample represented papers or connected components and retain item weights. Contribution intervals instead resample the full cohort with outcomes outside the category set to zero. All methods, depth and token contributions, and BM25 modifiers for singleton availability and QASPER answer agreement are in the machine-readable supplement. Empty cells remain empty; cells with fewer than ten represented clusters are flagged sparse. No new predictive model is fitted."
+    "Stratum intervals resample represented clusters; contribution intervals resample the full cohort with out-of-stratum outcomes set to zero. Full depth/token contributions and singleton/agreement modifiers remain in the supplement, including empty and sparse cells. No predictive model is fitted."
   ],
   [
     "subsection",
@@ -93,7 +101,19 @@
   ],
   [
     "p",
-    "The ordering of BM25, TF-IDF, and MiniLM does not reverse between max-reference and union F1 at the primary budgets. We therefore do not claim a demonstrated ranking reversal. Aggregation does change the magnitude of some contrasts: MiniLM's QASPER completion advantage over BM25 is {QdenseAdvC} points under C and {QdenseAdvA} under A. These comparisons are exploratory, and their pointwise intervals are retained in the results package rather than used to declare an unadjusted significance finding."
+    "The ordering of BM25, TF-IDF, and MiniLM does not reverse between max-reference and union F1 at the primary budgets. The original methods therefore do not demonstrate a ranking reversal. Aggregation does change the magnitude of some contrasts: MiniLM's QASPER completion advantage over BM25 is {QdenseAdvC} points under C and {QdenseAdvA} under A. These comparisons are exploratory, and their pointwise intervals are retained in the results package rather than used to declare an unadjusted significance finding."
+  ],
+  [
+    "subsection",
+    "Revision-added complete Qwen comparison"
+  ],
+  [
+    "p",
+    "{QwenResults}"
+  ],
+  [
+    "p",
+    "{QwenComparisons}"
   ],
   [
     "section",
@@ -105,19 +125,19 @@
   ],
   [
     "p",
-    "For answer agreement, each annotation is serialized as its ordered extractive spans joined with comma-space, otherwise its nonempty free-form answer, otherwise “yes” or “no” when specified. The string is lowercased, ASCII punctuation is deleted, the whole-word articles “a,” “an,” and “the” are removed, and whitespace is collapsed and trimmed. Unicode and non-ASCII punctuation are not normalized. An item is retained only if all annotations yield exactly the same string."
+    "Answer agreement uses the original exact normalized-string rule: ordered extractive spans, otherwise free-form answer, otherwise yes/no; lowercase, ASCII punctuation and English articles are removed, then whitespace is collapsed. It is neither semantic agreement nor evidence that its complement is semantically conflicting. The supplement gives the exact implementation."
   ],
   [
     "p",
-    "Exact normalized answer agreement holds for {QagreeN} QASPER questions. Restricting to those items reduces the BM25 union gap from {QCA} to {QAgreeGap} points. Pruning redundant supersets on the full cohort reduces it to {QPrunedGap} points while preserving C exactly. Both changes therefore explain part of the original difference. This is evidence against interpreting the full QASPER gap as exclusively disagreement-free, nonnested alternatives."
+    "The paired subgroup table separates two operations. Selecting {QagreeN} agreement questions changes cohort composition; pruning strict supersets changes the target on the same questions and rankings. The original gap is {QAgreeGap} points in that subset and {QPrunedGap} after pruning the full cohort. Subgroup-weighted means reconstruct the full-cohort values. Shared papers can occur in both subgroups; paper counts must not be added."
   ],
   [
     "p",
-    "The post-main joint sensitivity applies both restrictions. Its union gap is {QJointGap} points (95% interval {QJointLo} to {QJointHi}) across {QagreeN} questions in {QJointClusters} papers. A residual discrepancy remains, but the smaller magnitude is the appropriate bound for this more restrictive interpretation. SciFact is unchanged because all retained rationales are consistently labelled, distinct, and nonoverlapping."
+    "Among the {QagreeN} questions in {QJointClusters} papers satisfying exact normalized answer agreement, pruning yields a {QJointGap}-point gap (95% interval {QJointLo}–{QJointHi}). This characterizes a restricted cohort and annotation target. It establishes no formal bound on the full-cohort gap and does not isolate the causal effect of answer disagreement. Paired pruning differences in the table describe within-item transformations only. SciFact has no strict supersets to remove."
   ],
   [
     "table",
-    "robustness"
+    "pruning_v3"
   ],
   [
     "p",
@@ -125,43 +145,19 @@
   ],
   [
     "subsection",
-    "Neural truncation and token budgets"
-  ],
-  [
-    "p",
-    "No query is truncated by MiniLM. At least one candidate unit is truncated in {QAnyTrunc} QASPER items, and annotated evidence is truncated in {QGoldTrunc}. SciFact has one item with a truncated candidate sentence and none with truncated gold evidence. Excluding QASPER items with truncated gold leaves {QNoTruncN} items; the MiniLM union gap remains {QNoTruncGap} points. This sensitivity does not remove all effects of truncating nongold candidates, which can still influence rankings."
-  ],
-  [
-    "p",
-    "Supplementary token budgets admit complete prefixes without skipping an oversized next unit; this can yield an empty prefix. BM25 at 512 lexical tokens gives C={QTokenC}% and A={QTokenA}% in QASPER; at 64 tokens it gives C={STokenC}% and A={STokenA}% in SciFact. These are descriptive examples. SciFact saturates at 1024 tokens; QASPER remains incomplete at 2048. Equal token budgets do not equalize the tasks."
-  ],
-  [
-    "subsection",
     "Exploratory presentation of preselected cases"
   ],
   [
     "p",
-    "The panels present one preselected BM25 case per corpus in which C=1 and A=0. They show the exact evidence family and retrieved prefix, rather than treating a textual rationale as sufficient by inspection. The supplement records deterministic selection and all error-category counts; these cases are illustrations, not representative-sample estimates."
+    "The new QASPER panel was selected by SHA-256 order among {AgreeExampleCandidates} eligible questions with exact answer agreement, multiple minimal references, no supersets, and BM25 C=1/A=0 at k=5. Selection used already known outcomes. The original nesting/disagreement QASPER panel and a SciFact control remain in the supplement. All are annotation illustrations, without new human semantic validation."
   ],
   [
     "table",
-    "case_qasper"
-  ],
-  [
-    "table",
-    "case_scifact"
-  ],
-  [
-    "subsection",
-    "Numerical validation"
+    "case_agreement_v3"
   ],
   [
     "p",
-    "A separate arithmetic verifier recomputed all {RankRecords} rankings' costs and all {ScorePoints} scoring points without calling the production scoring function. It reconstructed every included QASPER reference from the original source, checked shared SciFact claims/documents against cluster IDs, and verified all frozen input and code hashes. The separately implemented direct-resampling check reproduced primary interval endpoints within {BootstrapMaxDiff} percentage points of the production bootstrap using a different seed."
-  ],
-  [
-    "p",
-    "Tests cover scorer parity, padding, invalid inputs, interrupted checkpoints, cluster arithmetic, conversion fixtures, and topology edge cases. Additional internal validation checks test the saved results and their presentation. These checks are not independent replication or peer review."
+    "Numerical checks reproduce frozen scoring and cluster intervals and validate the new pruning, budget, encoder, and real-scorer calculations. The supplement and release QA record their scope; these are automated checks, not independent replication or human peer review."
   ],
   [
     "section",
@@ -173,15 +169,11 @@
   ],
   [
     "p",
-    "A written protocol preceded inspection of additional implementation behavior; prior familiarity with the official evaluators was disclosed. A bounded GitHub and Hugging Face search combined each benchmark name with four neutral loader, evaluation, conversion, and RAG phrases. Fifteen eligible downstream implementation families per benchmark were inspected after lineage deduplication and deterministic selection. Official evaluators and their dataset distributions serve as separate reference cases. The supplement retains search coverage, exclusions, eligibility uncertainty, and selection corrections."
+    "The previous post-main audit used a written protocol, disclosed prior official-evaluator familiarity, and searched GitHub and Hugging Face with benchmark names combined with neutral loader, evaluation, conversion and RAG phrases. Fifteen downstream implementation families per benchmark were inspected after lineage deduplication and deterministic selection. Official implementations are separate reference cases. The supplement preserves the five-way counts, exclusions, search coverage, uncertainty and selection corrections."
   ],
   [
     "p",
-    "Representations were classified as preserved (grouping retained), flat only (unit membership without grouping), both exposed (grouped and aggregated paths), other/not applicable (a different task or granularity), or undetermined. Nested lists can preserve alternatives without explicit set IDs. Pinned source-to-output tracing and six isolated conversion fixtures support classification; full downstream model pipelines were not executed. A second consistency pass checked the same source records, without independent human annotation. Search indexing, screening, lineage uncertainty, and the inspection cap limit generalization."
-  ],
-  [
-    "table",
-    "ecosystem"
+    "Representations were classified as preserved, flat only, both exposed, other/not applicable, or undetermined using pinned tracing and six fixtures. Nested lists can preserve alternatives without set IDs. The present revision executes one converter/scorer path; neither the historical sample nor a second automated consistency pass constitutes independent human annotation."
   ],
   [
     "subsection",
@@ -189,7 +181,7 @@
   ],
   [
     "p",
-    "Two QASPER families expose flat-only representations: the sscc-rag-paper paragraph-qrels loader and the mteb/QASPER distribution. A fixture for the former maps two distinct, fully mappable evidence families to identical qrels while preserving all fixture units. The latter exposes passage qrels without reference linkage, but does not uniformly equal the source’s annotated union. Thus it demonstrates unavailable grouping, not a verified pure union conversion on every item; source-to-distribution checks are in the supplement."
+    "Two sampled QASPER families expose flat-only representations: sscc-rag-paper paragraph qrels and mteb/QASPER. Flat membership does not reconstruct C in general, but a released target need not equal the original union. We therefore verify exact mapped membership in the executed case and show nonmatching transformations separately."
   ],
   [
     "p",
@@ -197,7 +189,27 @@
   ],
   [
     "p",
-    "The reference evaluators preserve alternatives for their stated objectives. These findings support a concrete conversion risk and the value of inspecting source-to-score paths; they do not establish widespread defects, the prevalence of the exact intervention, or inappropriate use of standard IR metrics. The controlled experiment remains a measurement-sensitivity warning even where practical flattening is uncommon."
+    "Official evaluators preserve alternatives for their objectives. The bounded sample does not estimate prevalence or demonstrate widespread metric defects. The executed path supplies a concrete representation boundary; the controlled results quantify sensitivity to a subsequently chosen completion target."
+  ],
+  [
+    "subsection",
+    "Revision-added executed conversion and scoring"
+  ],
+  [
+    "p",
+    "{PipelineMethods}"
+  ],
+  [
+    "table",
+    "pipeline_v3"
+  ],
+  [
+    "p",
+    "{PipelineResults}"
+  ],
+  [
+    "p",
+    "{PipelineInterpretation}"
   ],
   [
     "section",
@@ -209,7 +221,7 @@
   ],
   [
     "p",
-    "The controlled intervention changes an evaluation target without adding or deleting observed evidence units. Annotation multiplicity determines where differences are possible; rankings determine whether they occur at a budget and their prefix costs. Their observed magnitude and distribution are the empirical contribution."
+    "The paired experiment isolates a change in annotation-completion target. Topology identifies where a difference is possible; ranking positions determine the finite-budget gap and tail cost. The new inverse-budget analysis translates those differences into uniform population budgets, and the converter replay verifies exact union membership after an explicit normalized-text and candidate-scope alignment; it does not identify the native exported task with the original retrieval universe."
   ],
   [
     "p",
@@ -221,7 +233,7 @@
   ],
   [
     "p",
-    "An export intended to support C should retain query and source-unit identity together with evidence-family membership and annotation provenance. Nested lists are sufficient; an explicit set-ID column is optional. Reports should identify the aggregation target and describe distinct/minimal sets, singleton availability, eligibility, and exclusions. A flat export remains suitable when its intended objective requires only flat relevance."
+    "An export intended to support C needs stable source-unit identity and evidence-family membership; nested lists suffice. Ordinary qrels remain appropriate for ordinary relevance metrics. Keeping grouped evidence alongside qrels lets users choose the documented target and reproduce both. Reports should state eligibility, duplicate handling, minimal-set structure, and the difference between uniform thresholds and individual oracle costs."
   ],
   [
     "subsection",
@@ -229,11 +241,7 @@
   ],
   [
     "p",
-    "The implementation sample includes preserved families, unavailable grouping, and deliberate changes of task. It supplies no population prevalence estimate, downstream answer outcome, or user-benefit measurement."
-  ],
-  [
-    "p",
-    "MiniLM is small and may have encountered related scientific text during pretraining. A prespecified feasibility gate prevented the planned Qwen3-Embedding-0.6B robustness run [[qwen]]; robustness to a stronger contemporary encoder remains untested (Supplement section 3). Larger models may change the observed gaps but cannot reconstruct grouping from flat membership alone. One seeded random ranking per item serves only as a control, not a stochastic performance estimate."
+    "{QwenLimitations} One seeded random ranking per item is a control, not an estimate over random retriever runs. Scientific pretraining overlap remains possible for both encoders."
   ],
   [
     "section",
@@ -253,7 +261,7 @@
   ],
   [
     "p",
-    "Generative AI tools (OpenAI Codex) supported grammar checking, language refinement, clarity, and organization. The author conceived the study, made the substantive methodological and interpretive decisions, conducted and verified the research, and wrote the substantive content. Under the author’s direction, tool assistance also supported code edits, reruns, numerical and reference checks, and preparation of figures and manuscript files. The author reviewed AI-assisted material and takes responsibility for the final work. AI is not an author. MiniLM was a retrieval encoder; Qwen was used only for the timing gate. No LLM generated experimental answers or served as the ground-truth judge."
+    "Generative AI tools (OpenAI Codex) supported grammar checking, language refinement, clarity, and organization. The author conceived the study, made the substantive methodological and interpretive decisions, conducted and verified the research, and wrote the substantive content. Under the author’s direction, tool assistance also supported code edits, reruns, numerical and reference checks, and preparation of figures and manuscript files. The author reviewed AI-assisted material and takes responsibility for the final work. AI is not an author."
   ],
   [
     "section",
@@ -261,11 +269,11 @@
   ],
   [
     "p",
-    "In two scientific retrieval settings, finding annotated evidence, completing one original evidence set, and exhausting all annotated units give materially different assessments of the same rankings. BM25's union gaps are {QCA} points for QASPER and {SCA} points for SciFact at the prespecified budgets. The stricter QASPER joint sensitivity reduces the gap to {QJointGap} points, showing that answer variation and nesting explain part, but not all, of that discrepancy."
+    "In fixed scientific rankings, completing one observed evidence set and exhausting the annotated union yield BM25 gaps of {QCA} points in QASPER and {SCA} in SciFact. The agreement-plus-pruning result of {QJointGap} points applies to a different cohort and target; it neither bounds the original result nor assigns a causal contribution to answer disagreement."
   ],
   [
     "p",
-    "The gap is structurally concentrated: one distinct set gives no difference, and SciFact’s gap arises entirely among pairs with multiple minimal sets. Median additional depth remains zero in both corpora, and no primary F1 ranking reversal was observed. The bounded implementation sample shows preserved and inapplicable cases alongside flat outputs. The practical implication is to retain evidence-family relationships when the objective needs them and state the chosen aggregation target explicitly. This is a controlled measurement result, not a semantic-sufficiency test or a claim of ecosystem-wide evaluation failure."
+    "{RevisionConclusion} The empirical distinction is unevenly distributed: one distinct set forces equality, both BM25 depth medians are zero, and the original primary F1 ordering is stable. These findings support retaining source groupings when annotation completion is the goal, while leaving ordinary relevance evaluation and semantic sufficiency as separate questions."
   ],
   [
     "section",
@@ -281,6 +289,6 @@
   ],
   [
     "p",
-    "The reproducibility repository is available at https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation. The immutable submission-time release v1.0.0 is archived on Zenodo at https://doi.org/10.5281/zenodo.23122620. It contains frozen plans and source snapshots, acquisition URLs and hashes, retrieval and analysis code, saved rankings, eligibility/mapping audits, and manuscript generators. Primary and post-main exploratory outputs are separated. Third-party datasets and model weights are not redistributed; acquisition instructions and hashes identify the original sources."
+    "The repository is https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation. This revision is frozen as v1.1.0 at https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation/releases/tag/v1.1.0, within the verified Zenodo version family https://doi.org/10.5281/zenodo.23122619. The concept DOI identifies the version family; the exact tag identifies these files. The archive contains the tag source snapshot, all four final PDFs, frozen plans, acquisition hashes, code, saved rankings, mapping audits, and revision evidence. GitHub also supplies the submission ZIP. Original, earlier post-main, and revision-added outputs remain separate. Third-party source collections and model weights are acquired from their distributors and are not redistributed."
   ]
 ]

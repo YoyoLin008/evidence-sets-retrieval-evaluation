@@ -1,0 +1,16 @@
+{
+  "verified_utc": "2026-10-03T16:42:51.006286+00:00",
+  "purpose": "Source-free rebuild of frozen source denominators; counts independently recomputed from original inputs and matched to prior manuscript registry",
+  "input_sha256": {
+    "data/raw/qasper-test-and-evaluator-v0/qasper-test-v0.3.json": "6e29ad410e6e39aa1936017fb965b30a20eb2e7751997f55b97c9d281aa884e5",
+    "data/raw/scifact/data/claims_dev.jsonl": "86f0435d08fdb65d1aa41d1472684f57e6e71930626497bdf4d7a9ec1a632217"
+  },
+  "values": {
+    "Qpapers": 416,
+    "Qtotal": 1451,
+    "Sclaims": 300,
+    "Sevidenceclaims": 188,
+    "Snoevidence": 112
+  },
+  "main_freeze_sha256": "c232c5f55207279c6987d8b819a4bd91c960f60620e70304f0706d83d5110267"
+}

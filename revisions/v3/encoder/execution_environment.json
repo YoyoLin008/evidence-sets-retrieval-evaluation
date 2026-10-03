@@ -1,0 +1,8 @@
+{
+  "utc": "2026-10-03T16:46:34.672168+00:00",
+  "python": "3.12.14 (main, Aug 25 2026, 13:50:33) [Clang 22.1.3 ]",
+  "python_implementation": "CPython",
+  "platform": "macOS-15.2-arm64-arm-64bit",
+  "machine": "arm64",
+  "note": "Supplementary environment inventory recorded during the unchanged frozen full inference; no configuration, package or source modification."
+}

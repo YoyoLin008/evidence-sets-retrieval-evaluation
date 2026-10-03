@@ -1,0 +1,10 @@
+# Table 4. Revision-added exploratory BM25 minimum uniform budgets, with paired 95% cluster intervals. Lexical-token budgets admit complete prefixes without skipping or truncating the next unit. All three thresholds use every eligible item; all bootstrap thresholds are attained. These are population thresholds, not mean individual extra costs.
+
+| Corpus / target | B_C [CI] | B_A [CI] | B_A−B_C [CI] |
+| --- | --- | --- | --- |
+| QASPER / 50% | 510 [445, 599] | 1116 [988, 1280] | 606 [489, 736] |
+| QASPER / 75% | 1397 [1250, 1514] | 2293 [2060, 2505] | 896 [715, 1108] |
+| QASPER / 90% | 2567 [2355, 2900] | 3508 [3209, 3758] | 941 [647, 1214] |
+| SciFact / 50% | 50 [39, 58] | 91 [76, 112] | 41 [25, 62] |
+| SciFact / 75% | 90 [76, 106] | 179 [151, 219] | 89 [61, 129] |
+| SciFact / 90% | 146 [123, 193] | 275 [237, 320] | 129 [80, 179] |

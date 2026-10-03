@@ -1,0 +1,10 @@
+{
+  "utc": "2026-10-03T16:38:13.665770+00:00",
+  "commands": [
+    "revisions/v3/pipeline/runtime/bin/python src/revision_v3_pipeline.py",
+    "revisions/v3/pipeline/runtime/bin/python -m pytest -q tests/test_revision_v3_pipeline.py tests/test_revision_v3_examples.py",
+    ".venv/bin/python src/revision_v3_pipeline.py --summarize-saved"
+  ],
+  "expected_completed_checks": "10 tests passed, including rejection of a changed public per-query score file; full real replay saved in execution_output.txt. Upstream ast.Num deprecation warnings are non-failing.",
+  "review": "Automated producing-agent validation, not independent human review."
+}

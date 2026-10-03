@@ -1,0 +1,89 @@
+{
+  "status": "completed revision-added exploratory conversion/scoring replay",
+  "started_utc": "2026-10-03T17:03:04.808431+00:00",
+  "finished_utc": "2026-10-03T17:03:14.871536+00:00",
+  "upstream": "https://github.com/qarkapp/sscc-rag-paper/tree/da7e8fb13f297969d344bad90295b15c2917a47d",
+  "upstream_source_hashes": {
+    "src/sage/eval/benchmarks.py": "a63f3d5d5fbaaa6636717ec5a8887f3c265cb857403b7f4b65d9afa1c5a276c6",
+    "src/sage/eval/dataset.py": "4c9026b49e8989da74ccbd250ef47e67d087c34391030d6fcf366b09644a3f11",
+    "src/sage/eval/metrics.py": "e344792d6f57ea0613f587ccd2a2370bfc3f09c9a71950df9dbf47c1e234cc72"
+  },
+  "upstream_code_locations": {
+    "converter": "src/sage/eval/benchmarks.py:99-159",
+    "export_reload": "src/sage/eval/dataset.py:127-147",
+    "scorer": "src/sage/eval/metrics.py:28-54"
+  },
+  "source_code_sha256": "2ff8ff327df8aba184ef14afa34583aca018df7c5ccd610f175609e6fac3b6f5",
+  "input_hashes": {
+    "qasper_test": "6e29ad410e6e39aa1936017fb965b30a20eb2e7751997f55b97c9d281aa884e5",
+    "qasper_dev": "2ae7ee62a65b1c4225791c70de80c2aad4e8998cf1fd4f09a53103db4f21af93",
+    "frozen_rankings": "50f3a7f67fb534724f115793df1c0e96da5b3c00683db46b3f05fc086706e16d"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS-15.2-arm64-arm-64bit",
+    "ir-measures": "0.4.3",
+    "pytrec-eval-terrier": "0.5.10",
+    "numpy": "2.2.6",
+    "pandas": "2.3.3",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.18.1"
+  },
+  "native_dev": {
+    "queries": 888,
+    "corpus_units": 13547,
+    "unchanged_loader_vs_data_supply_wrapper_exact_equality": true,
+    "serialized_output_sha256": "25c600e80ea61c89680e522502ecb1bdac6bb46f6c085ff7c62275d6e2243df2"
+  },
+  "test_export": {
+    "raw_questions": 1451,
+    "papers": 416,
+    "queries": 1309,
+    "corpus_units": 20233,
+    "raw_flow": {
+      "exact_union_membership": 1012,
+      "unmapped_source_evidence": 297,
+      "not_exported": 142
+    },
+    "not_exported_reasons": {
+      "no_mapped_evidence": 142,
+      "no_scorable_answer": 79,
+      "both": 79
+    },
+    "upstream_jsonl_roundtrip_exact_equality": true
+  },
+  "main_cohort": {
+    "original_n": 875,
+    "original_papers": 367,
+    "scored_n": 866,
+    "scored_papers": 364,
+    "excluded_n": 9,
+    "membership_counts": {
+      "exact_union_membership": 866,
+      "missing_or_filtered_membership": 9
+    },
+    "queries_not_exported": 0,
+    "exact_membership_any_text_ambiguity_questions": 90,
+    "exact_membership_gold_text_ambiguity_questions": 4,
+    "exact_membership_abstract_id_mapping_questions": 8,
+    "exact_membership_abstract_gold_id_mapping_questions": 1,
+    "exact_union_multiset_questions": 464,
+    "exact_union_one_distinct_set_questions": 402,
+    "candidate_scope_change_count": 875,
+    "ambiguity_question_count": 93,
+    "missing_unit_reasons": {
+      "strip-only converter misses whitespace-normalized source match": 14
+    }
+  },
+  "validation": {
+    "all_five_rankings_complete_permutations": true,
+    "real_scorer_formula_max_absolute_error": 2.220446049250313e-16,
+    "real_recall_equals_union_recall": true,
+    "real_success_equals_H": true,
+    "scoring_runs": 4330,
+    "bootstrap_replicates": 10000,
+    "bootstrap_seed": 20261002,
+    "cluster_unit": "paper; cluster resampling with item-weighted denominator"
+  },
+  "interpretation": "The flat target does not preserve which evidence groups were accepted. Upstream explicitly evaluates graded relevance, recall, success and reciprocal rank; its code does not claim C or A, and no objective/implementation mismatch is established. Actual converter and scorer execute; native dev identity validates data-supply interface, test is a documented interface extension. Controlled rankings retain the original normalized body-text units and exclude abstract-only text and other-paper distractors; first-match canonical IDs can denote abstract text identical to a body unit; this is not a reproduction of full pooled retrieval, RAPTOR, generation, or published downstream scores."
+}

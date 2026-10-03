@@ -43,5 +43,7 @@
     "style_sha256": "5952d152ce89b9446587f8e4182da420f8228a8a85248a692b83d52962fd2910",
     "separate_style_unmodified": true,
     "correction": "Restored exact publisher bytes; prior embedded-style output stripped trailing whitespace and changed edge blank lines only."
-  }
+  },
+  "historical_scope": "v1.0.0 and its post-archive DOI presentation update; retained as historical evidence, not validation of v1.1.0",
+  "current_revision_evidence": "revisions/v3/qa/"
 }

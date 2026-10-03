@@ -1,0 +1,9 @@
+{
+  "completed": 20112,
+  "elapsed_seconds": 2816.1357971670222,
+  "event": "progress",
+  "new_embeddings": 20112,
+  "peak_process_rss_bytes": 4128309248,
+  "total": 20112,
+  "utc": "2026-10-03T17:13:45.017328+00:00"
+}

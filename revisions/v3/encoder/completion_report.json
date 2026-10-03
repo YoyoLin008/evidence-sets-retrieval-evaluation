@@ -1,0 +1,39 @@
+{
+  "backend": "cpu",
+  "dtype": "float32",
+  "failed_inference_sessions": 0,
+  "file_sha256": {
+    "embedding_manifest.json": "ce01051100407cbc96004d8acf3b328880f3a5cd0919958a0a77319315178641",
+    "inference_complete.json": "1579bb889b835a8ce0529b136a65484b8ac29ce761a02a85840eb385adc35244",
+    "input_manifest.json": "400494ed64093a66e9a42ff987c01e82f40b5992d01856a9585352bdb5cfd29a",
+    "public_technical_summary.json": "c15f008b162dfa1c08bd971448c419459e8a660a12eb550ae078ba4e3cd71b32",
+    "rankings.jsonl": "95b84ba6f20e0fe91350a47d96ddb9201dbe4a1fd4ac7a3d8279f6a2e3c8ce23",
+    "runtime_freeze.json": "17ee328d3a079c9186d1aea87619d6bb4fb6755f00961b2b6d86047e592d77d0",
+    "scoring_complete.json": "cace0771b86ed6989ee0f2b41c7993c90cdc23d29000cf5d0a8e4b8e1db6f99d",
+    "truncation.jsonl": "85e40875445b147d319e213f93631166dab531aa443317a68c4831e6c69a27b9",
+    "validation.json": "74497b4883139d9841d8c534c7cb5de36ed6714c32b695c41703a3e4a107aead"
+  },
+  "inference_session_seconds": 2816.136554333032,
+  "input_occurrences_by_role": {
+    "document": 43642,
+    "query": 1084
+  },
+  "max_model_tokens": 4826,
+  "model": "Qwen/Qwen3-Embedding-0.6B",
+  "original_unit_budget_scoring_points": 6504,
+  "peak_process_rss_bytes": 4128309248,
+  "primary_frozen_rankings_modified": false,
+  "rankings": 1084,
+  "revision": "97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3",
+  "role": "revision-added exploratory complete-cohort robustness",
+  "runtime_scope": "Sum of inference sessions including model load and cache writes, excluding prior technical sample, subsequent fingerprint scan/scoring/statistics.",
+  "scientific_statistics": "See revision-v3 statistics outputs; this technical report does not select or summarize effectiveness.",
+  "technical_mps_failed": true,
+  "truncated_unique_inputs": 0,
+  "unique_inputs": 20112,
+  "unique_inputs_by_role": {
+    "document": 19108,
+    "query": 1004
+  },
+  "utc": "2026-10-03T17:15:08.073290+00:00"
+}

@@ -1,0 +1,15 @@
+{
+  "utc": "2026-10-03T16:28:08.632113+00:00",
+  "command": ".venv-revision/bin/python -m pytest -q tests/test_revision_v3_encoder.py",
+  "result": "6 passed in 0.96s",
+  "scope": [
+    "role-aware exact-text deduplication",
+    "query-only instruction format",
+    "batch size/token cap and ordering",
+    "source-index tie break/nonfinite rejection",
+    "cache key sensitivity and invalid-cache rejection",
+    "left/right/mixed attention-mask last-token pooling"
+  ],
+  "source_sha256": "14e873dcc5f6dbc79e719243207e6a535c705d6e6bf2fb47a1dad7661675a776",
+  "note": "Execution output recorded before the result-blind technical sample; this record does not rerun or relabel the test."
+}

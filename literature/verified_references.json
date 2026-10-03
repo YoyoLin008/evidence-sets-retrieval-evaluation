@@ -448,5 +448,51 @@
     "verification": "ACL Anthology publication record, BibTeX and full 9-page paper",
     "source_file": "revisions/final/literature/sources/li2025_final.bib",
     "verification_ledger": "revisions/final/literature/claim_source_ledger.json"
+  },
+  "rare2026": {
+    "authors": [
+      "Hanjun Cho",
+      "Jay-Yoon Lee"
+    ],
+    "title": "RARE: Redundancy-Aware Retrieval Evaluation Framework for High-Similarity Corpora",
+    "year": 2026,
+    "venue": "Proceedings of the 64th Annual Meeting of the Association for Computational Linguistics (Volume 1: Long Papers)",
+    "url": "https://aclanthology.org/2026.acl-long.923/",
+    "doi": "10.18653/v1/2026.acl-long.923",
+    "label": "Cho and Lee",
+    "verification": "Official original publication/version and selected methodological sections, 2026-10-03 UTC",
+    "verification_ledger": "revisions/v3/literature/claim_source_ledger.json",
+    "pages": "20160–20185"
+  },
+  "complement2026": {
+    "authors": [
+      "Zhexi Feng",
+      "Ruiyi Zhang",
+      "Yongbo Yang",
+      "Pengtao Xie"
+    ],
+    "title": "The Missing Complement: State-Conditioned Minimal Sufficient Evidence for Coding Agents",
+    "year": 2026,
+    "venue": "arXiv preprint 2609.20050v1",
+    "url": "https://arxiv.org/abs/2609.20050v1",
+    "doi": "10.48550/arXiv.2609.20050",
+    "label": "Feng et al.",
+    "verification": "Official original publication/version and selected methodological sections, 2026-10-03 UTC",
+    "verification_ledger": "revisions/v3/literature/claim_source_ledger.json"
+  },
+  "rinse2026": {
+    "authors": [
+      "Suting Chen",
+      "Peichun Hua",
+      "Yunming Xiao"
+    ],
+    "title": "Relevance Is Not Sufficient Evidence: Detecting Evidence Gaps Before Generation in RAG",
+    "year": 2026,
+    "venue": "arXiv preprint 2609.37469v1",
+    "url": "https://arxiv.org/abs/2609.37469v1",
+    "doi": "10.48550/arXiv.2609.37469",
+    "label": "Chen et al.",
+    "verification": "Official original publication/version and selected methodological sections, 2026-10-03 UTC",
+    "verification_ledger": "revisions/v3/literature/claim_source_ledger.json"
   }
 }

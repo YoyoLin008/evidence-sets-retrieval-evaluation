@@ -1,0 +1,44 @@
+{
+  "checked_utc": "2026-10-03T16:42:52.682135+00:00",
+  "baseline_commit": "faf730ea4c25161b6b2dc350ff9890e344bc3524",
+  "references_retrieved_from": "Author-specified Chrome ChatGPT conversation attachments",
+  "records": [
+    {
+      "reference_name": "manuscript_official_style(3).pdf",
+      "reference_sha256": "479ef4fb7dd2629e57071cdccb5a867d81da72157abfed28a9692dfd8d64578e",
+      "baseline_location": "repository paper/manuscript_official_style.pdf",
+      "baseline_sha256": "479ef4fb7dd2629e57071cdccb5a867d81da72157abfed28a9692dfd8d64578e",
+      "identical_bytes": true,
+      "identical_extracted_text": true,
+      "pages": 20
+    },
+    {
+      "reference_name": "supplement_official_style(2).pdf",
+      "reference_sha256": "2196a86149d565e3014e16452c2e822d4a2e20782a44a0dd92c119a0904a2812",
+      "baseline_location": "repository paper/supplement_official_style.pdf",
+      "baseline_sha256": "2196a86149d565e3014e16452c2e822d4a2e20782a44a0dd92c119a0904a2812",
+      "identical_bytes": true,
+      "identical_extracted_text": true,
+      "pages": 5
+    },
+    {
+      "reference_name": "cover_letter(1).pdf",
+      "reference_sha256": "f83626d60984b607b956774966853cb44dce7459808751b506cd798fb17cc8e0",
+      "baseline_location": "original project paper/cover_letter.pdf (not previously tracked)",
+      "baseline_sha256": "f83626d60984b607b956774966853cb44dce7459808751b506cd798fb17cc8e0",
+      "identical_bytes": true,
+      "identical_extracted_text": true,
+      "pages": 1
+    },
+    {
+      "reference_name": "manuscript_reading_copy(3).pdf",
+      "reference_sha256": "d217aa8612ef80d4922400aaa60dac14ebcd9680071339f2f70911136d1c4297",
+      "baseline_location": "repository paper/manuscript_reading_copy.pdf",
+      "baseline_sha256": "d217aa8612ef80d4922400aaa60dac14ebcd9680071339f2f70911136d1c4297",
+      "identical_bytes": true,
+      "identical_extracted_text": true,
+      "pages": 20
+    }
+  ],
+  "interpretation": "Reference PDF correspondence checked before new rendering. All original references preserved privately; v1.0 tag is unchanged."
+}

@@ -1,0 +1,12 @@
+{
+  "cache_key": "79ccd7137d190382673fc6beb6aab5dabc8710587e8495034343df93752518d4",
+  "effectiveness_computed": false,
+  "embedding_manifest_sha256": "ce01051100407cbc96004d8acf3b328880f3a5cd0919958a0a77319315178641",
+  "event": "complete",
+  "max_model_tokens": 4826,
+  "new_embeddings": 20112,
+  "seconds": 2816.136554333032,
+  "total": 20112,
+  "unique_truncated": 0,
+  "utc": "2026-10-03T17:13:45.018113+00:00"
+}

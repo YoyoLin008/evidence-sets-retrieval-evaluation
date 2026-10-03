@@ -1,0 +1,72 @@
+{
+  "passed": true,
+  "completed_utc": "2026-10-03T17:21:01.614680+00:00",
+  "scope": "Isolated intended-public-file copy, existing locked analysis environment, no raw source corpora/model weights/embeddings, saved-ranking reconstruction only; not independent full-inference replication.",
+  "steps": [
+    {
+      "command": "python src/revision_v3_statistics.py --rankings-only --qwen revisions/v3/encoder/rankings.jsonl",
+      "started_utc": "2026-10-03T17:20:30.357374+00:00",
+      "returncode": 0,
+      "output": "{\n  \"status\": \"revision-added exploratory\",\n  \"ranking_rows\": 6504,\n  \"scoring_points\": 39024,\n  \"original_ranking_rows\": 5420,\n  \"original_scoring_points\": 32520,\n  \"methods\": [\n    \"bm25\",\n    \"tfidf\",\n    \"dense\",\n    \"lead\",\n    \"random\",\n    \"qwen3\"\n  ],\n  \"replicates\": 10000,\n  \"seed\": 20261002,\n  \"checks\": {\n    \"qasper\": {\n      \"n\": 875,\n      \"clusters\": 367,\n      \"topology_counts\": [\n        403,\n        187,\n        243,\n        42\n      ],\n      \"answer_groups\": {\n        \"agreement_items\": 195,\n        \"agreement_papers\": 149,\n        \"complement_items\": 680,\n        \"complement_papers\": 337,\n        \"papers_shared_across_subsets\": 119,\n        \"rule\": \"all saved adapter-normalized answer strings exactly equal\"\n      },\n      \"historical_BM25_categories\": [\n        306,\n        123,\n        156,\n        290\n      ]\n    },\n    \"scifact\": {\n      \"n\": 209,\n      \"clusters\": 164,\n      \"topology_counts\": [\n        124,\n        0,\n        85,\n        0\n      ],\n      \"historical_BM25_categories\": [\n        34,\n        9,\n        58,\n        108\n      ]\n    },\n    \"valid_permutations\": true,\n    \"frozen_score_depth_replay\": true,\n    \"source_text_lexical_cost_replay\": false,\n    \"pruning_all_integer_prefixes_via_event_depths\": true,\n    \"answer_subgroup_weighted_reconstruction\": true,\n    \"full_cohort_thresholds_all_attained\": true\n  },\n  \"pruning_event_checks\": 38056,\n  \"best_reference_F1_counterexample\": {\n    \"family\": [\n      [\n        0\n      ],\n      [\n        0,\n        1\n      ]\n    ],\n    \"prefix\": [\n      0,\n      1\n    ],\n    \"original\": 1.0,\n    \"pruned\": 0.6666666666666666\n  },\n  \"Qwen_status\": \"full cohort included\"\n}\ndataset method  k                  group   n  papers   weight                     status  original_gap  original_gap_lo  original_gap_hi  pruned_gap  pruned_gap_lo  pruned_gap_hi  pruned_minus_original  pruned_minus_original_lo  pruned_minus_original_hi  topology_0_n  topology_1_n  topology_2_n  topology_3_n\n qasper   bm25  5 exact_answer_agreement 195     149 0.222857 revision-added exploratory      0.123077         0.078049         0.170984    0.082051       0.045000       0.124378              -0.041026                 -0.070654                 -0.015464           117            35            42             1\n qasper   bm25  5   agreement_complement 680     337 0.777143 revision-added exploratory      0.194118         0.164723         0.225108    0.127941       0.103952       0.153411              -0.066176                 -0.086567                 -0.047472           286           152           201            41\n qasper   bm25  5                   full 875     367 1.000000 revision-added exploratory      0.178286         0.153243         0.203769    0.117714       0.096885       0.138826              -0.060571                 -0.077011                 -0.045249           403           187           243            42\ndataset method    budget_unit   n  clusters  tau    B_C    B_A  difference  B_C_attained  B_A_attained  bootstrap_replicates  B_C_unattained_replicates  B_A_unattained_replicates  difference_undefined_replicates  B_C_lo  B_C_lo_unattained  B_C_hi  B_C_hi_unattained  B_A_lo  B_A_lo_unattained  B_A_hi  B_A_hi_unattained  difference_lo  difference_lo_unattained  difference_hi  difference_hi_unattained                                                        definition                     status\n qasper   bm25          units 875       367 0.50    5.0   11.0         6.0          True          True                 10000                          0                          0                                0     5.0              False     6.0              False    10.0              False    13.0              False            5.0                     False            7.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\n qasper   bm25          units 875       367 0.75   14.0   27.0        13.0          True          True                 10000                          0                          0                                0    13.0              False    16.0              False    24.0              False    29.0              False           10.0                     False           15.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\n qasper   bm25          units 875       367 0.90   30.0   44.0        14.0          True          True                 10000                          0                          0                                0    27.0              False    33.0              False    40.0              False    49.0              False           10.0                     False           18.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\n qasper   bm25 lexical_tokens 875       367 0.50  510.0 1116.0       606.0          True          True                 10000                          0                          0                                0   445.0              False   599.0              False   988.0              False  1280.0              False          489.0                     False          736.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\n qasper   bm25 lexical_tokens 875       367 0.75 1397.0 2293.0       896.0          True          True                 10000                          0                          0                                0  1250.0              False  1514.0              False  2060.0              False  2505.0              False          715.0                     False         1108.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\n qasper   bm25 lexical_tokens 875       367 0.90 2567.0 3508.0       941.0          True          True                 10000                          0                          0                                0  2355.0              False  2900.0              False  3209.0              False  3758.0              False          647.0                     False         1214.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\nscifact   bm25          units 209       164 0.50    2.0    3.0         1.0          True          True                 10000                          0                          0                                0     1.0              False     2.0              False     3.0              False     4.0              False            1.0                     False            3.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\nscifact   bm25          units 209       164 0.75    3.0    6.0         3.0          True          True                 10000                          0                          0                                0     3.0              False     4.0              False     6.0              False     7.0              False            2.0                     False            4.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\nscifact   bm25          units 209       164 0.90    6.0    9.0         3.0          True          True                 10000                          0                          0                                0     4.0              False     7.0              False     8.0              False    12.0              False            2.0                     False            6.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\nscifact   bm25 lexical_tokens 209       164 0.50   50.0   91.0        41.0          True          True                 10000                          0                          0                                0    39.0              False    58.0              False    76.0              False   112.0              False           25.0                     False           62.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\nscifact   bm25 lexical_tokens 209       164 0.75   90.0  179.0        89.0          True          True                 10000                          0                          0                                0    76.0              False   106.0              False   151.0              False   219.0              False           61.0                     False          129.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\nscifact   bm25 lexical_tokens 209       164 0.90  146.0  275.0       129.0          True          True                 10000                          0                          0                                0   123.0              False   193.0              False   237.0              False   320.0              False           80.0                     False          179.0                     False exact minimum integer budget; full rankings; all-item denominator revision-added exploratory\n"
+    },
+    {
+      "command": "python src/revision_v3_pipeline.py --summarize-saved",
+      "started_utc": "2026-10-03T17:20:52.768568+00:00",
+      "returncode": 0,
+      "output": "{\"status\": \"statistics rebuilt from public saved per-query results\", \"rows\": 4330, \"queries\": 866}\n"
+    },
+    {
+      "command": "python src/revision_v3_release_docs.py",
+      "started_utc": "2026-10-03T17:20:53.970933+00:00",
+      "returncode": 0,
+      "output": "Generated README, cover research prose, revision memo and citation metadata from complete results.\n"
+    },
+    {
+      "command": "python src/render_final.py",
+      "started_utc": "2026-10-03T17:20:54.175677+00:00",
+      "returncode": 0,
+      "output": "Current bibliography: 29 records\nBuilt manuscript model with 139 blocks, 126 source-linked values, 29 verified references.\nExported 10 article display tables under revisions/v3/tables/display; frozen tables untouched.\nExported 11 supplement display tables under revisions/v3/tables/display; frozen tables untouched.\nWrote conventional IRRJ LaTeX, PDF reading copy, and Markdown companion.\n{\"cover_letter_pages\": 1, \"text_checked\": true, \"visual_review\": \"pending\"}\nExported final official-style main and supplementary PDFs.\n"
+    }
+  ],
+  "byte_identical_sources_and_tables": {
+    "revisions/v3/statistics/budget_thresholds.csv": true,
+    "revisions/v3/statistics/primary.csv": true,
+    "revisions/v3/statistics/cost_distributions.csv": true,
+    "revisions/v3/statistics/agreement_pruning.csv": true,
+    "revisions/v3/statistics/costs.csv": true,
+    "revisions/v3/statistics/item_completion_costs.csv": true,
+    "revisions/v3/statistics/method_contrasts.csv": true,
+    "revisions/v3/statistics/cohort_membership.csv": true,
+    "revisions/v3/statistics/curves.csv": true,
+    "revisions/v3/pipeline/all_raw_question_flow.csv": true,
+    "revisions/v3/pipeline/score_summary.csv": true,
+    "revisions/v3/pipeline/per_query_scores.csv": true,
+    "revisions/v3/pipeline/paired_contrasts.csv": true,
+    "paper/article.json": true,
+    "paper/supplement.json": true,
+    "paper/manuscript.tex": true,
+    "paper/supplement.tex": true,
+    "paper/references.bib": true,
+    "paper/manuscript.md": true,
+    "paper/cover_letter.md": true
+  },
+  "PDF_checks": {
+    "manuscript_official_style": {
+      "same_page_count": true,
+      "same_page_text": true
+    },
+    "supplement_official_style": {
+      "same_page_count": true,
+      "same_page_text": true
+    },
+    "manuscript_reading_copy": {
+      "same_page_count": true,
+      "same_page_text": true
+    },
+    "cover_letter": {
+      "same_page_count": true,
+      "same_page_text": true
+    }
+  },
+  "PDF_byte_identity_not_required": "PDF creation metadata may vary; scientific model, TeX, page count and per-page extracted text are checked."
+}

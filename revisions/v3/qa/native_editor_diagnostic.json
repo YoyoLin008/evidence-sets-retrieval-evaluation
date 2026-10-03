@@ -1,0 +1,10 @@
+{
+  "status": "source_open_queued; native compile unavailable for adjacent style dependency",
+  "diagnostic": "Native standalone compiler could not find irrj2e.sty; source and unmodified adjacent official style retained.",
+  "official_export_route": "Existing local pdflatex compiles the two-file official project; no TeX or plugin installed.",
+  "last_checked_source_role": "final v1.1.0 manuscript.tex",
+  "last_checked_utc": "2026-10-03T17:29:54.766751+00:00",
+  "native_compile_status": "compile-failed: adjacent irrj2e.sty is not available to the native standalone compiler",
+  "official_export_status": "passed: existing local pdflatex, final main 21 pages and supplement 12 pages; all pages visually checked",
+  "manuscript_source_sha256": "2743e7af17700cb8a93a833fe6ab7794423a5994d0b40baf1da48739e62ce01a"
+}

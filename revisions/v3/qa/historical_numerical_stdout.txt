@@ -1,0 +1,38 @@
+{
+  "passed": true,
+  "protected_files": 42,
+  "historical_byte_check": "passed",
+  "estimate_rows_recomputed": 804,
+  "original_and_topology_cluster_intervals_recomputed": true,
+  "independent_direct_bootstrap_reproduced": [
+    {
+      "dataset": "qasper",
+      "metric": "hit_without_complete",
+      "lo": 0.11710677382319173,
+      "hi": 0.16510619212341274
+    },
+    {
+      "dataset": "qasper",
+      "metric": "complete_without_union",
+      "lo": 0.1535796766743649,
+      "hi": 0.2037940478710987
+    },
+    {
+      "dataset": "scifact",
+      "metric": "hit_without_complete",
+      "lo": 0.018433179723502304,
+      "hi": 0.07246376811594203
+    },
+    {
+      "dataset": "scifact",
+      "metric": "complete_without_union",
+      "lo": 0.21255725764060976,
+      "hi": 0.34343544137022397
+    }
+  ],
+  "joint_post_main_recomputed": true,
+  "qwen_timing_projection_reconstructed": true,
+  "source_ledger_entries": 29,
+  "overlapping_headline_figure_removed": true,
+  "no_original_output_changed": true
+}

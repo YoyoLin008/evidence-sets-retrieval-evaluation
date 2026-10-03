@@ -3,9 +3,8 @@ from pathlib import Path
 import json
 from render_manuscript import latex
 ROOT=Path(__file__).resolve().parents[1]
-def main():
-    doc=json.loads((ROOT/'paper/article.json').read_text())
-    out=ROOT/'revisions/final/tables/display';out.mkdir(parents=True,exist_ok=True)
+def export(doc, label):
+    out=ROOT/'revisions/v3/tables/display'/label;out.mkdir(parents=True,exist_ok=True)
     names=[value for kind,value in doc['blocks'] if kind=='table']
     for number,name in enumerate(names,1):
         t=doc['tables'][name]
@@ -20,5 +19,8 @@ def main():
         s+=row(t['headers'])+'\n'+r'\midrule'+'\n'
         s+='\n'.join(row(xs) for xs in t['rows'])+'\n'+r'\bottomrule\end{tabular}\end{table}'+'\n'
         (out/f'table{number}_{name}.tex').write_text(s)
-    print(f'Exported {len(names)} revised tables under revisions/final/tables/display; frozen tables untouched.')
+    print(f'Exported {len(names)} {label} display tables under revisions/v3/tables/display; frozen tables untouched.')
+def main():
+    for stem in ['article','supplement']:
+        export(json.loads((ROOT/f'paper/{stem}.json').read_text()),stem)
 if __name__=='__main__':main()

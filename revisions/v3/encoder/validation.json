@@ -1,0 +1,19 @@
+{
+  "cache_key": "79ccd7137d190382673fc6beb6aab5dabc8710587e8495034343df93752518d4",
+  "checks": [
+    "original item IDs and annotation hashes",
+    "source-index tie breaking",
+    "full candidate permutations",
+    "nonempty valid evidence families",
+    "all-prefix A<=C<=H",
+    "single-distinct-set C=A",
+    "cost replay",
+    "all six original unit budgets"
+  ],
+  "integer_prefix_checks": 44726,
+  "passed": true,
+  "rankings": 1084,
+  "rankings_sha256": "95b84ba6f20e0fe91350a47d96ddb9201dbe4a1fd4ac7a3d8279f6a2e3c8ce23",
+  "scoring_points": 6504,
+  "utc": "2026-10-03T17:13:54.235956+00:00"
+}

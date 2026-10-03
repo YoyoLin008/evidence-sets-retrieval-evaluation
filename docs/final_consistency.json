@@ -56,5 +56,7 @@
   "numerical_changes": 0,
   "empirical_verification": "81 protected files unchanged; 5,420 rankings and all primary values reverified by verify_final.py",
   "archive_verification": "Published archive all 238 files match v1.0.0 commit ed2d6f6",
-  "validation_limit": "Internal checks and isolated saved-ranking replay, not independent external replication"
+  "validation_limit": "Internal checks and isolated saved-ranking replay, not independent external replication",
+  "historical_scope": "v1.0.0 and its post-archive DOI presentation update; retained as historical evidence, not validation of v1.1.0",
+  "current_revision_evidence": "revisions/v3/qa/"
 }

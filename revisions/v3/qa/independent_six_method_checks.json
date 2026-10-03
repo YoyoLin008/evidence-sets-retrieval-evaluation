@@ -1,0 +1,51 @@
+{
+  "checked_utc": "2026-10-03T17:18:23.161080+00:00",
+  "passed": true,
+  "scope": "Scientific calculations, protected original inputs, pipeline public provenance and complete source-linked manuscript helper; excludes PDF rendering, remote publication and isolated source-free reproduction.",
+  "review_role": "Additional automated code/scientific review; pipeline is producing-agent self-check, statistics/helper are checked by a different agent; no independent human review.",
+  "methods": {
+    "bm25": 1084,
+    "tfidf": 1084,
+    "dense": 1084,
+    "lead": 1084,
+    "random": 1084,
+    "qwen3": 1084
+  },
+  "ranking_count": 6504,
+  "unit_budget_points": 39024,
+  "full_integer_prefix_pruning_checks": 261852,
+  "individual_score_value_checks": 351216,
+  "curve_mean_checks": 648,
+  "cost_mean_checks": 72,
+  "exact_budget_endpoint_minimality_checks": 144,
+  "subgroup_mean_checks": 36,
+  "pipeline_public_output_hashes_checked": 13,
+  "pipeline_original_intersection": 875,
+  "pipeline_aligned_n": 866,
+  "complete_helper_new_tables": [
+    "pruning_v3",
+    "pruning_topology_v3",
+    "budgets_v3",
+    "budgets_tokens_v3",
+    "affected_v3",
+    "pipeline_v3",
+    "case_qasper",
+    "case_agreement_v3",
+    "case_scifact",
+    "qwen_contrasts_v3"
+  ],
+  "qwen_results": "Complete Qwen3 rankings yield QASPER H/C/A=78.2/65.0/41.9%, C\u2212A=23.1 [20.2, 26.0] points, and mean extra depth 5.89 (median 0); SciFact H/C/A=90.4/86.6/59.3%, C\u2212A=27.3 [20.9, 33.9] points, and mean extra depth 1.61 (median 0). The revision contains 6,504 full rankings and 39,024 points across the six original unit budgets when the historical and new methods are counted together; the original block remains unchanged.",
+  "qwen_comparisons": "QASPER Qwen3\u2212BM25 differences are 14.1 points under C and 8.8 under A; SciFact Qwen3\u2212BM25 differences are 7.2 points under C and 7.7 under A. The fixed revision-added exploratory comparisons show no new primary F1 ranking reversal. The supplement reports every primary paired comparison against BM25 and MiniLM; all six budgets and all fixed metrics remain in the machine-readable results. These are exploratory pointwise comparisons.",
+  "qwen_technical_details": "The completed run encoded 20,112 distinct instructed-query/document inputs with CPU float32, batch size at most 4, at most 4,096 padded batch tokens (longer inputs singly), and 2 CPU threads. Full inference session time was 0.78 hours. The technical-only MPS trial failed the valid-vector check, so it was not used for effectiveness. CPU single-versus-batch maximum coordinate difference was 6e-07, and repeated encoding was exact. The 8,192-token limit truncated 0 unique inputs; maximum observed length was 4,826 model tokens. Query instruction: \u201cGiven a scientific question or claim, retrieve passages that provide evidence relevant to it.\u201d Model, tokenizer, dependencies, input roles, pooling, precision, and source fingerprints are bound in the cache key. All 1,084 rankings are complete original-candidate permutations; the encoder audit and separate statistics replay validate them.",
+  "checked_file_sha256": {
+    "revisions/v3/qa/independent_scientific_check.py": "2b7d791144715239a5409ddb7ba623a781bdedea7f8660f4072594c2b91bc2db",
+    "reference_outputs/main_v1/rankings.jsonl": "50f3a7f67fb534724f115793df1c0e96da5b3c00683db46b3f05fc086706e16d",
+    "revisions/v3/encoder/rankings.jsonl": "95b84ba6f20e0fe91350a47d96ddb9201dbe4a1fd4ac7a3d8279f6a2e3c8ce23",
+    "src/revision_v3_statistics.py": "fc2d563d69dbe761f6d47ef2b39251aecfd4c540bc41bd6627e283cfdca755ef",
+    "src/revision_v3_manuscript.py": "de18ca37ebd576b0d0d8bbb79af2fbb0d62d1b4d0c7a639c8d051a5ec575aa0e",
+    "src/validate_revision_v3_release.py": "25671d5a6e6d941d96c95214a57f9364fc6a3a9f5186f21160fe9970251f8ee8",
+    "src/revision_v3_release_docs.py": "98f232bfb696da976fc4d96eb5c8f1ae63874896424931fef8e35c2950077df6",
+    "revisions/v3/pipeline/manifest.json": "22d29f0d57a14c001aa9024928fa13bdf35cad022c34f56a073d2bf3b6ac1ca1",
+    "revisions/v3/statistics/manifest.json": "1e42f6e3d6e151f51297b119a05336ec83d3388e3646e47c5a6ebdd2c474877f"
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "status": "revision-added exploratory",
+  "frozen_utc": "2026-10-03T16:23:39.097614+00:00",
+  "known_results": "All v1.0.0 outcomes visible; outcome-conditional illustrative selection, not an unbiased semantic audit.",
+  "retained_cases": "First preselected QASPER and SciFact one_not_union cases in analysis/representative_examples.json",
+  "new_selection": "Original QASPER cohort; original strict normalized answer agreement; at least two distinct minimal sets; no strict supersets; original BM25 k=5 C=1,A=0; smallest SHA256 of question ID. Keep first even if interpretation weak.",
+  "presentation": "exact source IDs, query and recorded answers/label, evidence family, actual ranking prefix, H/C/A/dC/dA, bounded short verbatim excerpts; no independent human validation or semantic population inference."
+}

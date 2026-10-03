@@ -4,5 +4,7 @@
   "credential_pattern_findings": 0,
   "local_absolute_path_findings": 0,
   "files_checked": 241,
-  "private_cover_and_approval_records_excluded": true
+  "private_cover_and_approval_records_excluded": true,
+  "historical_scope": "v1.0.0 and its post-archive DOI presentation update; retained as historical evidence, not validation of v1.1.0",
+  "current_revision_evidence": "revisions/v3/qa/"
 }

@@ -1,0 +1,11 @@
+# Technical backend decision
+
+The result-blind comparison completed on 2026-10-03. The selected backend is **CPU float32**, with SDPA attention, two intra-op threads, one inter-op thread, at most four inputs per batch and at most 4,096 padded tokens except a longer singleton. This is the only backend used for the reported full-cohort rankings.
+
+The 20-input sample covers four equal-count length strata, four hash-selected inputs and the longest input per stratum. All 20 CPU singleton vectors and batched vectors passed shape, finiteness and unit-norm checks. Batched versus singleton embeddings had maximum absolute coordinate difference 5.9651e-7 and minimum cosine 0.99999979. Repeating the first CPU input yielded exactly equal coordinates. CPU loading took 1.25 s, singleton sample inference 56.14 s, and batched sample inference 54.57 s. The single globally longest paragraph (4,826 model tokens) dominated this small stress test; these times are not a full-run runtime estimate or a confidence bound.
+
+Apple MPS was available and was tested in float32 on the same sample. Its batched phase raised the encoder's invalid-vector exception (`ValueError: Invalid embedding shape or values`). The traceback and failed backend status are retained in `technical_results.json` and `failures.jsonl`. The prespecified CPU fallback was therefore selected before any new retrieval effectiveness was computed. We do not claim bitwise equivalence for MPS, and no MPS vector enters the reported rankings.
+
+All 20,112 unique original inputs were tokenized before inference. The maximum is 4,826 model tokens, so none exceed the fixed 8,192-token inference cap. This statement concerns Qwen tokenizer lengths. Completion costs continue to use the original lexical-token definition and full prefixes.
+
+The CPU configuration, source, model, tokenizer, dependencies and original instance hash are frozen in `runtime_freeze.json`. The old timing-only v2 result and its two-hour gate decision remain unchanged; the user's current revision instructions removed that gate. Full inference begins with a fresh cache namespace. No technical sample vector, including the earlier v2 timing vectors, is reused to bypass the complete run.

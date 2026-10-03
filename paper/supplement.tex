@@ -12,7 +12,7 @@
 \title{Supplementary material: When Evidence Sets Become Relevance Lists: A Controlled Audit of Scientific Retrieval Evaluation}
 \author{\name Yunya Lin \\ \addr University of Illinois Urbana-Champaign}
 \maketitle
-\begin{abstract}Supplementary distributions, implementation-audit details, encoder feasibility evidence, and computational provenance for the controlled evaluation study. No additional effectiveness experiment is reported.\end{abstract}
+\begin{abstract}Supplementary evidence for the controlled evaluation audit: prior post-main topology and implementation records, and revision-added subgroup/pruning estimates, uniform-budget thresholds, complete Qwen3 results, executed converter/scorer outputs, and source-linked examples. Original and revision-added analyses retain separate provenance.\end{abstract}
 \begin{keywords}retrieval evaluation; evidence sets; scientific information; measurement validity; reproducibility\end{keywords}
 
 \section{Additional depth distributions and tabulated results}
@@ -42,23 +42,35 @@ The implementation audit was frozen before inspecting additional code behavior. 
 
 The search comprised sixteen phrase-quoted queries and sixteen benchmark-quoted queries added by a pre-classification amendment, totaling 320 result slots and 148 canonical projects. Three inaccessible QASPER distributions had unverified eligibility. The final eligible pool contained 24 QASPER and 32 SciFact downstream families; fifteen per benchmark were selected by ascending SHA-256 of canonical identifiers. Post-inspection corrections merged the VikingRAG/OpenViking lineage and treated official AllenAI distributions as reference cases, replacing their selected slots with the next eligible families. The protocol, query records, eligibility decisions, and selection correction records accompany the package.
 
-Classification traces pinned input, conversion, output, and scoring roles where accessible. Grouped lists preserve relationships even without explicit set IDs. The classification ledger records commit/revision, code locations, source/output granularity, transformation, supporting evidence, and uncertainty. A second consistency pass rechecked these source records. It does not constitute independent human annotation. Six isolated conversion fixtures supplement static code and schema inspection; no complete downstream model pipeline was executed.
+Classification traces pinned input, conversion, output, and scoring roles where accessible. Grouped lists preserve relationships even without explicit set IDs. The classification ledger records commit/revision, code locations, source/output granularity, transformation, supporting evidence, and uncertainty. A second consistency pass rechecked these source records. It does not constitute independent human annotation. Six isolated conversion fixtures supplement static code and schema inspection; no complete downstream model pipeline was executed in that audit. The present revision separately executes a conversion-and-scoring path, without a downstream generator.
 
 The official QASPER evaluator selects a best reference for Evidence F1. The official SciFact evaluator retains alternative rationales for its complete-rationale abstract-level condition; sentence-level coverage is distinct. The official SciFact Hugging Face loader expands a rationale into a row, permitting grouping by claim and document. Reference distributions are excluded from downstream counts.
 
-For mteb/QASPER, comparison with source IDs finds exact raw-union targets for 576 of 1,335 matched questions. This prevents interpreting every released target as the controlled union intervention. The sscc-rag-paper fixture demonstrates relation loss when every evidence unit maps; real input can additionally lose unmatched evidence. These two failure modes are recorded separately.
+The historical mteb/QASPER comparison found exact raw-union targets for 576 of 1,335 matched source questions. That denominator is not the intersection with the 875-item main cohort. The revision case ledger keeps these scopes separate. This prevents interpreting every released target as the controlled union intervention. The sscc-rag-paper fixture demonstrates relation loss when every evidence unit maps; real input can additionally lose unmatched evidence. These two failure modes are recorded separately.
 
 Final downstream counts in preserved/flat-only/both/other/undetermined order are QASPER 0/2/3/9/1 and SciFact 1/0/1/13/0. Unavailable and changed-task cases remain visible. These bounded counts do not estimate ecosystem prevalence.
 
+\begin{table}[!htbp]\centering\small\caption{Exploratory bounded downstream implementation sample. Counts describe fifteen selected families per benchmark, not population prevalence. The two official evaluator reference families are excluded and retain alternatives for their relevant objectives.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{232.0pt}>{\raggedright\arraybackslash}p{82.0pt}>{\raggedright\arraybackslash}p{82.0pt}}
+\toprule
+\textbf{Representation class} & \textbf{QASPER} & \textbf{SciFact} \\
+\midrule
+{Preserved} & {0} & {1} \\
+{Flat only} & {2} & {0} \\
+{Both exposed} & {3} & {1} \\
+{Other / not applicable} & {9} & {13} \\
+{Undetermined} & {1} & {0} \\
+{Total inspected} & {15} & {15} \\
+\bottomrule\end{tabular}\end{table}
 
 \subsection{Case-selection record}
-The frozen error taxonomy contains 306/123/156/290 QASPER items and 34/9/58/108 SciFact pairs in the no-hit, fragment-only, one-set-without-union, and union-complete categories. Earlier examples were selected by SHA-256 order within each category, up to three per category. The panels in the main article present the first already-selected one-set-without-union case from each corpus; they are illustrations, not representative-sample estimates.
+The frozen error taxonomy contains 306/123/156/290 QASPER items and 34/9/58/108 SciFact pairs in the no-hit, fragment-only, one-set-without-union, and union-complete categories. Earlier examples were selected by SHA-256 order within each category, up to three per category. The historical panels below present the first already-selected one-set-without-union case from each corpus; they are illustrations, not representative-sample estimates.
 
 
-\section{Result-blind modern-encoder feasibility gate}
+\section{Historical timing gate and revision-added full encoder}
 Qwen3-Embedding-0.6B was the sole post-main candidate \citep{qwen}. Its official revision, tokenizer, weights, and separate dependencies were pinned. The proposed configuration used float32 CPU inference, last-token pooling, normalized 1,024-dimensional vectors, an 8,192-token limit, and the fixed instruction ``Given a scientific question or claim, retrieve passages that provide evidence relevant to it.'' Queries were instructed and candidate units were not.
 
-The frozen gate sampled 32 inputs by SHA-256 from each equal-count tokenizer-length quartile, adding its longest input when absent. Timing 132 of 20,112 unique inputs projected 10,568.9 seconds (2.94 hours), exceeding the prespecified two-hour limit. Full inference was therefore omitted. No effectiveness outcomes were computed from the timing sample, and no substitute was tried. The conservative longest-input addition and local runtime conditions limit the precision of this projection; omission leaves the modern-retriever robustness question unresolved.
+The frozen gate sampled 32 inputs by SHA-256 from each equal-count tokenizer-length quartile, adding its longest input when absent. Timing 132 of 20,112 unique inputs projected 10,568.9 seconds (2.94 hours), exceeding the prespecified two-hour limit. Full inference was omitted in v1.0.0. No effectiveness outcomes were computed from the timing sample, and no substitute was tried. The conservative longest-input addition and local runtime conditions limit the precision of this projection; that historical omission was superseded by the revision-added full run after the author removed the artificial two-hour limit.
 
 The pinned Qwen model revision is 97b0c614be4d77ee51c0cef4e5f07c00f9eb65b3. The separate environment records PyTorch 2.8.0 and Transformers 4.57.1, with exact resolved dependencies, tokenizer and weight hashes. Timing and truncation records are separate from the MiniLM embedding cache. The complete projection reconstructs from the length-bin means, full input counts, model loading, and warm-up costs. The gate was applied before effectiveness evaluation.
 
@@ -70,7 +82,7 @@ The frozen function answer\_key in src/evidence.py selects nonempty extractive\_
 \section{Computational provenance and replay}
 The pilot used SHA-256-selected QASPER development papers and SciFact training claims, yielding 88 and 47 eligible items; none entered the main estimates. Inclusion rules, metrics, models, and analysis were frozen locally at 2026-10-03T00:51:19 UTC. This is a prospective local record, not public preregistration.
 
-QASPER test annotations were first deserialized after the freeze. SciFact development schema and availability had been inspected earlier, but rankings had not been scored. No retriever was tuned on either main cohort. The saved experiment contains 5420 full rankings and 32520 unit-budget scoring points.
+QASPER test annotations were first deserialized after the freeze. SciFact development schema and availability had been inspected earlier, but rankings had not been scored. No retriever was tuned on either main cohort. The original saved experiment contains 5420 full rankings and 32520 unit-budget scoring points.
 
 The main CPU run took 626.5 seconds on ARM64 macOS with Python 3.12. Input, code, configuration, and model fingerprints bind checkpointed rankings and embedding caches. The reproduction package retains timestamped source snapshots, acquisition hashes, pilot records, correction logs, and current presentation sources.
 
@@ -78,7 +90,19 @@ The MiniLM revision is 1110a243fdf4706b3f48f1d95db1a4f5529b4d41. The acquired Sc
 
 Adapters validate nonempty evidence families and source-unit mappings. Scores treat predicted IDs as sets; duplicate references do not change H, C, A, or max-reference overlap. Fingerprints bind rankings to queries, units, annotations, configuration, and retrieval code.
 
-The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is \url{https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation}; immutable release v1.0.0 is archived at \url{https://doi.org/10.5281/zenodo.23122620}.
+The reproduction guide distinguishes replay of saved outputs from new retrieval. Frozen primary outputs and post-main exploratory additions are stored separately, with source fingerprints and machine-readable validation records. External datasets and model weights are acquired from their distributors using the supplied URLs and hashes. The public repository is \url{https://github.com/YoyoLin008/evidence-sets-retrieval-evaluation}; the present revision is v1.1.0 in the verified Zenodo concept family \url{https://doi.org/10.5281/zenodo.23122619}. Exact tag v1.1.0 identifies this frozen source and its PDFs; the version DOI is recorded on the release landing page after automatic archiving.
+
+
+\subsection{Neural truncation and token budgets}
+No query is truncated by MiniLM. At least one candidate unit is truncated in 556 QASPER items, and annotated evidence is truncated in 125. SciFact has one item with a truncated candidate sentence and none with truncated gold evidence. Excluding QASPER items with truncated gold leaves 750 items; the MiniLM union gap remains 20.4 points. This sensitivity does not remove all effects of truncating nongold candidates, which can still influence rankings.
+
+Supplementary token budgets admit complete prefixes without skipping an oversized next unit; this can yield an empty prefix. BM25 at 512 lexical tokens gives C=50.2\% and A=31.4\% in QASPER; at 64 tokens it gives C=63.2\% and A=37.3\% in SciFact. These are descriptive examples. SciFact saturates at 1024 tokens; QASPER remains incomplete at 2048. Equal token budgets do not equalize the tasks.
+
+
+\subsection{Numerical verification details}
+A separate arithmetic verifier recomputed all 5420 rankings' costs and all 32520 scoring points without calling the production scoring function. It reconstructed every included QASPER reference from the original source, checked shared SciFact claims/documents against cluster IDs, and verified all frozen input and code hashes. The separately implemented direct-resampling check reproduced primary interval endpoints within 0.08 percentage points of the production bootstrap using a different seed.
+
+Additional automated checks cover paired pruning, weighted subgroup reconstruction, threshold inversion, saturation, unreachable bootstrap replicates, full new-model rankings and encoder configuration, real converter mappings, and parity with the actual scorer. Tests and rerun logs are included. These checks are not independent replication or human peer review.
 
 
 \section{Literature-search scope}
@@ -86,6 +110,151 @@ A final targeted search on 3 October 2026 UTC covered evidence ranking, evidence
 
 Alt et al. (2026) and Li et al. (2025) were read in full for the comparison of sufficient-set ranking and group-versus-union evaluation \citep{alt2026,li2025}. The claim-to-source ledger distinguishes bibliographic verification from methodological reading and records source-access limitations. Cha et al. and Nguy are cited as preprints.
 
+
+\section{Revision-added statistics and executed path}
+The new subgroup/pruning, uniform-budget, converter/scorer, example, and full-encoder plans were recorded after the v1.0.0 findings were known. They are revision-added exploratory work, not an extension of the original preregistration. The historical joint sensitivity and two-hour timing decision remain archived; the new complete encoder run uses a separately frozen configuration and cache.
+
+\begin{table}[!htbp]\centering\small\caption{Revision-added exploratory QASPER BM25 at k=5. n/p gives questions/papers; papers overlap across subsets. Gap values are percentage points with paired paper-cluster 95\% intervals. The last column is a within-item target transformation, not a causal comparison between cohorts.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{57.0pt}>{\raggedright\arraybackslash}p{38.0pt}>{\raggedright\arraybackslash}p{93.0pt}>{\raggedright\arraybackslash}p{92.0pt}>{\raggedright\arraybackslash}p{92.0pt}}
+\toprule
+\textbf{Cohort} & \textbf{n/p} & \textbf{Original C-A} & \textbf{Pruned C-A} & \textbf{Pruned - original} \\
+\midrule
+{Exact agreement} & {195/149} & {12.3 [7.8, 17.1]} & {8.2 [4.5, 12.4]} & {-4.1 [-7.1, -1.5]} \\
+{Complement} & {680/337} & {19.4 [16.5, 22.5]} & {12.8 [10.4, 15.3]} & {-6.6 [-8.7, -4.7]} \\
+{Full cohort} & {875/367} & {17.8 [15.3, 20.4]} & {11.8 [9.7, 13.9]} & {-6.1 [-7.7, -4.5]} \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[!htbp]\centering\small\caption{Original topology within the QASPER answer subgroups. Categories: one distinct set; multiple sets with one minimal set; multiple minimal sets without supersets; multiple minimal sets plus supersets. Subgroups partition questions, not papers.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{74.0pt}>{\raggedright\arraybackslash}p{25.0pt}>{\raggedright\arraybackslash}p{46.0pt}>{\raggedright\arraybackslash}p{56.0pt}>{\raggedright\arraybackslash}p{80.0pt}>{\raggedright\arraybackslash}p{80.0pt}}
+\toprule
+\textbf{Cohort} & \textbf{n} & \textbf{One set} & \textbf{One minimal} & \textbf{Multi minimal; no supersets} & \textbf{Multi minimal + supersets} \\
+\midrule
+{Exact agreement} & {195} & {117} & {35} & {42} & {1} \\
+{Complement} & {680} & {286} & {152} & {201} & {41} \\
+{Full cohort} & {875} & {403} & {187} & {243} & {42} \\
+\bottomrule\end{tabular}\end{table}
+The three rows use the original exact normalized-answer Boolean. Questions partition into agreement and its complement, but 119 papers appear in both; no independent-groups comparison is inferred. Each within-row pruning difference uses the same item rankings and paired paper-cluster draws. The four structure categories remain mutually exclusive and exhaustive; their counts below describe the original annotations. Pruning preserves C and $d_{C}$ but may change best-reference F1, as the counterexample in the main text shows.
+
+\begin{table}[!htbp]\centering\small\caption{Revision-added exploratory BM25 minimum uniform budgets, with paired 95\% cluster intervals. Lexical-token budgets admit complete prefixes without skipping or truncating the next unit. All three thresholds use every eligible item; all bootstrap thresholds are attained. These are population thresholds, not mean individual extra costs.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{84.0pt}>{\raggedright\arraybackslash}p{96.0pt}>{\raggedright\arraybackslash}p{96.0pt}>{\raggedright\arraybackslash}p{108.0pt}}
+\toprule
+\textbf{Corpus / target} & \textbf{B\_C [CI]} & \textbf{B\_A [CI]} & \textbf{B\_A-B\_C [CI]} \\
+\midrule
+{QASPER / 50\%} & {510 [445, 599]} & {1116 [988, 1280]} & {606 [489, 736]} \\
+{QASPER / 75\%} & {1397 [1250, 1514]} & {2293 [2060, 2505]} & {896 [715, 1108]} \\
+{QASPER / 90\%} & {2567 [2355, 2900]} & {3508 [3209, 3758]} & {941 [647, 1214]} \\
+{SciFact / 50\%} & {50 [39, 58]} & {91 [76, 112]} & {41 [25, 62]} \\
+{SciFact / 75\%} & {90 [76, 106]} & {179 [151, 219]} & {89 [61, 129]} \\
+{SciFact / 90\%} & {146 [123, 193]} & {275 [237, 320]} & {129 [80, 179]} \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[!htbp]\centering\small\caption{Revision-added exploratory BM25 cost distributions. Positive n/g gives affected items/represented clusters; zero shares use the full 875/209-item populations. Conditional mean intervals resample represented clusters among affected items. Full distributions and every method remain in the machine-readable tables.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{58.0pt}>{\raggedright\arraybackslash}p{42.0pt}>{\raggedright\arraybackslash}p{31.0pt}>{\raggedright\arraybackslash}p{78.0pt}>{\raggedright\arraybackslash}p{83.0pt}>{\raggedright\arraybackslash}p{68.0pt}}
+\toprule
+\textbf{Corpus / cost} & \textbf{Positive n/g} & \textbf{Zero (\%)} & \textbf{All mean [CI]} & \textbf{Positive mean [CI]} & \textbf{Positive median / q90} \\
+\midrule
+{QASPER / units} & {395/247} & {54.9} & {6.7 [5.7, 7.7]} & {14.7 [12.9, 16.7]} & {9 / 37.0} \\
+{QASPER / tokens} & {395/247} & {54.9} & {540.9 [463.7, 624.0]} & {1198.2 [1054.6, 1352.7]} & {782 / 2746.0} \\
+{SciFact / units} & {85/70} & {59.3} & {2.0 [1.5, 2.6]} & {5.0 [4.0, 6.1]} & {4 / 9.6} \\
+{SciFact / tokens} & {85/70} & {59.3} & {58.5 [43.0, 76.3]} & {143.9 [117.4, 178.4]} & {112 / 250.0} \\
+\bottomrule\end{tabular}\end{table}
+Thresholds use 10,000 paired resamples of the original paper clusters or connected SciFact components, seed 20261002, with item-weighted denominators. C and A budgets and their difference are recalculated inside each draw. Percentile endpoints use linear interpolation and may be fractional for this discrete statistic. Unattained thresholds remain infinite and are counted rather than dropped; none occurred here. Positive-cost distributions condition on affected items and their represented clusters. All-method unit/token thresholds, quantiles, zero shares, and pointwise comparisons at all six original k values are retained in the machine-readable tables.
+
+\begin{table}[!htbp]\centering\small\caption{Revision-added exploratory Qwen3 differences at primary budgets. All values are percentage points, including F1×100, with paired pointwise 95\% cluster intervals. These four fixed comparisons are retained regardless of sign; no multiplicity-controlled significance claim is made.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{84.0pt}>{\raggedright\arraybackslash}p{72.0pt}>{\raggedright\arraybackslash}p{72.0pt}>{\raggedright\arraybackslash}p{72.0pt}>{\raggedright\arraybackslash}p{72.0pt}}
+\toprule
+\textbf{Corpus / contrast} & \textbf{C [CI]} & \textbf{A [CI]} & \textbf{Best-ref F1 [CI]} & \textbf{Union F1 [CI]} \\
+\midrule
+{QASPER: Qwen3-BM25} & {14.1 [10.2, 17.9]} & {8.8 [5.4, 12.1]} & {6.4 [4.9, 7.9]} & {6.5 [5.0, 8.0]} \\
+{QASPER: Qwen3-MiniLM} & {10.2 [7.2, 13.2]} & {8.6 [5.9, 11.4]} & {4.3 [3.2, 5.4]} & {4.8 [3.6, 5.9]} \\
+{SciFact: Qwen3-BM25} & {7.2 [1.5, 13.0]} & {7.7 [2.0, 13.2]} & {3.7 [0.8, 6.6]} & {6.1 [2.8, 9.4]} \\
+{SciFact: Qwen3-MiniLM} & {8.1 [3.5, 13.1]} & {8.6 [3.9, 13.7]} & {4.2 [1.9, 6.7]} & {6.6 [3.8, 9.5]} \\
+\bottomrule\end{tabular}\end{table}
+The completed run encoded 20,112 distinct instructed-query/document inputs with CPU float32, batch size at most 4, at most 4,096 padded batch tokens (longer inputs singly), and 2 CPU threads. Full inference session time was 0.78 hours. The technical-only MPS trial failed the valid-vector check, so it was not used for effectiveness. CPU single-versus-batch maximum coordinate difference was 6e-07, and repeated encoding was exact. The 8,192-token limit truncated 0 unique inputs; maximum observed length was 4,826 model tokens. Query instruction: ``Given a scientific question or claim, retrieve passages that provide evidence relevant to it.'' Model, tokenizer, dependencies, input roles, pooling, precision, and source fingerprints are bound in the cache key. All 1,084 rankings are complete original-candidate permutations; the encoder audit and separate statistics replay validate them.
+
+\begin{table}[!htbp]\centering\small\caption{Revision-added real converter/scorer replay on 866 questions in 364 papers, with exact union membership under the stated text mapping and original candidate restriction. Actual Recall/nDCG are conventional relevance measures; C/A are separate completion targets at k=5. The paired gap uses paper-cluster 95\% intervals. This is not native pooled-retrieval performance.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{40.0pt}>{\raggedright\arraybackslash}p{49.0pt}>{\raggedright\arraybackslash}p{64.0pt}>{\raggedright\arraybackslash}p{39.0pt}>{\raggedright\arraybackslash}p{39.0pt}>{\raggedright\arraybackslash}p{129.0pt}}
+\toprule
+\textbf{Method} & \textbf{Recall@5 (\%)} & \textbf{nDCG@10 (\%)} & \textbf{C (\%)} & \textbf{A (\%)} & \textbf{C-A, pp [CI]} \\
+\midrule
+{BM25} & {46.4} & {42.3} & {51.4} & {33.5} & {17.9 [15.4, 20.5]} \\
+{TF-IDF} & {44.4} & {42.1} & {49.0} & {31.5} & {17.4 [14.9, 20.0]} \\
+{MiniLM} & {48.8} & {46.7} & {55.1} & {33.7} & {21.4 [18.6, 24.3]} \\
+{Lead} & {14.2} & {13.9} & {18.1} & {7.4} & {10.7 [8.5, 13.1]} \\
+{Random} & {14.0} & {15.5} & {16.3} & {6.7} & {9.6 [7.6, 11.7]} \\
+\bottomrule\end{tabular}\end{table}
+The test export contains 1,309 queries and 20,233 paragraph IDs from 1,451 source questions. The raw flow differs from the strict main-cohort intersection. The aligned 866-question subset includes 464 items with multiple distinct source sets and 402 with one set. 90 aligned questions have multiple export candidates sharing normalized text (4 involving gold); 8 have a body unit mapped to an identical normalized abstract candidate (1 involving gold). IDs follow the first normalized-text match. The ledger retains these ambiguities; original body-text units and ranking order remain fixed, while abstract-only text and other papers are excluded. Thus exact membership equality is conditional on the stated text mapping; it is not an assertion that the entire native task underwent pure grouping loss. Every original item has a candidate-scope change relative to the upstream pooled task. The 9 membership failures and all IDs remain visible. Direct formulas match the actual scorer within 2.2e-16. The historical MTEB count 576/1,335 is not used as this intersection's denominator.
+
+
+\section{Readable source examples}
+\begin{table}[!htbp]\centering\small\caption{Exploratory annotation case: QASPER. Unit indices are zero-based in the released mapping; source-unit IDs use paper:paragraph:index or abstract:sentence:index. Brief excerpts are from the identified source. No new human semantic validation is claimed.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{79.0pt}>{\raggedright\arraybackslash}p{329.0pt}}
+\toprule
+\textbf{Field} & \textbf{Recorded example} \\
+\midrule
+{Source IDs} & {1804.07445; item 0bde3ecfdd7c4a9af23f53da2cda6cd7a8398220} \\
+{Question / claim} & {what language was the data in?} \\
+{Answer / label} & {English; English ; English} \\
+{Evidence family} & {$E_{1}$=\{24\}; $E_{2}$=\{20\}; $E_{3}$=\{24\}} \\
+{Exact prefix} & {[27,29,20,26,0] at k=5} \\
+{Completion} & {H=1, C=1, A=0; $d_{C}$=3, $d_{A}$=16} \\
+{Brief unit excerpts} & {20: ``aligned complex-simple sentence pairs from English Wikipedia''; 24: ``the output is grammatical English''} \\
+{Interpretation} & {All three recorded answers normalize to English; duplicate \{24\} leaves two distinct singleton alternatives, \{20\} and \{24\}, with no nesting. Paragraph 20 describes English Wikipedia pairs, whereas paragraph 24 mentions grammatical English as a fluency criterion. The selected first case is retained despite this difference in how directly the paragraphs support the question. It demonstrates annotation-defined same-answer alternatives; no independent human judgment establishes semantic sufficiency of either singleton.} \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[!htbp]\centering\small\caption{Exploratory annotation case: QASPER. Unit indices are zero-based in the released mapping; source-unit IDs use paper:paragraph:index or abstract:sentence:index. Brief excerpts are from the identified source. No new human semantic validation is claimed.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{79.0pt}>{\raggedright\arraybackslash}p{329.0pt}}
+\toprule
+\textbf{Field} & \textbf{Recorded example} \\
+\midrule
+{Source IDs} & {1909.12208; item 14fdc8087f2a62baea9d50c4aa3a3f8310b38d17} \\
+{Question / claim} & {What supports the claim that enhancement in training is advisable as long as enhancement in test is at least as strong as in training?} \\
+{Answer / label} & {Paraphrase: an extensive experimental evaluation on difficult CHiME-5 dinner-party data.; Paraphrase: training enhancement improves accuracy provided it is no stronger than test enhancement.} \\
+{Evidence family} & {$E_{1}$=\{17,22,23,34\}; $E_{2}$=\{23\}} \\
+{Exact prefix} & {[34,1,2,23,3] at k=5} \\
+{Completion} & {H=1, C=1, A=0; $d_{C}$=4, $d_{A}$=23} \\
+{Brief unit excerpts} & {17: ``Experiments were performed using the CHiME-5 data.''; 22: ``An extensive set of experiments''; 23: ``the recognition accuracy improves monotonically''; 34: ``CHiME-5 dinner party data''} \\
+{Interpretation} & {The singleton \{23\} is nested within \{17,22,23,34\}; completing the singleton makes C=1 before the full union is covered. The two recorded normalized answers differ. This illustrates annotation nesting and answer-text variation, not same-answer alternative sufficient evidence.} \\
+\bottomrule\end{tabular}\end{table}
+\begin{table}[!htbp]\centering\small\caption{Exploratory annotation case: SciFact. Unit indices are zero-based in the released mapping; source-unit IDs use paper:paragraph:index or abstract:sentence:index. Brief excerpts are from the identified source. No new human semantic validation is claimed.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{79.0pt}>{\raggedright\arraybackslash}p{329.0pt}}
+\toprule
+\textbf{Field} & \textbf{Recorded example} \\
+\midrule
+{Source IDs} & {1180972; item 873:1180972} \\
+{Question / claim} & {Obesity is determined solely by environmental factors.} \\
+{Answer / label} & {CONTRADICT} \\
+{Evidence family} & {$E_{1}$=\{3,4\}; $E_{2}$=\{6\}; $E_{3}$=\{7\}} \\
+{Exact prefix} & {[7,0,1] at k=3} \\
+{Completion} & {H=1, C=1, A=0; $d_{C}$=1, $d_{A}$=8} \\
+{Brief unit excerpts} & {3: ``body mass index (kg/m2) significantly increased''; 4: ``a steady but weaker increase''; 6: ``a striking, significant increase''; 7: ``influenced by genetic factors independent of sex''} \\
+{Interpretation} & {The gold label is CONTRADICT and the family contains the two-sentence set \{3,4\} plus alternatives \{6\} and \{7\}. The retrieved prefix completes \{7\}, while \{6\} and \{3,4\} remain incomplete. This is an annotation-defined alternative-rationale control; completion is not a new semantic validation.} \\
+\bottomrule\end{tabular}\end{table}
+The new panel uses the first SHA-256-ranked eligible ID without substitution. All original outcomes were already visible, and C=1/A=0 was a selection criterion. The annotation answers agree exactly, but paragraph 20 describes the data while paragraph 24 describes a fluency criterion; the difference in directness is retained. This is an annotation-defined illustration, not a human-validated rate of semantic sufficiency. Source positions, unit hashes, selection candidates, brief excerpts, and original answer metadata are retained in the example ledger.
+
+
+\section{Topology costs and original paired gaps}
+\begin{table}[!htbp]\centering\small\caption{Exploratory post-main completion costs in each populated topology category. Values are mean additional ranked units and lexical tokens with 95\% cluster intervals. Units are QASPER paragraphs or SciFact sentences; category denominators are in the preceding table.}
+\begin{tabular}{>{\raggedright\arraybackslash}p{161.0pt}>{\raggedright\arraybackslash}p{105.0pt}>{\raggedright\arraybackslash}p{130.0pt}}
+\toprule
+\textbf{Corpus and category} & \textbf{Extra units [CI]} & \textbf{Extra lexical tokens [CI]} \\
+\midrule
+{QASPER: One distinct set} & {0.00 [0.00, 0.00]} & {0.0 [0.0, 0.0]} \\
+{QASPER: Multiple sets, one minimal} & {10.18 [8.02, 12.49]} & {783.3 [629.2, 946.5]} \\
+{QASPER: Multiple minimal, no supersets} & {12.66 [10.82, 14.63]} & {1047.2 [907.9, 1201.2]} \\
+{QASPER: Multiple minimal plus supersets} & {20.05 [14.20, 26.64]} & {1721.7 [1177.5, 2342.5]} \\
+{SciFact: One distinct set} & {0.00 [0.00, 0.00]} & {0.0 [0.0, 0.0]} \\
+{SciFact: Multiple minimal, no supersets} & {4.96 [4.05, 6.12]} & {143.9 [117.4, 178.4]} \\
+\bottomrule\end{tabular}\end{table}
+\begin{figure}[!htbp]\centering
+\hbox to\textwidth{\begin{minipage}{.48\textwidth}\centering\begin{tikzpicture}\begin{axis}[width=.99\linewidth,height=5.1cm,tick label style={font=\scriptsize},label style={font=\small},title style={font=\small},title=QASPER,grid=major,grid style={gray!15},legend style={font=\scriptsize,draw=none},legend pos=south east,xmin=0,xmax=40,ymin=-.5,ymax=2.5,ytick={0,1,2},yticklabels={BM25,TF-IDF,MiniLM},xlabel={Difference (points)}]
+\addplot+[only marks,brown,mark=triangle*,error bars/.cd,x dir=both,x explicit] coordinates {(14.05714286,-0.12) += (2.37147078,0) -= (2.32607416,0) (14.05714286,0.88) += (2.33085673,0) -= (2.29243698,0) (14.05714286,1.88) += (2.35431840,0) -= (2.26356004,0)};
+\addlegendentry{H-C}
+\addplot+[only marks,blue,mark=*,error bars/.cd,x dir=both,x explicit] coordinates {(17.82857143,0.12) += (2.54834259,0) -= (2.50423175,0) (17.48571429,1.12) += (2.46920245,0) -= (2.50327639,0) (21.48571429,2.12) += (2.85714285,0) -= (2.83582871,0)};
+\addlegendentry{C-A}\end{axis}\end{tikzpicture}\end{minipage}\hfill\begin{minipage}{.48\textwidth}\centering\begin{tikzpicture}\begin{axis}[width=.99\linewidth,height=5.1cm,tick label style={font=\scriptsize},label style={font=\small},title style={font=\small},title=SciFact,grid=major,grid style={gray!15},legend style={font=\scriptsize,draw=none},legend pos=south east,xmin=0,xmax=40,ymin=-.5,ymax=2.5,ytick={0,1,2},yticklabels={BM25,TF-IDF,MiniLM},xlabel={Difference (points)}]
+\addplot+[only marks,brown,mark=triangle*,error bars/.cd,x dir=both,x explicit] coordinates {(4.30622010,-0.12) += (2.94015672,0) -= (2.47135771,0) (3.82775120,0.88) += (2.87327973,0) -= (2.39917977,0) (3.82775120,1.88) += (2.78017832,0) -= (2.37847583,0)};
+\addlegendentry{H-C}
+\addplot+[only marks,blue,mark=*,error bars/.cd,x dir=both,x explicit] coordinates {(27.75119617,0.12) += (6.54832074,0) -= (6.55343675,0) (27.27272727,1.12) += (6.85049548,0) -= (6.65455911,0) (27.75119617,2.12) += (6.86418845,0) -= (6.67276480,0)};
+\addlegendentry{C-A}\end{axis}\end{tikzpicture}\end{minipage}}
+\caption{Paired score gaps at the primary budgets: QASPER k=5 and SciFact k=3. Whiskers show 95\% cluster intervals. The definitions guarantee nonnegative gaps; their magnitudes are the empirical quantities.}
+\end{figure}
 
 \section{Authorship and assistance}
 Generative AI tools (OpenAI Codex) supported grammar checking, language refinement, clarity, and organization. The author conceived the study, made the substantive methodological and interpretive decisions, conducted and verified the research, and wrote the substantive content. Under the author's direction, tool assistance also supported code edits, reruns, numerical and reference checks, and preparation of figures and manuscript files. The author reviewed AI-assisted material and takes responsibility for the final work. AI is not an author.

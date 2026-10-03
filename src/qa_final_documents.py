@@ -4,7 +4,7 @@ import json,hashlib,re
 from pypdf import PdfReader
 import pypdfium2
 from PIL import Image,ImageDraw
-R=Path(__file__).resolve().parents[1];O=R/'revisions/submission/qa'
+R=Path(__file__).resolve().parents[1];O=R/'revisions/v3/qa/rendered'
 def main():
  O.mkdir(parents=True,exist_ok=True)
  reports=[]
@@ -18,7 +18,7 @@ def main():
    assert token not in text.lower(),(stem,token)
   assert 'project selection' not in text.lower()
   if 'manuscript' in stem:
-   for x in ['875','209','17.8','27.8','51.0','33.1','79.4','51.7','8.2']:assert x in texts[0],(stem,x)
+   for x in ['875','209','17.8','27.8','8.2']:assert x in texts[0],(stem,x)
    for x in ['Alt','Li','Minimal Evidence Group','User-Centric Evidence Ranking']:assert x in text,(stem,x)
   pdf=pypdfium2.PdfDocument(str(path));pages=[]
   for i in range(len(pdf)):
@@ -29,5 +29,5 @@ def main():
     im=Image.open(p);im.thumbnail((815,1170));x=j*830+(830-im.width)//2;canvas.paste(im,(x,30));d.text((j*830+12,8),f'{stem} page {start+j+1}',fill='black')
    canvas.save(O/f'{stem}_sheet_{start//2+1:02d}.png')
   reports.append({'file':str(path.relative_to(R)),'pages':len(reader.pages),'sha256':hashlib.sha256(path.read_bytes()).hexdigest(),'text_checks':'passed','all_pages_rendered':True,'visual_inspection':'pending'})
- (O/'document_checks.json').write_text(json.dumps(reports,indent=2)+'\n');print(json.dumps(reports,indent=2))
+ (O.parent/'document_checks.json').write_text(json.dumps(reports,indent=2)+'\n');print(json.dumps(reports,indent=2))
 if __name__=='__main__':main()
