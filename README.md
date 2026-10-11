@@ -1,5 +1,7 @@
 # When Evidence Sets Become Relevance Lists
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23126392.svg)](https://doi.org/10.5281/zenodo.23126392)
+
 **When Evidence Sets Become Relevance Lists: A Controlled Audit of Scientific Retrieval Evaluation**  
 Yunya Lin · University of Illinois Urbana-Champaign
 
